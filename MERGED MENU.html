@@ -1,0 +1,6725 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        margin: auto;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        overflow: auto;
+        background: linear-gradient(
+          315deg,
+          rgba(38, 80, 115, 1) 3%,
+          rgba(119, 176, 170, 1) 38%,
+          rgba(19, 93, 102, 1) 68%,
+          rgba(45, 149, 150, 1) 98%
+        );
+        animation: gradient 15s ease infinite;
+        background-size: 400% 400%;
+        background-attachment: fixed;
+      }
+
+      @keyframes gradient {
+        0% {
+          background-position: 0% 0%;
+        }
+
+        50% {
+          background-position: 100% 100%;
+        }
+
+        100% {
+          background-position: 0% 0%;
+        }
+      }
+
+      .wave {
+        background: rgb(255 255 255 / 25%);
+        border-radius: 1000% 1000% 0 0;
+        position: fixed;
+        width: 200%;
+        height: 12em;
+        animation: wave 10s -3s linear infinite;
+        transform: translate3d(0, 0, 0);
+        opacity: 0.8;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+      }
+
+      .wave:nth-of-type(2) {
+        bottom: -1.25em;
+        animation: wave 18s linear reverse infinite;
+        opacity: 0.8;
+      }
+
+      .wave:nth-of-type(3) {
+        bottom: -2.5em;
+        animation: wave 20s -1s reverse infinite;
+        opacity: 0.9;
+      }
+
+      @keyframes wave {
+        2% {
+          transform: translateX(1);
+        }
+
+        25% {
+          transform: translateX(-25%);
+        }
+
+        50% {
+          transform: translateX(-50%);
+        }
+
+        75% {
+          transform: translateX(-25%);
+        }
+
+        100% {
+          transform: translateX(1);
+        }
+      }
+
+      body {
+        font-family: "Arial", sans-serif;
+        text-align: center;
+        margin: 20px;
+        color: #fff;
+      }
+
+      p {
+        font-size: 18px;
+        font-weight: bold;
+        color: #ffd700;
+        text-shadow: 3px 10px 10px rgba(0, 0, 0, 0.5);
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 10px;
+      }
+
+      li {
+        font-size: 12px;
+        margin-bottom: 10px;
+        padding: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      li button {
+        background: linear-gradient(
+          0deg,
+          rgba(0, 60, 67, 0.5) 0%,
+          rgba(0, 60, 67, 0.5) 100%
+        );
+        line-height: 42px;
+        padding: 0;
+        border: none;
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+        transition: background-color 0.3s ease;
+        width: 100%;
+        text-align: center;
+      }
+
+      li button span {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+
+      li button:before,
+      li button:after {
+        position: absolute;
+        content: "";
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 215, 0, 1);
+        box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+          -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+          7px 7px 20px 0px rgba(0, 0, 0, 0.2),
+          4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      li button:before {
+        height: 0%;
+        width: 2px;
+      }
+
+      li button:after {
+        width: 0%;
+        height: 2px;
+      }
+
+      li button:hover {
+        color: rgba(255, 215, 0, 1);
+        background: transparent;
+      }
+
+      li button:hover:before {
+        height: 100%;
+      }
+
+      li button:hover:after {
+        width: 100%;
+      }
+
+      li button span:before,
+      li button span:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        background: rgba(255, 215, 0, 1);
+        box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+          -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+          7px 7px 20px 0px rgba(0, 0, 0, 0.2),
+          4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      li button span:before {
+        width: 2px;
+        height: 0%;
+      }
+
+      li button span:after {
+        height: 2px;
+        width: 0%;
+      }
+
+      li button span:hover:before {
+        height: 100%;
+      }
+
+      li button span:hover:after {
+        width: 100%;
+      }
+    </style>
+  </head>
+<h1 style=font-size:25px;color:#white;font-family:Times New Roman>REGION I: ILOCOS REGION</h1>
+  <ul>
+           <li>
+        <button class="btn-7">
+          <a href="INTRO R1.HTML" target="C"><span>ABOUT REGION I</span></a>
+        </button>
+      </li>
+  <body>
+    <div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+    </div>
+
+    <a href="Intro.html" target="C">
+      <p>ILOCOS SUR</p>
+    </a>
+
+    
+    <ul>
+  
+      <li>
+        <button class="btn-7">
+          <a href="BALUARTE.HTML" target="C"><span>Baluarte</span></a>
+        </button>
+      </li>
+    
+      <li>
+        <button class="btn-7">
+          <a href="BANTAY BELL TOWER.HTML" target="C"><span>Bantay Bell Tower</span></a>
+        </button>
+      </li>
+
+      <li>
+        <button class="btn-7">
+          <a href="BESSANG.HTML" target="C"><span>Bessang Pass Natural Park</span></a>
+        </button>
+      </li>
+
+      <li>
+        <button class="btn-7">
+          <a href="CALLE CRISOLOGO.HTML" target="C"><span>Calle Crisologo</span></a>
+        </button>
+      </li>
+
+      <li>
+        <button class="btn-7">
+          <a href="CRISOLOGO MUSEUM.html" target="C"><span>Crisologo Museum</span></a>
+        </button>
+      </li>
+
+      <li>
+        <button class="btn-7">
+          <a href="SANTA MARIA.HTML" target="C"><span>Santa Maria Church</span></a>
+        </button>
+      </li>
+
+      <li>
+        <button class="btn-7">
+          <a href="SYQUIA.HTML" target="C"><span>Syquia Mansion Museum</span></a>
+        </button>
+      </li>
+
+
+    <a href="Intro.html" target="C">
+      <p>ILOCOS NORTE</p>
+    </a>
+    <ul>
+
+      <li>
+        <button class="btn-7">
+          <a href="ATV RIDES IN LAOAG.html" target="C"><span>ATV Rides in Laoag</span></a>
+        </button>
+      </li>
+    <li>
+        <button class="btn-7">
+          <a href="BANGUI WIND.HTML" target="C"><span>Bangui Windmills</span></a>
+        </button>
+      </li>
+
+
+
+      <li>
+        <button class="btn-7">
+          <a href="CAPE BOJEADOR.HTML" target="C"><span>Cape Bojeador</span></a>
+        </button>
+      </li>
+    
+
+      <li>
+        <button class="btn-7">
+          <a href="LA PAZ.HTML" target="C"><span>La Paz Sand Dunes</span></a>
+        </button>
+      </li>
+   
+
+      <li>
+        <button class="btn-7">
+          <a href="PATAPAT.HTML" target="C"><span>Patapat Viaduct</span></a>
+        </button>
+      </li>
+
+        <li>
+        <button class="btn-7">
+          <a href="SAUD BEACH.HTML" target="C"><span>Saud Beach</span></a>
+        </button>
+      </li>
+  
+
+      <li>
+        <button class="btn-7">
+          <a href="PAOAY.html" target="C"><span>Paoay Church</span></a>
+        </button>
+      </li>
+
+
+      <li>
+        <button class="btn-7">
+          <a href="BLUE LAGOON.HTML" target="C"><span>Blue Lagoon</span></a>
+        </button>
+      </li>
+    
+
+      <li>
+        <button class="btn-7">
+          <a href="KAPURPURAWAN.HTML" target="C"><span>Kapurpurawan Rock Formation</span></a>
+        </button>
+      </li>
+    
+
+    <a href="Intro.html" target="C">
+      <p>PANGASINAN</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="BOLINAO.html" target="C"><span>Bolinao Falls</span></a>
+        </button>
+   
+   </li>
+  <li>
+        <button class="btn-7">
+          <a href="PATAR.html" target="C"><span>Patar Beach</span></a>
+        </button>
+      </li>
+
+    </ul>
+
+      <li>
+        <button class="btn-7">
+          <a href="HUNDRED ISLANDS.html" target="C"><span>Hundred Islands</span></a>
+        </button>
+      </li>
+    </ul>
+
+      <li>
+        <button class="btn-7">
+          <a href="TONDOL.html" target="C"><span>Tondol Beach Resort</span></a>
+        </button>
+      </li>
+    </ul>
+
+
+    <a href="Intro.html" target="C">
+      <p>LA UNION</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="IMMUKI ISLAND.HTML" target="C"><span>Immuki Island</span></a>
+        </button>
+      </li>
+   <li>
+        <button class="btn-7">
+          <a href="TANGADAN.HTML" target="C"><span>Tangadan Falls</span></a>
+        </button>
+      </li>
+   <li>
+        <button class="btn-7">
+          <a href="PORO.HTML" target="C"><span>Poro Point</span></a>
+        </button>
+      </li>
+   <li>
+        <button class="btn-7">
+          <a href="URBIZTONDO.HTML" target="C"><span>Urbiztondo Beach</span></a>
+        </button>
+      </li>
+   <li>
+        
+
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        margin: auto;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        overflow: auto;
+        background: linear-gradient(
+          315deg,
+          rgba(38, 80, 115, 1) 3%,
+          rgba(119, 176, 170, 1) 38%,
+          rgba(19, 93, 102, 1) 68%,
+          rgba(45, 149, 150, 1) 98%
+        );
+        animation: gradient 15s ease infinite;
+        background-size: 400% 400%;
+        background-attachment: fixed;
+      }
+
+      @keyframes gradient {
+        0% {
+          background-position: 0% 0%;
+        }
+
+        50% {
+          background-position: 100% 100%;
+        }
+
+        100% {
+          background-position: 0% 0%;
+        }
+      }
+
+      .wave {
+        background: rgb(255 255 255 / 25%);
+        border-radius: 1000% 1000% 0 0;
+        position: fixed;
+        width: 200%;
+        height: 12em;
+        animation: wave 10s -3s linear infinite;
+        transform: translate3d(0, 0, 0);
+        opacity: 0.8;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+      }
+
+      .wave:nth-of-type(2) {
+        bottom: -1.25em;
+        animation: wave 18s linear reverse infinite;
+        opacity: 0.8;
+      }
+
+      .wave:nth-of-type(3) {
+        bottom: -2.5em;
+        animation: wave 20s -1s reverse infinite;
+        opacity: 0.9;
+      }
+
+      @keyframes wave {
+        2% {
+          transform: translateX(1);
+        }
+
+        25% {
+          transform: translateX(-25%);
+        }
+
+        50% {
+          transform: translateX(-50%);
+        }
+
+        75% {
+          transform: translateX(-25%);
+        }
+
+        100% {
+          transform: translateX(1);
+        }
+      }
+
+      body {
+        font-family: "Arial", sans-serif;
+        text-align: center;
+        margin: 20px;
+        color: #fff;
+      }
+
+      p {
+        font-size: 18px;
+        font-weight: bold;
+        color: #ffd700;
+        text-shadow: 3px 10px 10px rgba(0, 0, 0, 0.5);
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 10px;
+      }
+
+      li {
+        font-size: 12px;
+        margin-bottom: 10px;
+        padding: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      li button {
+        background: linear-gradient(
+          0deg,
+          rgba(0, 60, 67, 0.5) 0%,
+          rgba(0, 60, 67, 0.5) 100%
+        );
+        line-height: 42px;
+        padding: 0;
+        border: none;
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+        transition: background-color 0.3s ease;
+        width: 100%;
+        text-align: center;
+      }
+
+      li button span {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+
+      li button:before,
+      li button:after {
+        position: absolute;
+        content: "";
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 215, 0, 1);
+        box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+          -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+          7px 7px 20px 0px rgba(0, 0, 0, 0.2),
+          4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      li button:before {
+        height: 0%;
+        width: 2px;
+      }
+
+      li button:after {
+        width: 0%;
+        height: 2px;
+      }
+
+      li button:hover {
+        color: rgba(255, 215, 0, 1);
+        background: transparent;
+      }
+
+      li button:hover:before {
+        height: 100%;
+      }
+
+      li button:hover:after {
+        width: 100%;
+      }
+
+      li button span:before,
+      li button span:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        background: rgba(255, 215, 0, 1);
+        box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+          -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+          7px 7px 20px 0px rgba(0, 0, 0, 0.2),
+          4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      li button span:before {
+        width: 2px;
+        height: 0%;
+      }
+
+      li button span:after {
+        height: 2px;
+        width: 0%;
+      }
+
+      li button span:hover:before {
+        height: 100%;
+      }
+
+      li button span:hover:after {
+        width: 100%;
+      }
+    </style>
+  </head>
+<h1 style=font-size:25px;color:#white;font-family:Times New Roman>REGION II: ILOCOS REGION</h1>
+
+ <ul>
+
+<li>
+        <button class="btn-7">
+          <a href="iNTRO R2.html" target="C"><span>ABOUT REGION II</span></a>
+        </button>
+      </li>
+ <ul>
+<body>
+    <div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+    </div>
+
+    <a href="Intro.html" target="C">
+      <p>BATANES</p>
+    </a>
+
+ 
+    <ul>
+      <!-- Like this href="body.html" -->
+      <li>
+        <button class="btn-7">
+          <a href="BATANES.html" target="C"><span>Batanes Islands</span></a>
+        </button>
+      </li>
+      <!-- Like this! just copy and paste.-->
+    </ul>
+
+    <a href="Intro.html" target="C">
+      <p>CAGAYAN</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="BAGGAO ECO TOURISM.html" target="C"><span> Baggao Eco-Tourism Zone</span></a>
+        </button>
+      </li>
+
+<li>
+        <button class="btn-7">
+          <a href="BASILICA.html" target="C"><span>Basilica Minore of Our Lady of Piat</span></a>
+        </button>
+      </li>
+
+<li>
+        <button class="btn-7">
+          <a href="BLUE WATER.html" target="C"><span>Blue Water Cave</span></a>
+        </button>
+      </li>
+
+<li>
+        <button class="btn-7">
+          <a href="CALLAO CAVE.html" target="C"><span>Callao Cave</span></a>
+        </button>
+      </li>
+
+<li>
+        <button class="btn-7">
+          <a href="CAPE.html" target="C"><span>Cape Engaño Lighthouse</span></a>
+        </button>
+      </li>
+
+<li>
+        <button class="btn-7">
+          <a href="MAGAPIT.html" target="C"><span>Magapit Suspension Bridge</span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="NANGARAMOAN.html" target="C"><span>Nangaramoan Beach</span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="PALAUI.html" target="C"><span>Palaui Island</span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="SIERRA.html" target="C"><span>Sierra Cave</span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="ST PETER.html" target="C"><span> St. Peter’s Metropolitan Cathedral</span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="TUGUEGARAO.html" target="C"><span>Tuguegarao City Museum</span></a>
+        </button>
+      </li>
+    </ul>
+
+    <a href="Intro.html" target="C">
+      <p>ISABELA</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="BALAI.html" target="C"><span>Balai na Ilagan</span></a>
+        </button>
+      </li>
+
+<li>
+        <button class="btn-7">
+          <a href="ILAGAN.html" target="C"><span> Ilagan Japanese Tunnel</span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="MAGAT.html" target="C"><span>Magat Dam</span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="ST MATTHIAS.html" target="C"><span>St. Matthias Parish Church</span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="SANTIAGO.html" target="C"><span>Santiago City Plaza</span></a>
+        </button>
+      </li>
+    </ul>
+
+<a href="Intro.html" target="C">
+      <p>NUEVA VIZCAYA</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="CAPISAAN.html" target="C"><span>Capisaan Cave System</span></a>
+        </button>
+      </li>
+    </ul>
+
+<a href="Intro.html" target="C">
+      <p>QUIRINO</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="AGLIPAY CAVES.html" target="C"><span>Aglipay Caves </span></a>
+        </button>
+      </li>
+
+<li>
+        <button class="btn-7">
+          <a href="MADDELA.html" target="C"><span>Maddela Watershed Forest</span></a>
+        </button>
+      </li>
+    </ul>
+
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        margin: auto;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        overflow: auto;
+        background: linear-gradient(
+          315deg,
+          rgba(38, 80, 115, 1) 3%,
+          rgba(119, 176, 170, 1) 38%,
+          rgba(19, 93, 102, 1) 68%,
+          rgba(45, 149, 150, 1) 98%
+        );
+        animation: gradient 15s ease infinite;
+        background-size: 400% 400%;
+        background-attachment: fixed;
+      }
+
+      @keyframes gradient {
+        0% {
+          background-position: 0% 0%;
+        }
+
+        50% {
+          background-position: 100% 100%;
+        }
+
+        100% {
+          background-position: 0% 0%;
+        }
+      }
+
+      .wave {
+        background: rgb(255 255 255 / 25%);
+        border-radius: 1000% 1000% 0 0;
+        position: fixed;
+        width: 200%;
+        height: 12em;
+        animation: wave 10s -3s linear infinite;
+        transform: translate3d(0, 0, 0);
+        opacity: 0.8;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+      }
+
+      .wave:nth-of-type(2) {
+        bottom: -1.25em;
+        animation: wave 18s linear reverse infinite;
+        opacity: 0.8;
+      }
+
+      .wave:nth-of-type(3) {
+        bottom: -2.5em;
+        animation: wave 20s -1s reverse infinite;
+        opacity: 0.9;
+      }
+
+      @keyframes wave {
+        2% {
+          transform: translateX(1);
+        }
+
+        25% {
+          transform: translateX(-25%);
+        }
+
+        50% {
+          transform: translateX(-50%);
+        }
+
+        75% {
+          transform: translateX(-25%);
+        }
+
+        100% {
+          transform: translateX(1);
+        }
+      }
+
+      body {
+        font-family: "Arial", sans-serif;
+        text-align: center;
+        margin: 20px;
+        color: #fff;
+      }
+
+      p {
+        font-size: 18px;
+        font-weight: bold;
+        color: #ffd700;
+        text-shadow: 3px 10px 10px rgba(0, 0, 0, 0.5);
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 10px;
+      }
+
+      li {
+        font-size: 12px;
+        margin-bottom: 10px;
+        padding: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      li button {
+        background: linear-gradient(
+          0deg,
+          rgba(0, 60, 67, 0.5) 0%,
+          rgba(0, 60, 67, 0.5) 100%
+        );
+        line-height: 42px;
+        padding: 0;
+        border: none;
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+        transition: background-color 0.3s ease;
+        width: 100%;
+        text-align: center;
+      }
+
+      li button span {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+
+      li button:before,
+      li button:after {
+        position: absolute;
+        content: "";
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 215, 0, 1);
+        box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+          -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+          7px 7px 20px 0px rgba(0, 0, 0, 0.2),
+          4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      li button:before {
+        height: 0%;
+        width: 2px;
+      }
+
+      li button:after {
+        width: 0%;
+        height: 2px;
+      }
+
+      li button:hover {
+        color: rgba(255, 215, 0, 1);
+        background: transparent;
+      }
+
+      li button:hover:before {
+        height: 100%;
+      }
+
+      li button:hover:after {
+        width: 100%;
+      }
+
+      li button span:before,
+      li button span:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        background: rgba(255, 215, 0, 1);
+        box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+          -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+          7px 7px 20px 0px rgba(0, 0, 0, 0.2),
+          4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      li button span:before {
+        width: 2px;
+        height: 0%;
+      }
+
+      li button span:after {
+        height: 2px;
+        width: 0%;
+      }
+
+      li button span:hover:before {
+        height: 100%;
+      }
+
+      li button span:hover:after {
+        width: 100%;
+      }
+    </style>
+  </head>
+<h1 style=font-size:25px;color:#white;font-family:Times New Roman>REGION III: CENTRAL LUZON</h1>
+
+<ul>
+<li>
+        <button class="btn-7">
+          <a href="INTRO R3.html" target="C" ><span>ABOUT REGION III</span></a>
+        </button>
+</li>
+
+<body>
+    <div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+    </div>
+
+    <a href="Intro.html" target="C">
+      <p>AURORA</p>
+    </a>
+
+   
+    <ul>
+      <!-- Like this href="body.html" -->
+      <li>
+        <button class="btn-7">
+          <a href="BALER.html" target="C" ><span>Baler</span></a>
+        </button>
+      </li>
+  <li>
+
+        <button class="btn-7">
+          <a href="DITUMABO.html" target="C"><span>Ditumabo Mother Falls</span></a>
+        </button>
+      </li>
+<li>
+
+        <button class="btn-7">
+          <a href="DICASALARIN.html" target="C" ><span>Dicasalarin Cove</span></a>
+        </button>
+      </li>
+
+
+    </ul>
+
+    <a href="Intro.html" target="C">
+      <p>BATAAN</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="DAMBANA.html" target="C" ><span>Dambana ng Kagitingan (Shrine of Valor)</span></a>
+        </button>
+      </li>
+ 
+      <li>
+        <button class="btn-7">
+          <a href="PAWIKAN.html" target="C" ><span>Pawikan Conservation Center</span></a>
+        </button>
+      </li>
+    
+      <li>
+        <button class="btn-7">
+          <a href="MOUNT NATIB.html" target="C"><span>Mount Natib</span></a>
+        </button>
+      </li>
+   
+    </ul>
+
+
+    <a href="Intro.html" target="C">
+      <p>BULACAN</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="BIAK.html" target="C" ><span>Biak-na-Bato National Park</span></a>
+        </button>
+      </li>
+ <!-- Like this! just copy and paste.-->
+      <li>
+        <button class="btn-7">
+          <a href="BARASOAIN.html" target="C" l><span>Barasoain Church</span></a>
+        </button>
+      </li>
+ <li>
+        <button class="btn-7">
+          <a href="ANGAT RAINFOREST.html" target="C" ><span>Angat Rainforest and Eco Park</span></a>
+        </button>
+      </li>
+
+    </ul>
+
+
+<a href="Intro.html" target="C">
+      <p>NUEVA ECIJA</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="MINALUNGAO.html" target="C"><span>Minalungao National Park</span></a>
+        </button>
+      </li>
+   <li>
+        <button class="btn-7">
+          <a href="GABALDON.html" target="C" ><span>Gabaldon Falls</span></a>
+        </button>
+      </li>
+   <li>
+        <button class="btn-7">
+          <a href="PHILIPPINE EAGLE.html" target="C" ><span>Philippine Eagle Foundation's Center for Philippine Raptors</span></a>
+        </button>
+      </li>
+
+    </ul>
+
+    <a href="Intro.html" target="C">
+      <p>TARLAC</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="TARLAC RECREATIONAL.html" target="C" ><span>Tarlac Reacreational Park</span></a>
+        </button>
+      </li>
+   <li>
+        <button class="btn-7">
+          <a href="MONASTERIO.html" target="C" ><span>Monasterio de Tarlac</span></a>
+        </button>
+      </li>
+   <li>
+        <button class="btn-7">
+          <a href="CAPAS.html" target="C" ><span>Capas National Shrine</span></a>
+        </button>
+      </li>
+   <li>
+        <button class="btn-7">
+          <a href="AQUINO.html" target="C"><span>Aquino Center and Museum</span></a>
+        </button>
+      </li>
+   <li>
+        <a href="Intro.html" target="C">
+      <p>ZAMBALES</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="ANAWANGIN.html" target="C" ><span>Anawangin Cove</span></a>
+        </button>
+      </li>
+   <li>
+        <button class="btn-7">
+          <a href="MOUNT PINATUBO.html" target="C" ><span>Mount Pinatubo Crater Lake</span></a>
+        </button>
+      </li>
+   <li>
+        <button class="btn-7">
+          <a href="HERMENA.html" target="C" ><span>Hermena Menor and Hermena Major Island</span></a>
+        </button>
+      </li>
+   <li>
+        <button class="btn-7">
+          <a href="SAN SALVADOR.html" target="C" ><span>San Salvador Island</span></a>
+        </button>
+      </li>
+   <li>
+       <a href="Intro.html" target="C">
+      <p>PAMPANGA</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="SANDBOX.html" target="C"><span>Sandbox at Alviera</span></a>
+        </button>
+      </li>
+   <li>
+        <button class="btn-7">
+          <a href="NAYONG.html" target="C"><span>Nayong Pilipino Clark</span></a>
+        </button>
+      </li>
+   <li>
+        <button class="btn-7">
+          <a href="MOUNT PINATUBO.html" target="C" ><span>Mount Pinatubo</span></a>
+        </button>
+      </li>
+   <li>
+        <button class="btn-7">
+          <a href="SAN GUILLIERMO.html" target="C" ><span>San Guillermo Parish Church</span></a>
+        </button>
+      </li>
+   <li>
+        <button class="btn-7">
+          <a href="DINOSAURS.html" target="C" ><span>Dinosaurs Island</span></a>
+        </button>
+      </li>
+
+    </ul>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        margin: auto;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        overflow: auto;
+        background: linear-gradient(
+          315deg,
+          rgba(38, 80, 115, 1) 3%,
+          rgba(119, 176, 170, 1) 38%,
+          rgba(19, 93, 102, 1) 68%,
+          rgba(45, 149, 150, 1) 98%
+        );
+        animation: gradient 15s ease infinite;
+        background-size: 400% 400%;
+        background-attachment: fixed;
+      }
+
+      @keyframes gradient {
+        0% {
+          background-position: 0% 0%;
+        }
+
+        50% {
+          background-position: 100% 100%;
+        }
+
+        100% {
+          background-position: 0% 0%;
+        }
+      }
+
+      .wave {
+        background: rgb(255 255 255 / 25%);
+        border-radius: 1000% 1000% 0 0;
+        position: fixed;
+        width: 200%;
+        height: 12em;
+        animation: wave 10s -3s linear infinite;
+        transform: translate3d(0, 0, 0);
+        opacity: 0.8;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+      }
+
+      .wave:nth-of-type(2) {
+        bottom: -1.25em;
+        animation: wave 18s linear reverse infinite;
+        opacity: 0.8;
+      }
+
+      .wave:nth-of-type(3) {
+        bottom: -2.5em;
+        animation: wave 20s -1s reverse infinite;
+        opacity: 0.9;
+      }
+
+      @keyframes wave {
+        2% {
+          transform: translateX(1);
+        }
+
+        25% {
+          transform: translateX(-25%);
+        }
+
+        50% {
+          transform: translateX(-50%);
+        }
+
+        75% {
+          transform: translateX(-25%);
+        }
+
+        100% {
+          transform: translateX(1);
+        }
+      }
+
+      body {
+        font-family: "Arial", sans-serif;
+        text-align: center;
+        margin: 20px;
+        color: #fff;
+      }
+
+      p {
+        font-size: 18px;
+        font-weight: bold;
+        color: #ffd700;
+        text-shadow: 3px 10px 10px rgba(0, 0, 0, 0.5);
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 10px;
+      }
+
+      li {
+        font-size: 12px;
+        margin-bottom: 10px;
+        padding: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      li button {
+        background: linear-gradient(
+          0deg,
+          rgba(0, 60, 67, 0.5) 0%,
+          rgba(0, 60, 67, 0.5) 100%
+        );
+        line-height: 42px;
+        padding: 0;
+        border: none;
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+        transition: background-color 0.3s ease;
+        width: 100%;
+        text-align: center;
+      }
+
+      li button span {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+
+      li button:before,
+      li button:after {
+        position: absolute;
+        content: "";
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 215, 0, 1);
+        box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+          -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+          7px 7px 20px 0px rgba(0, 0, 0, 0.2),
+          4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      li button:before {
+        height: 0%;
+        width: 2px;
+      }
+
+      li button:after {
+        width: 0%;
+        height: 2px;
+      }
+
+      li button:hover {
+        color: rgba(255, 215, 0, 1);
+        background: transparent;
+      }
+
+      li button:hover:before {
+        height: 100%;
+      }
+
+      li button:hover:after {
+        width: 100%;
+      }
+
+      li button span:before,
+      li button span:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        background: rgba(255, 215, 0, 1);
+        box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+          -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+          7px 7px 20px 0px rgba(0, 0, 0, 0.2),
+          4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      li button span:before {
+        width: 2px;
+        height: 0%;
+      }
+
+      li button span:after {
+        height: 2px;
+        width: 0%;
+      }
+
+      li button span:hover:before {
+        height: 100%;
+      }
+
+      li button span:hover:after {
+        width: 100%;
+      }
+    </style>
+  </head>
+<h1 style=font-size:25px;color:#white;font-family:Times New Roman>REGION IV-A: CALABARZON</h1>
+<ul>
+           <li>
+        <button class="btn-7">
+          <a href="INTRO R4A.html" target="C"><span>ABOUT REGION IV-A</span></a>
+        </button>
+      </li>
+<body>
+    <div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+    </div>
+
+    <a href="Intro.html" target="C">
+      <p>CAVITE</p>
+    </a>
+
+    
+    <ul>
+           <li>
+        <button class="btn-7">
+          <a href="TAAL LAKE.html" target="C"><span>Taal Lake and Volcano</span></a>
+        </button>
+      </li>
+     
+      <li>
+        <button class="btn-7">
+          <a href="PEOPLES PARK.html" target="C"><span>People's Park at the Sky in Tagaytay</span></a>
+        </button>
+      </li>
+
+
+      <li>
+        <button class="btn-7">
+          <a href="PICO.html" target="C"><span>Pico De Loro</span></a>
+        </button>
+      </li>
+      </ul>
+
+    <a href="Intro.html" target="C">
+      <p>LAGUNA</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="PAGSANJAN.html" target="C"><span>Pagsanjan Falls</span></a>
+        </button>
+      </li>
+
+<li>
+        <button class="btn-7">
+          <a href="ENCHANTED.html" target="C"><span>Enchanted Kingdom</span></a>
+        </button>
+      </li>
+
+<li>
+        <button class="btn-7">
+          <a href="CALIRAYA.html" target="C"><span>Caliraya Lake</span></a>
+        </button>
+      </li>
+
+<li>
+        <button class="btn-7">
+          <a href="RIZAL SHRINE.html" target="C"><span>Rizal Shrine Laguna</span></a>
+        </button>
+      </li>
+
+<li>
+        <button class="btn-7">
+          <a href="HIDDEN.html" target="C"><span>Hidden Valley Springs</span></a>
+        </button>
+      </li>
+
+<li>
+        <button class="btn-7">
+          <a href="TAYTAY.html" target="C"><span>Taytay Falls</span></a>
+        </button>
+      </li>
+
+<li>
+        <button class="btn-7">
+          <a href="CALIRAYA.html" target="C"><span>Caliraya Dam</span></a>
+        </button>
+      </li>
+
+<li>
+        <button class="btn-7">
+          <a href="RIZAL MONUMENT.html" target="C"><span>Rizal Monument</span></a>
+        </button>
+      </li>
+
+<li>
+        <button class="btn-7">
+          <a href="SAMPALOC LAKE.html" target="C"><span>Sampaloc Lake</span></a>
+        </button>
+      </li>
+      </ul>
+
+    <a href="Intro.html" target="C">
+      <p>BATANGAS</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="LAIYA.html" target="C"><span>Laiya Beach</span></a>
+        </button>
+      </li>
+
+<li>
+        <button class="btn-7">
+          <a href="FANTASY.html" target="C"><span>Fantasy World</span></a>
+        </button>
+      </li>
+
+<li>
+        <button class="btn-7">
+          <a href="MT BUTALAO.html" target="C"><span>Mt. Batulao</span></a>
+        </button>
+      </li>
+
+<li>
+        <button class="btn-7">
+          <a href="tali.html" target="C"><span>Tali Beach</span></a>
+        </button>
+      </li>
+
+<li>
+        <button class="btn-7">
+          <a href="MATABUNGKAY.html" target="C"><span>Matabungkay Beach</span></a>
+        </button>
+      </li>
+     </ul>
+
+<a href="Intro.html" target="C">
+      <p>QUEZON</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="VILLA ESCUDERO.html" target="C"><span>Villa Escudero Plantations and Resort</span></a>
+        </button>
+      </li>
+
+<li>
+        <button class="btn-7">
+          <a href="TIAONG.html" target="C"><span>Tiaong White Sand Beach</span></a>
+        </button>
+      </li>
+
+<li>
+        <button class="btn-7">
+          <a href="BORAWAN.html" target="C"><span>Borawan Beach</span></a>
+        </button>
+      </li>
+      </ul>
+
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        margin: auto;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        overflow: auto;
+        background: linear-gradient(
+          315deg,
+          rgba(38, 80, 115, 1) 3%,
+          rgba(119, 176, 170, 1) 38%,
+          rgba(19, 93, 102, 1) 68%,
+          rgba(45, 149, 150, 1) 98%
+        );
+        animation: gradient 15s ease infinite;
+        background-size: 400% 400%;
+        background-attachment: fixed;
+      }
+
+      @keyframes gradient {
+        0% {
+          background-position: 0% 0%;
+        }
+
+        50% {
+          background-position: 100% 100%;
+        }
+
+        100% {
+          background-position: 0% 0%;
+        }
+      }
+
+      .wave {
+        background: rgb(255 255 255 / 25%);
+        border-radius: 1000% 1000% 0 0;
+        position: fixed;
+        width: 200%;
+        height: 12em;
+        animation: wave 10s -3s linear infinite;
+        transform: translate3d(0, 0, 0);
+        opacity: 0.8;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+      }
+
+      .wave:nth-of-type(2) {
+        bottom: -1.25em;
+        animation: wave 18s linear reverse infinite;
+        opacity: 0.8;
+      }
+
+      .wave:nth-of-type(3) {
+        bottom: -2.5em;
+        animation: wave 20s -1s reverse infinite;
+        opacity: 0.9;
+      }
+
+      @keyframes wave {
+        2% {
+          transform: translateX(1);
+        }
+
+        25% {
+          transform: translateX(-25%);
+        }
+
+        50% {
+          transform: translateX(-50%);
+        }
+
+        75% {
+          transform: translateX(-25%);
+        }
+
+        100% {
+          transform: translateX(1);
+        }
+      }
+
+      body {
+        font-family: "Arial", sans-serif;
+        text-align: center;
+        margin: 20px;
+        color: #fff;
+      }
+
+      p {
+        font-size: 18px;
+        font-weight: bold;
+        color: #ffd700;
+        text-shadow: 3px 10px 10px rgba(0, 0, 0, 0.5);
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 10px;
+      }
+
+      li {
+        font-size: 12px;
+        margin-bottom: 10px;
+        padding: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      li button {
+        background: linear-gradient(
+          0deg,
+          rgba(0, 60, 67, 0.5) 0%,
+          rgba(0, 60, 67, 0.5) 100%
+        );
+        line-height: 42px;
+        padding: 0;
+        border: none;
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+        transition: background-color 0.3s ease;
+        width: 100%;
+        text-align: center;
+      }
+
+      li button span {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+
+      li button:before,
+      li button:after {
+        position: absolute;
+        content: "";
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 215, 0, 1);
+        box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+          -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+          7px 7px 20px 0px rgba(0, 0, 0, 0.2),
+          4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      li button:before {
+        height: 0%;
+        width: 2px;
+      }
+
+      li button:after {
+        width: 0%;
+        height: 2px;
+      }
+
+      li button:hover {
+        color: rgba(255, 215, 0, 1);
+        background: transparent;
+      }
+
+      li button:hover:before {
+        height: 100%;
+      }
+
+      li button:hover:after {
+        width: 100%;
+      }
+
+      li button span:before,
+      li button span:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        background: rgba(255, 215, 0, 1);
+        box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+          -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+          7px 7px 20px 0px rgba(0, 0, 0, 0.2),
+          4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      li button span:before {
+        width: 2px;
+        height: 0%;
+      }
+
+      li button span:after {
+        height: 2px;
+        width: 0%;
+      }
+
+      li button span:hover:before {
+        height: 100%;
+      }
+
+      li button span:hover:after {
+        width: 100%;
+      }
+    </style>
+  </head>
+<h1 style=font-size:25px;color:#white;font-family:Times New Roman>REGION IV-B: MIMAROPA REGION</h1>
+ <ul>
+
+      <li>
+        <button class="btn-7">
+          <a href="INTRO 4B.html" target="C"><span>ABOUT REGION IV-B</span></a>
+        </button>
+      </li>
+
+  <body>
+    <div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+    </div>
+
+    <a href="Intro.html" target="C">
+      <p>OCCIDENTAL MINDORO</p>
+    </a>
+
+       <ul>
+
+      <li>
+        <button class="btn-7">
+          <a href="APO REEF.html" target="C"><span>Apo Reef</span></a>
+        </button>
+      </li>
+      <!-- Like this! just copy and paste.-->
+      <li>
+        <button class="btn-7">
+          <a href="CALAWAGAN.html" target="C"><span>Calawagan Mountain Resort</span></a>
+        </button>
+      </li>
+
+
+      <li>
+        <button class="btn-7">
+          <a href="MANGYAN.html" target="C"><span>Mangyan Village</span></a>
+        </button>
+      </li>
+   
+      <li>
+        <button class="btn-7">
+          <a href="SABLAYAN.html" target="C"><span>Sablayan Zipline</span></a>
+        </button>
+      </li>
+    
+ </li>
+     
+    <a href="Intro.html" target="C">
+      <p>ORIENTAL MINDORO</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="PORT OF CALAPAN.html" target="C"><span>Port of Calapan</span></a>
+        </button>
+      </li>
+
+<li>
+        
+    <a href="Intro.html" target="C">
+      <p>MARINDUQUE</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="BOAC.html" target="C"><span>Boac Cathedral</span></a>
+        </button>
+      </li>
+
+<li>
+        
+<a href="Intro.html" target="C">
+      <p>ROMBLON</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="CASCARRO.html" target="C"><span>Cascarro Islet</span></a>
+        </button>
+      </li>
+
+<li>
+
+<a href="Intro.html" target="C">
+      <p>PALAWAN</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="BARRACUDA.html" target="C"><span>Barracuda Lake</span></a>
+        </button>
+      </li>
+
+<li>
+        <button class="btn-7">
+          <a href="CALAUIT.html" target="C"><span>Calauit Safari Park</span></a>
+        </button>
+      </li>
+
+<li>
+        <button class="btn-7">
+          <a href="CORON.html" target="C"><span>Coron</span></a>
+        </button>
+      </li>
+
+<li>
+        <button class="btn-7">
+          <a href="EL NIDO.html" target="C"><span>El Nido</span></a>
+        </button>
+      </li>
+
+<li>
+        <button class="btn-7">
+          <a href="KAYANGAN.html" target="C"><span>Kayangan Lake</span></a>
+        </button>
+      </li>
+
+<li>
+        <button class="btn-7">
+          <a href="MOUNT TAPYAS.html" target="C"><span>Mount Tapyas</span></a>
+        </button>
+      </li>
+
+<li>
+        <button class="btn-7">
+          <a href="NACPAN.html" target="C"><span>Nacpan Beach</span></a>
+        </button>
+      </li>
+
+<li>
+        <button class="btn-7">
+          <a href="PUERTO PRINCESA.html" target="C"><span>Puerto Princesa</span></a>
+        </button>
+      </li>
+
+<li>
+        <button class="btn-7">
+          <a href="PUKAWAY.html" target="C"><span>Pukaway Cave</span></a>
+        </button>
+      </li>
+
+<li>
+        <button class="btn-7">
+          <a href="SIETE.html" target="C"><span>Siete Pecados Marine Park</span></a>
+        </button>
+      </li>
+
+<li>
+        <button class="btn-7">
+          <a href="SNAKE.html" target="C"><span>Snake Island</span></a>
+        </button>
+      </li>
+
+<li>
+        <button class="btn-7">
+          <a href="TUBBATAHA.html" target="C"><span>Tubbataha Natural Reef</span></a>
+        </button>
+      </li>
+
+<li>
+        <button class="btn-7">
+          <a href="TWIN LAGOON.html" target="C"><span>Twin Lagoon</span></a>
+        </button>
+      </li>
+    </ul>
+
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        margin: auto;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        overflow: auto;
+        background: linear-gradient(
+          315deg,
+          rgba(38, 80, 115, 1) 3%,
+          rgba(119, 176, 170, 1) 38%,
+          rgba(19, 93, 102, 1) 68%,
+          rgba(45, 149, 150, 1) 98%
+        );
+        animation: gradient 15s ease infinite;
+        background-size: 400% 400%;
+        background-attachment: fixed;
+      }
+
+      @keyframes gradient {
+        0% {
+          background-position: 0% 0%;
+        }
+
+        50% {
+          background-position: 100% 100%;
+        }
+
+        100% {
+          background-position: 0% 0%;
+        }
+      }
+
+      .wave {
+        background: rgb(255 255 255 / 25%);
+        border-radius: 1000% 1000% 0 0;
+        position: fixed;
+        width: 200%;
+        height: 12em;
+        animation: wave 10s -3s linear infinite;
+        transform: translate3d(0, 0, 0);
+        opacity: 0.8;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+      }
+
+      .wave:nth-of-type(2) {
+        bottom: -1.25em;
+        animation: wave 18s linear reverse infinite;
+        opacity: 0.8;
+      }
+
+      .wave:nth-of-type(3) {
+        bottom: -2.5em;
+        animation: wave 20s -1s reverse infinite;
+        opacity: 0.9;
+      }
+
+      @keyframes wave {
+        2% {
+          transform: translateX(1);
+        }
+
+        25% {
+          transform: translateX(-25%);
+        }
+
+        50% {
+          transform: translateX(-50%);
+        }
+
+        75% {
+          transform: translateX(-25%);
+        }
+
+        100% {
+          transform: translateX(1);
+        }
+      }
+
+      body {
+        font-family: "Arial", sans-serif;
+        text-align: center;
+        margin: 20px;
+        color: #fff;
+      }
+
+      p {
+        font-size: 18px;
+        font-weight: bold;
+        color: #ffd700;
+        text-shadow: 3px 10px 10px rgba(0, 0, 0, 0.5);
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 10px;
+      }
+
+      li {
+        font-size: 12px;
+        margin-bottom: 10px;
+        padding: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      li button {
+        background: linear-gradient(
+          0deg,
+          rgba(0, 60, 67, 0.5) 0%,
+          rgba(0, 60, 67, 0.5) 100%
+        );
+        line-height: 42px;
+        padding: 0;
+        border: none;
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+        transition: background-color 0.3s ease;
+        width: 100%;
+        text-align: center;
+      }
+
+      li button span {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+
+      li button:before,
+      li button:after {
+        position: absolute;
+        content: "";
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 215, 0, 1);
+        box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+          -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+          7px 7px 20px 0px rgba(0, 0, 0, 0.2),
+          4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      li button:before {
+        height: 0%;
+        width: 2px;
+      }
+
+      li button:after {
+        width: 0%;
+        height: 2px;
+      }
+
+      li button:hover {
+        color: rgba(255, 215, 0, 1);
+        background: transparent;
+      }
+
+      li button:hover:before {
+        height: 100%;
+      }
+
+      li button:hover:after {
+        width: 100%;
+      }
+
+      li button span:before,
+      li button span:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        background: rgba(255, 215, 0, 1);
+        box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+          -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+          7px 7px 20px 0px rgba(0, 0, 0, 0.2),
+          4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      li button span:before {
+        width: 2px;
+        height: 0%;
+      }
+
+      li button span:after {
+        height: 2px;
+        width: 0%;
+      }
+
+      li button span:hover:before {
+        height: 100%;
+      }
+
+      li button span:hover:after {
+        width: 100%;
+      }
+    </style>
+  </head>
+<h1 style=font-size:25px;color:#white;font-family:Times New Roman>REGION V: BICOL REGION</h1>
+  <ul>
+            <li>
+        <button class="btn-7">
+          <a href="INTRO R5.html" target="C"><span>ABOUT REGION V</span></a>
+        </button>
+      </li>
+
+
+  <body>
+    <div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+    </div>
+
+    <a href="Intro.html" target="C">
+      <p>ALBAY</p>
+    </a>
+
+   
+    <ul>
+            <li>
+        <button class="btn-7">
+          <a href="LIGNON.html" target="C"><span>Lignon Hill Nature Park</span></a>
+        </button>
+      </li>
+
+           <li>
+        <button class="btn-7">
+          <a href="VERA.html" target="C"><span>Vera Falls</span></a>
+        </button>
+      </li>
+
+
+      <li>
+        <button class="btn-7">
+          <a href="CAGSAWA.html" target="C"><span>Cagsawa Ruins</span></a>
+        </button>
+      </li>
+   
+      <li>
+        <button class="btn-7">
+          <a href="MISIMIS.html" target="C"><span>Misimis Bay</span></a>
+        </button>
+      </li>
+    
+      <li>
+        <button class="btn-7">
+          <a href="QUINTINDAY.html" target="C"><span>Quitinday Greenhills</span></a>
+        </button>
+      </li>
+    
+      <li>
+        <button class="btn-7">
+          <a href="MAYON VOLCANO.html" target="C"><span>Mayon Volcano</span></a>
+        </button>
+      </li>
+    
+      <li>
+        <button class="btn-7">
+          <a href="CALABIDONGAN.html" target="C"><span>Calabidongan Cave</span></a>
+        </button>
+      </li>
+
+<li>
+        <button class="btn-7">
+          <a href="JOROAN.html" target="C"><span>Joroan Church</span></a>
+        </button>
+      </li>
+    </ul>
+
+    <a href="Intro.html" target="C">
+      <p>CAMARINES SUR</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="CARAMOAN.HTML" target="C"><span>Caramoan Islands</span></a>
+        </button>
+      </li>
+
+<li>
+        <button class="btn-7">
+          <a href="CATANDAYAGAN.html" target="C"><span>Catandayagan Falls</span></a>
+        </button>
+      </li>
+
+<li>
+        <button class="btn-7">
+          <a href="LAKE BUHI.html" target="C"><span>Lake Buhi</span></a>
+        </button>
+      </li>
+
+<li>
+        <button class="btn-7">
+          <a href="CALAGUAS ISLANDS.html" target="C"><span>Calaguas Islands</span></a>
+        </button>
+      </li>
+
+<li>
+        <button class="btn-7">
+          <a href="MALABSAY.html" target="C"><span>Malabsay Falls</span></a>
+        </button>
+      </li>
+
+<li>
+        <button class="btn-7">
+          <a href="CAMSUR.html" target="C"><span>CamSur Watersports</span></a>
+        </button>
+      </li>
+    </ul>
+
+    <a href="Intro.html" target="C">
+      <p>CAMARINES NORTE </p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="BAGASBAS.html" target="C"><span>Bagasbas Beach</span></a>
+        </button>
+      </li>
+
+<li>
+        <button class="btn-7">
+          <a href="MOUNT ISAROG.html" target="C"><span>Mount Isarog</span></a>
+        </button>
+      </li>
+    </ul>
+
+<a href="Intro.html" target="C">
+      <p>SORSOGON</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="SUBIC.html" target="C"><span>Subic Beach</span></a>
+        </button>
+      </li>
+
+<li>
+        <button class="btn-7">
+          <a href="BULUSAN.html" target="C"><span>Bulusan Lake</span></a>
+        </button>
+      </li>
+
+<li>
+        <button class="btn-7">
+          <a href="DONSOL.html" target="C"><span>Donsol</span></a>
+        </button>
+      </li>
+
+<li>
+        <button class="btn-7">
+          <a href="SORSOGON BAYWALK.html" target="C"><span>Sorsogon City Baywalk</span></a>
+        </button>
+      </li>
+    </ul>
+
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        margin: auto;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        overflow: auto;
+        background: linear-gradient(
+          315deg,
+          rgba(38, 80, 115, 1) 3%,
+          rgba(119, 176, 170, 1) 38%,
+          rgba(19, 93, 102, 1) 68%,
+          rgba(45, 149, 150, 1) 98%
+        );
+        animation: gradient 15s ease infinite;
+        background-size: 400% 400%;
+        background-attachment: fixed;
+      }
+
+      @keyframes gradient {
+        0% {
+          background-position: 0% 0%;
+        }
+
+        50% {
+          background-position: 100% 100%;
+        }
+
+        100% {
+          background-position: 0% 0%;
+        }
+      }
+
+      .wave {
+        background: rgb(255 255 255 / 25%);
+        border-radius: 1000% 1000% 0 0;
+        position: fixed;
+        width: 200%;
+        height: 12em;
+        animation: wave 10s -3s linear infinite;
+        transform: translate3d(0, 0, 0);
+        opacity: 0.8;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+      }
+
+      .wave:nth-of-type(2) {
+        bottom: -1.25em;
+        animation: wave 18s linear reverse infinite;
+        opacity: 0.8;
+      }
+
+      .wave:nth-of-type(3) {
+        bottom: -2.5em;
+        animation: wave 20s -1s reverse infinite;
+        opacity: 0.9;
+      }
+
+      @keyframes wave {
+        2% {
+          transform: translateX(1);
+        }
+
+        25% {
+          transform: translateX(-25%);
+        }
+
+        50% {
+          transform: translateX(-50%);
+        }
+
+        75% {
+          transform: translateX(-25%);
+        }
+
+        100% {
+          transform: translateX(1);
+        }
+      }
+
+      body {
+        font-family: "Arial", sans-serif;
+        text-align: center;
+        margin: 20px;
+        color: #fff;
+      }
+
+      p {
+        font-size: 18px;
+        font-weight: bold;
+        color: #ffd700;
+        text-shadow: 3px 10px 10px rgba(0, 0, 0, 0.5);
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 10px;
+      }
+
+      li {
+        font-size: 12px;
+        margin-bottom: 10px;
+        padding: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      li button {
+        background: linear-gradient(
+          0deg,
+          rgba(0, 60, 67, 0.5) 0%,
+          rgba(0, 60, 67, 0.5) 100%
+        );
+        line-height: 42px;
+        padding: 0;
+        border: none;
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+        transition: background-color 0.3s ease;
+        width: 100%;
+        text-align: center;
+      }
+
+      li button span {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+
+      li button:before,
+      li button:after {
+        position: absolute;
+        content: "";
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 215, 0, 1);
+        box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+          -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+          7px 7px 20px 0px rgba(0, 0, 0, 0.2),
+          4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      li button:before {
+        height: 0%;
+        width: 2px;
+      }
+
+      li button:after {
+        width: 0%;
+        height: 2px;
+      }
+
+      li button:hover {
+        color: rgba(255, 215, 0, 1);
+        background: transparent;
+      }
+
+      li button:hover:before {
+        height: 100%;
+      }
+
+      li button:hover:after {
+        width: 100%;
+      }
+
+      li button span:before,
+      li button span:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        background: rgba(255, 215, 0, 1);
+        box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+          -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+          7px 7px 20px 0px rgba(0, 0, 0, 0.2),
+          4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      li button span:before {
+        width: 2px;
+        height: 0%;
+      }
+
+      li button span:after {
+        height: 2px;
+        width: 0%;
+      }
+
+      li button span:hover:before {
+        height: 100%;
+      }
+
+      li button span:hover:after {
+        width: 100%;
+      }
+    </style>
+  </head>
+<h1 style=font-size:25px;color:#white;font-family:Times New Roman>REGION VI: WESTERN VISAYAS</h1>
+<ul>
+
+      <li>
+        <button class="btn-7">
+          <a href="INTRO R6.html" target="C"><span>ABOUT REGION VI</span></a>
+        </button>
+      </li>
+
+
+  <body>
+    <div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+    </div>
+
+    <a href="Intro.html" target="C">
+      <p>AKLAN</p>
+    </a>
+    <ul> 
+     
+      <li>
+        <button class="btn-7">
+          <a href="BORACAY ISLAND.html" target="C"><span>Boracay Island</span></a>
+        </button>
+      </li>
+       </ul>
+
+<a href="Intro.html" target="C">
+      <p>ANTIQUE </p>
+    </a>
+    <ul>
+
+      <li>
+        <button class="btn-7">
+          <a href="IGPASUNGAW.html" target="C"><span>Igpasungaw Falls</span></a>
+        </button>
+      </li>
+
+      <li>
+        <button class="btn-7">
+          <a href="MALALISON.html" target="C"><span>Malalison Island</span></a>
+        </button>
+      </li>
+
+      <li>
+        <button class="btn-7">
+          <a href="SECO.html" target="C"><span>Seco Island</span></a>
+        </button>
+      </li>
+        </ul>
+   
+<a href="Intro.html" target="C">
+      <p>CAPIZ </p>
+    </a>
+    <ul>
+
+      <li>
+        <button class="btn-7">
+          <a href="RUINS OF ALCATRAZ.html" target="C"><span>Ruins of Alcatraz</span></a>
+        </button>
+      </li>
+    
+      <li>
+        <button class="btn-7">
+          <a href="STA MONICA.html" target="C"><span>Sta. Monica Church</span></a>
+        </button>
+      </li>
+        </ul>
+
+<a href="Intro.html" target="C">
+      <p>GUIMARAS</p>
+    </a>
+    <ul>
+    
+      <li>
+        <button class="btn-7">
+          <a href="BARAS.html" target="C"><span>Baras Cave</span></a>
+        </button>
+      </li>
+    
+      <li>
+        <button class="btn-7">
+          <a href="GUIMARAS.html" target="C"><span>Guimaras Island</span></a>
+        </button>
+      </li>
+
+      <li>
+        <button class="btn-7">
+          <a href="NATAGO.html" target="C"><span>Natago Beach</span></a>
+        </button>
+      </li>
+    </ul>
+
+    <a href="Intro.html" target="C">
+      <p>ILOILO</p>
+    </a>
+    <ul>
+
+      <li>
+        <button class="btn-7">
+          <a href="file:///C:/Users/anna%20mae%20corriente/Desktop/ISLAS%20DE%20GIGANTES.html" target="C"><span>Islas De Gigantes</span></a>
+        </button>
+      </li>
+
+      <li>
+        <button class="btn-7">
+          <a href="MOLO.html" target="C"><span>Molo Church</span></a>
+        </button>
+      </li>
+
+      <li>
+        <button class="btn-7">
+          <a href="SICOGON ISLAND.html" target="C"><span>Sicogon Island</span></a>
+        </button>
+      </li>
+
+       <li>
+        <button class="btn-7">
+          <a href="WATERWORLD.html" target="C"><span>Waterworld</span></a>
+        </button>
+      </li>
+        </ul>
+
+<a href="Intro.html" target="C">
+      <p>NEGROS OCCIDENTAL</p>
+    </a>
+    <ul>
+
+      <li>
+        <button class="btn-7">
+          <a href="CAPITOL LAGOON.html" target="C"><span>Capitol Lagoon Park</span></a>
+        </button>
+      </li>
+
+      <li>
+        <button class="btn-7">
+          <a href="CARBIN.html" target="C"><span>Carbin Beef</span></a>
+        </button>
+      </li>
+
+      <li>
+        <button class="btn-7">
+          <a href="DANJUGAN.html" target="C"><span>Danjugan Island</span></a>
+        </button>
+      </li>
+
+      <li>
+        <button class="btn-7">
+          <a href="MOUNT KANLAON.html" target="C"><span>Mount Kanlaon</span></a>
+        </button>
+      </li>
+
+      <li>
+        <button class="btn-7">
+          <a href="SAN SEBASTIAN.html" target="C"><span>San Sebastian Cathedral</span></a>
+        </button>
+      </li>
+
+     <li>
+        <button class="btn-7">
+          <a href="NEGROS MUSEUM.html" target="C"><span>The Negros Museum</span></a>
+        </button>
+      </li>
+
+     <li>
+        <button class="btn-7">
+          <a href="RUINS OF ANCESTRAL.html" target="C"><span>The Ruins</span></a>
+        </button>
+      </li>
+    </ul>
+
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        margin: auto;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        overflow: auto;
+        background: linear-gradient(
+          315deg,
+          rgba(38, 80, 115, 1) 3%,
+          rgba(119, 176, 170, 1) 38%,
+          rgba(19, 93, 102, 1) 68%,
+          rgba(45, 149, 150, 1) 98%
+        );
+        animation: gradient 15s ease infinite;
+        background-size: 400% 400%;
+        background-attachment: fixed;
+      }
+
+      @keyframes gradient {
+        0% {
+          background-position: 0% 0%;
+        }
+
+        50% {
+          background-position: 100% 100%;
+        }
+
+        100% {
+          background-position: 0% 0%;
+        }
+      }
+
+      .wave {
+        background: rgb(255 255 255 / 25%);
+        border-radius: 1000% 1000% 0 0;
+        position: fixed;
+        width: 200%;
+        height: 12em;
+        animation: wave 10s -3s linear infinite;
+        transform: translate3d(0, 0, 0);
+        opacity: 0.8;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+      }
+
+      .wave:nth-of-type(2) {
+        bottom: -1.25em;
+        animation: wave 18s linear reverse infinite;
+        opacity: 0.8;
+      }
+
+      .wave:nth-of-type(3) {
+        bottom: -2.5em;
+        animation: wave 20s -1s reverse infinite;
+        opacity: 0.9;
+      }
+
+      @keyframes wave {
+        2% {
+          transform: translateX(1);
+        }
+
+        25% {
+          transform: translateX(-25%);
+        }
+
+        50% {
+          transform: translateX(-50%);
+        }
+
+        75% {
+          transform: translateX(-25%);
+        }
+
+        100% {
+          transform: translateX(1);
+        }
+      }
+
+      body {
+        font-family: "Arial", sans-serif;
+        text-align: center;
+        margin: 20px;
+        color: #fff;
+      }
+
+      p {
+        font-size: 18px;
+        font-weight: bold;
+        color: #ffd700;
+        text-shadow: 3px 10px 10px rgba(0, 0, 0, 0.5);
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 10px;
+      }
+
+      li {
+        font-size: 12px;
+        margin-bottom: 10px;
+        padding: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      li button {
+        background: linear-gradient(
+          0deg,
+          rgba(0, 60, 67, 0.5) 0%,
+          rgba(0, 60, 67, 0.5) 100%
+        );
+        line-height: 42px;
+        padding: 0;
+        border: none;
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+        transition: background-color 0.3s ease;
+        width: 100%;
+        text-align: center;
+      }
+
+      li button span {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+
+      li button:before,
+      li button:after {
+        position: absolute;
+        content: "";
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 215, 0, 1);
+        box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+          -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+          7px 7px 20px 0px rgba(0, 0, 0, 0.2),
+          4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      li button:before {
+        height: 0%;
+        width: 2px;
+      }
+
+      li button:after {
+        width: 0%;
+        height: 2px;
+      }
+
+      li button:hover {
+        color: rgba(255, 215, 0, 1);
+        background: transparent;
+      }
+
+      li button:hover:before {
+        height: 100%;
+      }
+
+      li button:hover:after {
+        width: 100%;
+      }
+
+      li button span:before,
+      li button span:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        background: rgba(255, 215, 0, 1);
+        box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+          -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+          7px 7px 20px 0px rgba(0, 0, 0, 0.2),
+          4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      li button span:before {
+        width: 2px;
+        height: 0%;
+      }
+
+      li button span:after {
+        height: 2px;
+        width: 0%;
+      }
+
+      li button span:hover:before {
+        height: 100%;
+      }
+
+      li button span:hover:after {
+        width: 100%;
+      }
+    </style>
+  </head>
+<h1 style=font-size:25px;color:#white;font-family:Times New Roman>REGION VII: CENTRAL VISAYAS</h1>
+<ul>
+     
+      <li>
+        <button class="btn-7">
+          <a href="INTRO R7.html" target="C"><span>ABOUT REGION VII</span></a>
+       </button>
+       </li>
+
+
+  <body>
+    <div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+    </div>
+
+    <a href="Intro.html" target="C">
+      <p>CEBU</p>
+    </a>
+
+    
+    <ul>
+     
+      <li>
+        <button class="btn-7">
+          <a href="CANYONEERING.html" target="C"><span>Canyoneering Badian</span></a>
+       </button>
+       </li>
+      <li>
+        <button class="btn-7">
+          <a href="BASILICA.html" target="C"><span>Basilica Del Santo Niño</span></a>
+         </button>
+       </li>
+
+      <li>
+        <button class="btn-7">
+          <a href="FORT SAN PEDRO.html" target="C"><span>Fort San Pedro</span></a>
+         </button>
+       </li>
+
+      <li>
+        <button class="btn-7">
+          <a href="KAWASAN FALLS.html" target="C"><span>Kawasan Falls</span></a>
+         </button>
+       </li>
+
+      <li>
+        <button class="btn-7">
+          <a href="LAKEVIEW.html" target="C"><span>Lakeview Le Jardin</span></a>
+        </button>
+       </li>
+
+      <li>
+        <button class="btn-7">
+          <a href="MAGELLANS.html" target="C"><span>Magellan Cross</span></a>
+         </button>
+       </li>
+
+      <li>
+        <button class="btn-7">
+         <a href="MOALBOAL.html" target="C"><span>Moalboal Beach</span></a>
+        </button>
+       </li>
+
+      <li>
+        <button class="btn-7">
+          <a href="SUMILON.html" target="C"><span>Sumilon Island</span></a>
+         </button>
+      </li>
+
+       <li>
+        <button class="btn-7">
+          <a href="TEMPLE OF LEAH.html" target="C"><span>Temple of Leah</span></a>
+        </button>
+      </li>
+
+     <li>
+        <button class="btn-7">
+          <a href="TUMALOG.html" target="C"><span>Tumalog Falls</span></a>
+        </button>
+      </li>
+
+      <li>
+        <button class="btn-7">
+          <a href="OSLOB.html" target="C"><span>Oslob Whale Shark</span></a>
+        </button>
+      </li>
+
+    </ul>
+
+    <a href="Intro.html" target="C">
+      <p>BOHOL</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="ANDA.html" target="C"><span>Anda White Beach</span></a>
+        </button>
+      </li>
+ <!-- Like this! just copy and paste.-->
+      <li>
+        <button class="btn-7">
+          <a href="BACLAYON.html" target="C"><span>Baclayon Church</span></a>
+        </button>
+      </li>
+    
+ <!-- Like this! just copy and paste.-->
+      <li>
+        <button class="btn-7">
+          <a href="CHOCOLATE.html" target="C"><span>Chocolate Hills</span></a>
+        </button>
+      </li>
+   
+ <!-- Like this! just copy and paste.-->
+      <li>
+        <button class="btn-7">
+          <a href="LOBOC.html" target="C"><span>Loboc River Cruise</span></a>
+        </button>
+      </li>
+    
+ <!-- Like this! just copy and paste.-->
+      <li>
+        <button class="btn-7">
+          <a href="PANGLAO.html" target="C"><span>Panglao Island</span></a>
+        </button>
+      </li>
+    
+ <!-- Like this! just copy and paste.-->
+      <li>
+        <button class="btn-7">
+          <a href="TARSIER.html" target="C"><span>Tarsier Conservation Area</span></a>
+        </button>
+      </li>
+    </ul>
+
+
+    <a href="Intro.html" target="C">
+      <p>NEGROS ORIENTAL</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="APO.html" target="C"><span>Apo Island</span></a>
+        </button>
+      </li>
+ <!-- Like this! just copy and paste.-->
+      <li>
+        <button class="btn-7">
+          <a href="CHOCOLATE.html" target="C"><span>Casaroro Falls</span></a>
+        </button>
+      </li>
+      <li>
+        <button class="btn-7">
+          <a href="TWIN LAKES.html" target="C"><span>Twin Lake Balinsasayao and Danao</span></a>
+        </button>
+      </li>
+    </ul>
+
+<a href="Intro.html" target="C">
+      <p>SIQUIJOR</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="CAMBUGAHAY.html" target="C"><span>Cambugahay Falls</span></a>
+        </button>
+      </li>
+   <li>
+        <button class="btn-7">
+          <a href="MOUNT BANDILAAN.html" target="C"><span>Mount Bandilaan National Park</span></a>
+        </button>
+      </li>
+   <li>
+        <button class="btn-7">
+          <a href="PALITON.html" target="C"><span>Paliton Beach</span></a>
+        </button>
+      </li>
+
+    </ul>
+    </ul>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        margin: auto;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        overflow: auto;
+        background: linear-gradient(
+          315deg,
+          rgba(38, 80, 115, 1) 3%,
+          rgba(119, 176, 170, 1) 38%,
+          rgba(19, 93, 102, 1) 68%,
+          rgba(45, 149, 150, 1) 98%
+        );
+        animation: gradient 15s ease infinite;
+        background-size: 400% 400%;
+        background-attachment: fixed;
+      }
+
+      @keyframes gradient {
+        0% {
+          background-position: 0% 0%;
+        }
+
+        50% {
+          background-position: 100% 100%;
+        }
+
+        100% {
+          background-position: 0% 0%;
+        }
+      }
+
+      .wave {
+        background: rgb(255 255 255 / 25%);
+        border-radius: 1000% 1000% 0 0;
+        position: fixed;
+        width: 200%;
+        height: 12em;
+        animation: wave 10s -3s linear infinite;
+        transform: translate3d(0, 0, 0);
+        opacity: 0.8;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+      }
+
+      .wave:nth-of-type(2) {
+        bottom: -1.25em;
+        animation: wave 18s linear reverse infinite;
+        opacity: 0.8;
+      }
+
+      .wave:nth-of-type(3) {
+        bottom: -2.5em;
+        animation: wave 20s -1s reverse infinite;
+        opacity: 0.9;
+      }
+
+      @keyframes wave {
+        2% {
+          transform: translateX(1);
+        }
+
+        25% {
+          transform: translateX(-25%);
+        }
+
+        50% {
+          transform: translateX(-50%);
+        }
+
+        75% {
+          transform: translateX(-25%);
+        }
+
+        100% {
+          transform: translateX(1);
+        }
+      }
+
+      body {
+        font-family: "Arial", sans-serif;
+        text-align: center;
+        margin: 20px;
+        color: #fff;
+      }
+
+      p {
+        font-size: 18px;
+        font-weight: bold;
+        color: #ffd700;
+        text-shadow: 3px 10px 10px rgba(0, 0, 0, 0.5);
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 10px;
+      }
+
+      li {
+        font-size: 12px;
+        margin-bottom: 10px;
+        padding: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      li button {
+        background: linear-gradient(
+          0deg,
+          rgba(0, 60, 67, 0.5) 0%,
+          rgba(0, 60, 67, 0.5) 100%
+        );
+        line-height: 42px;
+        padding: 0;
+        border: none;
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+        transition: background-color 0.3s ease;
+        width: 100%;
+        text-align: center;
+      }
+
+      li button span {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+
+      li button:before,
+      li button:after {
+        position: absolute;
+        content: "";
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 215, 0, 1);
+        box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+          -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+          7px 7px 20px 0px rgba(0, 0, 0, 0.2),
+          4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      li button:before {
+        height: 0%;
+        width: 2px;
+      }
+
+      li button:after {
+        width: 0%;
+        height: 2px;
+      }
+
+      li button:hover {
+        color: rgba(255, 215, 0, 1);
+        background: transparent;
+      }
+
+      li button:hover:before {
+        height: 100%;
+      }
+
+      li button:hover:after {
+        width: 100%;
+      }
+
+      li button span:before,
+      li button span:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        background: rgba(255, 215, 0, 1);
+        box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+          -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+          7px 7px 20px 0px rgba(0, 0, 0, 0.2),
+          4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      li button span:before {
+        width: 2px;
+        height: 0%;
+      }
+
+      li button span:after {
+        height: 2px;
+        width: 0%;
+      }
+
+      li button span:hover:before {
+        height: 100%;
+      }
+
+      li button span:hover:after {
+        width: 100%;
+      }
+    </style>
+  </head>
+<h1 style=font-size:25px;color:#white;font-family:Times New Roman>REGION VIII: EASTERN VISAYAS</h1>
+  <ul>
+      <li>
+        <button class="btn-7">
+          <a href="INTRO R8.html" target="C"><span>ABOUT REGION VIII</span></a>
+        </button>
+      </li>
+
+
+  <body>
+    <div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+    </div>
+
+    <a href="Intro.html" target="C">
+      <p>SAMAR</p>
+    </a>
+
+   
+    <ul>
+      <!-- Like this href="body.html" -->
+      <li>
+        <button class="btn-7">
+          <a href="SOHOTAN.html" target="C"><span>Sohotan Caves</span></a>
+       </button>
+       </li>
+      <li>
+        <button class="btn-7">
+          <a href="SAMAR ARCHAELOGICAL.html" target="C"><span>Samar Archeological Museum</span></a>
+         </button>
+       </li>
+
+    </ul>
+
+    <a href="Intro.html" target="C">
+      <p>BILIRAN</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="TINAGO.html" target="C"><span>Tinago Waterfalls</span></a>
+        </button>
+      </li>
+ <!-- Like this! just copy and paste.-->
+      <li>
+        <button class="btn-7">
+          <a href="SAMABAWAN.html" target="C"><span>Sambawan Island</span></a>
+        </button>
+      </li>
+    
+ <!-- Like this! just copy and paste.-->
+      <li>
+        <button class="btn-7">
+          <a href="CANAAN.html" target="C"><span>Canaan Hill Farms</span></a>
+        </button>
+      </li>
+   </ul>
+      <a href="Intro.html" target="C">
+      <p>ORMOC</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="LAKE JANAGDAN.html" target="C"><span>Lake Janagdan</span></a>
+        </button>
+      </li>
+ <!-- Like this! just copy and paste.-->
+      <li>
+        <button class="btn-7">
+          <a href="LAKE DANAO.html" target="C"><span>Lake Danao</span></a>
+        </button>
+      </li>
+      <li>
+    </ul>
+
+<a href="Intro.html" target="C">
+      <p>TACLOBAN</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="MACARTHUR.html" target="C"><span>Macarthur Landing Memorial Park</span></a>
+        </button>
+      </li>
+   <li>
+        <button class="btn-7">
+          <a href="SAN JUANICO.html" target="C"><span>San Juanico Bridge</span></a>
+        </button>
+      </li>
+   <li>
+        <button class="btn-7">
+          <a href="STO NINO.html" target="C"><span>Sto Nino Shrine Heritage Museum</span></a>
+        </button>
+      </li>
+
+    </ul>
+
+ <a href="Intro.html" target="C">
+      <p>LEYTE</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="CANIGAO.html" target="C"><span>Canigao Island</span></a>
+        </button>
+      </li>
+         <li>
+        <button class="btn-7">
+          <a href="KALANGGAMAN.html" target="C"><span>Kalanggaman Island</span></a>
+        </button>
+      </li>
+         <li>
+        <button class="btn-7">
+          <a href="CUATRO.html" target="C"><span>Cuatro Islas</span></a>
+        </button>
+      </li>
+     </ul>
+
+ <a href="Intro.html" target="C">
+      <p>EASTHERN SAMAR</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="CANHUGAS.html" target="C"><span>Canhugas Nature Park</span></a>
+        </button>
+      </li>
+       <li>
+        <button class="btn-7">
+          <a href="LINAO.html" target="C"><span>Linao Cave</span></a>
+        </button>
+      </li>
+        <li>
+        <button class="btn-7">
+          <a href="HANDIG.html" target="C"><span>Homonhon Island</span></a>
+        </button>
+      </li>
+    </ul>
+<a href="Intro.html" target="C">
+      <p>SOUTHERN LEYTE</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="GUINSUHOTAN.html" target="C"><span>Guinsuhotan Cave and Cagnitoan Waterfall</span></a>
+        </button>
+      </li>
+         <li>
+        <button class="btn-7">
+          <a href="MONTE CUEVA.html" target="C"><span>Monte Cueva Shrine</span></a>
+        </button>
+      </li>
+
+      </ul>
+<a href="Intro.html" target="C">
+      <p>NORTHERN SAMAR</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="CALBAYOG.html" target="C"><span>Calbayog Zipline</span></a>
+        </button>
+      </li>
+        <li>
+        <button class="btn-7">
+          <a href="PINK BEACH.html" target="C"><span>Pink Beach</span></a>
+        </button>
+      </li>
+
+
+    </ul>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        margin: auto;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        overflow: auto;
+        background: linear-gradient(
+          315deg,
+          rgba(38, 80, 115, 1) 3%,
+          rgba(119, 176, 170, 1) 38%,
+          rgba(19, 93, 102, 1) 68%,
+          rgba(45, 149, 150, 1) 98%
+        );
+        animation: gradient 15s ease infinite;
+        background-size: 400% 400%;
+        background-attachment: fixed;
+      }
+
+      @keyframes gradient {
+        0% {
+          background-position: 0% 0%;
+        }
+
+        50% {
+          background-position: 100% 100%;
+        }
+
+        100% {
+          background-position: 0% 0%;
+        }
+      }
+
+      .wave {
+        background: rgb(255 255 255 / 25%);
+        border-radius: 1000% 1000% 0 0;
+        position: fixed;
+        width: 200%;
+        height: 12em;
+        animation: wave 10s -3s linear infinite;
+        transform: translate3d(0, 0, 0);
+        opacity: 0.8;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+      }
+
+      .wave:nth-of-type(2) {
+        bottom: -1.25em;
+        animation: wave 18s linear reverse infinite;
+        opacity: 0.8;
+      }
+
+      .wave:nth-of-type(3) {
+        bottom: -2.5em;
+        animation: wave 20s -1s reverse infinite;
+        opacity: 0.9;
+      }
+
+      @keyframes wave {
+        2% {
+          transform: translateX(1);
+        }
+
+        25% {
+          transform: translateX(-25%);
+        }
+
+        50% {
+          transform: translateX(-50%);
+        }
+
+        75% {
+          transform: translateX(-25%);
+        }
+
+        100% {
+          transform: translateX(1);
+        }
+      }
+
+      body {
+        font-family: "Arial", sans-serif;
+        text-align: center;
+        margin: 20px;
+        color: #fff;
+      }
+
+      p {
+        font-size: 18px;
+        font-weight: bold;
+        color: #ffd700;
+        text-shadow: 3px 10px 10px rgba(0, 0, 0, 0.5);
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 10px;
+      }
+
+      li {
+        font-size: 12px;
+        margin-bottom: 10px;
+        padding: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      li button {
+        background: linear-gradient(
+          0deg,
+          rgba(0, 60, 67, 0.5) 0%,
+          rgba(0, 60, 67, 0.5) 100%
+        );
+        line-height: 42px;
+        padding: 0;
+        border: none;
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+        transition: background-color 0.3s ease;
+        width: 100%;
+        text-align: center;
+      }
+
+      li button span {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+
+      li button:before,
+      li button:after {
+        position: absolute;
+        content: "";
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 215, 0, 1);
+        box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+          -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+          7px 7px 20px 0px rgba(0, 0, 0, 0.2),
+          4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      li button:before {
+        height: 0%;
+        width: 2px;
+      }
+
+      li button:after {
+        width: 0%;
+        height: 2px;
+      }
+
+      li button:hover {
+        color: rgba(255, 215, 0, 1);
+        background: transparent;
+      }
+
+      li button:hover:before {
+        height: 100%;
+      }
+
+      li button:hover:after {
+        width: 100%;
+      }
+
+      li button span:before,
+      li button span:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        background: rgba(255, 215, 0, 1);
+        box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+          -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+          7px 7px 20px 0px rgba(0, 0, 0, 0.2),
+          4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      li button span:before {
+        width: 2px;
+        height: 0%;
+      }
+
+      li button span:after {
+        height: 2px;
+        width: 0%;
+      }
+
+      li button span:hover:before {
+        height: 100%;
+      }
+
+      li button span:hover:after {
+        width: 100%;
+      }
+    </style>
+  </head>
+<h1 style=font-size:25px;color:#white;font-family:Times New Roman>REGION IX: ZAMBOANGA PENINSULA</h1>
+ <ul>
+            <li>
+        <button class="btn-7">
+          <a href="INTRO R9.html" target="C"><span>ABOUT REGION IX </span></a>
+        </button>
+      </li>
+
+
+  <body>
+    <div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+    </div>
+
+    <a href="Intro.html" target="C">
+      <p>ZAMBOANGA DEL NORTE</p>
+    </a>
+
+    <ul>
+      <!-- Like this href="body.html" -->
+      <li>
+        <button class="btn-7">
+          <a href="AGLIPAY CAVES.html" target="C"><span>Aliguay Island </span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="COGON.html" target="C"><span>Cogon Eco-tourism Park </span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="DAKAK.html" target="C"><span>Dakak Park and Beach Resort </span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="GLORIAS.html" target="C"><span>Gloria Fantasyland</span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="OUR LADY.html" target="C"><span>Our Lady of the Most Holy Rosary Cathedral</span></a>
+        </button>
+      </li>
+      <li>
+        <button class="btn-7">
+          <a href="SUNGKILAW.html" target="C"><span> Sungkilaw Falls </span></a>
+        </button>
+      </li>
+      <li>
+        <button class="btn-7">
+          <a href="SUNSET.html" target="C"><span> Sunset Boulevard</span></a>
+        </button>
+      </li>
+    </ul>
+
+    <a href="Intro.html" target="C">
+      <p>ZAMBOANGA DEL SUR</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="DAODAO.html" target="C"><span>Dao Dao Island</span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="DITORAY.html" target="C"><span>Ditoray Falls</span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="MOALBOAL.html" target="C"><span>Moalboal Cave</span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="MOUNT TIMOLAN.html" target="C"><span>Mount Timolan</span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="PANIKIAN.html" target="C"><span>Panikian Island</span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="PULACAN.html" target="C"><span>Pulacan Falls</span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="TUBORAN.html" target="C"><span>Tuboran Eriberta Spring</span></a>
+        </button>
+      </li>
+    </ul>
+
+    <a href="Intro.html" target="C">
+      <p>ZAMBOANGA SIBUGAY</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="BULUAN.html" target="C"><span>Buluan Island</span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="FORT PILAR.html" target="C"><span>Fort Pillar</span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="GREAT.html" target="C"><span>Great Santa Cruz Island</span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="IPIL.html" target="C"><span> Ipil Rotunda Obelisk</span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="MERLOQUET.html" target="C"><span>Merloquet Falls</span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="METROPOLITAN CATHEDRAL.html" target="C"><span>Metropolitan Cathedral of Immaculate Conception</span></a>
+        </button>
+      </li>
+    </ul>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        margin: auto;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        overflow: auto;
+        background: linear-gradient(
+          315deg,
+          rgba(38, 80, 115, 1) 3%,
+          rgba(119, 176, 170, 1) 38%,
+          rgba(19, 93, 102, 1) 68%,
+          rgba(45, 149, 150, 1) 98%
+        );
+        animation: gradient 15s ease infinite;
+        background-size: 400% 400%;
+        background-attachment: fixed;
+      }
+
+      @keyframes gradient {
+        0% {
+          background-position: 0% 0%;
+        }
+
+        50% {
+          background-position: 100% 100%;
+        }
+
+        100% {
+          background-position: 0% 0%;
+        }
+      }
+
+      .wave {
+        background: rgb(255 255 255 / 25%);
+        border-radius: 1000% 1000% 0 0;
+        position: fixed;
+        width: 200%;
+        height: 12em;
+        animation: wave 10s -3s linear infinite;
+        transform: translate3d(0, 0, 0);
+        opacity: 0.8;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+      }
+
+      .wave:nth-of-type(2) {
+        bottom: -1.25em;
+        animation: wave 18s linear reverse infinite;
+        opacity: 0.8;
+      }
+
+      .wave:nth-of-type(3) {
+        bottom: -2.5em;
+        animation: wave 20s -1s reverse infinite;
+        opacity: 0.9;
+      }
+
+      @keyframes wave {
+        2% {
+          transform: translateX(1);
+        }
+
+        25% {
+          transform: translateX(-25%);
+        }
+
+        50% {
+          transform: translateX(-50%);
+        }
+
+        75% {
+          transform: translateX(-25%);
+        }
+
+        100% {
+          transform: translateX(1);
+        }
+      }
+
+      body {
+        font-family: "Arial", sans-serif;
+        text-align: center;
+        margin: 20px;
+        color: #fff;
+      }
+
+      p {
+        font-size: 18px;
+        font-weight: bold;
+        color: #ffd700;
+        text-shadow: 3px 10px 10px rgba(0, 0, 0, 0.5);
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 10px;
+      }
+
+      li {
+        font-size: 12px;
+        margin-bottom: 10px;
+        padding: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      li button {
+        background: linear-gradient(
+          0deg,
+          rgba(0, 60, 67, 0.5) 0%,
+          rgba(0, 60, 67, 0.5) 100%
+        );
+        line-height: 42px;
+        padding: 0;
+        border: none;
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+        transition: background-color 0.3s ease;
+        width: 100%;
+        text-align: center;
+      }
+
+      li button span {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+
+      li button:before,
+      li button:after {
+        position: absolute;
+        content: "";
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 215, 0, 1);
+        box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+          -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+          7px 7px 20px 0px rgba(0, 0, 0, 0.2),
+          4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      li button:before {
+        height: 0%;
+        width: 2px;
+      }
+
+      li button:after {
+        width: 0%;
+        height: 2px;
+      }
+
+      li button:hover {
+        color: rgba(255, 215, 0, 1);
+        background: transparent;
+      }
+
+      li button:hover:before {
+        height: 100%;
+      }
+
+      li button:hover:after {
+        width: 100%;
+      }
+
+      li button span:before,
+      li button span:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        background: rgba(255, 215, 0, 1);
+        box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+          -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+          7px 7px 20px 0px rgba(0, 0, 0, 0.2),
+          4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      li button span:before {
+        width: 2px;
+        height: 0%;
+      }
+
+      li button span:after {
+        height: 2px;
+        width: 0%;
+      }
+
+      li button span:hover:before {
+        height: 100%;
+      }
+
+      li button span:hover:after {
+        width: 100%;
+      }
+    </style>
+  </head>
+<h1 style=font-size:25px;color:#white;font-family:Times New Roman>REGION X: NORTHERN MINDANAO</h1>
+   <ul>
+      
+      <li>
+        <button class="btn-7">
+          <a href="INTRO R10.html" target="C"><span>ABOUT REGION X</span></a>
+        </button>
+      </li>
+
+
+  <body>
+    <div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+    </div>
+
+    <a href="Intro.html" target="C">
+      <p>CAMIGUIN</p>
+    </a>
+
+  
+    <ul>
+      
+      <li>
+        <button class="btn-7">
+          <a href="WHITE SAND.html" target="C"><span>White Island</span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="TUASAN.html" target="C"><span>Tuasan Falls</span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="SUNKEN.html" target="C"><span>Sunken Cemetery</span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="MOUNT HIBOK.html" target="C"><span>Mount Hibok-Hibok</span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="KATIBAWASAN.html" target="C"><span>Katibawasan Falls</span></a>
+        </button>
+      </li>
+     </ul>
+
+    <a href="Intro.html" target="C">
+      <p>LANAO DEL NORTE</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="STA CRUZ.html" target="C"><span>Santa Cruz Falls</span></a>
+        </button>
+      </li>
+
+<li>
+        <button class="btn-7">
+          <a href="MIMBALOT.html" target="C"><span>Mimbalot Falls</span></a>
+        </button>
+      </li>
+
+<li>
+        <button class="btn-7">
+          <a href="KAILANGAN.html" target="C"><span>Kalilangan Cold Spring</span></a>
+        </button>
+      </li>
+
+<li>
+        <button class="btn-7">
+          <a href="PAGAYAWAN.html" target="C"><span>Pagayawan Falls</span></a>
+        </button>
+      </li>
+
+<li>
+        <button class="btn-7">
+          <a href="LAKE NUNUNGAN.html" target="C"><span>Lake Nunungan</span></a>
+        </button>
+      </li>
+     </ul>
+
+    <a href="Intro.html" target="C">
+      <p>MISAMIS ORIENTAL</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="SEVEN SEAS.html" target="C"><span>Seven Seas Waterpark and Resort</span></a>
+        </button>
+      </li>
+     </ul>
+
+    <a href="Intro.html" target="C">
+      <p>MISAMIS OCCIDENTAL</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="SAPANG.html" target="C"><span>Sapang Dalaga Falls</span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="HOYOHOY.html" target="C"><span>Hoyohoy Highland Stone Chapel Adventure Park</span></a>
+        </button>
+      </li>
+
+<li>
+        <button class="btn-7">
+          <a href="BELVEDERE.html" target="C"><span>Belvedere </span></a>
+        </button>
+      </li>
+    </ul>
+
+   <a href="Intro.html" target="C">
+      <p>BUKIDNON</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="MONASTERY.html" target="C"><span>Monastery of the Transfiguration</span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="KAAMULAN.html" target="C"><span>Kaamulan Park</span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="DAHILAYAN.html" target="C"><span>Dahilayan Adventure Park</span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="CAMP PHILIPS.html" target="C"><span>Camp Phillips</span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="BUKIDNON.html" target="C"><span>Bukidnon Provincial Capitol</span></a>
+        </button>
+      </li>
+    </ul>
+   
+   <a href="Intro.html" target="C">
+      <p>CAGAYAN DE ORO</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="MALASAG.html" target="C"><span>The Malasog Eco-Tourism Village</span></a>
+        </button>
+      </li>
+    </ul>
+
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        margin: auto;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        overflow: auto;
+        background: linear-gradient(
+          315deg,
+          rgba(38, 80, 115, 1) 3%,
+          rgba(119, 176, 170, 1) 38%,
+          rgba(19, 93, 102, 1) 68%,
+          rgba(45, 149, 150, 1) 98%
+        );
+        animation: gradient 15s ease infinite;
+        background-size: 400% 400%;
+        background-attachment: fixed;
+      }
+
+      @keyframes gradient {
+        0% {
+          background-position: 0% 0%;
+        }
+
+        50% {
+          background-position: 100% 100%;
+        }
+
+        100% {
+          background-position: 0% 0%;
+        }
+      }
+
+      .wave {
+        background: rgb(255 255 255 / 25%);
+        border-radius: 1000% 1000% 0 0;
+        position: fixed;
+        width: 200%;
+        height: 12em;
+        animation: wave 10s -3s linear infinite;
+        transform: translate3d(0, 0, 0);
+        opacity: 0.8;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+      }
+
+      .wave:nth-of-type(2) {
+        bottom: -1.25em;
+        animation: wave 18s linear reverse infinite;
+        opacity: 0.8;
+      }
+
+      .wave:nth-of-type(3) {
+        bottom: -2.5em;
+        animation: wave 20s -1s reverse infinite;
+        opacity: 0.9;
+      }
+
+      @keyframes wave {
+        2% {
+          transform: translateX(1);
+        }
+
+        25% {
+          transform: translateX(-25%);
+        }
+
+        50% {
+          transform: translateX(-50%);
+        }
+
+        75% {
+          transform: translateX(-25%);
+        }
+
+        100% {
+          transform: translateX(1);
+        }
+      }
+
+      body {
+        font-family: "Arial", sans-serif;
+        text-align: center;
+        margin: 20px;
+        color: #fff;
+      }
+
+      p {
+        font-size: 18px;
+        font-weight: bold;
+        color: #ffd700;
+        text-shadow: 3px 10px 10px rgba(0, 0, 0, 0.5);
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 10px;
+      }
+
+      li {
+        font-size: 12px;
+        margin-bottom: 10px;
+        padding: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      li button {
+        background: linear-gradient(
+          0deg,
+          rgba(0, 60, 67, 0.5) 0%,
+          rgba(0, 60, 67, 0.5) 100%
+        );
+        line-height: 42px;
+        padding: 0;
+        border: none;
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+        transition: background-color 0.3s ease;
+        width: 100%;
+        text-align: center;
+      }
+
+      li button span {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+
+      li button:before,
+      li button:after {
+        position: absolute;
+        content: "";
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 215, 0, 1);
+        box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+          -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+          7px 7px 20px 0px rgba(0, 0, 0, 0.2),
+          4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      li button:before {
+        height: 0%;
+        width: 2px;
+      }
+
+      li button:after {
+        width: 0%;
+        height: 2px;
+      }
+
+      li button:hover {
+        color: rgba(255, 215, 0, 1);
+        background: transparent;
+      }
+
+      li button:hover:before {
+        height: 100%;
+      }
+
+      li button:hover:after {
+        width: 100%;
+      }
+
+      li button span:before,
+      li button span:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        background: rgba(255, 215, 0, 1);
+        box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+          -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+          7px 7px 20px 0px rgba(0, 0, 0, 0.2),
+          4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      li button span:before {
+        width: 2px;
+        height: 0%;
+      }
+
+      li button span:after {
+        height: 2px;
+        width: 0%;
+      }
+
+      li button span:hover:before {
+        height: 100%;
+      }
+
+      li button span:hover:after {
+        width: 100%;
+      }
+    </style>
+  </head>
+<h1 style=font-size:25px;color:#white;font-family:Times New Roman>REGION XI: DAVAO REGION</h1>
+   <ul>
+    
+      <li>
+        <button class="btn-7">
+          <a href="INTRO R11.html" target="C"><span>ABOUT REGION XI</span></a>
+ 
+        </button>
+      </li>
+
+
+  <body>
+    <div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+    </div>
+
+    <a href="Intro.html" target="C">
+      <p>DAVAO ORIENTAL</p>
+    </a>
+
+     <ul>
+      
+      <li>
+        <button class="btn-7">
+          <a href="DAHICAN.html" target="C"><span>Dahican Beach</span></a>
+ 
+        </button>
+      </li>
+
+      <li>
+        <button class="btn-7">
+          <a href="MOUNT HAMIGUITAN.html" target="C"><span>Mount Hamiuiguitan Wildlife Range Sanctuary</span></a>
+        </button>
+      </li>
+
+      <li>
+        <button class="btn-7">
+          <a href="PUJADA.html" target="C"><span>Pujada Bay</span></a>
+        </button>
+      </li>
+
+      <li>
+        <button class="btn-7">
+          <a href="SUBANGAN.html" target="C"><span>Subangan Museum</span></a>
+        </button>
+      </li>
+
+      <li>
+        <button class="btn-7">
+          <a href="ALIWAGWAG.html" target="C"><span>The Aliwagwag</span></a>
+        </button>
+      </li>
+
+    </ul>
+
+    <a href="Intro.html" target="C">
+      <p>DAVAO DEL SUR</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="DBONE.html" target="C"><span>D'bone Collector Museum</span></a>
+        </button>
+      </li>
+
+      <li>
+        <button class="btn-7">
+          <a href="DAVAO RIVERFRONT.html" target="C"><span>Davao Riverfront Crocodile Park and Zoo</span></a>
+        </button>
+      </li>
+    
+
+      <li>
+        <button class="btn-7">
+          <a href="PEOPLE PARK DAVAO.html" target="C"><span>People's Park Davao</span></a>
+        </button>
+      </li>
+   
+
+      <li>
+        <button class="btn-7">
+          <a href="PHILIPPINE EAGLE CENTER.html" target="C"><span>Philippine Eagle Center</span></a>
+        </button>
+      </li>
+    
+
+      <li>
+        <button class="btn-7">
+          <a href="SAN PEDRO.html" target="C"><span>San Pedro Metropolitan Cathedral</span></a>
+        </button>
+      </li>
+    
+
+      <li>
+        <button class="btn-7">
+          <a href="FREEDOM PARK.html" target="C"><span>Freedom Park</span></a>
+        </button>
+      </li>
+
+
+      <li>
+        <button class="btn-7">
+          <a href="EDEN.html" target="C"><span>Eden Nature Park</span></a>
+        </button>
+      </li>
+    
+ <!-- Like this! just copy and paste.-->
+      <li>
+        <button class="btn-7">
+          <a href="MALAGOS GARDEN.html" target="C"><span>Malagos Garden</span></a>
+        </button>
+      </li>
+    
+
+      <li>
+        <button class="btn-7">
+          <a href="MUSEO DABAWENYO.html" target="C"><span>Museo Dabawenyo</span></a>
+        </button>
+      </li>
+
+    <a href="Intro.html" target="C">
+      <p>DAVAO DEL NORTE</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="BLUE BIRD.html" target="C"><span>Blue Bird Deck View</span></a>
+        </button>
+      </li>
+
+      <li>
+        <button class="btn-7">
+          <a href="HAGIMIT.html" target="C"><span>Hagimit Falls</span></a>
+        </button>
+      </li>
+
+      <li>
+        <button class="btn-7">
+          <a href="SAN AGUSTIN.html" target="C"><span>San Agustin Botanical Park</span></a>
+        </button>
+      </li>
+
+      <li>
+        <button class="btn-7">
+          <a href="TAGUGUNAN.html" target="C"><span>Tagtugonan Water Falls</span></a>
+        </button>
+      </li>
+
+      <li>
+        <button class="btn-7">
+          <a href="SAMAL.html" target="C"><span>Samal</span></a>
+        </button>
+      </li>
+
+    </ul>
+
+
+
+    </ul>
+  </body>
+</html>
+
+<!DOCTYPE html>
+        <html>
+  <head>
+    <style>
+      body {
+        margin: auto;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        overflow: auto;
+        background: linear-gradient(
+          315deg,
+          rgba(38, 80, 115, 1) 3%,
+          rgba(119, 176, 170, 1) 38%,
+          rgba(19, 93, 102, 1) 68%,
+          rgba(45, 149, 150, 1) 98%
+        );
+        animation: gradient 15s ease infinite;
+        background-size: 400% 400%;
+        background-attachment: fixed;
+      }
+
+      @keyframes gradient {
+        0% {
+          background-position: 0% 0%;
+        }
+
+        50% {
+          background-position: 100% 100%;
+        }
+
+        100% {
+          background-position: 0% 0%;
+        }
+      }
+
+      .wave {
+        background: rgb(255 255 255 / 25%);
+        border-radius: 1000% 1000% 0 0;
+        position: fixed;
+        width: 200%;
+        height: 12em;
+        animation: wave 10s -3s linear infinite;
+        transform: translate3d(0, 0, 0);
+        opacity: 0.8;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+      }
+
+      .wave:nth-of-type(2) {
+        bottom: -1.25em;
+        animation: wave 18s linear reverse infinite;
+        opacity: 0.8;
+      }
+
+      .wave:nth-of-type(3) {
+        bottom: -2.5em;
+        animation: wave 20s -1s reverse infinite;
+        opacity: 0.9;
+      }
+
+      @keyframes wave {
+        2% {
+          transform: translateX(1);
+        }
+
+        25% {
+          transform: translateX(-25%);
+        }
+
+        50% {
+          transform: translateX(-50%);
+        }
+
+        75% {
+          transform: translateX(-25%);
+        }
+
+        100% {
+          transform: translateX(1);
+        }
+      }
+
+      body {
+        font-family: "Arial", sans-serif;
+        text-align: center;
+        margin: 20px;
+        color: #fff;
+      }
+
+      p {
+        font-size: 18px;
+        font-weight: bold;
+        color: #ffd700;
+        text-shadow: 3px 10px 10px rgba(0, 0, 0, 0.5);
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 10px;
+      }
+
+      li {
+        font-size: 12px;
+        margin-bottom: 10px;
+        padding: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      li button {
+        background: linear-gradient(
+          0deg,
+          rgba(0, 60, 67, 0.5) 0%,
+          rgba(0, 60, 67, 0.5) 100%
+        );
+        line-height: 42px;
+        padding: 0;
+        border: none;
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+        transition: background-color 0.3s ease;
+        width: 100%;
+        text-align: center;
+      }
+
+      li button span {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+
+      li button:before,
+      li button:after {
+        position: absolute;
+        content: "";
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 215, 0, 1);
+        box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+          -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+          7px 7px 20px 0px rgba(0, 0, 0, 0.2),
+          4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      li button:before {
+        height: 0%;
+        width: 2px;
+      }
+
+      li button:after {
+        width: 0%;
+        height: 2px;
+      }
+
+      li button:hover {
+        color: rgba(255, 215, 0, 1);
+        background: transparent;
+      }
+
+      li button:hover:before {
+        height: 100%;
+      }
+
+      li button:hover:after {
+        width: 100%;
+      }
+
+      li button span:before,
+      li button span:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        background: rgba(255, 215, 0, 1);
+        box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+          -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+          7px 7px 20px 0px rgba(0, 0, 0, 0.2),
+          4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      li button span:before {
+        width: 2px;
+        height: 0%;
+      }
+
+      li button span:after {
+        height: 2px;
+        width: 0%;
+      }
+
+      li button span:hover:before {
+        height: 100%;
+      }
+
+      li button span:hover:after {
+        width: 100%;
+      }
+    </style>
+  </head>
+<h1 style=font-size:25px;color:#white;font-family:Times New Roman>REGION XII:  SOCCSKSARGEN</h1>
+<ul>
+<li>
+        <button class="btn-7">
+          <a href="INTRO R12.HTML" target="C"><span> ABOUT REGION XII</span></a>
+</button>
+      </li>
+
+  <body>
+    <div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+    </div>
+
+    <a href="Intro.html" target="C">
+      <p>SARANGANI</p>
+    </a>
+<ul>
+<li>
+        <button class="btn-7">
+          <a href="BALUT ISLAND.HTML" target="C"><span>BALUT ISLAND</span></a>
+ 
+        </button>
+      </li>
+  <li>
+        <button class="btn-7">
+          <a href="TINOTO.HTML" target="C"><span>TINOTO WALL AND CORAL GARDEN</span></a>
+        </button>
+      </li>
+  <li>
+        <button class="btn-7">
+          <a href="MAASIM.HTML" target="C"><span>MAASIM BEACH</span></a>
+        </button>
+      </li>
+  <li>
+        <button class="btn-7">
+          <a href="KAMBA.HTML" target="C"><span>KIAMBA WHITE BEACH</span></a>
+        </button>
+      </li>
+  <li>
+        <button class="btn-7">
+          <a href="MAITUM.HTML" target="C"><span>MAITUM BEACH</span></a>
+        </button>
+      </li>
+  <li>
+        <button class="btn-7">
+          <a href="GUMASA.HTML" target="C"><span>GUMASA</span></a>
+        </button>
+      </li>
+
+
+   <a href="Intro.html" target="C">
+      <p>SULTAN KUDARAT</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="BARAS BIRD.HTML" target="C"><span>BARAS BIRD SANCTUARY</span></a>	
+        </button>
+      </li>
+
+       <li>
+        <button class="btn-7">
+          <a href="ECO PARK.HTML" Ltarget="C"><span>ECO PARK</span></a>
+        </button>
+      </li>
+    
+ 
+      <li>
+        <button class="btn-7">
+          <a href="LA PALMERA.HTML" target="C"><span>LA PALMERA MOUNTAIN RIDGE</span></a>
+        </button>
+      </li>
+   
+      <li>
+        <button class="btn-7">
+          <a href="UGIS PEAK.HTML" target="C"><span>UGIS PEAK ESPERANZA</span></a>
+        </button>
+      </li>
+    
+
+    <a href="Intro.html" target="C">
+      <p>SOUTH COTABATO</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="MAGSANGYAW.html" target="C"><span>MAGSANGYAW LAND OF PRAISE</span></a>
+        </button>
+      </li>
+
+      <li>
+        <button class="btn-7">
+          <a href="MOUNT MELIBINGOY.html" target="C"><span>MOUNT BELINGOY</span></a>
+        </button>
+      </li>
+
+      <li>
+        <button class="btn-7">
+          <a href="MT.MATUTUM.HTML" target="C"><span>OUR LADY OF MATUMTUM</span></a>
+        </button>
+      </li>
+
+      <li>
+        <button class="btn-7">
+          <a href="QUEEN TUNA.HTML" target="C"><span>QUEEN TUNA PARK</span></a>
+        </button>
+      </li>
+
+
+
+    </ul>
+  </body>
+</html>	
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        margin: auto;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        overflow: auto;
+        background: linear-gradient(
+          315deg,
+          rgba(38, 80, 115, 1) 3%,
+          rgba(119, 176, 170, 1) 38%,
+          rgba(19, 93, 102, 1) 68%,
+          rgba(45, 149, 150, 1) 98%
+        );
+        animation: gradient 15s ease infinite;
+        background-size: 400% 400%;
+        background-attachment: fixed;
+      }
+
+      @keyframes gradient {
+        0% {
+          background-position: 0% 0%;
+        }
+
+        50% {
+          background-position: 100% 100%;
+        }
+
+        100% {
+          background-position: 0% 0%;
+        }
+      }
+
+      .wave {
+        background: rgb(255 255 255 / 25%);
+        border-radius: 1000% 1000% 0 0;
+        position: fixed;
+        width: 200%;
+        height: 12em;
+        animation: wave 10s -3s linear infinite;
+        transform: translate3d(0, 0, 0);
+        opacity: 0.8;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+      }
+
+      .wave:nth-of-type(2) {
+        bottom: -1.25em;
+        animation: wave 18s linear reverse infinite;
+        opacity: 0.8;
+      }
+
+      .wave:nth-of-type(3) {
+        bottom: -2.5em;
+        animation: wave 20s -1s reverse infinite;
+        opacity: 0.9;
+      }
+
+      @keyframes wave {
+        2% {
+          transform: translateX(1);
+        }
+
+        25% {
+          transform: translateX(-25%);
+        }
+
+        50% {
+          transform: translateX(-50%);
+        }
+
+        75% {
+          transform: translateX(-25%);
+        }
+
+        100% {
+          transform: translateX(1);
+        }
+      }
+
+      body {
+        font-family: "Arial", sans-serif;
+        text-align: center;
+        margin: 20px;
+        color: #fff;
+      }
+
+      p {
+        font-size: 18px;
+        font-weight: bold;
+        color: #ffd700;
+        text-shadow: 3px 10px 10px rgba(0, 0, 0, 0.5);
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 10px;
+      }
+
+      li {
+        font-size: 12px;
+        margin-bottom: 10px;
+        padding: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      li button {
+        background: linear-gradient(
+          0deg,
+          rgba(0, 60, 67, 0.5) 0%,
+          rgba(0, 60, 67, 0.5) 100%
+        );
+        line-height: 42px;
+        padding: 0;
+        border: none;
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+        transition: background-color 0.3s ease;
+        width: 100%;
+        text-align: center;
+      }
+
+      li button span {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+
+      li button:before,
+      li button:after {
+        position: absolute;
+        content: "";
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 215, 0, 1);
+        box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+          -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+          7px 7px 20px 0px rgba(0, 0, 0, 0.2),
+          4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      li button:before {
+        height: 0%;
+        width: 2px;
+      }
+
+      li button:after {
+        width: 0%;
+        height: 2px;
+      }
+
+      li button:hover {
+        color: rgba(255, 215, 0, 1);
+        background: transparent;
+      }
+
+      li button:hover:before {
+        height: 100%;
+      }
+
+      li button:hover:after {
+        width: 100%;
+      }
+
+      li button span:before,
+      li button span:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        background: rgba(255, 215, 0, 1);
+        box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+          -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+          7px 7px 20px 0px rgba(0, 0, 0, 0.2),
+          4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      li button span:before {
+        width: 2px;
+        height: 0%;
+      }
+
+      li button span:after {
+        height: 2px;
+        width: 0%;
+      }
+
+      li button span:hover:before {
+        height: 100%;
+      }
+
+      li button span:hover:after {
+        width: 100%;
+      }
+    </style>
+  </head>
+<h1 style=font-size:25px;color:#white;font-family:Times New Roman>REGION XIII: CARAGA </h1>
+ <ul>
+     <!-- Like this href="body.html" -->
+      <li>
+        <button class="btn-7">
+          <a href="INTRO R13.html" target="C"><span>ABOUT REGION XIII</span></a>
+        </button>
+      </li>
+
+  <body>
+    <div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+    </div>
+
+    <a href="Intro.html" target="C">
+      <p>AGUSAN DEL NORTE</p>
+    </a>
+ <ul>
+         <li>
+        <button class="btn-7">
+          <a href="BUTUAN.html" target="C"><span>Butuan National Museum</span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="MAGELLANS LANDING.html" target="C"><span>Magellan's Landing Site </span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="SAK.HTML" target="C"><span>Sak-A Falls</span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="SANTO.HTML" target="C"><span>Santo Niño Diocesan Shrine</span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="TAGNOTE.html" target="C"><span> Tagnote Falls</span></a>
+        </button>
+      </li>
+    </ul>
+
+    <a href="Intro.html" target="C">
+      <p>AGUSAN DEL SUR</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="AGUSAN.html" target="C"><span>Agusan Wildlife Sanctuary</span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="BEGA.html" target="C"><span>Bega Falls</span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="GIBONG.html" target="C"><span>Gibong River</span></a>
+        </button>
+      </li>
+<li>
+        
+        <button class="btn-7">
+          <a href="MOUNT MAGDIWATA.html" target="C"><span>Mt. Magdiwata</span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="TUGONON.html" target="C"><span>Tugonon Falls</span></a>
+        </button>
+      </li>
+    </ul>
+
+    <a href="Intro.html" target="C">
+      <p>SURIGAO DEL NORTE</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="ALEGRIA.HTML" target="C"><span>Alegria Beach</span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="BUCAS.HTML" target="C"><span>Bucas Grande Island</span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="DAKU.HTML" target="C"><span>Daku Island</span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="LUMONDO.HTML" target="C"><span>Lumondo Falls</span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="SIARGAO.HTML" target="C"><span>Siargao Island</span></a>
+        </button>
+      </li>
+    </ul>
+
+ <a href="Intro.html" target="C">
+      <p>SURIGAO DEL SUR</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="CAGWAIT.html" target="C"><span>Cagwait White Beach</span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="HINATUAN.html" target="C"><span>Hinatuan Enchanted River</span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="LASWITAN.html" target="C"><span>Laswitan Falls and Lagoon</span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="LIBUACAN.html" target="C"><span>Libuacan Cold Spring</span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="TUNUYAN.html" target="C"><span>Tinuy-An Falls</span></a>
+        </button>
+      </li>
+    </ul>
+  </body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        margin: auto;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        overflow: auto;
+        background: linear-gradient(
+          315deg,
+          rgba(38, 80, 115, 1) 3%,
+          rgba(119, 176, 170, 1) 38%,
+          rgba(19, 93, 102, 1) 68%,
+          rgba(45, 149, 150, 1) 98%
+        );
+        animation: gradient 15s ease infinite;
+        background-size: 400% 400%;
+        background-attachment: fixed;
+      }
+
+      @keyframes gradient {
+        0% {
+          background-position: 0% 0%;
+        }
+
+        50% {
+          background-position: 100% 100%;
+        }
+
+        100% {
+          background-position: 0% 0%;
+        }
+      }
+
+      .wave {
+        background: rgb(255 255 255 / 25%);
+        border-radius: 1000% 1000% 0 0;
+        position: fixed;
+        width: 200%;
+        height: 12em;
+        animation: wave 10s -3s linear infinite;
+        transform: translate3d(0, 0, 0);
+        opacity: 0.8;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+      }
+
+      .wave:nth-of-type(2) {
+        bottom: -1.25em;
+        animation: wave 18s linear reverse infinite;
+        opacity: 0.8;
+      }
+
+      .wave:nth-of-type(3) {
+        bottom: -2.5em;
+        animation: wave 20s -1s reverse infinite;
+        opacity: 0.9;
+      }
+
+      @keyframes wave {
+        2% {
+          transform: translateX(1);
+        }
+
+        25% {
+          transform: translateX(-25%);
+        }
+
+        50% {
+          transform: translateX(-50%);
+        }
+
+        75% {
+          transform: translateX(-25%);
+        }
+
+        100% {
+          transform: translateX(1);
+        }
+      }
+
+      body {
+        font-family: "Arial", sans-serif;
+        text-align: center;
+        margin: 20px;
+        color: #fff;
+      }
+
+      p {
+        font-size: 18px;
+        font-weight: bold;
+        color: #ffd700;
+        text-shadow: 3px 10px 10px rgba(0, 0, 0, 0.5);
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 10px;
+      }
+
+      li {
+        font-size: 12px;
+        margin-bottom: 10px;
+        padding: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      li button {
+        background: linear-gradient(
+          0deg,
+          rgba(0, 60, 67, 0.5) 0%,
+          rgba(0, 60, 67, 0.5) 100%
+        );
+        line-height: 42px;
+        padding: 0;
+        border: none;
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+        transition: background-color 0.3s ease;
+        width: 100%;
+        text-align: center;
+      }
+
+      li button span {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+
+      li button:before,
+      li button:after {
+        position: absolute;
+        content: "";
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 215, 0, 1);
+        box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+          -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+          7px 7px 20px 0px rgba(0, 0, 0, 0.2),
+          4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      li button:before {
+        height: 0%;
+        width: 2px;
+      }
+
+      li button:after {
+        width: 0%;
+        height: 2px;
+      }
+
+      li button:hover {
+        color: rgba(255, 215, 0, 1);
+        background: transparent;
+      }
+
+      li button:hover:before {
+        height: 100%;
+      }
+
+      li button:hover:after {
+        width: 100%;
+      }
+
+      li button span:before,
+      li button span:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        background: rgba(255, 215, 0, 1);
+        box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+          -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+          7px 7px 20px 0px rgba(0, 0, 0, 0.2),
+          4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      li button span:before {
+        width: 2px;
+        height: 0%;
+      }
+
+      li button span:after {
+        height: 2px;
+        width: 0%;
+      }
+
+      li button span:hover:before {
+        height: 100%;
+      }
+
+      li button span:hover:after {
+        width: 100%;
+      }
+    </style>
+  </head>
+<h1 style=font-size:25px;color:#white;font-family:Times New Roman>REGION XIII: CARAGA </h1>
+ <ul>
+     <!-- Like this href="body.html" -->
+      <li>
+        <button class="btn-7">
+          <a href="INTRO R13.html" target="C"><span>ABOUT REGION XIII</span></a>
+        </button>
+      </li>
+
+  <body>
+    <div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+    </div>
+
+    <a href="Intro.html" target="C">
+      <p>AGUSAN DEL NORTE</p>
+    </a>
+ <ul>
+         <li>
+        <button class="btn-7">
+          <a href="BUTUAN.html" target="C"><span>Butuan National Museum</span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="MAGELLANS LANDING.html" target="C"><span>Magellan's Landing Site </span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="SAK.HTML" target="C"><span>Sak-A Falls</span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="SANTO.HTML" target="C"><span>Santo Niño Diocesan Shrine</span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="TAGNOTE.html" target="C"><span> Tagnote Falls</span></a>
+        </button>
+      </li>
+    </ul>
+
+    <a href="Intro.html" target="C">
+      <p>AGUSAN DEL SUR</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="AGUSAN.html" target="C"><span>Agusan Wildlife Sanctuary</span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="BEGA.html" target="C"><span>Bega Falls</span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="GIBONG.html" target="C"><span>Gibong River</span></a>
+        </button>
+      </li>
+<li>
+        
+        <button class="btn-7">
+          <a href="MOUNT MAGDIWATA.html" target="C"><span>Mt. Magdiwata</span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="TUGONON.html" target="C"><span>Tugonon Falls</span></a>
+        </button>
+      </li>
+    </ul>
+
+    <a href="Intro.html" target="C">
+      <p>SURIGAO DEL NORTE</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="ALEGRIA.HTML" target="C"><span>Alegria Beach</span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="BUCAS.HTML" target="C"><span>Bucas Grande Island</span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="DAKU.HTML" target="C"><span>Daku Island</span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="LUMONDO.HTML" target="C"><span>Lumondo Falls</span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="SIARGAO.HTML" target="C"><span>Siargao Island</span></a>
+        </button>
+      </li>
+    </ul>
+
+ <a href="Intro.html" target="C">
+      <p>SURIGAO DEL SUR</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="CAGWAIT.html" target="C"><span>Cagwait White Beach</span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="HINATUAN.html" target="C"><span>Hinatuan Enchanted River</span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="LASWITAN.html" target="C"><span>Laswitan Falls and Lagoon</span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="LIBUACAN.html" target="C"><span>Libuacan Cold Spring</span></a>
+        </button>
+      </li>
+<li>
+        <button class="btn-7">
+          <a href="TUNUYAN.html" target="C"><span>Tinuy-An Falls</span></a>
+        </button>
+      </li>
+    </ul>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        margin: auto;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        overflow: auto;
+        background: linear-gradient(
+          315deg,
+          rgba(38, 80, 115, 1) 3%,
+          rgba(119, 176, 170, 1) 38%,
+          rgba(19, 93, 102, 1) 68%,
+          rgba(45, 149, 150, 1) 98%
+        );
+        animation: gradient 15s ease infinite;
+        background-size: 400% 400%;
+        background-attachment: fixed;
+      }
+
+      @keyframes gradient {
+        0% {
+          background-position: 0% 0%;
+        }
+
+        50% {
+          background-position: 100% 100%;
+        }
+
+        100% {
+          background-position: 0% 0%;
+        }
+      }
+
+      .wave {
+        background: rgb(255 255 255 / 25%);
+        border-radius: 1000% 1000% 0 0;
+        position: fixed;
+        width: 200%;
+        height: 12em;
+        animation: wave 10s -3s linear infinite;
+        transform: translate3d(0, 0, 0);
+        opacity: 0.8;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+      }
+
+      .wave:nth-of-type(2) {
+        bottom: -1.25em;
+        animation: wave 18s linear reverse infinite;
+        opacity: 0.8;
+      }
+
+      .wave:nth-of-type(3) {
+        bottom: -2.5em;
+        animation: wave 20s -1s reverse infinite;
+        opacity: 0.9;
+      }
+
+      @keyframes wave {
+        2% {
+          transform: translateX(1);
+        }
+
+        25% {
+          transform: translateX(-25%);
+        }
+
+        50% {
+          transform: translateX(-50%);
+        }
+
+        75% {
+          transform: translateX(-25%);
+        }
+
+        100% {
+          transform: translateX(1);
+        }
+      }
+
+      body {
+        font-family: "Arial", sans-serif;
+        text-align: center;
+        margin: 20px;
+        color: #fff;
+      }
+
+      p {
+        font-size: 18px;
+        font-weight: bold;
+        color: #ffd700;
+        text-shadow: 3px 10px 10px rgba(0, 0, 0, 0.5);
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 10px;
+      }
+
+      li {
+        font-size: 12px;
+        margin-bottom: 10px;
+        padding: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      li button {
+        background: linear-gradient(
+          0deg,
+          rgba(0, 60, 67, 0.5) 0%,
+          rgba(0, 60, 67, 0.5) 100%
+        );
+        line-height: 42px;
+        padding: 0;
+        border: none;
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+        transition: background-color 0.3s ease;
+        width: 100%;
+        text-align: center;
+      }
+
+      li button span {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+
+      li button:before,
+      li button:after {
+        position: absolute;
+        content: "";
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 215, 0, 1);
+        box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+          -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+          7px 7px 20px 0px rgba(0, 0, 0, 0.2),
+          4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      li button:before {
+        height: 0%;
+        width: 2px;
+      }
+
+      li button:after {
+        width: 0%;
+        height: 2px;
+      }
+
+      li button:hover {
+        color: rgba(255, 215, 0, 1);
+        background: transparent;
+      }
+
+      li button:hover:before {
+        height: 100%;
+      }
+
+      li button:hover:after {
+        width: 100%;
+      }
+
+      li button span:before,
+      li button span:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        background: rgba(255, 215, 0, 1);
+        box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+          -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+          7px 7px 20px 0px rgba(0, 0, 0, 0.2),
+          4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      li button span:before {
+        width: 2px;
+        height: 0%;
+      }
+
+      li button span:after {
+        height: 2px;
+        width: 0%;
+      }
+
+      li button span:hover:before {
+        height: 100%;
+      }
+
+      li button span:hover:after {
+        width: 100%;
+      }
+    </style>
+  </head>
+<h1 style=font-size:25px;color:#white;font-family:Times New Roman> NCR: NATIONAL CAPITAL REGION</h1>
+ <ul>
+            <li>
+        <button class="btn-7">
+          <a href="INTRO NCR.HTML" target="C"><span>ABOUT REGION NCR</span></a>
+        </button>
+      </li>
+          </ul>
+
+  <body>
+    <div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+    </div>
+
+    <a href="Intro.html" target="C">
+      <p>LAS PIÑAS</p>
+    </a>
+
+   
+    <ul>
+            <li>
+        <button class="btn-7">
+          <a href="BAMBOO.HTML" target="C"><span>Bamboo Organ Church</span></a>
+        </button>
+      </li>
+          </ul>
+
+    <a href="Intro.html" target="C">
+      <p>MANDALUYONG </p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="SPUTNIK.html" target="C"><span>Sputnik Aviation Airline Experience</span></a>
+        </button>
+      </li>
+    </ul>
+
+    <a href="Intro.html" target="C">
+      <p>MANILA </p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="CASA MANILA.html" target="C"><span>Casa Manila</span></a>      
+  </button>
+      </li>
+
+         </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="CHINATOWN.HTML" target="C"><span>Chinatown Binondo</span></a>
+</button>
+      </li>
+
+<ul>
+      <li>
+        <button class="btn-7">
+          <a href="FORT SANTIAGO.html" target="C"><span>Fort Santiago</span></a>
+</button>
+      </li>
+
+<ul>
+      <li>
+        <button class="btn-7">
+          <a href="INTRAMUROS.html" target="C"><span>Intramuros</span></a></button>
+      </li>
+
+<ul>
+      <li>
+        <button class="btn-7">
+          <a href="MNL.html" target="C"><span>Manila Ocean Park</span></a></button>
+      </li>
+
+<ul>
+      <li>
+        <button class="btn-7">
+          <a href="MANILA ZOO.html" target="C"><span>Manila Zoo</span></a></button>
+      </li>
+
+<ul>
+      <li>
+        <button class="btn-7">
+          <a href="RIZAL PARK.HTML" target="C"><span>Rizal Park</span></a></button>
+      </li>
+
+    
+    </ul>
+
+<a href="Intro.html" target="C">
+      <p>MARIKINA</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="SHOE.html" target="C"><span>Shoe Museum</span></a>
+        </button>
+      </li>
+    </ul>
+
+    <a href="Intro.html" target="C">
+      <p>PASAY</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="UPSIDE.html" target="C"><span>Upside Down Museum</span></a>
+        </button>
+      </li>
+
+  <li>
+        <button class="btn-7">
+          <a href="PH AIR.html" target="C"><span> Philippine Air Force Aerospace Museum
+</span></a>
+        </button>
+      </li>
+
+    </ul>
+
+<a href="Intro.html" target="C">
+      <p>PASIG</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="PASIG CATHEDRAL.html" target="C"><span>Pasig Cathedral Museum</span></a>
+        </button>
+      </li>
+    </ul>
+
+   <a href="Intro.html" target="C">
+      <p>QUEZON</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="ART.html" target="C"><span>Art in Island</span></a>
+        </button>
+      </li>
+
+  <li>
+        <button class="btn-7">
+          <a href="MANUEL.html" target="C"><span> Museo ni Manuel Quezon
+
+</span></a>
+        </button>
+      </li>
+
+    </ul>
+
+<a href="Intro.html" target="C">
+      <p>SAN JUAN</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="PINAGLABANAN.HTML" target="C"><span>Pinaglabanan Shrine</span></a>
+        </button>
+      </li>
+    </ul>
+
+   <a href="Intro.html" target="C">
+      <p>TAGUIG </p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="BONIFACIO.html" target="C"><span>Bonifacio High Street</span></a>        
+</button>
+      </li>
+
+         </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="SIMBORIO.html" target="C"><span>Simborio</span></a>
+</button>
+      </li>
+
+<ul>
+      <li>
+        <button class="btn-7">
+          <a href="VENICE.html" target="C"><span>Venice Grand Hotel</span></a>
+</button>
+      </li>
+
+<ul>
+
+<a href="Intro.html" target="C">
+      <p>VALENZUELA</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="VALENZUELA.html" target="C"><span>Valenzuela People's Park</span></a>
+        </button>
+      </li>
+    </ul>
+
+
+ </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        margin: auto;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        overflow: auto;
+        background: linear-gradient(
+          315deg,
+          rgba(38, 80, 115, 1) 3%,
+          rgba(119, 176, 170, 1) 38%,
+          rgba(19, 93, 102, 1) 68%,
+          rgba(45, 149, 150, 1) 98%
+        );
+        animation: gradient 15s ease infinite;
+        background-size: 400% 400%;
+        background-attachment: fixed;
+      }
+
+      @keyframes gradient {
+        0% {
+          background-position: 0% 0%;
+        }
+
+        50% {
+          background-position: 100% 100%;
+        }
+
+        100% {
+          background-position: 0% 0%;
+        }
+      }
+
+      .wave {
+        background: rgb(255 255 255 / 25%);
+        border-radius: 1000% 1000% 0 0;
+        position: fixed;
+        width: 200%;
+        height: 12em;
+        animation: wave 10s -3s linear infinite;
+        transform: translate3d(0, 0, 0);
+        opacity: 0.8;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+      }
+
+      .wave:nth-of-type(2) {
+        bottom: -1.25em;
+        animation: wave 18s linear reverse infinite;
+        opacity: 0.8;
+      }
+
+      .wave:nth-of-type(3) {
+        bottom: -2.5em;
+        animation: wave 20s -1s reverse infinite;
+        opacity: 0.9;
+      }
+
+      @keyframes wave {
+        2% {
+          transform: translateX(1);
+        }
+
+        25% {
+          transform: translateX(-25%);
+        }
+
+        50% {
+          transform: translateX(-50%);
+        }
+
+        75% {
+          transform: translateX(-25%);
+        }
+
+        100% {
+          transform: translateX(1);
+        }
+      }
+
+      body {
+        font-family: "Arial", sans-serif;
+        text-align: center;
+        margin: 20px;
+        color: #fff;
+      }
+
+      p {
+        font-size: 18px;
+        font-weight: bold;
+        color: #ffd700;
+        text-shadow: 3px 10px 10px rgba(0, 0, 0, 0.5);
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 10px;
+      }
+
+      li {
+        font-size: 12px;
+        margin-bottom: 10px;
+        padding: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      li button {
+        background: linear-gradient(
+          0deg,
+          rgba(0, 60, 67, 0.5) 0%,
+          rgba(0, 60, 67, 0.5) 100%
+        );
+        line-height: 42px;
+        padding: 0;
+        border: none;
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+        transition: background-color 0.3s ease;
+        width: 100%;
+        text-align: center;
+      }
+
+      li button span {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+
+      li button:before,
+      li button:after {
+        position: absolute;
+        content: "";
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 215, 0, 1);
+        box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+          -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+          7px 7px 20px 0px rgba(0, 0, 0, 0.2),
+          4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      li button:before {
+        height: 0%;
+        width: 2px;
+      }
+
+      li button:after {
+        width: 0%;
+        height: 2px;
+      }
+
+      li button:hover {
+        color: rgba(255, 215, 0, 1);
+        background: transparent;
+      }
+
+      li button:hover:before {
+        height: 100%;
+      }
+
+      li button:hover:after {
+        width: 100%;
+      }
+
+      li button span:before,
+      li button span:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        background: rgba(255, 215, 0, 1);
+        box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+          -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+          7px 7px 20px 0px rgba(0, 0, 0, 0.2),
+          4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      li button span:before {
+        width: 2px;
+        height: 0%;
+      }
+
+      li button span:after {
+        height: 2px;
+        width: 0%;
+      }
+
+      li button span:hover:before {
+        height: 100%;
+      }
+
+      li button span:hover:after {
+        width: 100%;
+      }
+    </style>
+  </head>
+<h1 style=font-size:25px;color:#white;font-family:Times New Roman> CAR: CORDILLERA ADMINISTRATIVE REGION</h1>
+  <ul>
+           <li>
+        <button class="btn-7">
+          <a href="INTRO CAR.html" target="C"><span>ABOUT REGION CAR</span></a>
+ 
+        </button>
+      </li>
+
+  <body>
+    <div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+    </div>
+
+    <a href="Intro.html" target="C">
+      <p>APAYAO</p>
+    </a>
+
+        <ul>
+      <!-- Like this href="body.html" -->
+      <li>
+        <button class="btn-7">
+          <a href="LUSSOK.html" target="C"><span>Lussok Cave</span></a>
+ 
+        </button>
+      </li>
+    </ul>
+
+    <a href="Intro.html" target="C">
+      <p>BENGUET</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="BAGUIO.html" target="C"><span>Baguio City</span></a>
+        </button>
+      </li>
+ <!-- Like this! just copy and paste.-->
+      <li>
+        <button class="btn-7">
+          <a href="BURN.html" target="C"><span>Burnham Park</span></a>
+        </button>
+      </li>
+    
+ <!-- Like this! just copy and paste.-->
+      <li>
+        <button class="btn-7">
+          <a href="MOUNT COSTA.html" target="C"><span>Mount Costa</span></a>
+        </button>
+      </li>
+   
+ <!-- Like this! just copy and paste.-->
+      <li>
+        <button class="btn-7">
+          <a href="MOUNT PULAG.html" target="C"><span>Mount Pulag</span></a>
+        </button>
+      </li>
+    
+ <!-- Like this! just copy and paste.-->
+      <li>
+        <button class="btn-7">
+          <a href="MOUNT DATA.html" target="C"><span>Mount Data National Park</span></a>
+        </button>
+      </li>
+    
+ <!-- Like this! just copy and paste.-->
+      <li>
+        <button class="btn-7">
+          <a href="LA TRINIDAD.html" target="C"><span>La Trinidad Strawberry Farm</span></a>
+        </button>
+      </li>
+
+ <!-- Like this! just copy and paste.-->
+      <li>
+        <button class="btn-7">
+          <a href="MINES.html" target="C"><span>Mines View Park</span></a>
+        </button>
+      </li>
+    
+ <!-- Like this! just copy and paste.-->
+      <li>
+        <button class="btn-7">
+          <a href="CAMP JOHN.html" target="C"><span>Camp John Hay</span></a>
+        </button>
+      </li>
+    
+ <!-- Like this! just copy and paste.-->
+      <li>
+        <button class="btn-7">
+          <a href="MANSION.html" target="C"><span>The Mansion</span></a>
+        </button>
+      </li>
+    
+    </ul>
+
+
+    <a href="Intro.html" target="C">
+      <p>IFUGAO</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="BANAUE.html" target="C"><span>Banaue Rice Terraces</span></a>
+        </button>
+      </li>
+ <!-- Like this! just copy and paste.-->
+      <li>
+        <button class="btn-7">
+          <a href="IFUGAO.html" target="C"><span>Ifugao Museum</span></a>
+        </button>
+      </li>
+    </ul>
+
+
+<a href="Intro.html" target="C">
+      <p>KALINGA</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="TABUK.html" target="C"><span>Tabuk City</span></a>
+        </button>
+      </li>
+   <li>
+        <button class="btn-7">
+          <a href="KALINGA.html" target="C"><span>Kalinga Rice Terraces</span></a>
+        </button>
+      </li>
+   <li>
+        <button class="btn-7">
+          <a href="BALBALASANG.html" target="C"><span>Balbalasang-Balbalan National Park</span></a>
+        </button>
+      </li>
+
+    </ul>
+
+    <a href="Intro.html" target="C">
+      <p>MOUNTAIN PROVINCE</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="BOMOD.html" target="C"><span>Bomod-ok Falls</span></a>
+        </button>
+      </li>
+   <li>
+        <button class="btn-7">
+          <a href="SUMAGUING.html" target="C"><span>Sumaguing Cave</span></a>
+        </button>
+      </li>
+   <li>
+        <button class="btn-7">
+          <a href="SAGADA.html" target="C"><span>Sagada Hanging Coffins</span></a>
+        </button>
+      </li>
+   <li>
+        <button class="btn-7">
+          <a href="MOUNT KALAWIT.html" target="C"><span>Mount Kalawitan</span></a>
+        </button>
+      </li>
+   <li>
+        <button class="btn-7">
+          <a href="ECHO.html" target="C"><span>Echo Valley</span></a>
+        </button>
+      </li>
+
+    </ul>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        margin: auto;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        overflow: auto;
+        background: linear-gradient(
+          315deg,
+          rgba(38, 80, 115, 1) 3%,
+          rgba(119, 176, 170, 1) 38%,
+          rgba(19, 93, 102, 1) 68%,
+          rgba(45, 149, 150, 1) 98%
+        );
+        animation: gradient 15s ease infinite;
+        background-size: 400% 400%;
+        background-attachment: fixed;
+      }
+
+      @keyframes gradient {
+        0% {
+          background-position: 0% 0%;
+        }
+
+        50% {
+          background-position: 100% 100%;
+        }
+
+        100% {
+          background-position: 0% 0%;
+        }
+      }
+
+      .wave {
+        background: rgb(255 255 255 / 25%);
+        border-radius: 1000% 1000% 0 0;
+        position: fixed;
+        width: 200%;
+        height: 12em;
+        animation: wave 10s -3s linear infinite;
+        transform: translate3d(0, 0, 0);
+        opacity: 0.8;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+      }
+
+      .wave:nth-of-type(2) {
+        bottom: -1.25em;
+        animation: wave 18s linear reverse infinite;
+        opacity: 0.8;
+      }
+
+      .wave:nth-of-type(3) {
+        bottom: -2.5em;
+        animation: wave 20s -1s reverse infinite;
+        opacity: 0.9;
+      }
+
+      @keyframes wave {
+        2% {
+          transform: translateX(1);
+        }
+
+        25% {
+          transform: translateX(-25%);
+        }
+
+        50% {
+          transform: translateX(-50%);
+        }
+
+        75% {
+          transform: translateX(-25%);
+        }
+
+        100% {
+          transform: translateX(1);
+        }
+      }
+
+      body {
+        font-family: "Arial", sans-serif;
+        text-align: center;
+        margin: 20px;
+        color: #fff;
+      }
+
+      p {
+        font-size: 18px;
+        font-weight: bold;
+        color: #ffd700;
+        text-shadow: 3px 10px 10px rgba(0, 0, 0, 0.5);
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 10px;
+      }
+
+      li {
+        font-size: 12px;
+        margin-bottom: 10px;
+        padding: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      li button {
+        background: linear-gradient(
+          0deg,
+          rgba(0, 60, 67, 0.5) 0%,
+          rgba(0, 60, 67, 0.5) 100%
+        );
+        line-height: 42px;
+        padding: 0;
+        border: none;
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+        transition: background-color 0.3s ease;
+        width: 100%;
+        text-align: center;
+      }
+
+      li button span {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+
+      li button:before,
+      li button:after {
+        position: absolute;
+        content: "";
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 215, 0, 1);
+        box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+          -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+          7px 7px 20px 0px rgba(0, 0, 0, 0.2),
+          4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      li button:before {
+        height: 0%;
+        width: 2px;
+      }
+
+      li button:after {
+        width: 0%;
+        height: 2px;
+      }
+
+      li button:hover {
+        color: rgba(255, 215, 0, 1);
+        background: transparent;
+      }
+
+      li button:hover:before {
+        height: 100%;
+      }
+
+      li button:hover:after {
+        width: 100%;
+      }
+
+      li button span:before,
+      li button span:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        background: rgba(255, 215, 0, 1);
+        box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+          -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+          7px 7px 20px 0px rgba(0, 0, 0, 0.2),
+          4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      li button span:before {
+        width: 2px;
+        height: 0%;
+      }
+
+      li button span:after {
+        height: 2px;
+        width: 0%;
+      }
+
+      li button span:hover:before {
+        height: 100%;
+      }
+
+      li button span:hover:after {
+        width: 100%;
+      }
+    </style>
+  </head>
+<h1 style=font-size:25px;color:#white;font-family:Times New Roman>BARMM: BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO</h1>
+ <ul>
+           <li>
+        <button class="btn-7">
+          <a href="INTRO BARMM.html" target="C"><span>ABOUT REGION BARMM</span></a>
+ 
+        </button>
+      </li>
+
+  <body>
+    <div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+    </div>
+
+    <a href="Intro.html" target="C">
+      <p>MAGUINDANAO</p>
+    </a>
+
+    
+    <ul>
+      <!-- Like this href="body.html" -->
+      <li>
+        <button class="btn-7">
+          <a href="MOUNT MINANDAR.html" target="C"><span>Mount Minandar</span></a>
+        </button>
+      </li>
+      <!-- Like this! just copy and paste.-->
+      <li>
+        <button class="btn-7">
+          <a href="DATU.html" target="C"><span>Blue Lagoon of Datu Odin Sinsuat</span></a>
+        </button>
+      </li>
+	  <!-- Like this! just copy and paste.-->
+      <li>
+        <button class="btn-7">
+          <a href="PINK MOSQUE.html" target="C"><span>Pink Mosque</span></a>
+        </button>
+      </li>
+	  <!-- Like this! just copy and paste.-->
+      <li>
+        <button class="btn-7">
+          <a href="LAKE BULUAN.html" target="C"><span>Lake Buluan</span></a>
+        </button>
+      </li>
+	  <!-- Like this! just copy and paste.-->
+      <li>
+        <button class="btn-7">
+          <a href="RIO GRANDE.html" target="C"><span>Rio de Grande de Mindanao</span></a>
+        </button>
+      </li>
+    </ul>
+
+    <a href="Intro.html" target="C">
+      <p>LANAO DEL SUR</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="LAKE LANAO.html" target="C"><span>Lake Lanao</span></a>
+        </button>
+      </li>
+    </ul>
+
+    <a href="Intro.html" target="C">
+      <p>SULU</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="TUBBATAHA REEF.html" target="C"><span>Tubbataha Reef National Marine Park</span></a>
+        </button>
+      </li>
+	  <li>
+        <button class="btn-7">
+          <a href="TANDU.html" target="C"><span>Tan Duh Beach</span></a>
+        </button>
+      </li>
+	  <li>
+        <button class="btn-7">
+          <a href="SULU.html" target="C"><span>Sulu Provincial Capitol</span></a>
+        </button>
+      </li>
+	  <li>
+        <button class="btn-7">
+          <a href="MANISAN.html" target="C"><span>Manisan Beach</span></a>
+        </button>
+      </li>
+	  <li>
+        <button class="btn-7">
+          <a href="BANGAS.html" target="C"><span>Bangas Island</span></a>
+        </button>
+      </li>
+    </ul>
+  </body>
+</html>
