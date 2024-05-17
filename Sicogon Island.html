@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region VI</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+        </div>
+
+    <!-- Card content goes here -->
+
+   <h1>Sicogon Island</h1>
+    <p>Sicogon Island located in the northern region of Iloilo, which is part of the municipality of Carles, Iloilo, Philippines.
+<p>It's' a hidden gem with pristine beaches, beautiful surroundings, and a peaceful atmosphere that draws travelers looking for a place to relax. Sicogon Island, which is reachable by boat from the town of Carles, provides a getaway from the rush of city life with its pristine beaches and crystal-clear waters, luring visitors to relax and rejuvenate amid the beauty of nature.
+<p>Sicogon Island is a paradise for both nature lovers and explorers because of its abundant biodiversity and robust marine life. The island provides a wide range of outdoor activities for visitors to discover and enjoy, from hiking through deep woods brimming with exotic flora and wildlife to diving along vivid coral reefs. Immersed in the natural beauty of the Philippines, Sicogon Island offers a memorable experience for those seeking adventure in its pristine wildness or leisure on its pristine shores.</p>
+<img src="https://i.ibb.co/LhJj7VH/Cabugao-Gamay-001.jpg" alt="image" border="0"></a>
+    <h1>How to get there</h1>
+<p>To reach Sicogon Island, you can follow these general directions:
+<p>The easiest and fastest way to reach Sicogon Island is to take a bus bound for the town of Estancia in Iloilo province, which is at least four hours from the take-off point at Tagbak Terminal in Jaro District in Iloilo City.
+<p>Tourists have to be at the Estancia port before 8 a.m. to catch the motorized pumpboat that will take them to Sicogon at P60 per person. The island is about 45 minutes away from Estancia port.</p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+<img src="https://i.ibb.co/0Qx01mP/47d30d27791e36005e11babf4fb288d4.jpg" alt="image" border="0"></a>
+      <div class="card-content">
+        <h2>Huni Sicogon</h2>
+        <p><strong>Information:</strong><p> Huni Sicogon Hotel is a luxury beachfront resort located in Brgy. San Fernando, Sicogon Island, Iloilo, 5019 in the Philippines. It offers upscale accommodations with modern amenities, including spacious rooms and villas, stunning ocean views, and access to pristine beaches. The hotel also features a variety of dining options, recreational activities and wellness facilities. Overall, Huni Sicogon Hotel provides a tranquil and indulgent retreat for travelers seeking relaxation and adventure in a tropical paradise.</p>
+          </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+<img src="https://i.ibb.co/k5xm9bP/1710001305060.jpg" alt="image" border="0"></a>
+      <div class="card-content">
+        <h2>Solina Beach & Nature Resort</h2>
+        <p><strong>Information:</strong> <p>Solina Beach & Nature Resort is a luxurious beachfront resort nestled along the stunning coastline, located along Balasan Carles Provincial Road, Brngy. Guintivgan, Carles, Iloilo, 5019 Philippines. It boasts serene natural surroundings, with lush greenery and pristine sandy beaches. Guests can indulge in relaxation while enjoying breathtaking views of the ocean and immersing themselves in the tranquility of nature.</p>
+             </div>
+    </div>
+
+  
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

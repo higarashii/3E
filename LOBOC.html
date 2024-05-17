@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+        </div>
+
+
+   <h1>Loboc River Cruise</h1>
+    <p>The Loboc River Cruise is located in the town of Loboc, situated in the province of Bohol, Philippines.<p>
+
+<p>The Loboc River Cruise is a popular tourist attraction in Bohol that offers visitors a unique experience of enjoying a delicious meal while cruising along the serene and picturesque Loboc River. <p>
+
+<p>During the cruise, guests are treated to a traditional Filipino feast known as "floating restaurant" while being entertained by local musicians and dancers performing on board. The cruise also provides an opportunity to witness the stunning natural beauty of Bohol's countryside and its rich cultural heritage.<p>
+
+<p>The Loboc River Cruise is not only a dining experience but also an opportunity to appreciate the local culture and traditions while enjoying the tranquil ambiance of the river that flows through lush green landscapes and quaint villages.</p>
+
+    <a href="https://ibb.co/XJsWq8x"><img src="https://i.ibb.co/bdB6kJ5/explore-the-island-of.jpg" alt="explore-the-island-of" border="0"></a>
+
+    <h1>How to get there</h1>
+<p>To reach Loboc River Cruise, you can follow these general directions:<p>
+
+<p>From Tagbilaran City (the main entry point to Bohol via airport or ferry)<p>
+<p>By Car/Taxi : The most convenient way is to hire a car or taxi. It takes about 30 minutes to reach Loboc, depending on traffic.<p>
+<p>By Bus: You can catch a bus from the Dao Terminal in Tagbilaran heading towards Loboc. Buses that go to towns further east like Bilar or Carmen will also stop in Loboc. This is a cheaper option but may take longer.<p>
+<p>From Panglao Island<p>
+<p>By Car/Taxi : Traveling by car or taxi from Panglao to Loboc takes about 45 minutes to an hour. You would head to Tagbilaran first, then continue to Loboc.<p>
+<p>By Bus : First, take a jeepney or tricycle to Tagbilaran, then switch to a bus headed for Loboc at Dao Terminal.<p>
+
+<p>From Other Parts of Bohol : If you're traveling from other parts of Bohol, such as Anda or Carmen, direct routes via bus or hired vehicle can be taken to reach Loboc, with buses generally stopping in the town center.<p>
+
+<p>In Loboc : Once in Loboc, head to the Loboc Tourism Complex, where the river cruises depart. This area is well-marked and known locally, so any local transport method can get you there easily.</p>
+
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://ibb.co/hcPpcpw"><img src="https://i.ibb.co/MfYqfqQ/Book-a-Room-at-The-Villa-Alzhun-Tourist-Inn-and-Restaurant-and-Get-Discount-Rates-003.jpg" alt="Book-a-Room-at-The-Villa-Alzhun-Tourist-Inn-and-Restaurant-and-Get-Discount-Rates-003" border="0"></a>
+      <div class="card-content">
+        <h2>Villa Alzhun Tourist Inn and Restaurant</h2>
+        <p><strong>Information:</strong><p>Villa Alzhun Tourist Inn and Restaurant is located in Tagbilaran City on the island of Bohol, Philippines. This establishment offers a mix of accommodations and dining services, catering primarily to tourists visiting the area. It is situated conveniently to provide easy access to the city and the popular tourist attractions around Bohol.<p>
+<p>The inn typically features simple, comfortable rooms suitable for both short stays and longer visits. The restaurant part of the Villa Alzhun is known for serving a variety of dishes, possibly including local Filipino cuisine, which gives visitors a taste of the region’s culinary offerings.<p>
+<p>The setting is generally described as tranquil, often appreciated by visitors for its peaceful atmosphere away from the busier tourist spots. It's a good choice for travelers looking for affordable lodging and dining options in the heart of Bohol.</p>
+
+         </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://ibb.co/18B4mMQ"><img src="https://i.ibb.co/2gRpkSh/236737197.jpg" alt="236737197" border="0"></a>
+      <div class="card-content">
+        <h2>Fox & The Firefly Cottages</h2>
+        <p><strong>Information:</strong> <p>Fox & The Firefly Cottages is located in Loboc, Bohol, Philippines, positioned along the scenic Loboc River. This boutique accommodation is known for its serene, natural setting, providing a perfect retreat for those looking to immerse themselves in nature and experience local culture.<p>
+<p>The cottages are often described as rustic and eco-friendly, offering a charming, intimate atmosphere. The architecture and interior design typically incorporate local materials and traditional Filipino styles, adding to the authentic and cozy feel of the accommodations.<p>
+<p>Apart from the lovely rooms and cottages, Fox & The Firefly Cottages also offers activities such as stand-up paddleboarding on the river, cycling tours around the village, and other community-based tourism activities that highlight the local heritage and natural beauty of the area.</p>
+
+        </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://imgbb.com/"><img src="https://i.ibb.co/4pbS2gN/444949890.jpg" alt="444949890" border="0"></a>
+      <div class="card-content">
+        <h2>Nipa Hut Village</h2>
+        <p><strong>Information:</strong> <p>Nipa Hut Village is located in Valencia, Bohol, Philippines. Nipa Hut Village consists of traditional nipa huts, which are made from natural materials such as bamboo and thatch. These huts provide basic amenities and are designed to offer guests a glimpse into the simpler, rural way of life in the Philippines.<p>
+<p>The village setting is serene, surrounded by lush vegetation and often near or overlooking scenic spots like rivers or rice fields. The atmosphere encourages relaxation and provides a peaceful retreat from the hustle and bustle of urban areas. It's ideal for nature lovers, those interested in cultural immersion, and anyone looking to unwind in a quiet, natural setting.<p>
+<p>Guests can often engage in local activities, such as hiking, bird watching, or exploring nearby attractions. The hospitality is typically warm and inviting, with a focus on Filipino family values and community.<p>
+
+         </div>
+    </div>
+  </div>
+
+
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

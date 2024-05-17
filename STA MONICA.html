@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+          </div>
+
+    <h1>Sta. Monica Church</h1>
+    <p>Santa Monica Church or also known as Panay Church is one of the oldest stone churches in the Philippines. Its pillars and walls was built using coral stones, and its structure was inspired by European origin. It is located in Panay, near Roxas City in the province of Capiz.<p>
+
+<p>Santa Monica Church is also a home to "Dakong Lingganay" which translates to 'big bell'. Dakong Lingganay is one of the largest of its kind in Asia and was made out of 70 sacks of coins. Visitors can still see The original Dakong Lingganay and is situated in the church's 5-story belfry while the replica was displayed beside the Museo de Santa Monica, that is also located in the church's compound.<p>
+
+<p>The Santa Monica Church in Panay, Capiz was built in 1774 by Fr. Miguel Murguia. However, due to being heavily damaged by a typhoon that struct the province last January 17, 1875. The church was rebuilt in 1884 under the supervision of Fray Jose Beloso, OSA. The church stands until today. By the virtue of the National Historical Institute Resolution No. 3, the church was declared as a national historical landmark in 1997 and on July 31, 2001, Sta. Monica Church was declared as a national cultural treasure by the National Museum.<p>
+
+    <img src="https://media.istockphoto.com/photos/panay-church-in-roxas-city-capiz-philippines-picture-id1093848544?k=6&m=1093848544&s=170667a&w=0&h=gIFvK4gXaNnvMBgcm5VCOPkE7D1oj2j9v4cQReU0W9E="800"height="400"></a>
+
+	<h1>How to get there</h1>
+<p>To reach Sta. Monica Church, you can follow these general directions:<p>
+
+<p>1. From Manila, take Cebu Pacific or Philippines Airlines to Roxas City.From either Caticlan or Kalibo, board a Ceres bus to Iloilo and get off at Sigma bus stop. The fare from Caticlan is ₱215 while the fare from Kalibo is ₱107. Hop on a Roxas-bound bus or jeep from Sigma to get to Roxas City.<p>
+<p>2. From any point in Roxas City, you can board a tricycle to the terminal of Panay-bound trikes. The fare from the terminal to Panay is ₱15/person and it requires at least 4 passengers for it to leave.</p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/389332201.jpg?k=be83c574b97481e34eeb1477626b56889fca73f3c239f8f61d038ef04c2bea3d&o=&hp=1"></a>
+      <div class="card-content">
+        <h2>Istorya Forest Garden Resort</h2>
+        <p><strong>Information:</strong><p>A forest garden resort located in Poblacion Ilaya Panay, 5801, Roxas City surrounded by beautiful tall green trees, a breathe of fresh air, a peaceful & quiet resort. The resort is only 5 minutes away from one of the oldest churches in the Philippines called the Sta Monica Church. Istorya Forest Garden Resort has a lot of activities that tourists can do during their stay, they can use the hotel's free bikes, outdoor swimming pool, a garden and a terrace. If finding a place to fill an empty stomach, there's a restaurant inside the hotel,  the property also has a bar for night entertainment, as well as a hot tub for a refreshing bath. There is free private parking and the property has paid airport shuttle service tourists can use.<p>
+
+        </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://1.bp.blogspot.com/-HdP3C0LOzsc/WuAV-p7MFfI/AAAAAAAA0E0/PDXsh4WlUaotkFxpwA4QkbrQUy9sldJ7QCLcBGAs/s1600/Hotel%2BVeronica%2BHotels%2Bin%2BRoxas%2BCity%2BCapiz%2B%25281%2529.jpg"></a>
+      <div class="card-content">
+        <h2>Hotel Veronica</h2>
+        <p><strong>Information:</strong> <p>Hotel Veronica is an excellent choice for rest and rejuvenation. Well-known for its charming environment and proximity to great restaurants and attractions, Hotel Veronica makes it easy to enjoy the best of Roxas City. It is located in 1 Roxas Avenue, Roxas City, Capiz. Built in 2011, Hotel Veronica offers a modern and comfortable stay with its 36 well-appointed rooms. Each room is designed with the tourist's comfort in mind, featuring basic amenities they can use and different entertainment facilities to ensure guests have a truly enjoyable and memorable stay. Whether you are traveling alone, with a partner, or with your family, Hotel Veronica has the perfect room to suit your needs.<p>
+
+
+     
+        </p>
+      </div>
+    </div>
+
+ 
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

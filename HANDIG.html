@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+      </div>
+
+  
+   <h1> Handig Beach, Homonhon Island</h1>
+    <p> Nestled in the northernmost tip of Homonhon, the beach is a quiet spot away from public reach and the bustling of cities. Handig Beach boasts its beautiful white sand and its sparkling waters along with its unique rock formations. The beach is a long stretch of fine sand right beside an untamed jungle of trees and vegetation, and at its tip stands an impressive mountain dusted with greenery and plant life. Altogether, the landscape gives a primal feeling and there is no doubt you’ll be connected with mother nature.
+    <p> The rocks at the beach are a must-see for anyone who admires the works nature. The rocks are dark, a stark contrast to the white sands around it, and form interesting polygonal shapes along its surface. Since these rocks are on the northern tip of the island, this is the best place to watch both sunrise and sunset.
+    <p> Once you’ve had your fill of sand and saltwater (but I doubt you ever will), you can also arrange trips into the mainland to explore other natural wonders in Homonhon Island. One notable destination is the lugad, a freshwater stream within walking distance from the beach. Just be sure to respect the locals and the land around.
+</p>
+
+
+    <a href="https://ibb.co/0Q5Z1c1"><img src="https://i.ibb.co/Bwkjvtv/Handig-Beach.jpg" alt="Handig-Beach" border="0"></a>
+
+	<h1>How to get there</h1>
+
+<p><li>From Tacloban downtown area (Proper) ride a van at Van-vans or Duptours terminal bound to Guiuan. Fare is 270 pesos and Estimated travel time is 3 hrs. 
+<li>Drop off point is at Guiuan proper. Then ride a tricycle bound to Jetty purok 2 (Gitna) Brgy. Hollywood. Estimated fare is 15 pesos and the estimated travel time is 5 minutes. 
+<li>From the drop off point look for Mr. Jimmy Baguinon and inquire your travel to Brgy. Habag, Homonhon Island. Travel time is 1.5 hrs. Fare is 150 pesos (one way). For advance inquiry you may contact Mr. Jimmy cellphone number 09359952793. 
+</li><p>
+
+
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://ibb.co/9ndSLCF"><img src="https://i.ibb.co/CBSDZTk/Calicoan-Villa.jpg" alt="Calicoan-Villa" border="0"></a>
+      <div class="card-content">
+        <h2>Calicoan Villa</h2>
+        <p><strong>Information:</strong><p>Calicoan Villa features an outdoor swimming pool, garden, a terrace and restaurant in Sarog. There is free private parking and the property provides paid airport shuttle service. At the resort, each room includes a wardrobe. All units include a private bathroom, free toiletries and bed linen. The nearest airport is Borongan Airport, 140 km from Calicoan Villa.</p>
+
+            </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://ibb.co/LrNSQ9Z"><img src="https://i.ibb.co/f9DM8rx/Hotel-La-Maria.jpg" alt="Hotel-La-Maria" border="0"></a>
+      <div class="card-content">
+        <h2>Hotel La Maria</h2>
+        <p><strong>Information:</strong><p> The hotel’s fitness center is a must-try during your stay here.
+
+24-hours front desk is available to serve you, from check-in to check-out, or any assistance you need. Should you desire more, do not hesitate to ask the front desk, we are always ready to accommodate you. Savor your favorite dishes with special cuisines from Hotel La Maria exclusively for you. Hotel La Maria is a hotel with great comfort and excellent service according to most hotel's guests. With all facilities offered, Hotel La Maria is the right place to stay.</p>
+
+              <b>Location:</b> Barangay 4a Guibaolibot avenue, Guiuan, Eastern Samar, Philippines, 6809
+
+        </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://ibb.co/GxB56Nh"><img src="https://i.ibb.co/dW15Txh/Primea-Hotel.webp" alt="Primea-Hotel" border="0"></a>
+      <div class="card-content">
+        <h2>Primea Hotel</h2>
+        <p><strong>Information:</strong> <p>Have an enjoyable and relaxing day at the pool, whether you’re traveling solo or with your loved ones. 24-hours front desk is available to serve you, from check-in to check-out, or any assistance you need. Should you desire more, do not hesitate to ask the front desk, we are always ready to accommodate you. Primea Hotel is a hotel with great comfort and excellent service according to most hotel's guests. With all facilities offered, Primea Hotel is the right place to stay.
+</p>
+
+                 <b>Location:</b> G. Abogado St., Corner Alido St., Barangay C, Borongan City, Eastern Samar, Philippines, 6800
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

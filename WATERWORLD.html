@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region VI</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+       </div>
+
+   
+   <h1>WaterWorld</h1>
+    <p>WaterWorld Iloilo is the biggest and first-ever waterpark in the region located within the Eon Centennial Resort Hotel and Waterpark complex at Datu Sumakwel St., Alta Tierra Village in Jaro, Iloilo City. It is an amusement and leisure park with rides, slides, pools, food outlets, and other fun amenities which all ages will surely enjoy. The waterpark has around 20 colorful and extreme rides and waterslides, some are as tall as 4-story building. An enormous water playhouse FuntaSea with more rides and slides is located indoors covered with roofing full of solar panels, which power the whole facility. 
+<p>Waterworld also features the relaxing Lazy River that is perfect for unwinding the day away and that thrilling Mat Racers that will surely pump your adrenaline. WaterWorld offers an all-day unlimited use of all slides and attractions for the promo rate of only P350 (with Php150 worth of food coupons redeemable at any WaterWorld food outlet). The rate applies to all who wish to enter the waterpark, except for kids 3 feet and below who are FREE. Wearing proper swimwear is strictly imposed when engaging in all water rides and pool activities. Board Shorts, Swimsuits, Bikinis, Rashguards, Full body Swimsuits, Swimming Diapers, and Goggles are allowed. Not allowed are Regular Diapers, Undergarments, Jeans, Jackets, Halter Dress, Denim Shorts, Long Skirts, Garments with Buttons and Zippers, Boxer Shorts, and Jewelry.
+<p>'You have not been to Iloilo if you have not been to Waterworld', these are the words of Mr. Felix Tiu, the person behind the two (2) hectare property known as Waterworld Iloilo, which will officially open to the public today, December 16, 2016. Waterworld Iloilo is the first waterpark in the Visayas and the first in the world to be powered by solar energy. Waterworld Iloilo offers extreme water rides, 17 slides for kids and kids at heart, a 222 meter long lazy river, a water play area for toddlers, an open and covered waterpark, all manned by 30 certified lifeguards. 'Safety is our top priority' Tiu adds. The said waterpark also offers automated lockers, aircon suites, themed rooms, and lounge chairs. Waterworld Iloilo aims to help Iloilo City increase tourism arrivals by creating a destination place in the City of Love. Aside from that, it aims to increase job opportunities and improve lives, help the city government's tax revenue by attracting people from other places, improve branding and profile of Iloilo City as a tourist destination for both local and international visitors, and become a travel mart for tourists to visit before they go home. Alongside Waterworld Iloilo is EON Centennial Resort Hotel which will be marking its 10th anniversary this year.</p>
+<a href="https://ibb.co/9VQ7NTC"><img src="https://i.ibb.co/s68Z2wM/inbound6443637655144706958.jpg" alt="inbound6443637655144706958" border="0"></a></a>
+	<h1>How to get there</h1>
+<p>To reach WaterWorld, you can follow these general directions:
+<p>Waterworld is located at Datu Sumakwel St., Alta Tierra Village, Iloilo City. It's very easy to locate since it inside the subdivision. Just take taxi and tell the driver to drop you off at WaterWorld Iloilo. If you want to commute, you may take Jaro-Liko or Leganes jeepneys and alight at the entrance of Alta Tierra Subdivision. You may take a pedicab or tricycle going to the water park.
+<p>It's recommended to verify the specific routes and transportation options based on your starting point and current travel conditions. Additionally, always exercise caution and follow local traffic regulations while traveling.</p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+<a href="https://ibb.co/bdZc9ww"><img src="https://i.ibb.co/ZTPqD44/inbound2447356493428710850.jpg" alt="inbound2447356493428710850" border="0"></a></a>
+      <div class="card-content">
+        <h2>Seda Atria</h2>
+        <p><strong>Information:</strong><p>Welcome to Seda Atria, your Iloilo City "home away from home." Seda Atria aims to make your visit as relaxing and enjoyable as possible, which is why so many guests continue to come back year after year. For those interested in checking out popular landmarks while visiting Iloilo City, Seda Atria is located a short distance from Smallville Complex (1.2 mi) and Calle Real (1.8 mi). Guest rooms offer a flat screen TV and air conditioning, and Seda Atria makes getting online easy as free wifi is available. You can also take advantage of some of the amenities offered by the hotel, including a concierge and room service. In addition, guests can enjoy a fitness center and free breakfast during their visit. As an added convenience, there is free parking available to guests. If you're looking for an Asian restaurant, consider a visit to Netong's Original Special La Paz Batchoy, Roberto's, or Breakthrough Restaurant Iloilo, which are all conveniently located a short distance from Seda Atria. There is no shortage of things to do in the area: explore popular historic sites such as The Molo Mansion, Casa Real de Iloilo, and Fort San Pedro. Seda Atria puts the best of Iloilo City at your fingertips, making your stay both relaxing and enjoyable. It is located in Pison Avenue, Atria Park District, Barangay San Rafael Mandurriao Barangay San Rafael Mandurriao, Iloilo City, Iloilo Province 5000 Philippines.</p>
+          
+        </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+<a href="https://ibb.co/PNk7dpC"><img src="https://i.ibb.co/ZV9n0sT/inbound5755532287601320631.jpg" alt="inbound5755532287601320631" border="0"></a></a>
+      <div class="card-content">
+        <h2>Injap Tower Hotel</h2>
+        <p><strong>Information:</strong> <p>The tallest building in Western Visayas, Injap Tower Hotel, managed by Hotel 101, boasts of the best views of Iloilo City. Located at the heart of a lively commercial district, and near Iloilo City's major tourist sports, Iloilo City's booming business district along, West Diversion Road, Mandurriao Iloilo City, Iloilo Province 5000 Philippines. Injap Tower Hotel provides comfort and convenience, ideal for both leisure and business travelers. Whether you want a home away from home or a place of your dreams, it's here where you'll find such a happy place. Just the way you like it.</p>
+                
+        </p>
+      </div>
+    </div>
+
+>
+
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

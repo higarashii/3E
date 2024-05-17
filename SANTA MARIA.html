@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+      <p class="additional-info" style="display: none">
+       
+      </p>
+    </div>
+
+    <!-- Card content goes here -->
+
+   <h1>Santa Maria Church</h1>
+    <p>Santa Maria Church stands as a magnificent testament to Philippine history and cultural heritage. Located in the town of Santa Maria, Bulacan, this iconic church is renowned for its stunning Baroque architecture and rich historical significance. Built in the late 18th century, Santa Maria Church has endured the test of time, serving as a symbol of faith and resilience for generations of Filipinos.
+Stepping onto the grounds of Santa Maria Church, visitors are immediately struck by the grandeur of its façade. The church's intricate Baroque details, adorned with ornate carvings and embellishments, reflect the craftsmanship of its era and the dedication of the artisans who constructed it. Towering buttresses and majestic bell towers flank the entrance, inviting pilgrims and tourists alike to explore its hallowed halls.
+<br></br>
+Beyond its architectural splendor, Santa Maria Church holds a special place in Philippine history. As one of the four Baroque Churches of the Philippines designated as a UNESCO World Heritage Site, it stands as a poignant reminder of the country's colonial past and enduring religious traditions. Pilgrims flock to Santa Maria Church to pay homage to its patron saint and to experience the profound sense of spirituality that permeates its sacred spaces. With its timeless beauty and cultural significance, Santa Maria Church continues to captivate the hearts and minds of all who visit, leaving an indelible impression on the landscape of Philippine heritage.<p>
+
+  <img src="https://i.ibb.co/fdVpTrW/santamaria-church.jpg" alt="santamaria-church" style="width: 800px; height: auto;"></a>
+
+	<h1>How to get there</h1>
+<p>To reach Santa Maria Church, you can follow these general directions:<p>
+
+<p>To travel from Manila to Santa Maria Church, you have a few options. You can drive yourself by taking the North Luzon Expressway (NLEX) and then the Philippine-Japan Friendship Highway (MacArthur Highway) until you reach Santa Maria, Bulacan. Alternatively, you can take a bus from terminals like Cubao or Monumento bound for Santa Maria, ensuring it passes through the town proper. Once you arrive in Santa Maria, simply alight at the nearest stop to Santa Maria Church. After exploring the church and its surroundings, you can return to Manila using the same transportation mode or by exploring other nearby attractions.<p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://i.ibb.co/D4fZbpx/villa-angela.jpg" alt="villa-angela" border="0"></a>
+      <div class="card-content">
+        <h2>Villa Angela Heritage House</h2>
+        <p><strong>Information:</strong><p>Located: Paoay, Ilocos Norte
+<br></br>
+         Villa Angela Heritage House offers guests a glimpse into the rich cultural heritage of the Philippines. Housed in a beautifully restored ancestral home, this boutique hotel features elegant rooms and suites adorned with antique furnishings and modern amenities, providing a comfortable and charming stay for visitors.
+<br></br>
+Guests can relax in the hotel's lush garden courtyard or enjoy panoramic views of the surrounding countryside from the rooftop terrace. The hotel's restaurant serves authentic Ilocano cuisine made with fresh local ingredients, allowing guests to savor the flavors of the region.
+<br></br>
+With its convenient location near Paoay Church and other historical landmarks, Villa Angela Heritage House is the perfect base for exploring the cultural treasures of Ilocos Norte.</p>
+
+       
+        <p class="additional-info" style="display: none">
+
+        </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://i.ibb.co/sCLZS1b/residencia-de-fernando.jpg" alt="residencia-de-fernando" border="0"></a>
+      <div class="card-content">
+        <h2>Residencia De Fernando</h2>
+        <p><strong>Information:</strong> <p>Location: near Paoay Church
+<br></br>
+Residencia De Fernando offers guests a cozy and intimate stay in the heart of Ilocos Norte. This charming bed and breakfast features well-appointed rooms decorated in a traditional Filipino style, providing a comfortable retreat after a day of sightseeing.
+<br></br>
+Guests can start their day with a complimentary breakfast served at the hotel's dining area, which offers a selection of local delicacies and international dishes. The hotel's friendly staff are always on hand to assist guests with any requests or inquiries, ensuring a pleasant and memorable stay.
+<br></br>
+With its warm hospitality and convenient location near Paoay Church and other attractions, Residencia De Fernando is the perfect choice for travelers seeking an authentic Ilocano experience.
+</p>
+
+     
+        <p class="additional-info" style="display: none">
+         
+        </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://i.ibb.co/ZTB9Xjg/playa-tropical.jpg" alt="playa-tropical" border="0"></a>
+      <div class="card-content">
+        <h2>Playa Tropical Resort Hotel</h2>
+        <p><strong>Information:</strong> <p>Location: Ilocos Norte
+<br></br>
+ Playa Tropical Resort Hotel offers a serene retreat just a short distance from Paoay Church. The resort features charming villas and rooms designed with traditional Filipino architecture and modern amenities, providing guests with a comfortable and relaxing stay.
+<br></br>
+Guests can unwind by the outdoor swimming pool surrounded by tropical gardens or indulge in a soothing massage at the on-site spa. The resort also offers a restaurant serving delicious local and international cuisine, as well as a variety of recreational activities such as horseback riding, ATV adventures, and beach volleyball.
+<br></br>
+With its tranquil ambiance and convenient location near Paoay Church and other attractions, Playa Tropical Resort Hotel is the perfect choice for travelers seeking a peaceful getaway in Ilocos Norte.</p>
+
+     
+        <p class="additional-info" style="display: none">
+        
+        </p>
+      </div>
+    </div>
+  </div>
+
+ 
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

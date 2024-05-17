@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+          </div>
+
+     <h1>Mount Kanlaon</h1>
+    <p>Mount Kanlaon is located at Sitio Mapot, Brgy. Murcia, Negros Occidental in Western Visayas, which is also known as the highest peak in it. It is 2,465 m high at its peak, and rises can be seen between Negros Occidental and Negros Oriental. Mount Kanlaon is the largest and third most active volcano in the country with a record of 30 eruptions since 1819.  Most of its eruptions produce minor ash falls except in 1902 when it erupted with lava and gas fumes.  Being the highest in the region, Kanlaon attracts mountain climbers and hikers who are up for a new challenge.  Reaching the base camp takes about a day while the descent can last for two days.<p>
+
+<p>Mount Kanlaon is declared a natural park which features two main craters and several hiking trails with difficulty levels ranging from easy to difficult.  It also boasts of three hot springs – Bucalan Hot Spring, Bungol Hot Spring, and Mambucal Hot Springs which, along with Mambukal Mountain Resort, is managed by the provincial government of Negros Occidental.<p>
+
+<p>Mount Kanlaon is surrounded by different myths as to how it formed. There's a story that is very well known to the locals and that it was home to a datu named Laon while the volcano was said to be a place where a seven-headed dragon used to live and was slain by the youthful epic hero, Kan, who was an intimate friend and lover of Laon. Several years later a volcano was formed in the mountain which people from the past believed that the spirit of the dragon lived.<p>
+
+    <a href="https://ibb.co/4Yp0H4G"><img src="https://i.ibb.co/RBcJqQm/mt-kanlaon.jpg" alt="mt-kanlaon" border="0"></a>
+
+
+	<h1>How to get there</h1>
+<p>To reach Mount Kanlaon, you can follow these general directions:<p>
+
+<p>1. The cheapest way to get from Manila to Mount Kanlaon is to ferry which costs ₱2,500 - ₱9,500 and takes 29h 38m.<p>
+<p>2. The fastest way to get from Manila to Mount Kanlaon is to fly and taxi which takes 5h 14m and costs ₱3,300 - ₱7,000.</p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://pix8.agoda.net/hotelImages/246/246397/246397_14050115480019275646.jpg?ca=2&ce=1&s=800x"width="300" height="333"></a>
+      <div class="card-content">
+        <h2>Planta Centro Bacolod Hotel & Residences</h2>
+        <p><strong>Information:</strong><p>Planta Centro Bacolod Hotel & Residences is located at Araneta Corner Roxas Street Araneta Avenue, Bacolod. It offers you hospitality at its best, generous spaces, ultra comfort and the finest luxury at an affordable price. Equipped with handy amenities, guestrooms which guarantee a comfortable stay for all travelers. Some rooms at Planta Centro Bacolod Hotel & Residences are equipped with basic amenities and a mini bar for your convenience. Some rooms can also include special design features like a balcony or terrace. In-room entertainment such as daily newspaper, television and cable TV is provided for guests. The hotel also has outdoor swimming pool, a garden and a coffee shop which you can visit anytime of the day.<p>
+
+   
+        </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://q-xx.bstatic.com/xdata/images/hotel/max1024x768/135819821.jpg?k=aba3c94f71e36ee8e2f7655744e9d6cf87c9061affddc870a42c38c45a3b5fdf&o=&s=800x"width="300"></a>
+      <div class="card-content">
+        <h2>Acacia Hotel Bacolod</h2>
+        <p><strong>Information:</strong> <p>Acacia Hotel Bacolod's home of Bacolod City is not the "Land of Opportunities" for nothing—with its booming economic growth and rising tourism sector in recent years. Leisure? Business? No matter the reason for your visit, the hotel's facilities are ready and waiting to handle your needs. Burgos Street Ext., Reclamation Area, Bacolod City, Western Visayas. Acacia Hotel Bacolod offers 86 spacious and well-appointed rooms and suites. Each one features sea or mountain views, tropical palettes, and wood-inspired interiors. All rooms come with amenities for comfort and leisure.<p>
+
+
+       
+        </p>
+      </div>
+    </div>
+
+
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+       </div>
+
+    <!-- Card content goes here -->
+
+   <h1>The Ruins</h1>
+    <p>The Ruins is the remains of the ancestral home mansion of the family of Don Mariano Ledesma Lacson and Maria Braga Lacson. It is situated in Talisay, Negros Occidental, Philippines. The mansion was built in early 1900s and inspired by Italian architecture.<p>
+
+<p>The Ruins was the ancestral mansion of the family of wealthy sugar businessman Don Mariano Ledesma Lacson built on a 440 hectare sugar plantation in Talisay City, Negros Occidental, in the early 1900s in memory of his Portuguese wife Maria Braga Lacson, who died during the birth of their 8th child. During the Second World War, Filipino guerillas burned it down as a countermeasure to prevent the invading Japanese forces from using it as a military headquarters. It burned for three days. The intention was to burn it to the ground.<p>
+
+    <img src="https://i.ibb.co/C6R7xq7/The-Ruins-Negros-Occidental.jpgg" alt="image" border="0"></a>
+
+	<h1>How to get there</h1>
+<p>From the airport, take a shuttle to Bacolod and tell the driver to drop you off at The Ruins. It is along the way to Bacolod City from the airport. By private car or taxi, from the airport, take the access road to the airport going south to Bacolod City. Turn right to Don Mariano L. Lacson Highway (5th intersection) and in about 900 meters you will arrive at The Ruins.From Bacolod City, take an airconditioned coaster ride to BATA and get off at Acropolis Gardens/Rose Lawn. Then, take a tricycle ride to Octagon Village and walk a few meters to The Ruins. By private car or taxi, take Lacson Street going north to Talisay City. After the flyover at the CERES North Terminal and PEPSI bottling plant, turn right towards the mountains on Don Mariano L. Lacson Highway and in about 2.3 kms. you will arrive at The Ruins.<p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1> Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://i.ibb.co/QDv1MBM/252176392.jpg" alt="image" border="0"></a>
+      <div class="card-content">
+        <h2>Nature's Village Resort</h2>
+        <p><strong>Information:</strong><p>Conveniently situated in the Talisay City part of Bacolod (Negros Occidental), this property puts you close to attractions and interesting dining options. Don't leave before paying a visit to the famous The Ruins and nearby attractions. Rated with 4 stars, this high-quality property provides guests with access to massage, restaurant and indoor pool on-site.</p>
+
+       	Location:
+Talisay City, Bacolod
+        </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://i.ibb.co/rsx0khH/218672481.jpg" alt="image" border="0"></a>
+      <div class="card-content">
+        <h2>North Tourist Inn.</h2>
+        <p><strong>Information:</strong> <p>Whether you're a tourist or traveling on business, North Tourist Inn. is a great choice for accommodation when visiting Bacolod (Negros Occidental). From here, guests can enjoy easy access to all that the lively city has to offer.</p>
+
+      	Location:
+Lacson Street, Mandalagan, Bacolod, 6100 Negros Occidental
+        </p>
+      </div>
+    </div>
+
+
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

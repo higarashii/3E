@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+        </div>
+
+    <!-- Card content goes here -->
+
+   <h1>Apo Island</h1>
+    <p>Apo Island is small community under the municipality of Dauin, Negros Oriental. It has a land area of 12 hectares with a population of around 1,000. Electricity in the island is only available for three hours, from 7 to 10 in the evening. The townsfolk use rain water as their tap water. WiFi access is also very limited.<p>
+
+<p>Apo Island is a small, pristine island surrounded by calm and clear waters. It is perfect for underwater activities such as snorkeling and diving; it has even been rated as one of the best dive sites in the world.<p>
+
+<p>Here, divers can encounter an incredible variety of marine life: among the species which can be found near Apo Island are big-eyed jajacks, hump-head wrasses, hammerheads, manta rays and even tuna.<p>
+
+<p>The island has immaculate white sand, and it is also littered with unique rock formations. Apo Island is located just a few kilometers off the coast of Negros.<p>
+
+    <img src="https://i.ibb.co/DKbvWJG/apo-island.jpg" alt="apo-island" border="0"></a>
+
+    <h1>How to get there</h1>
+<p>To reach Apo Island, you can follow these general directions:<p>
+
+<p>From Manila, take either a ferry or flight to Dumaguete. Both Cebu Pacific and Philippine Airlines fly to Dumaguete thrice or twice daily. Flights are also available from Cebu or Davao.<p>
+
+<p>If you are already in the Visayas or Mindanao area, ferries are available from Cebu, Siquijor, Bohol, Cagayan De Oro, Dipolog, and Dapitan.<p>
+<p>From Dumaguete Ceres Terminal, hop on a Siaton– or Bayawan-bound bus, and then get off at Malatapay Wednesday market junction.<p>
+
+<p>Walk towards the shore, and then look for the AMAPOI (Association of Malatapay & Apo Island Pumpboat Operators, Inc.) outpost. All boat rides to Apo Island must be booked at the outpost.<p>
+<p>If you're traveling by private vehicle from nearby towns or cities, you can use online maps or navigation apps to guide you to Apo Island.<p>
+<p>It's recommended to verify the specific routes and transportation options based on your starting point and current travel conditions. Additionally, always exercise caution and follow local traffic regulations while traveling.<p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://i.ibb.co/SR8F03L/1715317965859.jpg" alt="1715317965859" border="0"></a>
+      <div class="card-content">
+        <h2>Lavanya Beach and Dive Resort</h2>
+        <p><strong>Information:</strong><p>At Lavanya Beach and Dive Resort in Dumaguete,Located at Sitio Dalakit, Zamboanguita, Negros Oriental Philippines, guests are treated to a wide range of entertainment facilities that are sure to enhance their stay. Whether you're looking to relax and unwind or indulge in some pampering, this resort has you covered.<p>
+<p>Kick back and enjoy a refreshing drink at the resort's vibrant bar, where you can mingle with fellow guests and soak in the lively atmosphere. Sip on a tropical cocktail as you watch the stunning sunset over the pristine beach, creating the perfect backdrop for a memorable evening. For those in need of some relaxation, Lavanya Beach and Dive Resort offers rejuvenating massages and spa treatments. Let the skilled therapists work their magic, easing away any tension or stress, leaving you feeling completely refreshed and revitalized.<p>
+<p>Indulge in the ultimate pampering experience at the resort's spa, where you can choose from a variety of treatments designed to nourish your body and mind. From soothing facials to invigorating body scrubs, each treatment is tailored to provide a truly blissful experience.
+Whether you're in the mood for a fun-filled evening at the bar or a tranquil spa session, Lavanya Beach and Dive Resort's entertainment facilities ensure that your stay is nothing short of extraordinary.</p>
+
+              </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://i.ibb.co/bX677m5/Thalata-Beach-Resort-Pool.jpg" alt="Thalata-Beach-Resort-Pool" border="0"></a>
+      <div class="card-content">
+        <h2>Thalatta Resort</h2>
+        <p><strong>Information:</strong> <p>Nestled in the picturesque city of Dumaguete, Philippines, Thalatta Resort is a charming 3-star hotel that offers a tranquil escape from the hustle and bustle of everyday life. With its stunning surroundings and warm hospitality, this resort is the perfect destination for those seeking a peaceful getaway. Thalatta Resort boasts 16 well-appointed rooms, each designed with comfort and relaxation in mind.<p>
+<p>Travel savvy guests who are looking for affordable, yet comfortable and top-quality accommodations while on vacation in Dumaguete need to look no further than Thalatta Resort. Located in Maluay – Zamboanguita, this beautiful resort has the advantage of being quiet, lovely landscaped and close to local attractions like the Malatapay Market, while also being just a short boat ride away from top scuba diving destinations like Apo Island.<p>
+<p>Whether you choose a spacious suite or a cozy room, you can expect to find all the necessary amenities to make your stay enjoyable. Conveniently located just 30 minutes away from the airport, Thalatta Resort offers easy access to the city's main attractions while providing a serene retreat. The hotel is situated approximately 20 kilometers from the city center, allowing guests to enjoy a peaceful atmosphere away from the noise and crowds.<p>
+
+
+             </div>
+    </div>
+  </div>
+
+
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

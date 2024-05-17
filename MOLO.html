@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+      </div>
+
+  
+   <h1>Molo Church</h1>
+    <p>Molo Church, also known as Saint Anne Parish Church, is a neogothic Roman Catholic church located in the district of Molo in Iloilo City, Iloilo, in the Philippines. The church is recognized as "the women's church" or "the feminist church" because it only features images of female saints inside, including Saint Anne, the patron saint of Molo. The National Historical Institute declared it a national landmark in 1992.<p>
+
+<p>Molo Church was constructed in 1831 under Fray Pablo Montaño. Originally made of tabique pampango with a chalk roof. Plans for a concrete structure were drawn up in 1866, approved by Bishop Mariano Cuartero in 1869, and completed in 1888 by Fray Agapito Buenaflor under Don Jose Manuel Locsin's supervision. In honor of Saint Anne, the church is known as a feminist church because of its two rows of sixteen female saints on both sides of the altar.<p>
+
+    <img src="https://i.ibb.co/g9B1rww/Molo-Church-Ilo-Ilo.jpg" alt="image" border="0"></a>
+
+	<h1>How to get there</h1>
+<p>Located beside the district plaza of Molo, Iloilo City. Accessible from anywhere in Iloilo City by taxi and jeepneys. Jeepneys with “Molo” or “Villa / Arevalo” on its signboard will pass by Molo Church.<p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1> Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://i.ibb.co/G2XyH7R/shsakd.jpg" alt="image" border="0"></a>
+      <div class="card-content">
+        <h2>Richmonde Hotel Iloilo</h2>
+        <p><strong>Information:</strong><p>With a stay at Richmonde Hotel in Megaworld Boulevard Corner Enterprise Road Iloilo Business Park, Mandurriao, Iloilo City, you'll be in the business district, just steps from Iloilo Convention Center and a 2-minute drive from Jaro Cathedral. This 4-star hotel is 1.3 mi (2 km) from SM City Iloilo and 1.1 mi (1.8 km) from Iloilo Esplanade.</p>
+
+   	Location:
+Megaworld Boulevard Corner Enterprise Road Iloilo Business Park, Mandurriao, Iloilo City
+        </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://i.ibb.co/V9r887V/209881899.jpg" alt="image" border="0"></a>
+      <div class="card-content">
+        <h2>J7 Plaza Hotel</h2>
+        <p><strong>Information:</strong> <p>Whatever your reason for visiting Iloilo, J7 Plaza Hotel is the perfect venue for an exhilarating and exciting break away. With its ideal location in Q. Abeto St, Mandurriao, Iloilo City which is just 1.3 km from SM City Iloilo, J7 Plaza Hotel gives you easy and fast options for shopping, food, or basic needs without too much travel time. Travelers are guaranteed to have a hassle-free stay with all the amenities and services provided by J7 Plaza Hotel.</p>
+
+      	Location:
+Q. Abeto St, Mandurriao, Iloilo City
+        </p>
+      </div>
+    </div>
+  </div>
+
+  
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

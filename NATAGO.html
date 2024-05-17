@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+       </div>
+
+    
+   <h1>Natago Beach</h1>
+    <p>On the shores of Brgy. Sinapsapan, a strip of land lies between two mountains offering solitude to weary tourists, which is Natago Beach Resort. In the vernacular, Natago means "hidden". The hidden resort is ideal for swimming, scuba diving or just letting time pass by with unexploited works of nature.<p>
+
+<p>Natago Beach is one of the most beautiful beach included in an island hopping tour in Guimaras. It is located at Brgy. Sinapsapan Jordan and is a privately owned resort, its shore has a soft cream-colored sand, crsytal water, and rock formations around the island. It is perfect for tourists who wanted to experience a life in the Island, it has a small bamboo home with several rooms that can be rented by everyone.<p>
+
+<a href="https://ibb.co/1nJ50Nc"><img src="https://i.ibb.co/cvXHy9q/Natago-Beach.jpg" alt="Natago-Beach" border="0"></a>
+
+	<h1>How to get there</h1>
+<p>To reach Natago Beach, you can follow these general directions:<p>
+
+<p>1. There are no direct flights from Manila to Guimaras; however, the island is easy to get to from Iloilo City. There are direct and regular flights operated by Cebu Pacific Air and Philippine Airlines.
+Tourists' route of choice to Guimaras is via Ortiz Wharf where boats bound for Jordan Wharf in Guimaras run regularly. The fastest way to get to the wharf from Iloilo's city center is by taxi. This is the port of choice because it only takes around 15 minutes to the island; the fare is approximately ₱15 as of this writing.<p>
+<p>2. Once in Jordan Wharf, visitors have to register at the tourism office where they can also board tricycles to take them around or straight to their chosen accommodations. A one way trip to Alubihod Beach, Nueva Valencia is around ₱250. This is also the area where most resorts are located. Natago Beach is part of the island hopping tour most visitors do from Alubihod Beach.</p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://pix8.agoda.net/hotelImages/546/546967/546967_14121717040024018706.jpg?ca=3&ce=1&s=800x"></a>
+      <div class="card-content">
+        <h2>Zemkamps Chalet</h2>
+        <p><strong>Information:</strong><p>Zemkamps Chalet is perfect for those tourists who want a stay that feels like your home! It has a touch of old furnitures that will make everyone miss their childhood home as each room is tastefully decorated and well-appointed. The hotel offers a range of facilities that will keep you entertained such as chapels and shrines, garden, shops and a massage center offering a Filipino traditional massage to help you relax after a long day of exploring Guimaras Island.<p>
+
+  
+
+        </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/401427495.jpg?k=7facf9ce2a1dd09642931c350b3838259de83cc902c6ada8f3373697f712a79e&o=&hp=1"></a>
+      <div class="card-content">
+        <h2>Marceily Point Resort</h2>
+        <p><strong>Information:</strong> <p>Marceily Point Resort is one of the hidden paradise of Guimaras as it will make the tourist feel like they are shooting a 90's movie for its wonderful facilities and magnificent view of the land. It is located at Brgy. Tambong San Lorenzo, Igcauayan, Guimaras. It doesn't offer much in the entertainment facility, however, you can immerse yourself with the beauty of the place, they offer a huge garden where you can take a stroll, an outdoor pool to take a dip, and a restaurant to dine when you're hungry.<p>
+
+
+       
+        </p>
+      </div>
+    </div>
+
+  
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

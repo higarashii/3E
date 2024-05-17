@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+         </div>
+
+ 
+   <h1>Tumalog Falls</h1>
+    <p>Tumalog Falls is located in the town of Oslob, Cebu, Philippines. It is roughly 170 kilometers from Cebu City, typically requiring a drive of about 3 to 4 hours depending on traffic conditions. Tumalog Falls is one of the natural attractions that make Oslob a popular destination, aside from its famous whale shark watching activities.<p>
+
+<p>Tumalog Falls is known for its stunning beauty, characterized by its tall but gentle cascade over a wide, amphitheater-like formation covered with lush, mossy vegetation. The waterfalls create a thin, veil-like drizzle as they descend, which has a soothing, almost ethereal appearance. The pool at the bottom is shallow and clear, inviting visitors to wade and enjoy a refreshing dip.<p>
+
+<p>The area surrounding the falls is relatively undeveloped, adding to its charm and the feeling of being close to nature. The approach to the falls requires a short walk from the parking area, which can be a bit steep, though motorbike services are available to take visitors closer to the site.<p>
+
+<p>Tumalog Falls is particularly popular because it offers a serene and picturesque setting ideal for relaxation and nature photography. It's a must-visit for those traveling to Oslob, especially for those looking to unwind after an early morning of whale shark watching.</p>
+
+    <a href="https://ibb.co/mCPMW7M"><img src="https://i.ibb.co/wN2xm1x/1-Tumalog-Falls-Oslob-Cebu.jpg" alt="1-Tumalog-Falls-Oslob-Cebu" border="0"></a>
+
+    <h1>How to get there</h1>
+<p>To reach Tumalog Falls, you can follow these general directions:<p>
+
+<p>1. Start from Cebu City: Begin your journey on the South Road Properties (SRP) road heading towards Talisay.<p>
+<p>2. Continue on Cebu South Road: Follow the Cebu South Road all the way through the towns of Minglanilla, Naga, San Fernando, and Carcar. This route will take you along the eastern coast of Cebu.<p>
+<p>3. Pass through the Towns of Argao and Dalaguete: After Carcar, continue south to pass through Argao and Dalaguete. These are scenic towns with coastal roads that offer views of the sea and the mountains.<p>
+<p>4. Proceed to Oslob: Continue driving south until you reach the town of Oslob. This portion of the drive will take you close to the southeastern tip of Cebu Island.<p>
+<p>5. Turn for Tumalog Falls: Once in Oslob, look for signage that directs you to Tumalog Falls. You will turn off the main highway and onto a smaller road leading up to the falls. This road can be steep and narrow.<p>
+
+<p>6. Arrive at Tumalog Falls: The road will lead you to a parking area. From there, you can either walk down to the falls or take a motorcycle (habal-habal) that can be rented from locals.<p>
+
+<p>Alternative Transportation: If you're not driving, you can take a bus from the South Bus Terminal in Cebu City to Oslob. Tell the conductor you wish to visit Tumalog Falls so they can drop you off at the correct junction. From there, you can hire a motorcycle to take you to the falls.<p>
+
+<p>Remember to check local travel advisories and road conditions before setting off, as this can impact your travel plans.</p>
+
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://ibb.co/FwNDfwn"><img src="https://i.ibb.co/YkYLKkb/bluewatersumilonisland-oslobcebu-4.jpg" alt="bluewatersumilonisland-oslobcebu-4" border="0"></a>
+      <div class="card-content">
+        <h2>Bluewater Sumilon Island Resort </h2>
+        <p><strong>Information:</strong><p>Bluewater Sumilon Island Resort is located on Sumilon Island, which is off the southeastern tip of Cebu, Philippines. The island is accessible via a short boat ride from the mainland in Oslob, which is famous for its whale shark watching activities. The resort is quite remote, providing an exclusive and private environment for its guests.<p>
+<p>Located on its own private island, this resort is a short boat ride from the mainland Oslob. It offers luxurious accommodations with unique amenities like sandbars, a natural lagoon, and on-site diving. The resort offers a variety of accommodations, ranging from deluxe rooms to glamping tents, all designed with a blend of traditional Filipino and contemporary decor.<p>
+<p>The resort's isolation and beautiful natural environment make it an ideal destination for those looking to escape the hustle and bustle of city life and immerse themselves in nature's tranquility. It's well-suited for romantic getaways, family vacations, and even solo retreats seeking peace and rejuvenation.</p>
+
+          </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://imgbb.com/"><img src="https://i.ibb.co/Nr8R9bX/146888883.jpg" alt="146888883" border="0"></a>
+      <div class="card-content">
+        <h2>Seafari Resort Oslob</h2>
+        <p><strong>Information:</strong> <p>Seafari Resort Oslob is nestled along the coast of Barangay Tan-awan in Oslob, Cebu, Philippines. This seaside resort offers guests stunning views of the Bohol Sea and is conveniently located near popular attractions such as the whale shark watching area and Tumalog Falls.<p>
+<p>Perched on a cliff, Seafari Resort offers spectacular sea views and has a tiered design that descends towards the water. It's a bit more upscale, with amenities including a swimming pool and an in-house restaurant. The resort boasts a tranquil and picturesque setting, making it an ideal escape for travelers seeking relaxation and natural beauty.<p>
+<p>Overall, Seafari Resort Oslob offers a perfect blend of comfort, convenience, and natural beauty, making it an ideal destination for travelers looking to experience the best of Oslob's coastal charm.<p>
+
+             </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://ibb.co/LP3vy38"><img src="https://i.ibb.co/FWFn1FK/swimmingpool-1.jpg" alt="swimmingpool-1"border="0"></a>
+      <div class="card-content">
+        <h2>MB Sunrise View Resort</h2>
+        <p><strong>Information:</strong> <p>MB Sunrise View Resort is situated in the coastal town of Oslob in Cebu, Philippines, offering guests stunning views of the sunrise over the Bohol Sea. This budget-friendly resort is close to the whale shark watching area and offers basic accommodations with easy access to Tumalog Falls and other local attractions.<p>
+<p>MB Sunrise View Resort can arrange various activities for guests, including island hopping tours, snorkeling trips, and visits to nearby attractions. The resort's location along the coast provides ample opportunities for swimming, sunbathing, and water sports.<p>
+<p>Overall, MB Sunrise View Resort offers a comfortable and affordable accommodation option in Oslob, with its stunning sunrise views and convenient location making it an excellent choice for travelers exploring the wonders of southern Cebu.<p>
+
+              </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

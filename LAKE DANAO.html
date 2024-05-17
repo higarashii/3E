@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+         </div>
+
+   <h1>Lake Danao</h1>
+    <p>Lake Danao is a guitar-shaped lake on the island of Leyte in the Philippines. The lake is covering an area of 148 hectares. It is situated in the 2,193 hectares Lake Danao Natural Park, which also includes the Amandiwin mountain range. The lake is 18 kilometres northeast of Ormoc, half an hour drive along the San Pablo -Tongonan and Milagro - Lake Danao roads. It was originally named Lake Imelda and was declared a national park on June 2, 1972 by virtue of presidential memorandum issued by then President Ferdinand Marcos. Later it was renamed and declared as Lake Danao National Park on February 3, 1998 through Proclamation No. 1155 and is now protected by Republic Act No. 7586 otherwise known as the National Integrated Protected Area System Act of 1992.<p>
+
+   <a href="https://ibb.co/wwLmxyM"><img src="https://i.ibb.co/b23981z/21-lake-danao-floating-cottage.jpg" alt="21-lake-danao-floating-cottage" border="0"></a>
+
+	<h1>How to get there</h1>
+<p>From Ormoc City to Lake Danao
+Go to Ormoc's terminal near the public market. There, look for a multi-cab or jeepney heading to Barangay Lake Danao. 2. Inquire the driver what time are the trips back to the City Proper or to haggle for them to pick you up at a certain time<p>
+
+
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://ibb.co/T4qVsgT"><img src="https://i.ibb.co/c6XGjrv/497721-13073009310014143998.jpg" alt="497721-13073009310014143998" border="0"></a>
+      <div class="card-content">
+        <h2>Hotel Don Felipe</h2>
+        <p><strong>Information:</strong><p>Welcome to Don Felipe Hotel, your Ormoc “home away from home.” Located at Larrazabal Street 6541 Ormoc City Leyte. Don Felipe Hotel aims to make your visit as relaxing and enjoyable as possible, which is why so many guests continue to come back year after year. You’ll enjoy relaxing rooms that offer a refrigerator, air conditioning, and a desk, and you can stay connected during your stay as Don Felipe Hotel offers guests free internet access. The hotel features a 24 hour front desk, 24 hour check-in, and room service. Plus, Don Felipe Hotel offers an on-site restaurant, providing a pleasant respite from your busy day. For guests with a vehicle, free parking is available. During your visit, be sure to check out a popular Ormoc shrimp restaurant such as Mimay's Seafood House, which is a short distance from Don Felipe Hotel. Plus, during your trip, don't forget to check out a park, such as Green Lake Park. Don Felipe Hotel puts the best of Ormoc at your fingertips, making your stay both relaxing and enjoyable.</p>
+
+         </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+     <a href="https://ibb.co/cQf0qq4"><img src="https://i.ibb.co/Rcrf88R/409386-14040809010018994963.jpg" alt="409386-14040809010018994963" border="0"></a>
+      <div class="card-content">
+        <h2>Ormoc Villa Hotel</h2>
+        <p><strong>Information:</strong> <p>See why so many travelers make Ormoc Villa Hotel their hotel of choice when visiting Ormoc. located at Ground Floor Ormoc Villa Hotel San Pedro Street 6541 Ormoc City Leyte. Providing an ideal mix of value, comfort and convenience, it offers a family-friendly setting with an array of amenities designed for travelers like you. The rooms offer a flat screen TV, air conditioning, and a minibar, and getting online is possible, as internet access is available, allowing you to rest and refresh with ease. Ormoc Villa Hotel features a 24 hour front desk, room service, and a coffee shop. In addition, as a valued Ormoc Villa Hotel guest, you can enjoy a pool and a lounge that are available on-site. Guests arriving by vehicle have access to free parking. During your visit, be sure to check out a popular Ormoc shrimp restaurant such as Mimay's Seafood House, which is a short distance from Ormoc Villa Hotel. Looking to explore? Then look no further than Green Lake Park, which is a popular Ormoc park – and it is conveniently located a short distance from the 
+hotel.</p>
+
+            </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://ibb.co/p3Vm9x4"><img src="https://i.ibb.co/khbdWxq/e3ab80e8-z.jpg" alt="e3ab80e8-z" border="0"></a>
+      <div class="card-content">
+        <h2>Rosetta Guest House</h2>
+        <p><strong>Information:</strong> <p>Rosetta Guest House is offering accommodation in Ormoc, located at Rizal Street 6541 Ormoc City Eastern Visayas. This 2-star hotel offers room service and a 24-hour front desk. There is a terrace and guests can make use of free WiFi and free private parking. The hotel will provide guests with air-conditioned rooms with a wardrobe, a kettle, a fridge, a microwave, a safety deposit box, a flat-screen TV and a private bathroom with a bidet. Certain rooms here will provide you with a kitchen with a stovetop. At Rosetta Guest House every room has bed linen and towels. The nearest airport is Daniel Z. Romualdez Airport, 106 km from the accommodation.</p>
+
+              
+       </div>
+    </div>
+  </div>
+
+ 
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

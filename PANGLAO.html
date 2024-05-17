@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panglao Island</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+        </div>
+
+  
+
+   <h1>Panglao Island</h1>
+    <p>Panglao Island is located at Panglao Island, Bohol, Philippines. Panglao Island is a wondrous island found in the north Bohol sea that is situated in the Central Visayas area. Basking in the radiant sun is one of the things this island is best known for. In the nighttime, the island transforms into a party place central where Filipinos and foreigners alike mingle. Since the island is considered as one of the paradises in Bohol, you have a lot of activities in Panglao Island to enjoy. There are a lot of beaches that you can explore that would fulfill the island dream experience you desire.<p>
+
+<p>Panglao Beach in the Philippines is a small beach that is only 200 meters long, but holds stunning natural beauty. The beach is famous for its white sand, clear waters and vibrant marine life, making Panglao Beach a popular destination for beach lovers and divers. The beach is lined with coconut trees, making it the perfect place to relax and enjoy the view. The beach also offers a variety of water sports and delicious seafood.<p>
+
+    <a href="https://ibb.co/wgBmnPh"><img src="https://i.ibb.co/fFqw3yd/panglaoo.jpg" alt="Panglao Island" border="0"></a> </th>
+
+	<h1>How to get there</h1>
+<p>For you to be able to reach Panglao Island, the most convenient way to reach Panglao Island is by flying to Tagbilaran Airport (TAG), which is the main airport serving Bohol Province. Several airlines operate flights to Tagbilaran Airport from Manila, Cebu, and other major cities in the Philippines. Once you land at Tagbilaran Airport, you can easily reach Panglao Island by taxi, tricycle, or van.  If you prefer traveling by sea, you can take a ferry from Cebu City to Tagbilaran Port in Bohol. Several ferry companies operate this route, and the journey takes around 2 hours. Once you arrive at Tagbilaran Port, you can hire a taxi or tricycle to take you to Panglao Island. Another option is to rent a car or motorcycle and drive to Panglao Island. Rental agencies are available in Tagbilaran City and at the airport. The drive to Panglao Island is relatively easy and scenic, with well-maintained roads and directional signs along the way.
+
+<p>Once you arrive on Panglao Island, you can explore its beautiful beaches, dive sites, and other attractions.<p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="<a href="https://ibb.co/WKRZgRW"><img src="https://i.ibb.co/tC1g81M/mayana-resort.jpg" alt="The Mayana Resort" border="0"></a> </th>
+      <div class="card-content">
+        <h2>The Mayana Resort</h2>
+        <p><strong>Information:</strong> <p>The Mayan Resort is located at Purok 7, San Isidro, Dauis, Bohol Beach Road, 6339 Dauis, Philippines. The Mayana Resort has an outdoor swimming pool, garden, a shared lounge and restaurant in Dauis. This 3-star hotel offers room service, a concierge service and free WiFi. Guests can use the hot tub, or enjoy garden views.
+
+At the hotel the rooms are equipped with air conditioning, a wardrobe, a flat-screen TV, a private bathroom, bed linen, towels and a terrace with pool view. All guest rooms feature a safety deposit box. An à la carte, continental or American breakfast is available every morning at the property. You can play darts at The Mayana Resort, and car hire is available. San Isidro Beach is less than 1 km from the accommodation, while Bikini Beach is 1.9 km from the property. The nearest airport is Bohol-Panglao International, 9 km from The Mayana Resort, and the property offers a paid airport shuttle service.<p>
+
+          </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+     <a href="<a href="https://imgbb.com/"><img src="https://i.ibb.co/rpKgSF6/chinita-botique-hotel.jpg" alt="Chinita Boutique Hotel" border="0"></a> </th>
+      <div class="card-content">
+        <h2>Chinita Boutique Hotel</h2>
+        <p><strong>Information:</strong> <p>Chinita Boutique Resort is located at Purok 2 Barangay Dao, Dauis, 6339 Panglao, Philippines. Chinita Boutique Hotel provides accommodation with an outdoor swimming pool, free private parking, a garden and a terrace. Featuring room service, this property also provides guests with a restaurant. The resort also offers free WiFi as well as a paid airport shuttle service. At the resort each room includes air conditioning, a seating area, a flat-screen TV with satellite channels, a safety deposit box and a private bathroom with a bidet, free toiletries and a hairdryer. Selected rooms have a kitchenette with a fridge, a dishwasher and a microwave. At Chinita Boutique Hotel every room includes bed linen and towels. The nearest airport is Bohol-Panglao International Airport, 6 km from Chinita Boutique Hotel.
+             </div>
+    </div>
+
+
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

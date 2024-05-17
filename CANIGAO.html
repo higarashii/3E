@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+         </div>
+
+  
+   <h1>Canigao Island</h1>
+    <p>The white sand beach on sunny Canigao Island is a local favourite. With palm trees lining the coast and clean blue waters, the small island looks as good in person as it does in pictures. Beach bummers can relax and sunbathe on the powdery shore, while more adventurous travellers can explore underwater gems by scuba diving and snorkelling around the island. Don’t miss visiting one of Leyte’s oldest lighthouses right in the heart of Canigao Island.<p>
+
+    <a href="https://ibb.co/dJ9pxM9"><img src="https://i.ibb.co/BKD6F3D/Canigao-Island-Leyte.jpg" alt="Canigao-Island-Leyte" border="0"></a>
+
+	<h1>How to get there</h1>
+<p>Take a van from Tacloban to Maasin, and ask the driver to drop you off at Matalom. Upon getting to Matalom, walk or ride a tricycle to the pier, where boats will be waiting to take you to Canigao Island. Expect a 20-minute boat ride to the island.<p>
+
+
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://ibb.co/F0XKKdx"><img src="https://i.ibb.co/X3DbbG2/32181561-1.jpg" alt="32181561-1" border="0"></a>
+      <div class="card-content">
+        <h2>Citi Hotel Hilongos</h2>
+        <p><strong>Information:</strong><p>The “Citi Hotel Hilongos” has the facility to host meetings, conferences, weddings, receptions and other functions in individual customizable function rooms and a private garden restaurant on the roof top. Located at National Highway. 6524 Hilongos - Leyte - Eastern Visayas The function rooms can hold up to 250 people. For further information on meetings and conferences or information on weddings, receptions and parties please send us your inquiry.
+
+The "Citi Hotel Hilongos" was built in 2010 - 2012 and provides with its convenient location at the central west coast of Leyte, located between Baybay and Maasin, an ideal 4-star address with superior high class hospitality.</p>
+
+              </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://ibb.co/YtbVTcg"><img src="https://i.ibb.co/wKY2rSt/my-little-island-hotel.jpg" alt="my-little-island-hotel" border="0"></a>
+      <div class="card-content">
+        <h2>My Little Island</h2>
+        <p><strong>Information:</strong> <p>See why so many travelers make My Little Island Hotel their hotel of choice when visiting Poro Island. Located at  Esperanza, 6014 Esperanza, Philippines. Providing an ideal mix of value, comfort and convenience, it offers a family-friendly setting with an array of amenities designed for travelers like you. Free internet access is offered to guests, and rooms at My Little Island Hotel offer air conditioning and a desk. During your stay, take advantage of some of the amenities offered, including room service, a concierge, and a coffee shop. Guests of My Little Island Hotel are also welcome to enjoy a pool and an on-site restaurant. For travelers arriving by car, free parking is available.
+
+Plus, during your trip, don't forget to check out a waterfall, such as Busay Falls. We’re sure you’ll enjoy your stay at My Little Island Hotel as you experience all of the things Poro Island has to offer.</p>
+
+              
+        </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://imgbb.com/"><img src="https://i.ibb.co/7Y2dffj/the-reception-area.jpg" alt="the-reception-area" border="0"></a>
+      <div class="card-content">
+        <h2>Fan's Hotel</h2>
+        <p><strong>Information:</strong> <p>Fan's Hotel is approximately 31.1 miles (50.1 km) from Ormoc Airport, located at 30 de Deciembre Street, Baybay City, Eastern Visayas the nearest airport. As a guest at Fan's Hotel, you have the option to request pick-up or drop-off at the airport, as the hotel provides an airport shuttle service for an additional fee. Guests are welcome to check in at the hotel starting from 2:00 PM and check-out by 12:00 PMAt Fan's Hotel, guests can start their day with breakfast.
+
+Your safety is important at Fan's Hotel. That is why the premises are equipped with surveillance cameras, security alarms, 24-hour security, and other safety measures. Fire extinguishers and smoke alarms are strategically placed within the property. Smoking is not allowed within the property.</p>
+
+             
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>
