@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minalungao National Park</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+        </div>
+
+      <h1>Minalungao National Park</h1>
+    <p>Minalungao National Park is a protected area of the Philippines located in the municipality of General Tinio, Nueva Ecija, near its Boundary with Doña Remedios Trinidad, Bulacan. The park covers an area of 2,018 hectares centered along the scenic Peñaranda River bordered on both sides by up to 16-meter high limestone walls in the foothills of the Sierra Madre mountain range. It was established in 1967 by virtue of Republic Act No. 5100.<p>
+
+<p>The park is considered one of the few remaining natural environments in this region north of Manila. It is promoted by the local government as an ecotourism destination offering breath-taking scenery of green pristine river and unique rock formations. A system of unexplored caverns have also been identified as potential attractions. Facilities for picnics, swimming, fishing, raft riding and cliff diving have likewise been put up to draw more visitors.<p>
+
+<p>These days, a lot of city folk want a taste of the laid-back provincial life. When life gets too hectic in the metro, just heading somewhere you can float on a bamboo raft, enjoy simple home-cooked meals and see stunning natural sights can be just what you need to re-energize for the work week ahead. One of the fastest-rising destinations to offer this kind of experience near Manila is Minalungao National Park in Nueva Ecija.
+
+
+<p>The allure of Minalungao National Park (as with all eco-tourism attractions) is its natural beauty. Unfortunately, with popularity comes development. The place has been developed to cater to the influx of tourists, with artificial structures, a hotel in the works and even a man-made swimming pool right next to the river catering to the crowds. To be honest, I wish the place only had native cottages or a camping site instead. I really think having artificial structures ruins the whole natural vibe of the place. The highlight of our visit for me was getting to sample some unique Novo Ecijano dishes that I hadn’t ever tried.<p>
+
+<p>The word Minalungao was derived from the words Mina meaning mine and Lungao which is a local word for cave. It’s been a few years since photos of this destination started circulating on social media and has since become very popular with the weekend crowds. Locals say before the park was “discovered,” not a lot of tourists visited the province of Nueva Ecija. This natural sight put the once sleepy province on the map. The best time to visit to see the emerald green waters is around summer time. It rained before our visit, so we weren’t able to see the place in its full glory.<p>
+
+    <a href="https://ibb.co/Jdrpg6R"><img src="https://i.ibb.co/j53ws0v/minalungao.jpg" alt="minalungao" border="0"></a><br /><a target='_blank' href='https://freeonlinedice.com/'></a>
+	<h1>How to get there</h1>
+<p>To reach Minlungao National Park, you can follow these general directions:<p>
+
+<p>By Public Transportation:<p>
+
+<p>Ride a bus bound for Gapan/Cabanatuan. There are buses that play the Manila-Cabanatuan route from Cubao and Pasay. Fare is about P150-200,Estimated travel time is 2-3 hours,from Gapan, ride a jeep to General Tinio,then ride a tricycle to Minalungao Park,fare is about P50/person.You can also rent a tricycle from Gapan going directly to Minalungao for P500-600/trike. Estimated travel time is 1-1.5 hours.<p>
+
+<p>By Private Transportation:<p>
+
+<p>Take NLEX traveling north and exit at Sta. Rita.
+Proceed right and go along the Candaba-San Miguel Road. Continue until you reach Bucana, Gapan.Estimated travel time: 4-5 hours, with some portions on a rough road. There is a parking area right next to the picnic grounds for all types of vehicles. The area is accessible to buses, vans, sedans, jeeps, tricycles and motorcycles.<p>
+
+<p>It's recommended to verify the specific routes and transportation options based on your starting point and current travel conditions. Additionally, always exercise caution and follow local traffic regulations while traveling.<p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://ibb.co/pnbc4zw"><img src="https://i.ibb.co/ZNG5c8X/238678376.jpg" alt="238678376" border="0"></a>      <div class="card-content">
+        <h2>Sierra Casas Hotel</h2>
+        <p><strong>Information:</strong><p>Sierra Casas Hotel is offering accommodation in General Tinio. This 3-star hotel offers room service and a 24-hour front desk. The units come with air conditioning, a flat-screen TV with satellite channels, a fridge, a kettle, a bidet, free toiletries and a desk. All rooms at the hotel are fitted with a private bathroom and bed linen.<p>
+<p>The hotel provides basic amenities and services, including clean and well-maintained rooms, friendly staff, and convenient access to nearby attractions and facilities.<p>
+
+               </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+     <a href="https://ibb.co/j32n9XW"><img src="https://i.ibb.co/WBwmNJP/497497857-1.jpg" alt="497497857-1" border="0"></a>      
+<div class="card-content">
+        <h2>Asia Jem Hotel</h2>
+        <p><strong>Information:</strong> <pLocated in Gapan, Luzon region, ASIA JEM HOTEL - GAPAN CITY is set 48 km from LausGroup Event Centre. Among the facilities at this property are room service and a 24-hour front desk, along with free WiFi throughout the property.<p>
+<p>The property is non-smoking and is situated 48 km from Kingsborough International Convention Center. Complete with a private bathroom fitted with a bidet and free toiletries, the rooms at the hotel have a flat-screen TV and air conditioning, and certain rooms come with a balcony.<p>
+<p>With its convenient location and excellent services, Asia Jem Hotel provides guests with a pleasant and memorable stay experience in gapan city.</p>
+
+       
+        </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://ibb.co/vJjKBcH"><img src="https://i.ibb.co/7G16zSX/413481282.jpg" alt="413481282" border="0"></a>
+      <div class="card-content">
+        <h2>Balai Consuelo Pamingwitan Campground</h2>
+        <p><strong>Information:</strong> <p>Balai Consuelo Pamingwitan Campground
+Situated in Buliran, within 43 km of Kingsborough International Convention Center and 43 km of LausGroup Event Centre, Balai Consuelo Pamingwitan Campground features accommodation with a garden as well as free private parking for guests who drive.<p>
+<p>The property features lake and garden views. Boasting family rooms, this property also provides guests with a sun terrace.<p>
+<p>The units at the campground are fitted with a seating area. All units have bed linen. The campground has an outdoor fireplace and an outdoor pool.</p>
+        
+      </div>
+    </div>
+  </div>
+
+ 
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

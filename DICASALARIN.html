@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+        </div>
+
+    <!-- Card content goes here -->
+
+   <h1>Dicasalarin Cove</h1>
+    <p>Dicasalarin Cove is a stunning, secluded beach located near Baler in Aurora Province, Philippines. Known for its pristine beauty and relatively untouched natural surroundings, it is a favorite spot for tourists seeking tranquility away from more crowded destinations. <p>
+
+<p>The cove features a wide crescent-shaped beach with fine white sand and crystal-clear turquoise waters, surrounded by lush green hills and dramatic rock formations. One of the most notable landmarks in Dicasalarin Cove is a lighthouse that offers panoramic views of the Pacific Ocean and the surrounding landscape. Visitors often hike up to this lighthouse to enjoy the breathtaking scenery.<p>
+
+<p>While the cove is perfect for sunbathing and picnics, the waters here can also be great for swimming, snorkeling, and surfing, especially when the weather conditions are right. Kayaking and paddleboarding are other popular activities.<p>
+
+<p>Dicasalarin Cove is known for its privacy and seclusion, making it an ideal destination for those seeking a peaceful and serene escape from the hustle and bustle of city life. The secluded location allows visitors to unwind, relax, and reconnect with nature in a tranquil and pristine environment.<p>
+
+    <a href="https://ibb.co/NmxXjcJ"><img src="https://i.ibb.co/TbcZ897/au-detour-de-la-route.jpg" alt="au-detour-de-la-route" border="0"></a>
+    <h1>How to get there</h1>
+<p>To reach Dicasalarin Cove, you can follow these general directions:<p>
+
+<p>Transport Options:<p>
+
+<p>1. By Car: If you have access to a private vehicle, you can drive to Dicasalarin Cove. The drive from Baler takes about 20 to 30 minutes, depending on road conditions. The route includes a scenic drive along the coast.<p>
+<p>2. By Tricycle: Tricycles are a popular local transportation mode in Baler and can be hired for a trip to Dicasalarin Cove. Make sure to negotiate the fare before starting your journey. This can cost anywhere from 300 to 500 PHP, depending on your negotiation skills and the number of passengers.<p>
+<p>3. By Motorcycle: Renting a motorcycle is another option for those who prefer a more adventurous route. It offers flexibility to explore the area at your own pace.<p>
+<p>The road to Dicasalarin Cove is steep and narrow, especially as you approach the cove. The last part of the road can be challenging, making it important to be cautious if you're driving yourself.<p>
+<p>Access to Dicasalarin Cove is controlled by the Costa Pacifica resort, and an entrance fee is required. The fee includes access to the beach and the lighthouse.<p>
+
+<p>Once there, you can explore the pristine beach, visit the iconic lighthouse for panoramic views, or check out the Artist Village. The cove is ideal for swimming, picnicking, and simply relaxing by the sea.<p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://ibb.co/7nfxSht"><img src="https://i.ibb.co/n7GqwpM/costa-pacifica.jpg" alt="costa-pacifica" border="0"></a>
+      <div class="card-content">
+        <h2>Costa Pacifica</h2>
+        <p><strong>Information:</strong><p>Located along Sabang Beach, Costa Pacifica is a luxurious beachfront resort offering comfortable accommodations and excellent amenities. It's approximately a 30-minute drive from Dicasalarin Cove.<p>
+<p>The resort offers a range of accommodations to suit various preferences and budgets, from deluxe rooms to suites. Each room is designed with a contemporary and tropical flair, equipped with modern amenities such as air conditioning, flat-screen TVs, mini-bars, and private bathrooms. Many rooms feature balconies or terraces with ocean or pool views.<p>
+<p>The resort offers a relaxed and luxurious atmosphere, making it a popular choice for families, couples, and groups seeking a premium beachfront experience in Baler. Its lush gardens, stylish decor, and soothing ocean views contribute to an overall sense of tranquility and relaxation.</p>
+
+               </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+     <a href="https://ibb.co/867LWDN"><img src="https://i.ibb.co/Gc54Kvn/large-aliya-surf-camp-3.jpg" alt="large-aliya-surf-camp-3" border="0"></a>
+      <div class="card-content">
+        <h2>Aliya Surf Camp and Resort</h2>
+        <p><strong>Information:</strong> <p>Located directly on Sabang Beach, Aliya Surf Camp provides easy beach access, perfect for those eager to hit the waves or simply soak up the sun on the sandy shore. The resort is also conveniently close to Baler's town center, allowing guests quick access to local shops, restaurants, and historical sites.<p>
+<p>Aliya Surf Camp is known for its laid-back, friendly environment, which is particularly appealing to younger travelers and those interested in the surf culture. The resort often features live music and social events, making it a lively spot to meet fellow travelers.<p>
+<p>Guests typically enjoy a relaxed and active stay at Aliya Surf Camp, with its combination of functional accommodations, easy beach access, and vibrant social scene. It’s especially recommended for those looking to immerse themselves in Baler’s surfing lifestyle while enjoying the comforts and conveniences of a beachfront resort.<p>
+
+
+               </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://ibb.co/58fzwBr"><img src="https://i.ibb.co/NjHkbZ9/424217891.jpg" alt="424217891" border="0"></a>
+      <div class="card-content">
+        <h2>Pacific Waves Inn</h2>
+        <p><strong>Information:</strong> <p>Pacific Waves Inn is ideally located along Sabang Beach, just a few meters away from the ocean. This proximity to the beach offers easy access to Baler’s famous surfing spots and provides a scenic beachfront view. The inn is also close to the town center, allowing guests easy access to local dining options, shops, and other attractions.<p>
+<p>The inn provides a variety of room types to cater to different guest needs, ranging from basic fan rooms to more comfortable air-conditioned rooms. The accommodations are generally simple and functional, designed to offer a comfortable place to rest after a day of surfing or exploring.<p>
+<p>Pacific Waves Inn is known for its laid-back and friendly atmosphere. It’s a great spot for backpackers, young travelers, and anyone looking for a relaxed beachfront stay without the frills of luxury resorts.<p>
+
+
+             </p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+         </div>
+
+   
+   <h1>Tarlac Reacreational Park</h1>
+    <p>
+While thinking of a fun place where my office mates will enjoy, Tarlac came across the picture. It seemed to be the perfect setting where we can bond at low cost. 
+<p>
+
+<p>
+First, we went to Tarlac Recreational Park to enjoy some thrilling adventures. The brave hearted ones immediately tried the dune buggy drive which costs 300 pesos per 20-minute-ride. <p>
+
+<p>There was adrenaline rush as I competed with the boys in our office. It was like drive a small automatic car driven in a rocky road. We were all dusty yet giddy as we drove around the 78 hectare recreational park. <p>
+
+<p>I totally enjoyed the dune buggy and I attested the fun by riding it for three consecutive times. The last one was with my sister who was celebrating her masteral degree at that time. She was so afraid that she might fall but I assured her that I was already expert by memorizing the track of the dune buggy. At the end, we both made this experience a very notable one. <p>
+
+<a href="https://ibb.co/qdY0Yf2"><img src="https://i.ibb.co/Msk8k4J/events-8-1-e1633454437446.jpg" alt="events-8-1-e1633454437446" border="0"></a>
+    <h1>How to get there</h1>
+<p>To reach San Salvador Island , you can follow these general directions:<p>
+
+<p>By Public Transportation:<p>
+
+<p>1. You can take a bus bound for Tarlac City. Several bus companies operate routes from Manila to Tarlac. Once in Tarlac City, you can hire a tricycle or jeepney to take you to the park.<p>
+
+<p>By Private Vehicle:<p>
+<p>1.  If you're driving, you can take the North Luzon Expressway (NLEX) and exit at the Tarlac City exit. From there, follow signs leading to Tarlac Recreational Park.<p>
+
+<p>Alternatively, you can take a Victory Liner bus from Manila to Tarlac City. From the Tarlac City bus terminal, you can take a tricycle or jeepney to the park.<p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+    <a href="https://ibb.co/9cK8Jrm"><img src="https://i.ibb.co/pbV0gL6/227355077.jpg" alt="227355077" border="0"></a>
+      
+      <div class="card-content">
+        <h2>La Maja Rica Hotel</h2>
+        <p><strong>Information:</strong><p> Boasting a restaurant and a bar, La Maja Rica Hotel is set in Tarlac. With an outdoor swimming pool, the 3-star hotel has air-conditioned rooms with free WiFi, each with a private bathroom. Free private parking is available and the hotel also offers a shuttle service for guests who want to explore the surrounding area.
+<p>
+<p>
+All guest rooms in the hotel are fitted with a flat-screen TV with cable channels. At La Maja Rica Hotel the rooms are equipped with bed linen and towels.<p>
+<p>The accommodation can conveniently provide information at the reception to help guests to get around the area.
+
+The nearest airport is Clark International Airport, 37 km from La Maja Rica Hotel.</p>
+
+             </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+     <a href="https://ibb.co/gSS1ZHv"><img src="https://i.ibb.co/zXXcVj8/l-square-hotel.jpg" alt="l-square-hotel" border="0"></a>
+      <div class="card-content">
+        <h2>L Square Hotel</h2>
+        <p><strong>Information:</strong> <p>The Department of Tourism-accredited L Square Hotel is a three-star property located along the McArthur Highway in Tarlac City. Perfect for both business and leisure travelers, the hotel aims to provide guests with the best in hospitality and services at affordable prices. <p>
+The hotel has a total of 40 zen-themed rooms and villas available. With 10 room types, ranging from the cozy Standard Single to the grand Presidential Suite, guests are ensured to find everything they need during their stay. All room types come fully equipped with an air conditioning unit, a flat-screen television with cable channels, a personal refrigerator, a work desk, a seating area, a safety deposit box, ironing facilities, an electric kettle, and a telephone. The en suite bathroom comes with a bidet, a hot and cold shower, and a complete set of toiletries. Hypoallergenic towels, robes, and linen are provided. WiFi is accessible in all public and private areas and is free of charge. All checked-in guests are entitled to complimentary shuttle services from 8am to 5pm daily.
+<p>
+
+
+              </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+    <a href="https://ibb.co/wJg8RLr"><img src="https://i.ibb.co/XyL6b4k/124412066.jpg" alt="124412066" border="0"></a>
+      <div class="card-content">
+        <h2>Barceló San Salvador </h2>
+        <p><strong>Information:</strong> <p>Offering an outdoor pool and spa centre, Barcelo San Salvador is set in San Salvador in the San Salvador Department Region, 1.8 km from San Salvador Bicentennial Park. Guests can enjoy the on-site bar. Free private parking is available on site.<p>
+<p>Each room has a private bathroom. A 37' inch LCD TV is also provided. All rooms offer views of the city or volcano. There is 24-hour room service.
+
+You will also find a 24-hour front desk and hairdresser's at the property. Barcelo San Salvador is located in front of the Insigne corporate offices building and the Bambu City Center<p>
+
+           </div>
+    </div>
+  </div>
+
+ 
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

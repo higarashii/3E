@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region III: PAMPANGA</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+          </div>
+
+    <!-- Card content goes here -->
+
+   <h1>Sandbox at Alviera</h1>
+    <p>  SandBox in Alviera is an adventure park located in Porac, Pampanga, Philippines. It is part of the larger Alviera development, a mixed-use estate featuring residential, commercial, and recreational spaces. SandBox is designed to cater to adventure seekers and outdoor enthusiasts, offering a range of thrilling activities for visitors of all ages.<p>
+
+<p>The park is set within a sprawling landscape and provides a unique blend of natural beauty and man-made attractions, creating an ideal setting for family outings and team-building events. One of the key features of SandBox is its extensive adventure courses and activities. The park offers attractions like the Giant Swing, which swings riders up to 10 meters high, and the Aerial Walk Challenge, a series of obstacle courses suspended in the air.
+<p>
+
+
+  <a href="https://ibb.co/gTjxSjH"><img src="https://i.ibb.co/r67Vx7T/sandbox-7dbae158.jpg" alt="sandbox-7dbae158"alt="image" border="0"></a></th>
+
+    
+
+	<h1>How to get there</h1>
+<p>To reach Sandbox at Alviera, you can follow these general directions:<p>
+
+<p>To get to SandBox in Alviera, Pampanga, you can drive or take public transportation. If you're coming from Manila, the most direct route is to take the North Luzon Expressway (NLEX) and exit at the Angeles City exit, then take the Subic-Clark-Tarlac Expressway (SCTEX) toward Porac. Once you exit at Porac, follow the signs to Alviera, where SandBox is located. If using public transport, you can take a bus to Angeles City, then a jeepney or tricycle to Porac, where SandBox is situated. Be sure to check local transportation schedules and road conditions for the smoothest journey.<p>
+
+
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+     <a href="https://imgbb.com/"><img src="https://i.ibb.co/TL1jPQ2/midori-clark-hotel-and.jpg" alt="midori-clark-hotel-and" border="0"></a></th>
+      <div class="card-content">
+        <h2>
+Midori Clark Hotel and Casino</h2>
+        <p><strong>Information:</strong><p>  It is located within the Clark Freeport Zone, offering a luxurious stay with a mix of entertainment and relaxation facilities. <p>
+<p>The hotel features spacious rooms and suites, an outdoor pool, a fitness center, and multiple dining options. It is conveniently located for visitors to SandBox and offers easy access to other attractions in the Clark area, making it a great base for both adventure and leisure activities.<p>
+
+
+            </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://ibb.co/K7NCxZB"><img src="https://i.ibb.co/jGV7kKq/quest-plus-clark-swimming.jpg" alt="quest-plus-clark-swimming" border="0"></a></th>
+      <div class="card-content">
+        <h2>Quest Plus Conference Center, Clark</h2>
+        <p><strong>Information:</strong> <p>This hotel provides comfortable and spacious rooms with an emphasis on business and conference facilities. It has a large outdoor pool, a golf course, a gym, and several dining options. <p>
+<p> Its proximity to Clark International Airport and SandBox makes it a practical choice for travelers.<p>
+
+            </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://ibb.co/F6SswW7"><img src="https://i.ibb.co/8MWz5B8/pool.jpg" alt="pool" border="0"></a></th>
+      <div class="card-content">
+        <h2>Widus Hotel and Casino</h2>
+        <p><strong>Information:</strong> <p> This hotel combines a relaxing environment with entertainment options, offering an outdoor pool, a casino, a spa, and several restaurants. <p>
+<p>Its rooms are modern and well-equipped, providing a comfortable stay for guests. Located within the Clark Freeport Zone, it’s a short drive to SandBox and other key attractions in Pampanga.<p>
+
+               </div>
+    </div>
+  </div>
+
+
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>

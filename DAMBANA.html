@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+          </div>
+
+    <!-- Card content goes here -->
+
+   <h1>Dambana ng Kagitingan (Shrine of Valor)</h1>
+    <p>The Shrine of Valor is situated atop Mount Samat, a strategic vantage point overlooking the Bataan Peninsula and Manila Bay. Mount Samat is approximately 20 kilometers from the town of Balanga, the capital of Bataan Province, and is easily accessible by car or public transportation.<p>
+
+<p>The Shrine of Valor commemorates the heroism and sacrifices of Filipino and American soldiers who fought during the Battle of Bataan in World War II. The battle, which took place from January to April 1942, marked a significant chapter in Philippine history and is remembered for the courage and resilience of the defenders against overwhelming odds.<p>
+
+<p>At the heart of the shrine complex is a towering cross, standing at 92 meters tall, symbolizing the Filipinos' faith and courage during the war. The cross serves as a memorial to the soldiers who perished during the battle and is visible from miles around.<p>
+
+<p>Adjacent to the cross is a museum that showcases artifacts, photographs, and memorabilia related to the Battle of Bataan and World War II. Visitors can learn about the events leading up to the battle, the experiences of soldiers and civilians during the war, and the significance of the shrine in Philippine history.</p>
+
+    <a href="https://ibb.co/xKkDcLk"><img src="https://i.ibb.co/1YgLpQg/1200px-Mount-Samat-Shrine-Pilar-Bataan-05-20-2023.jpg" alt="1200px-Mount-Samat-Shrine-Pilar-Bataan-05-20-2023" border="0"></a>
+
+    <h1>How to get there</h1>
+<p>To get to the Dambana ng Kagitingan, also known as the Shrine of Valor, you can follow these general directions:<p>
+
+<p>From Manila or Nearby Cities:<p>
+
+<p>1. By Private Vehicle : If you have access to a car or motorcycle, you can drive to Mount Samat from Manila or nearby cities. Take the North Luzon Expressway (NLEX) and continue on the Subic-Clark-Tarlac Expressway (SCTEX) until you reach the Dinalupihan exit. From there, follow the signs to Mount Samat. The Shrine of Valor is located at the summit of Mount Samat.<p>
+<p>2. By Public Transportation : If you prefer to use public transportation:<p>
+<p>A. By Bus : Take a bus bound for Balanga, Bataan, from Cubao or Pasay bus terminals in Metro Manila. From Balanga, you can take a jeepney or tricycle to Mount Samat. Alternatively, some buses may have routes that pass by or stop near Mount Samat.<p>
+<p>B. By Jeepney : From Balanga, you can take a jeepney bound for the town of Pilar, where Mount Samat is located. From Pilar, you can hire a tricycle or take a jeepney to the shrine itself.<p>
+
+<p>Arrival at Mount Samat:<p>
+
+<p>Once you arrive at Mount Samat, you will need to park your vehicle in the designated parking area (if you drove). Purchase tickets at the entrance gate, which grants you access to the shrine complex and museum. You can then either hike or take a shuttle to reach the summit where the Dambana ng Kagitingan (Shrine of Valor) is located. The shuttle service is usually available for visitors who prefer not to hike up the steep road to the summit.<p>
+
+<p>It's advisable to check the operating hours of the shrine complex and museum before planning your visit, as they may vary.</p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://ibb.co/gTfBSLR"><img src="https://i.ibb.co/zRB0XT4/Swimming-Pool.jpg" alt="Swimming-Pool" border="0"></a>
+      <div class="card-content">
+        <h2>The Oriental Bataan</h2>
+        <p><strong>Information:</strong><p>The Oriental Bataan is a luxurious resort located in the town of Mariveles, Bataan, Philippines. The Oriental Bataan offers stunning views of the West Philippine Sea. It's approximately a 45-minute to one-hour drive from the Dambana ng Kagitingan (Shrine of Valor) on Mount Samat.<p>
+<p>The resort provides a range of well-appointed rooms and suites, each designed with modern amenities and stylish decor. Guests can choose from various room types, including deluxe rooms, suites, and family villas, depending on their preferences and needs.  The staff are friendly and accommodating, ready to assist with any requests or arrangements.<p>
+<p>The Oriental Bataan offers a luxurious retreat amidst the natural beauty of Mariveles, providing guests with a perfect blend of comfort, elegance, and tranquility. Whether you're seeking a romantic getaway, a family vacation, or a corporate retreat, the resort caters to a variety of preferences and occasions.</p>
+
+                </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://ibb.co/pP7sRCd"><img src="https://i.ibb.co/7zfTR7K/LASCASAS-09.jpg" alt="LASCASAS-09" border="0"></a><br/>
+      <div class="card-content">
+        <h2>Las Casas Filipinas de Acuzar</h2>
+        <p><strong>Information:</strong> <p>Situated along the coast of Bagac, Bataan, the resort is about an hour's drive from the Dambana ng Kagitingan (Shrine of Valor) on Mount Samat. Its beachfront location offers scenic views of the West Philippine Sea.<p>
+<p>This resort stands out for its concept of preserving and reassembling old Spanish colonial buildings from different parts of the Philippines, offering guests a step back in time to the 18th century while providing modern comforts.Las Casas Filipinas de Acuzar is also a popular venue for weddings, conferences, and other events, offering unique backdrops for special occasions, enhanced by the historic architecture and picturesque landscapes.<p>
+<p>Crown Royale Hotel offers practical and straightforward accommodations with all the basic comforts expected of a mid-range hotel. It's an ideal choice for business travelers, families, and tourists looking for a central location in Balanga without the need for luxury amenities. Its proximity to both commercial areas and tourist attractions makes it a convenient option for various travelers.</p>
+
+               </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://ibb.co/ZXCtqDP"><img src="https://i.ibb.co/fF7Bjw5/123653367.jpg" alt="123653367" border="0"></a>
+      <div class="card-content">
+        <h2>Crown Royale Hotel</h2>
+        <p><strong>Information:</strong> <p>The hotel is strategically situated in the heart of Balanga in Bataan, making it accessible to various commercial establishments, government offices, and educational institutions. It’s approximately 30 minutes from the Dambana ng Kagitingan (Shrine of Valor) on Mount Samat, making it a suitable base for tourists visiting this historic site.<p>
+<p>Crown Royale Hotel offers a range of room options to cater to different needs and budgets. The rooms are typically equipped with essential amenities such as air conditioning, televisions, and private bathrooms. The decor is straightforward, emphasizing functionality and comfort. The service at Crown Royale is focused on providing a comfortable and hassle-free stay.<p>
+<p>Crown Royale Hotel offers a range of room options to cater to different needs and budgets. The rooms are typically equipped with essential amenities such as air conditioning, televisions, and private bathrooms. The decor is straightforward, emphasizing functionality and comfort. The service at Crown Royale is focused on providing a comfortable and hassle-free stay.<p>
+<p>Crown Royale Hotel offers practical and straightforward accommodations with all the basic comforts expected of a mid-range hotel. It's an ideal choice for business travelers, families, and tourists looking for a central location in Balanga without the need for luxury amenities. Its proximity to both commercial areas and tourist attractions makes it a convenient option for various travelers.</p>
+
+           </p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

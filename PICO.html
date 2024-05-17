@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+     
+      </p>
+    </div>
+
+    
+
+   <h1>Pico De loro</h1>
+    <p>Pico de Loro is a popular mountain located in the province of Cavite in the Philippines. Its name, which translates to "Parrot's Beak" in Spanish, comes from the shape of the peak, which resembles a parrot's beak when viewed from a distance.
+
+<p>This mountain is part of the Mount Palay-Palay National Park and is a favorite destination for hikers and outdoor enthusiasts. The summit offers breathtaking panoramic views of the surrounding landscape, including nearby mountains and the beautiful coastline of Batangas province.</p>
+
+<p>Aside from hiking, Pico de Loro is also known for rock climbing, bird watching, and camping. Its proximity to Metro Manila makes it a convenient destination for day trips or weekend getaways for those looking to escape the city and reconnect with nature.</p>
+
+
+<a href="https://ibb.co/qDYJyB4"><img src="https://i.ibb.co/RgTjv2M/Pico-Beach-scaled.jpg" alt="Pico-Beach-scaled" border="0"></a>
+	<h1>How to get there</h1>
+ <p>To get to Pico de Loro, you typically start your journey from Manila, the capital city of the Philippines. Here's a general guide on how to get there:</p>
+
+<p>1.Public Transportation: From Manila, you can take a bus bound for Ternate, Cavite. Several bus companies operate routes to Ternate from various terminals in Manila. Make sure to inform the bus conductor or driver that you're heading to Pico de Loro so they can drop you off at the correct stop.</p>
+
+<p>2.Private Transportation: If you prefer more flexibility and convenience, you can drive to Pico de Loro using your own vehicle or by renting one. From Manila, take the Coastal Road or the Manila-Cavite Expressway (CAVITEX) and head towards Ternate, Cavite. From Ternate, follow the signs leading to the Mount Palay-Palay National Park where Pico de Loro is located.</p>
+
+<p>3.Tricycle or Jeepney Ride: Once you reach Ternate, you'll need to take a tricycle or jeepney ride to the jump-off point for Pico de Loro. The jump-off point is typically at the Magnetic Hill or DENR Station. Tricycle drivers in Ternate are familiar with the location and can take you there.</p>
+
+<p>4.Hike to Pico de Loro: From the jump-off point, you'll begin your hike to Pico de Loro. The hike usually takes around 2-4 hours depending on your pace and the trail conditions. It's advisable to start early in the morning to avoid the midday heat and to allow ample time to enjoy the summit views.</p>
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+    
+	 <a href="https://ibb.co/kcSWbtW"><img src="https://i.ibb.co/BsCSW9S/pico-sands-hotel.jpg" alt="pico-sands-hotel" border="0"></a>
+     
+	 <div class="card-content">
+        <h2>Pico Sands Hotel</h2>
+        <p><strong>Information:</strong><p>Pico Sands Hotel is a contemporary seven storey hotel comprised of 154 spacious rooms equipped with modern amenities and captivating views of the lush mountains and tranquil lagoon. The hotel is situated amidst the lush tropical seaside sanctuary of Pico de Loro Cove, a 40-hectare residential resort village and the maiden cove developed by Hamilo Coast.</p>
+            </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+     
+	<a href="https://ibb.co/7kKkyqr"><img src="https://i.ibb.co/6XFXskD/84580517.jpg" alt="84580517" border="0"></a>
+	
+	<div class="card-content">
+        <h2>Myna Lagoon Pico De Loro</h2>
+        <p><strong>Information:</strong><p>The unit has a flat-screen TV. There is also a kitchenette, fitted with a microwave. A toaster, fridge, stovetop and kettle are included. There is a private bathroom with a shower. Bed linen is available.</p>
+
+	<p>Guests can enjoy an outdoor pool, canoeing, windsurfing, diving, snorkeling and cycling. There is also a fitness center, bowling alley, spa and a tennis court.</p>
+
+	<p>From Manila, it takes 1.5 hours drive via Cavitex-Ternate Route or 2.5 hours drive via SLEX-Sta. Rosa-Tagaytay Route to reach Myna Lagoon Pico de Loro.</p>
+	 
+           </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+    
+	
+
+            </div>
+    </div>
+  </div>
+
+
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

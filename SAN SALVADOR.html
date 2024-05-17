@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+        </div>
+
+    <!-- Card content goes here -->
+
+   <h1>San Salvador Island</h1>
+    <p>San Salvador Island is located in Philippines. Let us guide you to explore San Salvador Island and uncover its beauty. Find inspirations about popular tourist attractions, travel tips, to the best accommodation in Zambales here. Plan your next adventure at Traveloka!<p>
+
+<p>San Salvador is also called the land of lakes and Columbus’ Isle. It is about 12 miles long and five miles wide. Its original name was Guanahani. Later it was called Watling’s Island after George Watling, a noted buccaneer. <p>
+
+<p>Until recently, San Salvador was considered one of the least important islands of The Bahamas. However, with the quincentennial celebrations in 1992, San Salvador attracted much attention as it has been for years identified as the first landfall of Christopher Columbus in the New World. He landed at San Salvador on October 12, 1492, and was greeted by the friendly Lucayan Arawaks.<p>
+
+<p>San Salvador has a rich history: the depopulation of its indigenous population by the Spaniards; the use of its inlets by pirates and buccaneers; the coming of the Loyalists and their slaves; the coming of the Americans during the Second World War and its aftermath; and more recently, the advent of the tourist industry.<p>
+
+   <a href="https://ibb.co/FmJybdP"><img src="https://i.ibb.co/fqtyYTc/636df5c24a3e3c6af073e52d-philippines-cover-img.webp" alt="636df5c24a3e3c6af073e52d-philippines-cover-img" border="0"></a>
+    <h1>How to get there</h1>
+<p>To reach San Salvador Island , you can follow these general directions:<p>
+
+<p>By Public Transportation:<p>
+
+<p>1. Look for flights to Tacloban or Cebu City. From Tacloban, you may need to take a ferry to Guiuan, Eastern Samar, which is the nearest mainland point to San Salvador Island. Once in Guiuan, you can inquire about boat transfers to San Salvador Island.<p>
+
+<p>By Private Vehicle:<p>
+<p>1. If you're starting from Cebu City, you can take a ferry to Ormoc City in Leyte. From there, you can travel overland to Tacloban or take another ferry to Calbayog City in Samar. From Calbayog, you can continue by road to Guiuan and then to San Salvador Island.<p>
+
+<p>It's recommended to verify the specific routes and transportation options based on your starting point and current travel conditions. Additionally, always exercise caution and follow local traffic regulations while traveling.<p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+    <a href="https://imgbb.com/"><img src="https://i.ibb.co/XYm1swp/download-25.jpg" alt="download-25" border="0"></a>
+      
+      <div class="card-content">
+        <h2>Captain Simon's Place resort hotel</h2>
+        <p><strong>Information:</strong><p>Then look no further than Simon's Place, a family-friendly boutique hotel that brings the best of Nuku'alofa to your doorstep. Experience island luxury at our eco-friendly hotel as each double deluxe room is fully furnished with their own private bathrooms, verandas with exotic garden views, coffee and tea making facilities including a fridge, a work desk and more. Staying connected is important so to make your stay easier, we offer free wifi to all guests. Our guests can also utilize the free parking spaces reserved just for them. Experience the best of island cuisine at our on-site Restaurant or unwind and relax at happy hour in our bar while throwing darts in our darts room. Anything you need from car rentals, tour bookings, cultural history etc, our hotel staff will be happy to assist. We promise to ensure you experience the best hospitality our kingdom has to offer, let Simon's Place show you why Tonga is known as the Friendly Islands!
+We’re sure you’ll enjoy your stay at Magalawa Island Armada Resort as you experience all of the things Palauig has to offer.</p>
+
+             </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+   <a href="https://imgbb.com/"><img src="https://i.ibb.co/PQ7D8L1/download-26.jpg" alt="download-26" border="0"></a>
+      <div class="card-content">
+        <h2>Raimers Resort Beach Hotel</h2>
+        <p><strong>Information:</strong> <p>Let Raimers Beach Resort be your host may it be a weekend date, a family gathering, team building, an engagement proposal, a corporate event or a wedding.Summer or Rainy Season enjoy the nature, videoke, comfortable accommodation, glamping overnight or just a day visit. We are equip with kayaks and paddle boards plus a trip to the nearby famous sandbar and we offer tours. Birds Eye View with the view of both the sunset and the sunrise. It is a whole new level of Zambales Experience and our  water is kid friendly/ <p>
+
+
+            </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+    <a href="https://imgbb.com/"><img src="https://i.ibb.co/q7L6b3n/images-11.jpg" alt="images-11" border="0"></a>
+      <div class="card-content">
+        <h2>The Sands Hotel</h2>
+        <p><strong>Information:</strong> <p>The Sands Hotel has 25 stylish seaside cottages and rooms, located on a pristine white sandy private beach with the most beautiful turquoise blue water and breathtaking sunsets, just steps away from your accommodation. The rooms are all decorated so you can feel the atmosphere from the island, each with its own balcony with views of the sunset and beach.<p>
+
+              </div>
+    </div>
+  </div>
+
+  
+
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html
