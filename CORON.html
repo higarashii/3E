@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+      
+      <p class="additional-info" style="display: none">
+      </p>
+    </div>
+
+   <h1>Coron, Palawan</h1>
+    <p>Is a stunning destination located in Northern Palawan, Philippines. It's renowned for its crystal-clear waters, towering limestone cliffs, and pristine beaches. Visitors often explore its famous attractions like Kayangan Lake, Barracuda Lake, and Twin Lagoon, which offer opportunities for snorkeling, diving, and swimming. Coron Island is also home to rich marine life and underwater wrecks, making it a paradise for divers. Additionally, the island is inhabited by the indigenous Tagbanua people, adding cultural significance to its natural beauty.
+
+<p>Best known for world-class World War II-era wreck diving, but the island also offers limestone karst landscapes, beautiful Palawan beaches, crystal-clear freshwater lakes, and shallow-water coral reefs.Coron's town proper is smaller and quieter than El Nido's. However, you'll find a lot of amazing things to do here within the surrounding islands and waters and on the main island. You can hop on a boat and head to the stunning islands for quality snorkeling, scuba or wreck diving, and beach camping. You can also hike up a mountain for a stunning sunset or dip in a hot spring.
+</p>
+
+
+    <a href="https://ibb.co/vq2QNC8"><img src="https://i.ibb.co/8sFdynV/Coron-Palawan.jpg" alt="Coron-Palawan" border="0"></a>
+
+	<h1>How to get there</h1>
+
+<p>By Flights</p>
+<p>Take a ride at the Van Terminal of downtown area Tacloban City to Borongan City via Basey at the South Samar Coastal Road and drop Hernani downtown area near Iglesia ni Cristo Church.<p>
+
+<p>By Sea</p>
+<p>By ferry, 2Go Travel has weekly trips bound for Coron every Friday and Tuesday, and every Tuesday and Friday bound for Manila with 28 hours total travel time. Atienza Shipping Lines also offers ferry trips bound for Coron from Manila and El Nido. Departure from Manila is every Saturday, arriving in Coron on Sunday.
+<p>
+
+
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://imgbb.com/"><img src="https://i.ibb.co/GxRWbgd/Coron-Hilltop.jpg" alt="Coron-Hilltop" border="0"></a>
+      <div class="card-content">
+        <h2>Coron Hilltop View Resort</h2>
+        <p><strong>Information:</strong><p>Located at Brgy. Poblacion 6, Sitio Dipulao, Coron - Busuanga Rd, Coron, 5316 Palawan. Begin your journey at CORON HILLTOP VIEW RESORT, located at the island paradise of Busuanga in Coron, Palawan. This area harnesses the natural beauty of Coron and the laid back rural culture of the vicinity which makes an ideal place to relax and enjoy the natural wonders of nature.
+<p>Staying at this beach resort is an excellent way to enjoy your stay in Coron without having to spend a lot. They offer magnificent views of the island and is close to Mount Tapyas. The rooms provided here blends with the atmosphere of the resort. Plus, they have an outdoor pool.
+
+<p>Price Range is ₱4,000 - ₱6,000 (Based on Average Rates for a Standard Room)</p>
+
+        </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://imgbb.com/"><img src="https://i.ibb.co/bJb8LvB/Club-Paradise-Palawan.jpg" alt="Club-Paradise-Palawan" border="0"></a>
+      <div class="card-content">
+        <h2>Club Paradise Palawan</h2>
+        <p><strong>Information:</strong><p> Located at Dimakya Island, Coron, Northern Palawan. If you want to stay at an exclusive island resort that offers various activities such as diving and jetski, then stay at Club Paradise. It's near the town center and is accessible by a private boat.
+<p>Their beachfront cottages have top-notch facilities such as mini bar, plasma TV and en-suite bathroom. They also have their spa and an on-site dive center.
+
+<p>₱15,900 - ₱19,700 (Based on Average Rates for a Room per night) </p>
+
+        </p>
+      </div>
+    </div>
+
+ 
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

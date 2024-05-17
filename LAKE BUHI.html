@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+         </div>
+
+  
+   <h1>Lake Buhi </h1>
+    <p>Lake Buhi is not just a scenic spot but also holds cultural significance for the Buhinon people, the indigenous community living around the lake. They have a deep connection to the lake and its ecosystem, which is reflected in their traditions, folklore, and livelihoods. The lake is also a designated protected area to conserve its biodiversity and ensure sustainable fishing practices. Visitors can learn about the local culture and environmental conservation efforts through community-led tours and activities.<p>
+
+<p>Lake Buhi is a freshwater lake located in the province of Camarines Sur, Philippines. It's famous for being the home of the world's smallest commercially harvested fish species, the "sinarapan" or "tabios." The lake is surrounded by lush greenery and offers picturesque views of the surrounding mountains. Visitors can enjoy activities such as fishing, boating, and birdwatching while taking in the natural beauty of the area. Additionally, there are resorts and accommodations available nearby for those looking to extend their stay and explore more of the region.<p>
+
+<p>Lake Buhi's unique ecosystem is home not only to the sinarapan but also to a variety of other aquatic species, including tilapia and carp. The lake's waters support diverse flora and fauna, making it an important ecological site in the region. Efforts to conserve and protect Lake Buhi's biodiversity are ongoing, with initiatives focusing on sustainable resource management and environmental education. Visitors can participate in eco-tours and learn about the lake's ecological importance while enjoying its natural beauty and recreational activities.<p>
+
+   <p> Lake Buhi's unique ecosystem is home not only to the sinarapan but also to a variety of other aquatic species, including tilapia and carp. The lake's waters support diverse flora and fauna, making it an important ecological site in the region. Efforts to conserve and protect Lake Buhi's biodiversity are ongoing, with initiatives focusing on sustainable resource management and environmental education. Visitors can participate in eco-tours and learn about the lake's ecological importance while enjoying its natural beauty and recreational activities.<p>
+
+    
+     <a href="https://ibb.co/2kWbm8F"><img src="https://i.ibb.co/YLPrYDN/photo1715591405.jpg" alt="photo1715591405" border="0"></a>
+
+    
+    <h1>How to get there</h1>
+<p>To reach Lake Buhi, you can follow these general directions:<p>
+
+
+
+<p>By Public Transportation:<p>
+
+<p>If you're coming from Naga City, you can take a bus or hire a private vehicle to travel to Buhi town, where Lake Buhi is located. The journey usually takes around 2 to 3 hours, depending on traffic and road conditions.<p>
+
+<p>By Private Vehicle:<p>
+
+</p>If traveling by private vehicle, you can drive from Legazpi City to Naga City via the Maharlika Highway, which offers a scenic journey through the countryside. Once in Tiwi, follow the signs leading to Lake Buhi, which is approximately 20 kilometers away from the town proper. The road leading to the lake is well-paved and accessible by car, making it a convenient option for those with their own transportation.<p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+     <a href="https://ibb.co/s5yy78b"><img src="https://i.ibb.co/vsZZ90V/photo1715591496.jpg" alt="photo1715591496" border="0"></a>
+      <div class="card-content">
+        <h2>Buhi Resort</h2>
+        <p><strong>Information:</strong><p>Located just a short distance from Buhu, Buhi Resort offers comfortable rooms with modern amenities. Guests can enjoy stunning views of the surrounding landscape, including lush greenery and the nearby coastline.<p>
+<p>The resort features an outdoor swimming pool, restaurant, and spacious grounds ideal for relaxation.<p>
+<p>With its convenient location and tranquil atmosphere, Tiwi Resort is an excellent choice for travelers seeking a peaceful retreat near Buhi lake.</p>
+
+              </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://ibb.co/7vY0rYs"><img src="https://i.ibb.co/BLzYTz0/photo1715591534.jpg" alt="photo1715591534" border="0"></a>
+      <div class="card-content">
+        <h2>Avenue Plaza Hotel</h2>
+        <p><strong>Information:</strong> <p>Situated along the scenic coastline of Buhi, Avenue Plaza Hotel provides guests with a relaxing beachfront experience. The resort offers cozy accommodations with private balconies overlooking the sea, allowing guests to enjoy breathtaking sunsets and ocean views.<p>
+<p>Guests can unwind by the beach, take a refreshing dip in the resort's swimming pool, or indulge in delicious local cuisine at the onsite restaurant. With its serene ambiance and proximity to Buhi.' Avenue Plaza Hotel offers a memorable stay for travelers exploring the area.</p>
+
+            </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+<a href="https://ibb.co/Ryn23t4"><img src="https://i.ibb.co/yST06KB/photo1715591703.jpg" alt="photo1715591703" border="0"></a>
+      <div class="card-content">
+        <h2>Naga Land Hotel</h2>
+        <p><strong>Information:</strong> <p>Nestled amidst lush tropical gardens, Naga Land Hotel provides a oasis for guests visiting Buhi Lake. The resort offers a range of accommodations, including cozy cottages and spacious villas, all surrounded by verdant foliage and colorful flowers.<p>
+<p>Guests can relax in the resort's outdoor swimming pool, dine at the onsite restaurant serving Filipino specialties, or explore the nearby attractions, including Buhi Lake.</p>
+
+             </div>
+    </div>
+  </div>
+
+
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

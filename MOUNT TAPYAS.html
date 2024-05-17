@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+       </div>
+
+  
+   <h1> Mount Tapyas </h1>
+    <p>Mount Tapyas is a prominent mountain and popular tourist attraction in Coron, Palawan, Philippines. Rising 210 meters above sea level, it offers breathtaking panoramic views of Coron town, the surrounding islands, and the sparkling waters of Coron Bay. The highlight of the visit is the iconic giant cross situated at the summit, accessible via a challenging but rewarding climb up a staircase with over 700 steps. The lush greenery and refreshing breeze make Mount Tapyas a picturesque location for both adventure seekers and those seeking a tranquil spot to enjoy the scenic beauty of Palawan.
+
+<br><br>The history of Mount Tapyas is deeply rooted in Coron's cultural and religious heritage. The mountain has long been considered a sacred site by the local Tagbanua people. The construction of the giant cross, which stands as a symbol of faith and devotion, began in the early 2000s. Mount Tapyas has since become a pilgrimage site and a must-visit destination for tourists, attracting visitors with its stunning views and offering a connection to the cultural and spiritual fabric of Coron.
+</p>
+
+
+  <a href="https://ibb.co/SXJV5jZ"><img src="https://i.ibb.co/DDLwzJj/mt-tapyas-2.jpg" alt="mt-tapyas-2" border="0"></a>
+
+	<h1>How to get there</h1>
+<p> From Coron Town Proper, you can easily flag down a tricycle to take you to the trailhead for only 150 PHP. <br><br> Another way to get to Mount Tapyas is on foot and the starting point can be found right next to ‘Davens Palace’ in Coron Town Proper. <br><br>‍ From the center of Coron Town, it’s no more than a 10-minute walk to reach the Tapyas stairway.</p>
+<p>
+
+
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://ibb.co/7bgdw90"><img src="https://i.ibb.co/nR3NHWK/the-funny-lion-2.jpg" alt="the-funny-lion-2" border="0"></a>
+      <div class="card-content">
+        <h2>  The Funny Lion Coron </h2>
+        <p><strong>Information:</strong><p>The Funny Lion is a contemporary safari-themed resort located on the outskirts of Coron Town, just 30 minutes from Busuanga Airport. With 46 well-appointed rooms, this boutique holiday destination promises a peaceful refuge with its eco-chic exteriors, modern amenities, and friendly vibe.</p>
+
+                
+        </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+     <a href="https://ibb.co/GRBz0wW"><img src="https://i.ibb.co/Wfqm69k/2-seasons.jpg" alt="2-seasons" border="0"></a>
+      <div class="card-content">
+        <h2> Two Seasons Coron Bayside Hotel</h2>
+        <p><strong>Information:</strong> <p>Two Seasons Resorts, named after the Philippines' wet and dry seasons, offers high-quality accommodations for travelers worldwide. Located on Boracay Island, the resort offers 34 air-conditioned rooms and suites, including 10 Standard Rooms, 9 Deluxe Rooms, 8 Family Suites, 4 Junior Suites, and 2 Seaview Rooms. The resort also features a luxurious presidential suite named Suite Heaven with an infinity pool and verandah overlooking the beach. The barLO Resto Lounge offers refreshing cocktails and delectable Euro-Asian dishes. In 2012, the resort opened its second property in Coron, Palawan, offering 42 high-ceiling bungalows with a distinct Filipino tropical design. The resort is set to open its world-class accommodation in Coron Town, Palawan, with the opening of Two Seasons Coron Bayside Hotel in late 2016.</p>
+
+             
+        </p>
+      </div>
+    </div>
+
+  
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

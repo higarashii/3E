@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region VI</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+         </div>
+
+  
+   <h1>Baras Cave</h1>
+    <p>One interesting place that visitors usually skip is a small cave named Baras in Brgy. Lawi in the Municipality of Jordan. Baras Cave is a small cave with two openings. One can practically swim from one entrance to the other. The water is quite deep, while its reflection on the interior of the cave creates a mesmerizing effect. Small cave with double entry for a short break visiting the charming islands of Guimaras. Nice for swimming, break from the sun and talking some photos. 
+<p>Baras Cave is one of the stops at the Islang Hopping in Guimaras arranged by the Raymen Beach Resort. It is a spacious cave with different rock formations already. It is possible and safe to go deeper inside but better with a guide. Guimaras has a number of caves that tourists can explore, all of them varying in accessibility and size. 
+<p>The most visited is the Baras Cave, which houses fruit bats. Other caves, such as Biri Cave and Bucoy Cave - both in Jordan - can only be accessed by crawling. Capitoguan Cave, also in Jordan, is a bat sanctuary and is about 250 meters (820 feet) long and the entrance is 12 meters (39 feet) tall. Higante Cave, found on top of a hill in Jordan, was said to have been inhabited by a giant, hence its name.</p>
+
+<a href="https://ibb.co/ZB4xP7q"><img src="https://i.ibb.co/9bKWLSQ/inbound4512960629017704735.jpg" alt="inbound4512960629017704735" border="0"></a></a>
+
+	<h1>How to get there</h1>
+<p>To reach Baras Cave, you can follow these general directions:
+<p>From Manila, take a flight to IloIlo. Travel time is roughly 1hr. and 25 minutes. From IloIlo International Airport, take a point to point bus to IloIlo City proper. From downtown IloIlo City, you may take a jeepney or taxi to Ortiz Wharf.
+<p>Get in line and purchase your ferry/boat ticket to Jordan Wharf. Board your boat to Jordan Point in Guimaras. Travel time is about 15 mins. Take a jeepney or tricycle to your resort. Ride a boat to go to the Baras Cave.</p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/nL7hqzp/inbound404515828469434218.jpg" alt="inbound404515828469434218" border="0"></a></a>
+      <div class="card-content">
+        <h2>Raymen Beach Resort</h2>
+        <p><strong>Information:</strong><p>Welcome to Raymen Beach Resort, your Guimaras Island "home away from home." Raymen Beach Resort aims to make your visit as relaxing and enjoyable as possible, which is why so many guests continue to come back year after year. Free internet access is offered to guests, and rooms at Raymen Beach Hotel offer air conditioning. During your stay, take advantage of some of the amenities offered, including shops. Guests of Raymen Beach Hotel are also welcome to enjoy an on-site restaurant. For travelers arriving by car, free parking is available. Best of all, Raymen Beach Hotel makes it easy to experience some great Guimaras Island attractions like Guisi Lighthouse, which is a popular historic site. Raymen Beach Resort puts the best of Guimaras Island at your fingertips, making your stay both relaxing and enjoyable. It is located at Alubihod, Poblacion, Nueva Valencia, Guimaras.</p>
+          
+       
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+<a href="https://ibb.co/hsxw4SJ"><img src="https://i.ibb.co/nrqtYFN/inbound5312434887440208697.jpg" alt="inbound5312434887440208697" border="0"></a></a>
+      <div class="card-content">
+        <h2>Nature's Eye Resort</h2>
+        <p><strong>Information:</strong> <p>Located at Brgy Tando, Nueva Valencia 5046 Philippines. Nature's Eye Beach Resort is an environmentally friendly private resort with a very casual ambiance, green hills roll into soft white sand beach and turquoise waters. It offers serene, sunset and an endless view of the sea to nurture your spirit. You can relax on your own private beach and enjoy nature yourself completely. When you land here, you have found the jewel of Guimaras. An easy escape that is hard to forget.</p>
+               
+
+      </div>
+    </div>
+
+
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

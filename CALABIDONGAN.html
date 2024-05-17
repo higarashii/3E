@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+    </div>
+
+ 
+   <h1>Calabidongan Cave</h1>
+    <p>Located in Camalig, Albay, Calabidongan Cave is known for its stunning rock formations and underground river.<p>
+
+<p>Calabidongan Cave is one of the largest caves in the Philippines, extending over several kilometers with numerous chambers and passages to explore. It's a popular destination for spelunkers and adventure seekers, offering opportunities for cave diving, rock climbing, and discovering unique cave formations such as stalactites and stalagmites. The cave's underground river adds to its allure, making it a must-visit for anyone fascinated by the natural wonders of the world.<p>
+
+<p>Calabidongan Cave's intricate network of passages and chambers offers an intriguing environment for scientific research. Scientists and biologists study the unique ecosystem within the cave, including its geological formations, hydrology, and the diverse species that inhabit it. Exploring the cave can lead to discoveries about the cave's formation, the processes shaping its environment, and the adaptations of its inhabitants to the dark, subterranean conditions. Additionally, ongoing conservation efforts aim to preserve the cave's natural beauty and ecological integrity for future generations to enjoy.<p>
+
+<p>In addition to its natural beauty, Calabidongan Cave holds cultural significance for the local community. It's often used as a venue for cultural events and gatherings, showcasing traditional practices and ceremonies. Exploring the cave provides not only a thrilling adventure but also a chance to immerse oneself in the rich heritage and history of the region. Visitors can also learn about the biodiversity within the cave system, as it supports various species of bats, insects, and other cave-dwelling organisms.<p>
+
+   <a href="https://imgbb.com/"><img src="https://i.ibb.co/tQLCDLv/photo1715590700.jpg" alt="photo1715590700" border="0"></a>
+
+    <h1>How to get there</h1>
+<p>To reach Calabidongan Cave, you can follow these general directions:<p>
+
+<p>By Public Transportation:<p>
+
+<p>1. you can typically travel by land from Dumaguete City, the capital of Negros Oriental.The most common route is to take a bus or hire a private vehicle. <p>
+<p>2. Once in Mabinay, you may need to inquire locally for the specific directions to the cave entrance, as it might not be well signposted. It's advisable to arrange for a local guide who knows the area well to ensure a safe and enjoyable journey.<p>
+
+<p>By Private Vehicle:<p>
+<p>1. If you're traveling by private vehicle from nearby towns or cities, you can use online maps or navigation apps to guide you to Calabidongan Cave<p>
+<p>2. Once in Calabidongan, you can navigate to the city center or inquire with locals for directions to the Cave. Calabidongan Cave is centrally located and easily accessible from major roads in the area.<p>
+
+<p>It's recommended to verify the specific routes and transportation options based on your starting point and current travel conditions. Additionally, always exercise caution and follow local traffic regulations while traveling.<p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://ibb.co/YWf0H3b"><img src="https://i.ibb.co/Jdr3DKC/park-inn-by-radisson.jpg" alt="park-inn-by-radisson" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'></a><br />
+      <div class="card-content">
+        <h2>Atmosphere Resorts & Spa</h2>
+        <p><strong>Information:</strong><p>Atmosphere Resort&Spa is a cozy and budget-friendly hotel located in Dumaguete.
+It offers comfortable accommodations suitable for travelers looking for affordable yet decent lodging options.<p>
+<p>The hotel provides basic amenities and services, including clean and well-maintained rooms, friendly staff, and convenient access to nearby attractions and facilities.<p>
+<p>Overall, Atmosphere Resorts & Spa is a practical choice for travelers seeking a simple and hassle-free stay in Dumaguete.</p>
+
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+  <a href="https://imgbb.com/"><img src="https://i.ibb.co/7nC8TjQ/photo1715590713.jpg" alt="photo1715590713" border="0"></a>
+      <div class="card-content">
+        <h2>The Park Inn by Radisson Dumaguete</h2>
+        <p><strong>Information:</strong> <p>Hotel Ariana is a modern and stylish hotel situated in Dumaguete.<p>
+<p>It boasts contemporary design and comfortable accommodations suitable for both leisure and business travelers.<p>
+<p>The hotel offers a range of amenities and facilities, including spacious rooms equipped with modern conveniences, a restaurant serving delicious local and international cuisine, and meeting or event spaces for various occasions.<p>
+<p>With its convenient location and excellent services, The Park provides guests with a pleasant and memorable stay experience in Dumaguete.</p>
+
+            </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+   <a href="https://ibb.co/c8LKV4y"><img src="https://i.ibb.co/bvJjDc6/photo1715590737.jpg" alt="photo1715590737" border="0"></a>
+      <div class="card-content">
+        <h2>Sta. Monica Beach Club</h2>
+        <p><strong>Information:</strong> <p>Sta. Monica Beach Club is a charming boutique hotel nestled in Dumaguete.<p>
+<p>It exudes a cozy and welcoming atmosphere, making it an ideal retreat for travelers seeking relaxation and comfort.<p>
+<p>The hotel features tastefully decorated rooms with elegant furnishings and modern amenities, ensuring a comfortable stay for guests.<p>
+<p>Additionally, Sta. Monica Beach Club offers personalized services, including attentive staff, delectable dining options, and facilities such as a swimming pool or spa<p>.
+<p>Whether you're visiting for leisure or business, Villa Victoria Hotel provides a delightful oasis in Dumaguete for discerning travelers.</p>
+
+             </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

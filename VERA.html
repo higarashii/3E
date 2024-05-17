@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+     
+      </p>
+    </div>
+
+    
+   <h1>Vera Falls</h1>
+   <p>Vera Falls is a breathtaking natural attraction located in the Philippines. It's renowned for its stunning cascades, crystal-clear pools, and lush surroundings, making it a popular destination for nature lovers and adventurers alike. The falls offer visitors an opportunity to swim in its refreshing waters, surrounded by the beauty of the tropical landscape.
+
+Located in the province of Antique, Vera Falls is often considered one of the hidden gems of the region, as it's nestled amidst verdant forests, requiring a bit of a trek to reach. The journey to the falls is often part of the adventure, as visitors hike through the scenic terrain to reach the cascades.
+
+While not as widely known as some other waterfalls in the Philippines, Vera Falls offers a tranquil and picturesque setting for those seeking a more off-the-beaten-path experience. It's a place where visitors can immerse themselves in the beauty of nature, away from the hustle and bustle of city life.</p>
+
+
+</p>
+
+
+<a href="https://ibb.co/VH7RgR6"><img src="https://i.ibb.co/wJ9VSVt/DSC-5843.jpg" alt="DSC-5843" border="0"></a>
+
+<h1>How to get there</h1>
+<p>LVera Falls is a beautiful destination! To get there, you'll first need to know its location. Vera Falls is located in Barangay Vera, which is in the municipality of Malinao, Aklan, Philippines. Here's a general guide on how to get there:</p>
+
+<p>-Arrive in Aklan: If you're traveling from outside the province, you'll likely arrive in Aklan via air or sea. The main airport serving Aklan is Kalibo International Airport, while there are also sea ports in Caticlan and Kalibo.</p>
+<p>-Travel to Malinao: Once in Aklan, you'll need to travel to the municipality of Malinao. You can do this by bus, van, or private car. Buses and vans heading to Malinao are available at the Kalibo International Airport or in Caticlan.</p>
+<p>-Reach Barangay Vera: From the town center of Malinao, you'll need to travel to Barangay Vera where Vera Falls is located. You can hire a tricycle or a habal-habal (motorcycle taxi) to take you there. Make sure to inform the driver that you're heading to Vera Falls.</p>
+<p>-Hike to Vera Falls: Upon reaching Barangay Vera, you'll need to hike a short distance to reach Vera Falls. The hike usually takes around 15 to 30 minutes depending on your pace. The trail is relatively easy and surrounded by lush greenery.</p>
+<p>-Enjoy Vera Falls: Once you've reached Vera Falls, take your time to appreciate its natural beauty. You can swim in the cool waters, take photos, have a picnic, or simply relax amidst the serene surroundings.</p>
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+   
+ <a href="https://ibb.co/7QfHBRr"><img src="https://i.ibb.co/2S9wRsc/158149451.jpg" alt="158149451" border="0"></a>
+
+	 <div class="card-content">
+        <h2>Mayon Lodging House</h2>
+        <p><strong>Information:</strong><p>Along the Pan-Philippine Highway, this modest guesthouse with views of Mayon Volcano Natural Park is 3 km from Daraga train station and 4 km from Sumlang Lake.
+The down-to-earth rooms come with fans, flat-screen TVs and en suite wet rooms. Upgraded rooms add air conditioning. Family rooms sleep up to 8 people and include bunk beds.
+There's a rooftop deck with views of the volcano </p>
+             </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+     
+<a href="https://ibb.co/0YTwYYv"><img src="https://i.ibb.co/HG6JGG3/hotel-fina.jpg" alt="hotel-fina" border="0"></a>
+      
+	<div class="card-content">
+        <h2>Hotel Fina</h2>
+        <p><strong>Information:</strong> <p>Hotel Fina welcomes guests to make the most of their stay in a vibrant and relaxing conveniently setting. Offering hotel guests superior services and a broad range of amenities, the hotel is committed to ensuring that your stay is as comfortable as possible. The hotel offers access to a vast array of services, including car park, shuttle service, airport transfer, Wi-Fi in public areas, coffee shop, restaurant, and laundry & iron service. In addition, the hotel offers wonderful leisure amenities such as lap swimming pool, kiddie swimming pool, jacuzzi. Guest can also enjoy spa/wellness facilities such as hydrotherapy massage / spa tub, full service health spa to make your stay truly unforgettable. </p>
+            </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+    
+	  <a href="https://ibb.co/7WfMf42"><img src="https://i.ibb.co/4TqvqdP/254940513.jpg" alt="254940513" border="0"></a>
+     
+	 <div class="card-content">
+        <h2>The Marison Hotel</h2>
+        <p><strong>Information:</strong> <p>Located in Legazpi, 7.4 km from Cagsawa Ruins, The Marison Hotel provides accommodation with a fitness centre, free private parking, a restaurant and a bar. The accommodation features a 24-hour front desk, airport transfers, room service and free WiFi throughout the property.
+The hotel will provide guests with air-conditioned rooms with a desk, a kettle, a fridge, a safety deposit box, a flat-screen TV and a private bathroom with a bidet.
+A buffet breakfast is available daily at The Marison Hotel.
+Access to the indoor pool and business centre is provided to all guests of the accommodation.</p>
+</p>
+
+            </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

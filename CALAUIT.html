@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+        </div>
+
+   
+   <h1> Calauit Safari Park </h1>
+    <p>Calauit Safari Park, situated on Calauit Island in the Philippines, is a captivating wildlife reserve sprawling across 3,700 hectares. The park, established in 1976, boasts a unique blend of African and Philippine landscapes. Home to diverse species such as giraffes, zebras, and antelopes, the park offers visitors an immersive safari experience set against a tropical backdrop. Guided tours enable guests to witness the harmonious cohabitation of these African animals in a picturesque setting, making Calauit Safari Park a remarkable destination for wildlife enthusiasts and those seeking an extraordinary nature encounter.
+
+<br><br>In its inception in 1976, Calauit Safari Park was established as part of a bold conservation effort. The project aimed to provide sanctuary to endangered African wildlife species while simultaneously showcasing the Philippines' commitment to wildlife preservation and ecotourism. The island's unique blend of African and local environments was carefully chosen to serve as a haven for these animals. Over the years, Calauit Safari Park has become a symbol of the nation's dedication to conservation and offers a glimpse into the rich history of its wildlife preservation initiatives.
+</p>
+
+
+   <a href="https://ibb.co/K5F3dS2"><img src="https://i.ibb.co/S6R9bGt/calauit-safari-2.jpg" alt="calauit-safari-2" border="0"></a>
+
+	<h1>How to get there</h1>
+<p> By Plane: If you are coming from Manila or other major airports, you can fly directly to Francisco Reyes Airport (Busuanga Airport). From the airport, it is only around a 1.5-hour drive to Calauit Island Port.<br> By public transport: You can also take a scheduled van trip at 10 AM from Coron Public Market to New Busuanga. The van will bring you to Salvacion. From there, you can rent a motorbike or ride a tricycle to Calauit Island Port, which costs ₱500 -₱750 (USD $10 – USD $15) <br> Boat Ride: Whichever mode of transport you choose, you will arrive at Calauit Port. From there, you will take a 10-minute boat ride to Calauit Island.</p>
+<p>
+
+
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://ibb.co/Gkz1VDF"><img src="https://i.ibb.co/K7TQ9gm/la-estancia-new.jpg" alt="la-estancia-new" border="0"></a>
+      <div class="card-content">
+        <h2>  La Estancia Busuanga Resort </h2>
+        <p><strong>Information:</strong><p>Busuanga Island is made up of two towns, Coron and Busuanga. It is the biggest island in North Palawan. Busuanga Town is known for its dive sites, limestone islands, white beaches, waterfalls, lush green forests and a wildlife nature reserve. It may be the lesser-known town, but it encompasses most of the sites of interest in the area. It is pristine, exotic and uncrowded.<br> La Estancia Busuanga is a family-owned resort with its own private beach. It is nestled in a bay surrounded by islands and a lush mangrove forest. Guests are afforded the luxury of escaping from the crowds and experiencing a private island lifestyle.</p>
+
+                 
+        </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+     <a href="https://ibb.co/ZNLJpjZ"><img src="https://i.ibb.co/YbRWFCr/sandcastle.jpg" alt="sandcastle" border="0"></a>
+      <div class="card-content">
+        <h2>Palawan Sandcastles</h2>
+        <p><strong>Information:</strong> <p>Go native in breezy air-conditioned beach houses and fan-cooled pavilions on the closest and prettiest beach to Coron-Busuanga Airport, Palawan, Philippines. With its rustic island charm, travelers to Palawan SandCastles are sure to find bliss on one of the most beautiful spots on Busuanga Island. Only a 30-minute drive from the airport, Palawan SandCastles features private white sand beaches, beachfront accommodation, and a house reef in a private cove. All 10 rooms open up to the tropical breeze, with the beach houses featuring romantic mosquito net canopies when air-conditioning’s not your thing. Fresh, spring water-fed plunge pools are a feature of all but the two backpacker native pavilions; backpackers though still have access to the plunge pool at the bar! SandCastles isn’t your typical tropical beach resort. It’s quite unique.</p>
+
+             </div>
+    </div>
+
+ 
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

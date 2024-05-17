@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region VI</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+       </div>
+
+   
+   <h1>Danjugan Island</h1>
+    <p>Danjugan Island is a pristine gem located in Brgy. Bulata, Cauayan, Negros Occidental, Philippines. 
+<p>It acts as a sanctuary for several species of fish, birds, and reptiles because of its colorful coral reefs, lush mangrove forests, and diverse marine life. For those who love the outdoors and the environment and are looking for peace and adventure among untouched beauty, the island is a haven.
+<p>Danjugan Island's abundant biodiversity can be discovered by guests on guided nature walks, snorkeling trips, and diving explorations. While endangered bird species like the Philippine cockatoo find refuge in the dense jungle, visitors can catch glimpses of vibrant coral gardens brimming with tropical fish in the crystal-clear waters around the island. Danjugan Island, which is a conservation area, is not only a beautiful place to visit but also evidence of how important it is to protect our natural heritage for the enjoyment of future generations.</p>
+<img src="https://i.ibb.co/qndmk33/caption.jpg" alt="image" border="0"></a>
+    <h1>How to get there</h1>
+<p>To reach Danjugan Island, you can follow these general directions:
+<p>The nearest airport to Danjugan Island is Bacolod-Silay Airport, which is located in Bacolod City. From there, you can take a bus or a car to the town of Bulata, which is the jump-off point for trips to the island. From Bulata, you will need to take a boat to reach the island. The trip takes about an hour and a half by pumpboat.
+<p>You can also get to Danjugan Island from Bacolod by land, via the town of Cauayan. It’s about two hours ride from Bacolod to Cauayan, you will then take a habal-habal (motorbike) and tricycle ride to Barangay Bulata.</p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+<img src="https://i.ibb.co/HrT6mF2/Takatuka-Beach-Resort-Marco-Polo.jpg" alt="image" border="0"></a>
+      <div class="card-content">
+        <h2>Takatuka Beach Resort</h2>
+        <p><strong>Information:</strong><p>Takatuka Beach Resort located in Brngy. Nauhang, Sipalay City, Negros Occidental, Philippines, 6113 is a picturesque tropical escape with vibrant beachfront cottages, palm-fringed shores, and crystal-clear waters. Ideal for relaxation and adventure, it offers water sports, beachfront dining, and cozy accommodations.</p>
+        </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+<img src="https://i.ibb.co/W2JTBnp/gallery-image-5.jpg" alt="image" border="0"></a>
+      <div class="card-content">
+        <h2>Punta Bulata Resort & Spa</h2>
+        <p><strong>Information:</strong> <p>Punta Bulata Resort & Spa is a tranquil beachfront retreat located in Cauayan, Negros Occidental 6112 Philippines. It offers pristine white sand beaches, lush tropical gardens, and luxurious spa treatments, making it an ideal destination for relaxation and rejuvenation amidst natural beauty.</p>
+            </div>
+    </div>
+
+ 
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+    </div>
+
+   
+   <h1>Apo Reef</h1>
+    <p>Apo Reef is the largest coral reef in the Philippines! It spreads over an area of 34 square kilometers, making it the second largest connecting coral reef in the world (the first place being occupied by the Great Barrier Reef of Australia). The Apo Reef, also considered as the second largest atoll-like reef in the Philippines comprises of two isolated coral reefs that are disconnected by a 30-meter deep channel.</p>
+
+<p> The clear blue waters of the channel are teeming with 285 species of colorful marine life, including tropical aquarium fish, snappers and the crevice-dwelling moray. It is one best dive spots in the world, attracting hordes of divers all the year round. The soft white sand and patches of fine corals, clearly visible through the crystal blue waters, is truly an entrancing sight to behold!</p>
+       <img src="https://i.ibb.co/XWc3RtT/apo-reef.jpg" alt="apo-reef" border="0"></a>
+
+	<h1>How to get there</h1>
+<p>There is no direct connection from Palawan to Apo Reef. However, you can take the taxi to El Nido airport, fly to Francisco B. Reyes, then take the travel to Apo Reef. Alternatively, you can take the Minivan to El Nido, take the walk to El Nido, Palawan, take the ferry to Coron, then take the travel to Apo Reef.</p>
+
+
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://i.ibb.co/svJP0TV/seasons.jpg" alt="seasons" border="0"></a>
+      <div class="card-content">
+        <h2>Seasons Hotel Sablayan</h2>
+        <p><strong>Information:</strong><p>While lodging at this wonderful hotel located at Sablayan Municipal Park, National Highway P. Urieta Brgy., Buenavista, Sablayan, Mindoro 5104 Philippines, the helpful staff at the front desk can assist you with multiple services that include concierge service and safety deposit boxes. If you want seats to city's best entertainment, you can get help through the hotel's tours. The hotel's on-site dry cleaning service and laundry service help you keep your favorite travel outfits clean so you can pack less. In-room conveniences include 24-hour room service, room service and daily housekeeping, so you can relax and enjoy your stay.</p>
+                 
+        </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://i.ibb.co/GVBwtCP/paraiso.jpg" alt="paraiso" border="0"></a>
+      <div class="card-content">
+        <h2>Sablayan Paraiso Beach Resort</h2>
+        <p><strong>Information:</strong> <p>Located in VQ4H+JPR, Sablayan, 800 metres from Buenavista Occidental Mindoro, Sablayan Paraiso Beach Resort offers accommodation in bungalows and Nipa huts. The resort features free WiFi access and private parking. All rooms have a mosquito net, seating area and sofa. Bathrooms come with shower and free toiletries. Towels and linen are provided. Guests can admire the sea turtles and coral reefs on Pandan Island, a 20-minute boat ride from Sablayan Paraiso Beach Resort. The area is popular for snorkelling and diving. The resort can assist guests with day trip arrangements to Apo Reef coral atoll. Sablayan Paraiso also offers bike hire. You can play darts and squash at the property. Guests can enjoy local and international food and drinks in the restaurant and bar on site.</p>
+
+           
+        </p>
+      </div>
+    </div>
+
+  
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

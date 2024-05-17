@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+       </div>
+
+  
+
+   <h1>KAYANGAN LAKE</h1>
+    <p>Kayangan Lake is the ancestral domain of the indigenous Tagbanua people who call Coron home. It’s important to note that the lake has a long history of local lore and tradition behind it, and increasing tourist numbers have seen the boundaries between the Tagbanua and tourists pushed to the limits. The Tagbanua are the original inhabitants of Coron, a community descended from the Tabon culture which is seen as the first modern human culture to arrive in the Philippines. Tagbanua traditions mean that they see themselves as caretakers of their sacred land, including the lakes, as well as guardians of the visitors who come here. Ancient traditions hold that the lakes on Coron Island, of which Kayangan is but one that’s open to tourists, are home to nature spirits. This includes the riveting myth of a giant octopus creature that defends the land of the Tagbanua. Kayangan Lake is a crystal-clear freshwater lake in Coron, featuring underwater rock formations, caves and islets. It's a popular spot for photographers, for fairly obvious reasons, and is said to be the cleanest lake in all of the Philippines.</p>
+
+    <a href="https://ibb.co/tC0cpz3"><img src="https://i.ibb.co/0J0ZyKQ/aerial-view-of-kayangan-lake.jpg" alt="aerial-view-of-kayangan-lake" border="0"></a>
+
+	<h1>How to get there</h1>
+Kayangan Lake is only accessible by boat, and it’s a short 15 minutes journey from Coron town (or 5 minutes from the stunning Twin Lagoon). Most people choose one of the package tours to see this beautiful place, many of which arrive at the same time. By hiring your own boat, you’ll be able to magically skip all the crowds and have a fantastic experience (more on that later). There are no public transport options to visit Kayangan. With either option the boat will dock at the pier in the middle of this stunning bay. If you go on a package tour, you will go to Kayangan Lake at exactly the same time as all the other groups. Tour companies in Coron are unimaginative and all stick to very similar timetables, so you’ll bump into the same people all day. This means you’ll be going to every spot at the most crowded times of day.</p>
+
+
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://ibb.co/ydMjvxY"><img src="https://i.ibb.co/n6VJdKn/468303108.jpg" alt="468303108" border="0"></a>
+      <div class="card-content">
+        <h2>DK'S INN</h2>
+        <p><strong>Information:</strong><p>Located at Barangay 1, Coron, Palawan, 4.4 km from Maquinit Hot Spring, DK's Inn offers accommodation with a garden, free WiFi and room service. Located around 700 metres from Coron Public Market, the homestay is also 1.1 km away from Mount Tapyas. The property is 100 metres from the city centre and 1.9 km from Dicanituan Beach.</p>
+
+        <!--In this part, you will add information about this place, and when you add a new paragraph/info, just enclose it with <br /> tags. -->
+        <p class="additional-info" style="display: none">
+          
+        </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+     <a href="https://ibb.co/WP735dh"><img src="https://i.ibb.co/4YCftDq/85946270.jpg" alt="85946270" border="0"></a>
+      <div class="card-content">
+        <h2>TWO SEASONS CORON BAYSIDE HOTEL</h2>
+        <p><strong>Information:</strong> <p>Located at National Road Barangay Tagumpay, Coron, 5316 Palawan, Two Seasons Coron Bayside Hotel offers accommodation with views of the sea, 5 km from Kayangan Lake. Guests can enjoy meals at the in-house restaurant. Free WiFi is provided throughout the property. It is a 280 metre-walk to Coron Seaport. Coron Public Market is 2 km away, while Maquinit Hot Spring is 3 km from the property. The nearest airport is Busuanga Airport, 23.2 km from Two Seasons Coron Bayside Hotel.</p>
+
+        </div>
+    </div>
+
+
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>
