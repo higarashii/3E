@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+         </div>
+
+
+   <h1>Callao Cave</h1>
+    <p>Callao Cave is one of the most famous natural landmarks in the Cagayan Valley region of the Philippines. Located in Barangays Magdalo and Quibal in the municipality of Peñablanca, Callao Cave is renowned for its unique rock formations, cathedral-like chambers, and its historical and cultural significance.<p>
+
+<p>The cave complex consists of seven chambers, with the first chamber serving as the main entrance. What makes Callao Cave truly special is its natural skylight created by a large opening in the cave ceiling, allowing sunlight to filter through and illuminate parts of the cavern, creating a surreal and picturesque sight.<p>
+
+<p>Aside from its natural beauty, Callao Cave holds cultural significance as well. Archaeological excavations have revealed evidence of early human habitation dating back thousands of years. Inside the cave, ancient artifacts such as pottery shards and tools have been discovered, shedding light on the prehistoric inhabitants of the area.<p>
+
+<p>Moreover, Callao Cave is a popular destination for religious pilgrimages and spiritual retreats. Within the caverns, visitors can find a chapel dedicated to the Virgin Mary, complete with a cross and religious icons. This adds another layer of significance to the cave, making it not only a natural wonder but also a place of reverence and worship for many.<p>
+
+<p>Visitors to Callao Cave can explore its chambers through guided tours offered by local guides. The cave's awe-inspiring beauty, combined with its rich history and cultural importance, makes it a must-visit destination for travelers exploring the Cagayan Valley region.<p>
+
+    <a href="https://ibb.co/jg9ydnD"><img src="https://i.ibb.co/9smbJQW/6461f8b64dab5d001dd4ee1b.jpg" alt="6461f8b64dab5d001dd4ee1b" border="0"></a>
+
+	<h1>How to get there</h1>
+<p>To reach Callao Cave, you can follow these general directions:<p>
+
+<p>By Public Transportation:<p>
+
+<p>1. From Manila to Tuguegarao City: Take a bus bound for Tuguegarao City, Cagayan. Several bus companies operate routes from various terminals in Manila to Tuguegarao. The journey typically takes around 10 to 12 hours, depending on traffic and road conditions.<p>
+<p>2. From Tuguegarao City to Peñablanca: Upon reaching Tuguegarao City, head to the van terminal near the city center. Vans bound for Peñablanca, where Callao Cave is located, are available. The travel time is approximately 30 to 45 minutes.<p>
+<p>3. From Peñablanca to Callao Cave: From the Peñablanca town proper, you can hire a tricycle or motorcycle (locally known as habal-habal) to take you to Callao Cave. It's a short ride from the town center to the cave entrance.
+
+<p>By Private Vehicle:<p>
+<p>1. From Manila to Tuguegarao City: Take the North Luzon Expressway (NLEX) and continue onto the Subic-Clark-Tarlac Expressway (SCTEX). From there, merge onto the Tarlac-Pangasinan-La Union Expressway (TPLEX) and follow signs leading to the North Luzon provinces until you reach Tuguegarao City.<p>
+<p>2. From Tuguegarao City to Peñablanca: From Tuguegarao City, take the Maharlika Highway (also known as Pan-Philippine Highway) heading north towards the municipality of Peñablanca. The distance is approximately 20 kilometers.<p>
+<p>3. From Peñablanca to Callao Cave: Once you reach Peñablanca, follow the main road towards the town center. Look for signs indicating the way to Callao Cave. The cave entrance is easily accessible by car, and there are parking facilities available.
+
+<p>Regardless of the mode of transportation you choose, it's always a good idea to check for any updates on routes, schedules, and road conditions before embarking on your journey. Additionally, it's advisable to visit Callao Cave during daylight hours to fully appreciate its beauty and ensure a safe and enjoyable experience.<p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+    <a href="https://ibb.co/zfJY6Rv"><img src="https://i.ibb.co/s3HGWwY/213944344.jpg" alt="213944344" border="0"></a>
+      <div class="card-content">
+        <h2>Hotel Carmelita</h2>
+        <p><strong>Information:</strong><p>Hotel Carmelita in Tuguegarao City offers comfortable accommodations with modern amenities in the heart of the bustling city.<p>
+<p>Conveniently located, the hotel provides easy access to commercial and cultural establishments.<p>
+<p>With well-appointed rooms, a restaurant serving local and international cuisine, and facilities like a swimming pool and fitness center, Hotel Carmelita ensures a pleasant stay for both leisure and business travelers.</p>
+
+                      </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+    <a href="https://ibb.co/M7jhXvf"><img src="https://i.ibb.co/Xtd4wQD/photo4jpg.jpg" alt="photo4jpg" border="0"></a>
+      <div class="card-content">
+        <h2>Valley Hotel</h2>
+        <p><strong>Information:</strong> <p>Valley Hotel, nestled in Tuguegarao City, offers a cozy retreat with its convenient location and warm hospitality.<p>
+<p>This budget-friendly option provides comfortable rooms and basic amenities, making it an ideal choice for travelers exploring the Cagayan Valley region.<p>
+<p>With its proximity to major landmarks and attractions, Valley Hotel serves as a convenient base for guests to enjoy their stay in the area.<p>
+
+           <p class="additional-info" style="display: none">
+                </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+ <a href="https://imgbb.com/"><img src="https://i.ibb.co/YN56r8C/5d3d0dfa8927386c4e13381edc9e91ec12983f2a0bfdf0d5dd69780d1b6c.jpg" alt="5d3d0dfa8927386c4e13381edc9e91ec12983f2a0bfdf0d5dd69780d1b6c" border="0"></a>
+      <div class="card-content">
+        <h2>Balai Bed and Breakfast</h2>
+        <p><strong>Information:</strong> <p>Balai Bed and Breakfast in Tuguegarao City provides a charming and cozy stay for guests seeking comfort and convenience.<p>
+<p>Located in the heart of the city, this accommodation offers well-appointed rooms and a warm ambiance.<p>
+<p>The hotel features tastefully decorated rooms with elegant furnishings and modern amenities, ensuring a comfortable stay for guests.<p>
+<p>With its friendly service and easy access to amenities and dining options, Balai Bed and Breakfast is an excellent choice for travelers exploring the Cagayan Valley region.</p>
+        <p class="additional-info" style="display: none">
+                </p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

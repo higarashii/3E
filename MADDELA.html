@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+ 
+      <p class="additional-info" style="display: none">
+       
+      </p>
+    </div>
+
+    <!-- Card content goes here -->
+
+   <h1>Maddela Watershed Forest</h1>
+    <p>The Maddela Watershed Forest Reserve, situated in Quirino province, Philippines, is a vital ecological treasure in the region. Spanning approximately 11,787 hectares, this reserve plays a crucial role in regulating the local climate, preserving biodiversity, and safeguarding water resources for nearby communities. Its diverse landscape encompasses lush forests, sprawling grasslands, and winding rivers, providing habitat for various plant and animal species, some of which are endemic to the area.
+
+<p>The conservation efforts within the Maddela Watershed Forest Reserve are essential for maintaining the ecological balance of the region. Through sustainable forest management practices and reforestation initiatives, local authorities strive to protect the reserve's biodiversity and ensure the longevity of its ecosystem services. Additionally, the reserve serves as a living laboratory for scientific research, offering insights into ecosystem dynamics, carbon sequestration, and watershed management strategies.
+
+<p>The Maddela Watershed Forest Reserve also holds cultural and recreational value for local communities and visitors alike. It serves as a venue for eco-tourism activities such as hiking, birdwatching, and nature photography, allowing people to appreciate the beauty of the natural environment while fostering a deeper connection with nature. Moreover, the reserve serves as a source of inspiration for environmental education and awareness programs, encouraging individuals to become stewards of the environment and advocates for sustainable development practices.
+
+
+    <a href="https://ibb.co/L1M4Wpv"><img src="https://i.ibb.co/DQN3yKL/00-1.jpg" alt="image" border="0"></a>
+
+	<h1>How to get there</h1>
+<p>To get to Maddela Watershed Forest, you can follow these directions:<p>
+
+<p>Getting to the Maddela Watershed Forest Reserve in Quirino involves several steps, but the journey is worth it for the breathtaking scenery and rich biodiversity that await. The most common starting point is from Manila, the capital city of the Philippines. From Manila, travelers have several options for reaching Quirino province, including by bus, private car, or air travel to Cauayan Airport in nearby Isabela province.
+
+<p>Once you've arrived in Quirino province, the next step is to make your way to the town of Maddela, where the forest reserve is located. From the provincial capital of Cabarroguis, you can take a bus, jeepney, or hire a private vehicle to Maddela. The journey typically takes around 1 to 2 hours, depending on road conditions and transportation availability.
+
+<p>Upon reaching Maddela town proper, you can inquire about guided tours or transportation services to the Maddela Watershed Forest Reserve. Many local tour operators offer packages that include transportation to the reserve's entrance, where you can begin your exploration of this pristine natural sanctuary. Alternatively, if you prefer to explore independently, you can arrange for a tricycle or motorcycle ride to take you to the reserve entrance. Once there, you can embark on hiking trails or participate in guided eco-tours to fully experience the beauty and wonders of the Maddela Watershed Forest Reserve.
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://ibb.co/2dPy2my"><img src="https://i.ibb.co/89203T0/1-scaled.jpg" alt="image" border="0"></a>
+      <div class="card-content">
+        <h2>Abrasa MPC Hotel</h2>
+        <p><strong>Information:</strong><p>Cordon - Diffun - Maddela - Aurora Rd, Diffun, Quirino<p> 
+<p>Abrasa MPC Hotel, situated in Quirino province, Philippines, offers a comfortable and convenient lodging option for travelers exploring the region. The hotel features well-appointed rooms and suites, equipped with modern amenities to ensure a pleasant stay for guests. Whether you're visiting for business or leisure, Abrasa MPC Hotel provides a welcoming ambiance and personalized service to cater to your needs.<p>
+<p>Abrasa MPC Hotel offers a range of facilities and services to enhance guests' experiences. From a cozy restaurant serving delicious local and international cuisine to a spacious function hall ideal for hosting events and gatherings, the hotel provides ample opportunities for relaxation and socializing. With its strategic location and warm hospitality, Abrasa MPC Hotel serves as a convenient base for exploring the natural attractions, cultural landmarks, and vibrant communities of Quirino province.</p>
+
+       
+        <p class="additional-info" style="display: none">
+         
+        </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://imgbb.com/"><img src="https://i.ibb.co/yq2MXMX/unnamed.jpg" alt="image" border="0"></a>
+      <div class="card-content">
+        <h2>Villa Caridad Resort & Hotel</h2>
+        <p><strong>Information:</strong> <p>55MJ+7PJ, Calamba, 4027 Laguna<p>
+<p>Villa Caridad Resort & Hotel, nestled in the heart of Quirino province, Philippines, offers a tranquil retreat amidst lush greenery and scenic landscapes. The resort boasts a range of accommodation options, including cozy rooms and spacious villas, designed to cater to the diverse needs of guests. Whether you're seeking a romantic getaway, a family vacation, or a corporate retreat, Villa Caridad provides a serene ambiance coupled with modern amenities to ensure a comfortable stay.<p>
+<p>Villa Caridad features an array of leisure facilities and recreational activities for guests to enjoy. From swimming pools and water slides to outdoor sports facilities like basketball and volleyball courts, there's something for everyone to indulge in. The resort's lush gardens and manicured lawns also provide a perfect setting for events such as weddings, conferences, and team-building activities, making it a popular choice for both leisure and business travelers alike.</p>
+
+     
+        <p class="additional-info" style="display: none">
+         
+        </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://ibb.co/Kwj41gQ"><img src="https://i.ibb.co/rsG8WhL/3.jpg" alt="image" border="0"></a>
+      <div class="card-content">
+        <h2>Quirino Provincial Hotel</h2>
+        <p><strong>Information:</strong> <p>Capitol Hills Rd, Cabarroguis, 3400 Quirino<p>
+<p> Quirino Provincial Hotel stands as a beacon of hospitality in Quirino province, Philippines, offering a comfortable and memorable stay to visitors. The hotel boasts a variety of accommodation options, ranging from cozy rooms to spacious suites, ensuring that guests find the perfect retreat for their needs. Each room is thoughtfully designed and well-equipped with modern amenities to provide convenience and relaxation throughout your stay.<p>
+<p> Quirino Provincial Hotel offers a range of facilities and services to enhance guests' experiences. The hotel features a restaurant serving delectable local and international cuisine, as well as a coffee shop where guests can unwind and enjoy a cup of freshly brewed coffee. With its convenient location and warm hospitality, Quirino Provincial Hotel serves as an ideal base for exploring the natural wonders, cultural heritage, and warm communities of Quirino province. Whether you're visiting for business or leisure, this hotel provides a welcoming haven where you can create lasting memories amidst the beauty of Quirino.<p>
+
+        <p class="additional-info" style="display: none">
+         
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

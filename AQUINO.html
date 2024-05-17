@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aquino Center and Museum</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+         </div>
+
+    <!-- Card content goes here -->
+
+   <h1>Aquino Center and Museum</h1>
+    <p>Located at Hacienda Luisita, San Miguel, Tarlac City, Tarlac, Philippines<p>
+
+<p>The Aquino Center and Museum was established by the Board of Trustees of the then Benigno S. Aquino, Jr. Foundation together with equally committed individuals to enshrine and continuously learn from the valuable lessons of our people’s struggle to restore freedom, democracy, and genuine development.  It was formally inaugurated on August 21, 2001, the eighteenth anniversary of Ninoy Aquino’s martyrdom.<p>
+
+<p>Its main feature is the Museum, which houses photos and memorabilia of Ninoy and Cory Aquino.  It also chronicles the Filipinos proud recent history: their fight to restore democracy and their shining example of People Power that inspired the world.<p>
+
+<p>The Center also features conference and event facilities that provide an inspiring setting for leadership formation, training, and team building activities; fellowship among corporations, government agencies, and non-government organizations; and other social gatherings<p>
+
+    <a href="https://imgbb.com/"><img src="https://i.ibb.co/PMGHFG2/aquinocenter.jpg" alt="aquinocenter" border="0"></a> </th>
+
+	<h1>How to get there</h1>
+<p>  The Aquino Center and Museum is located approximately 130 kilometers north of Manila, the capital city of the Philippines. You can travel by private vehicle, public transportation, or organized tour.<p>
+
+<p>By Public Transportation:<p>
+
+<p>1. from Manila, you can take a bus bound for Tarlac City. Several bus companies operate routes to Tarlac, with terminals located in various parts of Metro Manila such as Cubao, Pasay, and Sampaloc.<p>
+<p>2. Upon reaching Tarlac City, you can take a tricycle or jeepney to Hacienda Luisita where the Aquino Center and Museum is located. Tricycles and jeepneys are common modes of transportation in the area and can be found near the public market or terminal.<p>
+
+<p>By Private Vehicle:<p>
+<p>1. By Private Vehicle, from Manila, take the North Luzon Expressway (NLEX) and exit at the Concepcion Exit in Tarlac. After the tollgate, turn right onto the MacArthur Highway (AH26). <p>
+<p>2. Continue driving straight on MacArthur Highway until you reach Tarlac City. Once in Tarlac City, continue on MacArthur Highway until you see signs for Hacienda Luisita. Turn right into Hacienda Luisita and follow the road until you reach the Aquino Center and Museum.<p>
+
+<p>By following these directions, you should be able to reach the Aquino Center and Museum and explore its exhibits and galleries dedicated to the legacy of the Aquino family and Philippine democracy.<p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://ibb.co/ZTCYTGp"><img src="https://i.ibb.co/h8vZ8LJ/rancho-hotel.jpg" alt="rancho-hotel" border="0"></a> </th>
+      <div class="card-content">
+        <h2>El Rancho Hotel</h2>
+        <p><strong>Information:</strong><p>El Rancho Hotel is located along MacArthur Highway in San Rafael, Tarlac City, Philippines. <p>
+El Rancho HOtel offers comfortable accommodations and a range of amenities suitable for both leisure and business travelers. The standard room at El Rancho Hotel features cozy furnishings and modern amenities, providing a comfortable retreat for guests.<p>
+<p>Each room is equipped with either one queen-size bed or two single beds, accommodating up to two adults and one child. The deluxe room offers additional space and upgraded amenities for added comfort during your stay. These rooms may feature one queen-size bed or two single beds, accommodating up to two adults and one child. Deluxe rooms also include a seating area and work desk for added convenience.<p>
+<p>El Rancho Hotel provides guests with a relaxing and enjoyable stay in Tarlac City, with comfortable accommodations, recreational facilities, and convenient amenities for a memorable experience.</p>
+
+              </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+     <a href="https://imgbb.com/"><img src="https://i.ibb.co/3pR4KGp/romana-hotel.jpg" alt="romana-hotel" border="0"></a> </th>
+      <div class="card-content">
+        <h2>La Romana Hotel</h2>
+        <p><strong>Information:</strong> <p>La Romana Hotel is located along MacArthur Highway in Brgy. San Rafael, Tarlac City, Philippines.<p>
+<p>It offers comfortable accommodations and a range of amenities suitable for both leisure and business travelers. The standard room at La Romana Hotel features cozy furnishings and essential amenities for a comfortable stay.<p>
+<p>Each room is equipped with one queen-size bed or two single beds, accommodating up to two adults and one child. The deluxe room offers additional space and upgraded amenities for added comfort during your stay. These rooms may feature one queen-size bed or two single beds, accommodating up to two adults and one child. Deluxe rooms also include a seating area and work desk for added convenience.<p>
+<p>La Romana Hotel provides guests with a convenient and enjoyable stay in Tarlac City, with comfortable accommodations, convenient amenities, and attentive service to ensure a memorable experience.</p>
+
+                </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://ibb.co/vsZhnj8"><img src="https://i.ibb.co/q0kCQrw/casareal-hotel.png" alt="casareal-hotel" border="0"></a> </th>
+      <div class="card-content">
+        <h2>Casareal Hotel</h2>
+        <p><strong>Information:</strong> <p>Casareal Hotel situated in Barangay San Roque, Tarlac City, Tarlac, Philippines.<p>
+<p>The hotel offers comfortable and well-appointed rooms designed to provide guests with a relaxing and enjoyable stay.<p>
+<p>Room options may include standard rooms, deluxe rooms, and suites, each featuring modern amenities and stylish furnishings to ensure a comfortable stay.<p>
+<p>Guests staying at Casareal Hotel can explore nearby attractions and landmarks in Tarlac City, including the Aquino Center and Museum, Luisita Golf and Country Club, and Tarlac Recreational Park.<p>.
+<p>Casareal Hotel is conveniently located within walking distance or a short drive from key attractions, shopping centers, restaurants, and business establishments in Tarlac City. Public transportation options are readily available in the area for guests who wish to explore the city further.</p>
+
+             </p>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

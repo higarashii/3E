@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+       </div>
+
+   <h1>Baler</h1>
+    <p>Baler is a coastal town located in the province of Aurora. It situated on the eastern coast of Luzon island, facing the Philippine Sea. It is approximately 231 kilometers northeast of Manila, the capital city of the Philippines.<p>
+
+<p>Baler has a rich historical significance, particularly for its role in the Philippine Revolution against Spanish colonization. The Siege of Baler, which took place from 1898 to 1899, was a notable event where Spanish soldiers held out in the town's church for almost a year after the end of the Spanish-American War. This event is commemorated in various historical sites and landmarks around the town.<p>
+
+<p>The economy of Baler is primarily driven by agriculture, fishing, and tourism. The town is known for its fertile lands, producing crops such as rice, coconut, and various fruits. Fishing is also a significant industry due to Baler's coastal location. In recent years, tourism has become increasingly important, with Baler attracting visitors seeking its renowned surfing spots, natural attractions, and historical sites.<p>
+
+<p>Baler is a popular tourist destination, offering a mix of natural beauty, cultural heritage, and outdoor activities. Some of the notable attractions in and around Baler include:Sabang Beach, Ditumabo Mother Falls (Mother Falls),Dicasalarin Cove, and  various historical landmarks and sites, including the Baler Museum, Baler Catholic Church (also known as San Luis Obispo de Tolosa Parish Church), and the Aurora Quezon House. In addition to surfing, visitors can enjoy activities such as snorkeling, swimming, trekking, and camping in and around Baler.<p>
+
+    <a href="https://ibb.co/r413fJ8"><img src="https://i.ibb.co/bz8FRnw/Photo-Grid-1572956543210.jpg" alt="Photo-Grid-1572956543210" border="0"></a>
+
+    <h1>How to get there</h1>
+<p>To get to Baler town in Aurora province, Philippines, you have several transportation options depending on your starting point. You can follow these general directions:<p>
+
+<p>From Manila:<p>
+
+<p>1. By Bus: The most common way to reach Baler from Manila is by bus. Several bus companies operate daily trips from Metro Manila to Baler. Buses usually depart from terminals in Cubao or Pasay. The travel time is approximately 5 to 6 hours, depending on traffic conditions and the bus route taken. Genesis Transport, JoyBus, and Baliwag Transit are some of the bus companies that serve the Manila-Baler route.<p>
+<p>2. By Private Vehicle : If you prefer to drive, you can take your own vehicle or rent one in Manila. The route typically involves taking the North Luzon Expressway (NLEX) and the Subic-Clark-Tarlac Expressway (SCTEX) until you reach the town of Cabanatuan in Nueva Ecija. From there, you'll proceed to the eastern coastal road leading to Baler.<p>
+
+<p>From Clark International Airport:<p>
+<p>1. By Private Vehicle or Taxi :  If you're arriving at Clark International Airport, you can take a taxi or arrange for a private vehicle to drive you directly to Baler. The journey takes approximately 4 to 5 hours, depending on traffic conditions.<p>
+<p>2. By Bus : Some bus companies also offer direct trips from Dau Bus Terminal in Mabalacat, Pampanga, near Clark International Airport, to Baler.<p>
+
+<p>From Other Provinces: By Bus, if you're coming from other provinces in Luzon, you can check for bus routes that pass through Cabanatuan City or other transit points near Baler. From there, you can transfer to buses bound for Baler.<p>
+
+<p>Baler town proper is relatively small and easy to navigate. Most buses and vehicles drop off passengers at the town center, where you'll find various accommodations, restaurants, and shops. From there, you can easily access popular attractions within Baler and its surrounding areas using tricycles, rented motorcycles, or private vehicles.<p>
+
+<p>It's advisable to check the bus schedules and book tickets in advance, especially during weekends, holidays, and peak travel seasons.<p>
+
+
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://ibb.co/VLLs4GT"><img src="https://i.ibb.co/Mggm0H7/circle-hostel-la-union-1603097532.jpg" alt="circle-hostel-la-union-1603097532" border="0"></a>
+      <div class="card-content">
+        <h2>The Circle Hostel Baler</h2>
+        <p><strong>Information:</strong><p>The Circle Hostel Baler is situated in Barangay Sabang, Baler, offering easy access to Sabang Beach, one of the prime surfing spots in the area. It's conveniently located near restaurants, shops, and other attractions in Baler town.<p>
+<p>The Circle Hostel Baler is committed to sustainability and eco-friendly practices. The hostel promotes responsible tourism and environmental conservation through initiatives such as waste segregation, recycling programs, and beach clean-up activities.<p>
+<p>A budget-friendly option for backpackers and travelers, The Circle Hostel Baler offers dormitory-style accommodations and private rooms in a laid-back atmosphere. The hostel is known for its vibrant community and social events, making it ideal for solo travelers and groups.</p>
+
+                </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://ibb.co/rf06K90"><img src="https://i.ibb.co/dJM2sZM/amihan-aplaya-lodge-1.jpg" alt="amihan-aplaya-lodge-1" border="0"></a>
+      <div class="card-content">
+        <h2>Amihan Aplaya Resort</h2>
+        <p><strong>Information:</strong> <p>Located in Barangay Sabang, Amihan Aplaya Resort provides guests with a peaceful retreat away from the crowds, with amenities such as a swimming pool and restaurant.<p>
+<p>The resort offers comfortable rooms and beachfront cottages overlooking the ocean. Each accommodation option is designed with a modern and minimalist aesthetic, providing guests with a relaxing and cozy ambiance during their stay.<p>
+<p>In addition to the beach, guests staying at Amihan Aplaya Resort can explore other nearby attractions such as Ditumabo Mother Falls, Dicasalarin Cove, and historical landmarks in Baler town.<p>
+<p>Amihan Aplaya Resort offers a relaxing beachfront retreat, ideal for couples, families, and friends seeking a tranquil getaway in Baler. Whether enjoying beach activities, exploring local attractions, or simply unwinding by the pool, guests can expect a memorable and enjoyable experience at this charming resort in Baler, Aurora.</p>
+
+            </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://ibb.co/ZBpmMdm"><img src="https://i.ibb.co/7nd41v4/l-sirene-boutique-resort.jpg" alt="l-sirene-boutique-resort" border="0"></a>
+      <div class="card-content">
+        <h2>L'Sirene Boutique Resort</h2>
+        <p><strong>Information:</strong> <p>L'Sirene Boutique Resort in Baler, Aurora, Philippines, offers a charming retreat for those looking to enjoy the natural beauty of the area. Situated slightly away from the busier areas of Baler, it provides a more tranquil and intimate atmosphere.<p>
+<p>The resort is particularly known for its mermaid-themed concept, appealing especially to those looking for a unique aesthetic experience. Options range from basic rooms for budget travelers to more luxurious accommodations for those seeking comfort.<p>
+<p>They offer various activities including yoga sessions and mermaid swimming lessons, adding unique elements to a typical beach vacation.<p>
+<p>L'Sirene Boutique Resort is particularly popular among couples and families looking for a peaceful beachfront location. It's also a hit with Instagram-savvy travelers due to its picturesque setting and unique thematic decor.</p>.
+
+
+         </p>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

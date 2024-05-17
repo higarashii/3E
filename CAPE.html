@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+      </div>
+
+  
+   <h1>Cape Engaño Lighthouse</h1>
+    <p>Cape Engaño Lighthouse, standing proudly on the rugged cliffs of Palaui Island in Cagayan, Philippines, is not just a beacon guiding ships through treacherous waters; it's a silent witness to centuries of history and maritime adventures. Built by the Spanish colonial government in 1892, it serves as a testament to their dedication to safe navigation in the archipelago. What makes this lighthouse truly unique is its architectural style, blending Spanish and American influences, reflecting the complex history of the Philippines.<p>
+
+<p>The lighthouse offers stunning panoramic views of the Luzon Strait and the surrounding lush landscapes, making it a favorite spot for photographers and adventurers alike. It has survived numerous natural calamities and even World War II, standing resilient against the passage of time.<p>
+
+<p>The isolation of Palaui Island adds to the allure of the lighthouse, as reaching it involves a boat ride and a trek through unspoiled wilderness, offering visitors a sense of discovery and adventure. Today, Cape Engaño Lighthouse stands not only as a symbol of maritime safety but also as a cultural and historical landmark, drawing visitors from around the world to experience its timeless charm.<p>
+
+  <a href="https://ibb.co/BVCB5tL"><img src="https://i.ibb.co/PZ6gvNx/9-A9-C4176-7-CE5-40-DB-BCC2-0-E866-DAAC3-F4.jpg" alt="image" border="0"></a>
+
+    <h1>How to get there</h1>
+<p>To reach Cape Engaño Lighthouse, you can follow these general directions:<p>
+
+<p>1. Start by getting to Santa Ana, the nearest town to Palaui Island. You can reach Santa Ana by land from Tuguegarao City, the capital of Cagayan province. Tuguegarao is accessible by bus or plane from Manila.<p>
+<p>2. Once in Santa Ana, you'll need to arrange transportation to Palaui Island. You can hire a boat from San Vicente Port in Santa Ana, which is the main jump-off point to Palaui Island.<p>
+<p>3. Board a boat from San Vicente Port to Palaui Island. The boat ride typically takes around 30 to 45 minutes, depending on sea conditions.<p>
+<p>4. Upon reaching Palaui Island, you'll arrive at Punta Verde, the main entry point to the island. This is where you'll register and pay the necessary fees for visiting the island.<p>
+<p>5. From Punta Verde, you'll embark on a scenic trek through Palaui's lush forests and rugged terrain. The trek to Cape Engaño Lighthouse usually takes around 1 to 1.5 hours, depending on your pace and the weather conditions.<p>
+<p>6. Once you reach Cape Engaño Lighthouse, take some time to admire its beauty and soak in the breathtaking views of the surrounding landscape and the sea.<p>
+<p>7. After exploring the lighthouse and its surroundings, retrace your steps back to Punta Verde. From there, board your boat back to San Vicente Port in Santa Ana.<p>
+<p>8. Once back in Santa Ana, you can either stay overnight in the town or travel back to your accommodation elsewhere, depending on your travel plans.<p>
+<p>Remember to check weather conditions and sea advisories before embarking on your journey to Palaui Island, as rough seas can affect boat travel. It's also advisable to bring essentials such as water, snacks, sunscreen, and insect repellent for the trek.<p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+     <a href="https://ibb.co/BVCB5tL"><img src="https://i.ibb.co/PZ6gvNx/9-A9-C4176-7-CE5-40-DB-BCC2-0-E866-DAAC3-F4.jpg" alt="image" border="0"></a>
+      <div class="card-content">
+        <h2>Costa Carina Beachfront</h2>
+        <p><strong>Information:</strong><p>Costa Carina Beach Front Elmar Street Centro, Sta Ana, Cagayan.<p> 
+<p>Costa Carina Beachfront offers a delightful escape to paradise, where the sun-kissed shores and azure waters create an idyllic setting for unforgettable vacations. Nestled along the pristine coastline, guests are greeted with luxurious accommodations, each meticulously designed to blend modern comfort with the serenity of beachfront living. Whether indulging in a romantic getaway, family vacation, or solo retreat, the resort caters to every traveler's needs with a range of amenities and activities.<p>
+<p>For those seeking relaxation, the beachfront beckons with soft sands and gentle waves, perfect for sunbathing, swimming, or leisurely strolls along the shore. Guests can unwind with rejuvenating spa treatments, savor gourmet cuisine at oceanfront restaurants, or simply lounge by the infinity pool while sipping tropical cocktails. Adventure enthusiasts will find no shortage of excitement, with an array of water sports such as snorkeling, kayaking, and jet skiing available right at their fingertips.<p>
+<p>Beyond the beach, Costa Carina offers cultural excursions, from guided tours of nearby historic landmarks to immersive experiences that showcase the rich heritage of the region. Whether exploring vibrant local markets, embarking on a jungle trek, or discovering hidden gems in quaint coastal villages, guests can immerse themselves in the authentic charm of the destination. With its unparalleled beauty and warm hospitality, Costa Carina Beachfront invites travelers to create cherished memories against the backdrop of sun, sand, and sea.<p>
+
+                </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+   <a href="https://ibb.co/NZmTMYr"><img src="https://i.ibb.co/TmbWsh1/DBE158-D7-AE18-4-F4-A-A84-C-E8531-EE00377.jpg" alt="image" border="0"></a>
+      <div class="card-content">
+        <h2>Playa Tropical Resort Hotel</h2>
+        <p><strong>Information:</strong> <p>Barangay Victoria Currimao, Laoag, 2900 Ilocos Norte<p>
+<p>Playa Tropical Resort Hotel offers a serene escape nestled along the stunning coastline, where azure waters meet golden sands. With a commitment to providing an unforgettable experience, the resort offers a plethora of amenities and activities tailored to suit every traveler's desires.<p>
+<p>For those seeking relaxation, the resort boasts luxurious accommodations ranging from spacious rooms to private villas, each meticulously designed to offer comfort and tranquility. Guests can indulge in rejuvenating spa treatments, unwind by the poolside with refreshing cocktails, or simply bask in the breathtaking views of the tropical landscape.<p>
+<p>Adventure enthusiasts are spoilt for choice with an array of exciting activities, from snorkeling and scuba diving to exhilarating jungle treks. The resort also organizes cultural excursions, allowing guests to immerse themselves in the vibrant local heritage and traditions. Whether seeking blissful relaxation or thrilling adventures, Playa Tropical Resort Hotel offers a bespoke experience that promises memories to last a lifetime.<p>
+
+      
+        </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+     <a href="https://ibb.co/1Zw2B87"><img src="https://i.ibb.co/H7kgRnB/C3-EFACF7-B801-46-A5-8-A0-B-7749-D0-F98559.jpg"  alt="image" border="0"></a>
+      <div class="card-content">
+        <h2>Palm Grove Saud Holiday Complex</h2>
+        <p><strong>Information:</strong> <p>Sitio Jupiter, Pagudpud, 2919 Ilocos Norte<p>
+<p>The Palm Grove Saud Holiday Complex offers an idyllic escape for tourists seeking a blend of relaxation and adventure. Nestled in the serene ambiance of Saud Beach in Pagudpud, Philippines, the resort immerses visitors in the natural beauty of its surroundings. With a variety of accommodation options ranging from cozy cottages to luxurious beachfront villas, guests can indulge in comfort while enjoying breathtaking views of the crystal-clear waters and pristine white sands.<p>
+<p>For those craving adventure, the resort provides a plethora of outdoor activities to satisfy every taste. From exhilarating water sports such as snorkeling, kayaking, and windsurfing to land-based adventures like hiking through lush tropical forests or exploring nearby waterfalls, there's never a dull moment at Palm Grove Saud. After a day of excitement, guests can unwind with a relaxing massage at the on-site spa or savor delectable local cuisine at the beachfront restaurant, complete with stunning sunset views.<p>
+<p>The resort caters to families with a range of amenities and activities designed to entertain guests of all ages. Kids can frolic in the dedicated children's pool or participate in organized beach games and crafts, while adults can enjoy leisurely strolls along the shoreline or romantic candlelit dinners under the stars. With its perfect blend of natural beauty, adventure, and relaxation, Palm Grove Saud Holiday Complex promises an unforgettable getaway for all who visit.</p>
+
+          <p class="additional-info" style="display: none">
+               </p>
+      </div>
+    </div>
+  </div>
+
+ 
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

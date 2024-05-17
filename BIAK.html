@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Biak-na-Bato</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+    </div>
+
+    <!-- Card content goes here -->
+
+   <h1>Biak-na-Bato National Park</h1>
+    <p>Biak-na-Bato National Park is a protected area of the Philippines located almost entirely within Barangay Biak-na-Bato in San Miguel, Bulacan from where it derives its name. The park also extends to the nearby municipalities of San Ildefonso and Doña Remedios Trinidad covering a total area of 2,117 hectares (5,230 acres).[1] It was declared a national park in 1937 by President Manuel L. Quezon by virtue of its association with the history and site of the Biak-na-Bato Republic. The park consists of a cave network and a system of rivers and trails of both historical and ecological importance. Situated only 80 kilometers (50 mi) northeast from Manila, it is fast becoming a popular weekend eco-adventure destination for the city dwellers.<p>
+
+<p>Biak-na-Bato National Park is centered on a mountain gorge sliced by the Balaong River in the Sierra Madre mountain range. More than a hundred caves of varying sizes and crystalline mineral formations are spread across the park. Among the most explored caves are the Aguinaldo Cave, once the headquarters of President Emilio Aguinaldo, and the Bahay Paniki or Bat Cave. Orchids, trees, shrubs, ferns, bushes and bokawe (buho) are some of the flora than can be found in the park.<p>
+
+<p>Observation outposts of the former republic as well as ruins of stone fortifications also abound within the park, including a stone cliff with carvings, possibly over a hundred years old, Mount Susong Dalaga and Tilandong Falls are also popular attractions inside the park.<p>
+
+<p>It is called Bahay Paniki. There are lots of bats in the cave and the surrounding smells like bat poop. The tour guide says, “the bat poop is being used as a fertilizer by some people here". A isolated cave situated at Biak-na-Bato, Trinidad Tecson, so called "Mother of Biak na Bato," was born here.<p>
+
+    "<a href="https://ibb.co/gV5bdCR"><img src="https://i.ibb.co/jRc9zFr/biak-na-bato.jpg" alt="biak-na-bato" border="0"></a>
+	<h1>How to get there</h1>
+<p>To reach Biak-na-bato National Park, you can follow these general directions:<p>
+
+<p>By Public Transportation:<p>
+
+<p>By Bus:
+Take a bus from Manila Pasay to San Miguel. The journey takes approximately 2 hours and 26 minutes. The bus route is AH261.
+Cost: Around ₱513 - ₱679.
+By Night Bus:
+Take the night bus from Epifanio de los Santos Avenue / Bulacan Intersection, Quezon City to Norzagaray-Santa Maria Bulacan, Santa Maria, Manila Sta Maria - Baclaran NLEX EDSA. The night bus journey takes approximately 3 hours and 35 minutes.
+By Taxi:
+Take a taxi from Trinoma to Biak-na-Bato National Park. The distance is approximately 74.4 kilometers.<p>
+
+<p>By Private Vehicle:<p>
+<p>By Car:
+Drive from Trinoma to Biak-na-Bato National Park. The drive takes approximately 1 hour and 14 minutes.
+Cost: Around ₱500 - ₱800.<p>
+
+<p>It's recommended to verify the specific routes and transportation options based on your starting point and current travel conditions. Additionally, always exercise caution and follow local traffic regulations while traveling.<p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      "<a href="https://ibb.co/p4T5mjN"><img src="https://i.ibb.co/r5hNW2q/best-western-metro-clark.jpg" alt="best-western-metro-clark" border="0"></a>
+      <div class="card-content">
+        <h2>Best Western Plus Metro Clark</h2>
+        <p><strong>Information:</strong><p>Whether you’re traveling for business or leisure, the Best Western Plus Metro Clark can accommodate your needs. Situated next to the Saver’s Mall in downtown Angeles City, this modern midscale hotel offers comfortable rooms and suites, contemporary design, a dramatic infinity pool, fitness center, and an onsite restaurant. Located on McArthur Highway, the city’s main thoroughfare, guests are surrounded by attractions including restaurants, bars, shopping centers, and casinos. The surrounding area also features theme parks, spas, golf courses, and Clark International Airport is just 10 kilometers away, and it's located at Savers Building MC Arthur Hwy, Angeles City, Luzon 2009 Philippines.<p>
+
+<p>Best Western Plus Metro Clark provides accommodation with an outdoor swimming pool, free private parking, a fitness centre and a garden. Among the facilities of this property are a restaurant, free shuttle service and room service, along with free WiFi throughout the property. The accommodation offers a 24-hour front desk, an ATM and luggage storage for guests. All units at the hotel come with air conditioning, a seating area, a flat-screen TV with cable channels, a safety deposit box and a private bathroom with a bidet, free toiletries and a hairdryer. Every room is equipped with a kettle, while some rooms will provide you with a kitchen with a microwave and a minibar. At Best Western Plus Metro Clark every room is fitted with bed linen and towels. A buffet, continental or Full English/Irish breakfast can be enjoyed at the property. Kingsborough International Convention Center is 21 km from the accommodation, while LausGroup Event Centre is 21 km away.<p>
+<p>Overall, Best Western Plus Metro Clrk is a practical choice for travelers seeking a simple and hassle-free stay in .</p>
+
+              </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      "<a href="https://imgbb.com/"><img src="https://i.ibb.co/T4W74vJ/Microtel.jpg" alt="Microtel" border="0"></a>
+      <div class="card-content">
+        <h2>Microtel by Wyndham Cabanatuan</h2>
+        <p><strong>Information:</strong> <p>Microtel by Wyndham Cabanatuan offers unmatched comfort in a limited service hotel. The minute you step into the lobby, you’ll recognize the consistent quality of an international brand. Our cozy accommodations exude modest elegance that never goes out of style. We also go the extra mile to provide the service you deserve. Because of such quality offerings at a remarkable value, our hotels have been ranked highest in guest satisfaction among budget hotel chains.<p>
+<p>It boasts contemporary design and comfortable accommodations suitable for both leisure and business travelers.<p>
+<p>Located in Cabanatuan city in the province of Nueva Ecija, Microtel Cabanatuan offers rooms with cable TV and private bathrooms. It features an outdoor pool, restaurant and free parking. All rooms offer views of nearby rice fields and have a radio clock and telephone. Wi-Fi is available for a fee.<p>
+<p>With its convenient location and excellent services, Microtel by Wyndham Cabanatuan provides guests with a very friendy, and accommodating staff stay experience in Cabanatuan City.</p>
+
+             </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      "<a href="https://ibb.co/ZgKpYw7"><img src="https://i.ibb.co/rpMRcLN/347100461.jpg" alt="347100461" border="0"></a>      <div class="card-content">
+        <h2>Rosey Hotel</h2>
+        <p><strong>Information:</strong> <p>The Rosey Hotel is known for its comfort and affordability. It offers a range of budget-friendly air-conditioned rooms with modern amenities, including complimentary Wi-Fi, access to popular streaming services, an on-site convenience store, and café. The hotel is designed to make your stay feel like a ‘home away from home’. It’s also pet-friendly, so your furry friends are welcome too.<p>
+<p>Located in Cabanatuan City, Central Luzon, the Rosey Hotel is conveniently situated near the central terminal, making it easily accessible for travelers. Guests have praised the hotel for its clean rooms, accommodating staff, and convenient location.<p>
+<p>With a range of budget-friendly air-conditioned rooms equipped with modern amenities, complimentary Wi-Fi, access to popular streaming services, an on-site convenience store and café, you have everything you need at your fingertips, making your stay feel like a true 'home away from home'. Whether you're traveling for business or leisure, the Rosey Hotel is the perfect choice for those seeking a comfortable and convenient stay without breaking the bank. Book your stay with us today and experience the exceptional hospitality firsthand. The Rosey Hotel is also pet-friendly, ensuring that your furry companions are also warmly welcomed.<p>
+<p>Additionally, Villa Victoria Hotel offers personalized services, including attentive staff, delectable dining options, and facilities such as a swimming pool or spa<p>.
+<p>Whether you're visiting for leisure or business, t’s a great choice for both business and leisure travelers looking for a comfortable stay without overspending, If you’re planning to visit or need a place to stay in the area, the Rosey Hotel could be an excellent option to consider.</p>
+
+                </p>
+      </div>
+    </div>
+  </div>
+
+ 
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

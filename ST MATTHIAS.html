@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+    
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+      <p class="additional-info" style="display: none">
+ 
+      </p>
+    </div>
+
+    <!-- Card content goes here -->
+
+   <h1>St. Matthias Parish Church</h1>
+    <p>St. Matthias Parish Church, located in Tumauini, Isabela, is a historical landmark known for its unique architecture and cultural significance. Built in the 18th century, this centuries-old church features a distinct cylindrical bell tower, making it one of the only two round churches in the Philippines. The church's design reflects a blend of Spanish colonial and native Filipino influences, showcasing intricate details and craftsmanship.<p>
+
+<p>Visitors to St. Matthias Parish Church can admire its well-preserved facade adorned with ornate carvings and embellishments. Inside, the church boasts a serene atmosphere with its high ceilings, wooden beams, and religious artwork. The church also houses antique wooden altars and religious relics, adding to its historical charm.<p>
+
+<p>Apart from its architectural beauty, St. Matthias Parish Church holds cultural significance as a symbol of faith and heritage for the local community. It serves as a venue for religious ceremonies, gatherings, and celebrations, attracting pilgrims and tourists alike to experience its spiritual ambiance and rich history.<p>
+
+    <a href="https://ibb.co/r5StHXX"><img src="https://i.ibb.co/44Gfp00/image.png" alt="image" border="0"></a>
+
+	<h1>How to get there</h1>
+<p>To get to St. Matthias Parish Church in Tumauini, Isabela, you can follow these general directions:<p>
+
+<p>1. By Land: If you're coming from Manila or other parts of Luzon, you can take a bus bound for Tuguegarao City, which is the capital of Cagayan Province. From Tuguegarao, you can then take another bus or a van going to Tumauini, Isabela. Alternatively, you can drive to Tumauini if you have your own vehicle or rent one.<p>
+
+<p>2. By Air: The nearest airport with commercial flights is Tuguegarao Airport (TUG), which serves Tuguegarao City. From there, you can take a bus, van, or arrange for a private vehicle to reach Tumauini.<p>
+
+<p>Once you arrive in Tumauini, you can ask locals for directions to St. Matthias Parish Church, as it is a prominent landmark in the town and easily accessible from the main roads.<p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://imgbb.com/"><img src="https://i.ibb.co/pPnwppg/image.png" alt="image" border="0"></a>
+      <div class="card-content">
+        <h2>Jomalia Suites Inn</h2>
+        <p><strong>Information:</strong><p>Located in Isabela City, the capital of Basilan Province, Jomalia Suites Inn offers comfortable accommodation with modern amenities.<p>
+<p>The inn provides convenient access to key attractions in the city and is suitable for both business and leisure travelers.<p>
+<p>Guests can expect warm hospitality and personalized service during their stay at Jomalia Suites Inn.</p>
+
+     
+        <p class="additional-info" style="display: none">
+         
+        </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://ibb.co/nBVRwkQ"><img src="https://i.ibb.co/bFy76dN/image.png" alt="image" border="0"></a>
+      <div class="card-content">
+        <h2>Loreland Farm Resort</h2>
+        <p><strong>Information:</strong> <p>Situated in Antipolo City, Loreland Farm Resort is a picturesque retreat nestled amidst lush greenery.<p>
+<p>The resort offers a range of accommodation options, from cozy rooms to spacious villas, perfect for families, couples, and groups.<p>
+<p>Guests can enjoy various recreational activities such as swimming, hiking, and outdoor picnics, making it an ideal destination for relaxation and leisure.</p>
+
+               <p class="additional-info" style="display: none">
+         
+        </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://ibb.co/L9xqSX7"><img src="https://i.ibb.co/1RrpZtW/image.png" alt="image" border="0"></a>
+      <div class="card-content">
+        <h2>Valcon Garden Resort</h2>
+        <p><strong>Information:</strong> <p>Located in Danao City, Cebu, Valcon Garden Resort is a charming getaway known for its serene ambiance and beautiful surroundings.<p>
+<p>The resort features well-appointed cottages and villas, each offering modern comforts and stunning views of the surrounding landscape.<p>
+<p>Guests can indulge in a range of activities, including swimming, kayaking, and exploring the nearby attractions, ensuring a memorable stay at Valcon Garden Resort.</p>
+
+               <p class="additional-info" style="display: none">
+         
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

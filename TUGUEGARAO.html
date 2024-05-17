@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+ 
+      <p class="additional-info" style="display: none">
+       
+      </p>
+    </div>
+
+    <!-- Card content goes here -->
+
+   <h1>Tuguegarao City Museum</h1>
+    <p>The Tuguegarao City Museum is a cultural institution located in Tuguegarao City, Cagayan. It showcases exhibits highlighting the cultural, historical, and natural heritage of the region. The museum features artifacts, artworks, and displays depicting the indigenous cultures, colonial history, and natural resources of Cagayan Valley. Its mission is to preserve, promote, and celebrate the cultural heritage of the region while providing educational experiences for visitors. Operating hours and admission fees, if applicable, may vary.<p>
+
+<p>Tuguegarao City Museum offers visitors an immersive journey through the rich history and diverse cultural heritage of the Cagayan Valley region. From archaeological finds to colonial-era artifacts, the museum provides insights into the traditions, lifestyles, and historical events that have shaped the local communities over the centuries. Through carefully curated exhibits and interactive displays, visitors can gain a deeper understanding of the region's past, present, and future. Additionally, the museum serves as a valuable resource for researchers, educators, and anyone interested in exploring the unique cultural tapestry of Tuguegarao City and its surrounding areas.<p>
+
+<p>Visitors can explore archaeological treasures, colonial artifacts, and interactive exhibits that highlight the area's rich heritage. It's a must-visit destination for anyone curious about the fascinating past and diverse traditions of Tuguegarao City and its surrounding communities.<p>
+
+
+    <a href="https://ibb.co/QcQK8js"><img src="https://i.ibb.co/7zC1gN7/image.png" alt="image" border="0"></a>
+
+	<h1>How to get there</h1>
+<p>To get to Tuguegarao City Museum, you can follow these directions:<p>
+
+<p>1. By Public Transportation: From the city center or any major transportation terminal in Tuguegarao City, you can take a tricycle or jeepney heading towards the museum. Make sure to confirm with the driver that they know the location of the museum to avoid any confusion.<p>
+
+<p>2. By Private Vehicle: If you're driving, you can use GPS or a map application to navigate to Tuguegarao City Museum. The museum is located along Luna Street in Tuguegarao City, Cagayan. Simply input the museum's address into your navigation system and follow the directions to reach your destination.<p>
+
+<p>3. By Walking: If you're already in the vicinity of the city center, you can choose to walk to the museum if it's within a reasonable distance. Tuguegarao City is a relatively walkable city, and you can enjoy exploring the streets and landmarks on foot while making your way to the museum.<p>
+
+<p>Once you arrive at Tuguegarao City Museum, you can explore the exhibits showcasing the cultural heritage and history of the region. It's advisable to check the museum's operating hours and any entry requirements before your visit.<p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://imgbb.com/"><img src="https://i.ibb.co/FW5tZ1W/image.png" alt="image" border="0"></a>
+      <div class="card-content">
+        <h2>Hotel Carmelita</h2>
+        <p><strong>Information:</strong><p>Situated in the heart of Tuguegarao City, Hotel Carmelita offers a delightful blend of comfort and convenience. With its spacious and well-appointed rooms, guests can enjoy a relaxing stay complemented by modern amenities such as air conditioning, flat-screen TVs, and complimentary Wi-Fi.<p> 
+<p>The hotel's restaurant serves a delectable array of local and international dishes, satisfying every palate. For events and meetings, Hotel Carmelita provides versatile function rooms equipped with audiovisual facilities.<p>
+<p> Guests can also unwind and rejuvenate in the swimming pool or stay active in the fitness center.</p>
+
+       
+        <p class="additional-info" style="display: none">
+         
+        </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      a href="https://ibb.co/7rz24gw"><img src="https://i.ibb.co/gt7zVv5/image.png" alt="image" border="0"></a>
+      <div class="card-content">
+        <h2>Hotel Joselina</h2>
+        <p><strong>Information:</strong> <p>Nestled in the vibrant city of Santiago, Hotel Joselina welcomes guests with warm hospitality and cozy accommodations.<p>
+<p> The hotel's rooms are designed for comfort, featuring plush bedding, en-suite bathrooms, and essential amenities.<p>
+<p>	 Guests can indulge in delicious meals at the on-site restaurant, offering a diverse menu of Filipino and international cuisine. Hotel Joselina also caters to business travelers with its well-equipped meeting rooms and banquet facilities, ideal for corporate events or social gatherings.</p>
+
+     
+        <p class="additional-info" style="display: none">
+         
+        </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://ibb.co/qMDhdT6"><img src="https://i.ibb.co/27FRyGJ/image.png" alt="image" border="0"></a>
+      <div class="card-content">
+        <h2>Holiday Plaza Hotel</h2>
+        <p><strong>Information:</strong> <p>Experience luxury and sophistication at Holiday Plaza Hotel, Santiago City's premier accommodation choice.<p>
+<p> Boasting elegant and spacious rooms, each appointed with modern furnishings and amenities, guests are treated to a lavish stay.<p>
+<p> The hotel's signature restaurant offers a culinary journey with its extensive menu, showcasing both local delicacies and international favorites.<p>
+<p> Leisure facilities abound, including a sparkling swimming pool where guests can bask in the tropical sun, and a fully equipped fitness center for those seeking an active lifestyle. Whether for business or leisure, Holiday Plaza Hotel provides the perfect setting for a memorable stay in Santiago City.</p>
+
+        <p class="additional-info" style="display: none">
+         
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

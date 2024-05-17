@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+      <p class="additional-info" style="display: none">
+       
+      </p>
+    </div>
+
+    <!-- Card content goes here -->
+
+   <h1>Batanes Islands in Batanes</h1>
+    <p>Nestled in the northernmost part of the Philippines, the Batanes Islands stand as a breathtaking testament to nature’s grandeur and resilience. Comprising ten pristine islands scattered amidst the vast expanse of the Luzon Strait, Batanes enchants visitors with its rugged coastlines, verdant hills, and dramatic cliffs that plunge into the azure waters of the Pacific Ocean. Known for its unspoiled beauty and unique cultural heritage, Batanes offers travelers a glimpse into a world untouched by time, where tradition and nature intertwine to create a landscape of unparalleled beauty and serenity.
+
+Batanes is a haven for nature lovers and outdoor enthusiasts, offering a wealth of activities amidst its stunning landscapes. From hiking along picturesque trails that wind through rolling hills and verdant pasturelands to snorkeling in crystal-clear waters teeming with marine life, the islands provide endless opportunities for exploration and adventure. Visitors can also immerse themselves in the rich culture and traditions of the Ivatan people, who have inhabited these islands for centuries, by participating in cultural tours, visiting ancient stone houses, and savoring the local cuisine.
+
+Despite its remote location, getting to Batanes is easier than ever, with regular flights connecting the islands to Manila and other major cities in the Philippines. Upon arrival, travelers are greeted by the warm hospitality of the Ivatan people, who welcome visitors with open arms and share their rich cultural heritage with pride. Whether seeking a tranquil retreat amidst stunning natural beauty or embarking on an adventure-filled journey through rugged landscapes, Batanes offers a truly unforgettable experience that lingers in the hearts and minds of all who are fortunate enough to explore its shores.
+<p>
+
+  <img src="https://i.ibb.co/1TD27Rs/batanes-islads-in-batanes.jpg" alt="batanes-islads-in-batanes" border="0" style="width: 800px; height: auto;">
+
+
+	<h1>How to get there</h1>
+<p>To reach Batanes Islands in Batanes, you can follow these general directions:<p>
+
+<p>To reach the remote Batanes Islands from Manila, travelers must take a domestic flight to Basco, the capital. It’s advisable to book flights in advance, especially during peak seasons, as they can fill up quickly. Upon arrival at Basco Airport, travelers can easily reach their accommodations in Basco town via tricycle or taxi, as the airport is close to the town center. Basco serves as the main transportation hub for exploring the islands. Once settled, visitors can enjoy exploring Batanes’ scenic landscapes, historic sites, and cultural experiences. Renting a motorcycle or bicycle for self-guided tours or joining guided tours to iconic landmarks are popular options for exploring the islands’ beauty and heritage.<p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://i.ibb.co/bb3cSxy/fundacion-pacita.jpg" alt="fundacion-pacita" border="0">
+</a>
+      <div class="card-content">
+        <h2>Fundacion Pacita Batanes Nature Lodge</h2>
+        <p><strong>Information:</strong><p>Perched on a hilltop amidst the stunning landscapes of Batanes, Fundacion Pacita Batanes Nature Lodge promises guests a one-of-a-kind and luxurious retreat experience. The lodge boasts charming rooms and cottages adorned with traditional Ivatan architecture, offering a perfect blend of heritage charm and modern comfort. From cozy interiors to breathtaking views, every aspect of the lodge is designed to provide guests with an unforgettable stay.
+
+In addition to its captivating accommodations, Fundacion Pacita Batanes Nature Lodge offers a range of amenities to enhance the guest experience. Visitors can explore the on-site art gallery, showcasing local artwork and providing insight into the rich cultural heritage of Batanes. The lodge's restaurant serves delectable local cuisine, allowing guests to indulge in authentic Ivatan flavors while enjoying panoramic views of the surrounding countryside.
+
+With its idyllic hilltop location and unparalleled views, Fundacion Pacita Batanes Nature Lodge offers a serene and immersive retreat for travelers seeking tranquility and natural beauty. Whether guests are admiring the landscape from their room or exploring the art gallery, the lodge provides a memorable escape into the heart of Batanes' captivating scenery and culture..</p>
+
+       
+        <p class="additional-info" style="display: none">
+         
+        </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://i.ibb.co/cXDV536/batanes-seaside.jpg" alt="batanes-seaside" border="0"></a>
+      <div class="card-content">
+        <h2>Batanes Seaside Lodge and Restaurant</h2>
+        <p><strong>Information:</strong> <p>Nestled along the picturesque coast of Basco, Batanes Seaside Lodge and Restaurant offers guests a cozy and welcoming atmosphere combined with comfortable accommodations. The lodge provides spacious rooms that afford captivating views of the ocean, allowing guests to immerse themselves in the tranquil beauty of Batanes right from their doorstep.
+
+At Batanes Seaside Lodge and Restaurant, guests can indulge in delightful dining experiences at the on-site restaurant, which serves a variety of local and international dishes. Whether savoring fresh seafood or enjoying traditional Ivatan cuisine, guests can satisfy their taste buds while soaking in the serene ambiance of the seaside setting. The lodge's friendly staff are also on hand to assist guests with travel arrangements and tour bookings, ensuring a seamless and memorable stay in Basco.
+
+Conveniently located, Batanes Seaside Lodge and Restaurant serves as an ideal base for exploring the wonders of Basco and the surrounding areas of Batanes. Whether guests are embarking on adventurous excursions or simply seeking relaxation by the sea, the lodge provides a convenient and comfortable retreat for travelers looking to experience the charm and beauty of Batanes.</p>
+
+     
+        <p class="additional-info" style="display: none">
+         
+        </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://i.ibb.co/1QSfv38/Ivatan-Lodge.jpg" alt="Ivatan-Lodge" border="0"></a>
+      <div class="card-content">
+        <h2>Ivatan Lodge</h2>
+        <p><strong>Information:</strong> <p> Ivatan Lodge, nestled in the heart of Basco, offers budget-friendly accommodations perfect for travelers seeking comfort without the hefty price tag. Despite its affordability, the lodge doesn't compromise on cleanliness and coziness, ensuring guests have a pleasant stay throughout their visit to Batanes.
+
+Guests at Ivatan Lodge can enjoy the simplicity of clean and comfortable rooms, providing a peaceful retreat after a day of exploring Basco's attractions. The lodge's no-frills approach caters to travelers on a budget, offering essential amenities without unnecessary extravagance.
+
+Conveniently located within walking distance of Basco's attractions and amenities, Ivatan Lodge provides easy access to the beauty and charm of Batanes. Whether guests are exploring the town's cultural sites or indulging in local cuisine at the on-site restaurant, Ivatan Lodge offers a practical and affordable option for visitors looking to experience the magic of Batanes without breaking the bank.</p>
+
+     
+        <p class="additional-info" style="display: none">
+         
+        </p>
+      </div>
+    </div>
+  </div>
+
+ 
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

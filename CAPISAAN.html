@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+      <p class="additional-info" style="display: none">
+       
+      </p>
+    </div>
+
+    <!-- Card content goes here -->
+
+   <h1>Capisaan Cave System in Nueva Vizcaya</h1>
+    <p>Nestled within the rugged landscapes of Nueva Vizcaya, the Capisaan Cave System stands as a remarkable testament to the province’s geological and natural wonders. Encompassing a vast network of caves, tunnels, and chambers, this intricate labyrinth beckons adventurers and explorers from around the world to uncover its mysteries. Carved over millennia by the forces of nature, the Capisaan Cave System offers a fascinating glimpse into the Earth’s history, with its stunning limestone formations, underground rivers, and hidden passages captivating the imagination of all who venture within.
+
+As one of the most extensive cave systems in the Philippines, the Capisaan Cave System presents a thrilling challenge for spelunkers and outdoor enthusiasts alike. Exploring its depths promises an unforgettable adventure, with each cavern revealing unique geological formations and ecological wonders. From towering stalactites and stalagmites to subterranean pools and chambers adorned with rare rock formations, every corner of the Capisaan Cave System holds the potential for discovery and awe-inspiring encounters with nature’s grandeur.
+
+Beyond its natural beauty, the Capisaan Cave System also holds cultural and historical significance for the indigenous communities of Nueva Vizcaya. These caves have served as sanctuaries, meeting places, and even burial sites for generations, bearing witness to the rich heritage and traditions of the region. Today, efforts are underway to preserve and protect this invaluable natural treasure, ensuring that future generations can continue to marvel at the wonders of the Capisaan Cave System for years to come.
+<p>
+
+  <img src="https://i.ibb.co/D9QYbQH/capisaan-cave.jpg" alt="capisaan-cave" border="0"></a>
+
+	<h1>How to get there</h1>
+<p>To reach Capisaan Cave System in Nueva Vizcaya, you can follow these general directions:<p>
+
+<p>Exploring the Capisaan Cave System is an adventure of a lifetime, but reaching this hidden gem requires some planning and navigation. From Manila, travelers can take a bus bound for Bayombong, the capital of Nueva Vizcaya, which is approximately a 6 to 7-hour journey. Upon reaching Bayombong, visitors can then hire a private vehicle or take a public van or jeepney to the town of Kasibu, where the Capisaan Cave System is located. From Kasibu, it’s advisable to arrange for a local guide who can lead the way to the caves and ensure a safe and memorable exploration experience.<p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://i.ibb.co/7kchp0z/the-lodging-hotel.jpg" alt="the-lodging-hotel" border="0"></a>
+      <div class="card-content">
+        <h2>Da’s Lodging House</h2>
+        <p><strong>Information:</strong><p>Located in the town of Kasibu, Da’s Lodging House offers travelers a simple yet comfortable place to stay while exploring the renowned Capisaan Cave System. This lodging house is designed to provide essential comfort without unnecessary frills, catering to those who value practicality and affordability.
+
+Da’s Lodging House features basic amenities to ensure guests have a pleasant and hassle-free stay. Each room is equipped to meet essential needs, providing a cozy environment for rest after a day of adventure. The straightforward setup is perfect for travelers who prioritize spending time outdoors and exploring local attractions.
+
+With its convenient location, Da’s Lodging House serves as an ideal base for adventurers seeking budget-friendly accommodations. Its proximity to the Capisaan Cave System and other natural wonders in the area makes it a practical choice for those looking to maximize their exploration time while enjoying a comfortable and cost-effective lodging option.</p>
+
+       
+        <p class="additional-info" style="display: none">
+         
+        </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://i.ibb.co/kXRXqkn/la-veranda-hotel.jpg" alt="la-veranda-hotel" border="0"></a>
+      <div class="card-content">
+        <h2>La Veranda Hotel</h2>
+        <p><strong>Information:</strong> <p> Situated in the nearby town of Bayombong, La Veranda Hotel provides modern accommodations with a touch of elegance, making it an attractive choice for discerning travelers. The hotel is designed to offer a blend of comfort and sophistication, ensuring a memorable stay for all guests.
+
+La Veranda Hotel features spacious rooms that are thoughtfully decorated and equipped with contemporary amenities. Guests can enjoy a variety of on-site dining options, catering to diverse culinary preferences and offering a delightful dining experience. The elegant ambiance of the hotel enhances the overall comfort and satisfaction of its visitors.
+
+In addition to its luxurious rooms and dining facilities, La Veranda Hotel offers amenities such as a swimming pool and a fitness center. These facilities provide guests with opportunities for relaxation and wellness, making the hotel a perfect retreat for those seeking both comfort and convenience during their stay in Bayombong.</p>
+
+     
+        <p class="additional-info" style="display: none">
+         
+        </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://i.ibb.co/09Ky5md/hotel-dianed.jpg" alt="hotel-dianed" border="0"></a>
+      <div class="card-content">
+        <h2>Hotel Dianed</h2>
+        <p><strong>Information:</strong> <p> Located in Bayombong, Hotel Dianed provides travelers with a cozy retreat complemented by personalized service, offering a warm and inviting atmosphere for guests to enjoy. The hotel is committed to ensuring a comfortable stay for every visitor, with attentive staff ready to cater to individual needs.
+
+Hotel Dianed features well-appointed rooms designed to provide a restful and enjoyable experience for guests. Each room is tastefully furnished and equipped with essential amenities, ensuring a comfortable stay throughout. The on-site restaurant serves a delectable array of both local and international cuisine, providing guests with a delightful dining experience.
+
+In addition to its comfortable accommodations and dining options, Hotel Dianed offers facilities for events and functions, making it a versatile choice for various occasions. Whether guests are exploring the wonders of the Capisaan Cave System or discovering the natural beauty of Nueva Vizcaya, Hotel Dianed provides a welcoming haven for travelers seeking both comfort and convenience during their stay in Bayombong..</p>
+
+     
+        <p class="additional-info" style="display: none">
+         
+        </p>
+      </div>
+    </div>
+  </div>
+
+ 
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>
