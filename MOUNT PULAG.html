@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Region Guide</title>
+<style>
+body {
+margin: auto;
+font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+overflow: auto;
+background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+animation: gradient 15s ease infinite;
+background-size: 400% 400%;
+background-attachment: fixed;
+}
+
+@keyframes gradient {
+0% {
+background-position: 0% 0%;
+}
+
+50% {
+background-position: 100% 100%;
+}
+
+100% {
+background-position: 0% 0%;
+}
+}
+
+.wave {
+background: rgb(255 255 255 / 25%);
+border-radius: 1000% 1000% 0 0;
+position: fixed;
+width: 200%;
+height: 12em;
+animation: wave 10s -3s linear infinite;
+transform: translate3d(0, 0, 0);
+opacity: 0.8;
+bottom: 0;
+left: 0;
+z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+bottom: -1.25em;
+animation: wave 18s linear reverse infinite;
+opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+bottom: -2.5em;
+animation: wave 20s -1s reverse infinite;
+opacity: 0.9;
+}
+
+@keyframes wave {
+2% {
+transform: translateX(1);
+}
+
+25% {
+transform: translateX(-25%);
+}
+
+50% {
+transform: translateX(-50%);
+}
+
+75% {
+transform: translateX(-25%);
+}
+
+100% {
+transform: translateX(1);
+}
+}
+
+body {
+font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #265073;
+}
+
+.container {
+max-width: 800px;
+margin: 20px auto;
+padding: 20px;
+background-color: rgba(45, 149, 150, 0.5);
+border-radius: 15px;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+text-align: center;
+}
+
+.header {
+text-align: center;
+margin-bottom: 20px;
+color: #9ad0c2;
+}
+
+.info {
+color: #9affd0c2;
+cursor: pointer;
+}
+
+.additional-info {
+color: #fff;
+}
+
+.card {
+margin-top: 20px;
+display: flex;
+flex-direction: column;
+background-color: rgba(255, 255, 255, 0.5);
+border-radius: 15px;
+box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+margin-bottom: 20px;
+overflow: hidden;
+transition: all 0.3s ease;
+cursor: pointer;
+}
+
+.card img {
+width: 100%;
+height: auto;
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+object-fit: cover;
+}
+
+.card-content {
+padding: 20px;
+}
+
+.card-content h2 {
+margin-top: 0;
+font-size: 1.5rem;
+color: #333;
+}
+
+.card-content p {
+color: #666;
+}
+</style>
+</head>
+
+<body>
+
+<div>
+<div class="wave"></div>
+<div class="wave"></div>
+<div class="wave"></div>
+</div>
+
+<div class="container">
+<div class="header">
+
+<p>
+
+</p>
+</div>
+
+<!-- Introduction / Information part here -->
+<div class="info" onclick="toggleInfoContent()">
+<h1></h1>
+
+</div>
+
+
+<h1>Mount Pulag</h1>
+<p>Mount Pulag stands proudly as the third-highest peak in the Philippines, renowned for its stunning vistas, diverse ecosystems, and unique biodiversity. Located within the Cordillera Administrative Region (CAR) in northern Luzon, Mount Pulag is a favorite destination among nature enthusiasts and adventurers alike. Its gentle slopes are adorned with mossy forests, dwarf bamboo groves, and vibrant wildflowers, offering a kaleidoscope of colors that change with the seasons.<p>
+
+<p>The highlight of any visit to Mount Pulag is the opportunity to witness the breathtaking sunrise from its summit, where the sea of clouds blankets the surrounding landscape in an ethereal glow. Beyond its natural beauty, Mount Pulag holds cultural significance for the indigenous communities of Benguet, serving as a sacred site and a symbol of ancestral heritage. Mount Pulag is situated in the municipality of Kabayan in Benguet province, approximately 2,922 meters above sea level. The most common route to reach the mountain is via land travel from Baguio City, the regional capital of CAR. From Baguio, visitors can take a bus or hire a private vehicle to reach the jump-off point in Kabayan. The journey typically takes around 4 to 5 hours, passing through scenic mountain roads and quaint rural villages.<p>
+
+<p>Upon arrival in Kabayan, adventurers must register at the DENR office and secure a permit before embarking on the trek to Mount Pulag's summit. Guided tours and transportation services are available for those who prefer organized excursions. While camping is the primary accommodation option on Mount Pulag, there are also homestays and lodges available in nearby communities for those who prefer more comfortable amenities. Campsites are strategically located along the trails, offering designated areas for tents and basic facilities such as toilets and water sources.<p>
+
+<p>Visitors can choose from various trekking routes, each offering unique landscapes and levels of difficulty. The most popular trails include the Ambangeg, Akiki, and Tawangan routes, each providing distinct perspectives of Mount Pulag's natural splendor. Activities on the mountain range from leisurely nature walks and birdwatching to challenging summit climbs and stargazing sessions. Regardless of one's level of experience, a journey to Mount Pulag promises an unforgettable adventure amidst the pristine wilderness of the CAR Region.<p>
+
+<img src="https://i.ibb.co/KyyB4Jz/mount-batulao-philippines-012918-960x540.jpg" alt="image" border="0"></a>
+
+	<h1>How to get there</h1>
+<p>By Air:<p>
+
+<p>The nearest airport is in Baguio City, the Loakan Airport. From Baguio, you can take a bus or hire a private vehicle to the jump-off point of Mount Pulag. The travel time is approximately 4-5 hours.<p>
+
+<p>By Land:<p>
+<p>From Manila, take a bus bound for Baguio City. From Baguio City, proceed to the jump-off point of Mount Pulag by bus or private vehicle.<p>
+
+
+
+</body>
+</html>
+<div class="container">
+<div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+<div class="card" onclick="toggleCardContent(this)">
+<img src="https://i.ibb.co/JqtGRJy/381743857.jpg" alt="image" border="0"></a>
+<div class="card-content">
+<h2>Elliannah Pines Hotel</h2>
+<p><strong>Information:</strong><p>Elliannah Pines Hotel is nestled in the serene Phase 4 of the Green Valley Subdivision in Baguio, Benguet. Offering a tranquil escape from the city hustle, the hotel provides a cozy and inviting ambiance for guests to unwind amidst the cool mountain air. Whether you're traveling for leisure or business, Elliannah Pines Hotel ensures a comfortable and memorable stay in the heart of Baguio. Elliannah Pines Hotel features a range of facilities and amenities to cater to guests' needs.<p>
+<p>Comfortable accommodations include standard rooms and deluxe suites, each equipped with modern conveniences for a relaxing stay. Guests can savor delicious meals at the hotel's restaurant, lounge in the outdoor garden, or connect with loved ones using the Wi-Fi access. For leisure activities, guests can explore nearby attractions through guided tours, engage in nature walks, or simply relax and enjoy the peaceful surroundings.<p>
+<p>Located in Phase 4 of the Green Valley Subdivision in Baguio, Elliannah Pines Hotel is easily accessible by bus or private vehicle from Manila. From Baguio City, guests can take a short drive to the Green Valley Subdivision, where the hotel is conveniently situated. With its accessible location and tranquil atmosphere, Elliannah Pines Hotel provides an ideal base for exploring the attractions of Baguio and its surrounding areas.</p>
+
+</div>
+</div>
+
+<div class="card" onclick="toggleCardContent(this)">
+<img src="https://i.ibb.co/WN9nrJg/pinecone-lodge-and-restaurant.jpg" alt="image" border="0"></a>
+<div class="card-content">
+<h2>Pinecone Lodge and Restaurant</h2>
+<p><strong>Information:</strong> <p>Pinecone Lodge and Restaurant offers a rustic retreat along the scenic Gurel, Bokod, Kabayan, Buguias, Abatan Rd, Benguet. Surrounded by towering pine trees and majestic mountains, the lodge provides guests with a peaceful escape from the hustle and bustle of urban life.<p>
+<p>Whether you're seeking adventure or relaxation, Pinecone Lodge welcomes you to experience the beauty and tranquility of the Cordillera mountains. Pinecone Lodge and Restaurant offers cozy accommodations in traditional cottages and wooden cabins, providing a unique and immersive mountain experience. Guests can enjoy hearty meals at the lodge's restaurant, gather around the bonfire for evening festivities, or explore the surrounding wilderness through guided hikes and nature walks.<p>
+<p>Cultural immersion experiences, such as visits to indigenous communities and traditional weaving workshops, offer guests a deeper understanding of local culture and heritage. Situated along the Gurel-Bokod-Kabayan-Buguias-Abatan Road in Kabayan, Pinecone Lodge and Restaurant can be reached by bus or private vehicle from Baguio City. Guests can enjoy a scenic drive through the countryside, taking in the breathtaking views along the way. Once in Kabayan, the lodge is accessible via a short drive or tricycle ride along the main road. With its tranquil setting and immersive experiences, Pinecone Lodge provides an ideal getaway for nature lovers and adventure seekers alike.</p>
+
+</div>
+</div>
+
+<div class="card" onclick="toggleCardContent(this)">
+<img src="https://i.ibb.co/0Q4wyBC/8aef5e4fc3890291e947b53d029f9e94.jpg" alt="image" border="0"></a>
+<div class="card-content">
+<h2>Albergo Hotel</h2>
+<p><strong>Information:</strong> <p>Albergo Hotel is conveniently located on Villamor Drive in Baguio City, 2600 Benguet, offering a blend of modern comfort and classic elegance. Inspired by Italian architecture, the hotel exudes sophistication and charm, providing guests with a luxurious retreat in the summer capital of the Philippines. Whether you're traveling for business or leisure, Albergo Hotel promises a memorable stay with its upscale amenities, impeccable service, and convenient access to Baguio's top attractions. Albergo Hotel features stylish rooms and suites, each tastefully furnished with modern amenities for a comfortable stay.<p>
+<p>Guests can indulge in Italian-inspired cuisine and local delicacies at the hotel's restaurant, unwind in the fitness center or spa facilities, and conduct business meetings or events in the hotel's conference rooms. With Wi-Fi access throughout the property and a concierge service to assist with travel arrangements, guests can enjoy a seamless and enjoyable stay at Albergo Hotel. Located on Villamor Drive in Baguio City, Albergo Hotel is easily accessible by bus or private vehicle from Manila.<p> 
+<p>Guests can enjoy a scenic drive through the mountains, arriving in Baguio City within a few hours. From Baguio City, it's a short drive to Villamor Drive, where the hotel is conveniently situated. With its central location and upscale amenities, Albergo Hotel provides a luxurious and convenient base for exploring the attractions of Baguio and its surrounding areas.</p>
+
+</div>
+</div>
+</div>
+
+
+<script>
+function toggleCardContent(card) {
+const content = card.querySelector(".additional-info");
+content.style.display =
+content.style.display === "none" ? "block" : "none";
+}
+
+function toggleInfoContent() {
+const info = document.querySelector(".info");
+const content = info.querySelector(".additional-info");
+content.style.display =
+content.style.display === "none" ? "block" : "none";
+}
+</script>
+</body>
+
+</html>

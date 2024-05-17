@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+        </div>
+
+   
+
+   <h1>Pasig Cathedral Museum</h1>
+    <p>Nestled within the historic confines of Pasig Cathedral, the Pasig Cathedral Museum stands as a testament to the city's vibrant past and enduring legacy. Housed within the hallowed walls of the cathedral, this museum offers visitors a fascinating glimpse into the diverse tapestry of Pasig's cultural heritage.<p>
+
+<p>Beyond its impressive collection, the Pasig Cathedral Museum itself is a work of art. Housed within a beautifully restored colonial-era building, the museum's architecture is a testament to Pasig's rich architectural heritage. From its ornate facades to its majestic interiors, every corner of the museum exudes a sense of grandeur and historical significance, transporting visitors to a bygone era of elegance and charm.<p>
+
+<p>More than just a repository of artifacts, the Pasig Cathedral Museum serves as a hub of learning and inspiration for visitors of all ages. Through its carefully curated exhibits and educational programs, the museum seeks to foster a deeper appreciation for Pasig's cultural heritage and promote a sense of pride and identity among local residents. Whether you're a history enthusiast, a student eager to learn, or simply a curious traveler, there's something for everyone to discover and explore at the Pasig Cathedral Museum.<p>
+
+<pWhether you're a history buff, an art enthusiast, or simply someone with a passion for culture and heritage, the Pasig Cathedral Museum invites you to embark on a journey of discovery and exploration. Plan your visit today and experience the magic of Pasig's rich cultural tapestry come to life at the Pasig Cathedral Museum.<p>
+
+    <img src="https://i.ibb.co/YB4cRLY/03314jf-San-Jose-San-Nicolas-Sumilang-Cathedral-Museum-Pasig-Cityfvf-18.jpg" alt="03314jf-San-Jose-San-Nicolas-Sumilang-Cathedral-Museum-Pasig-Cityfvf-18" border="0"></a>
+
+
+	<h1>How to get there</h1>
+<p>To reach Pasig Cathedral Museum, you can follow these general directions:<p>
+
+<p>By Public Transportation:<p>
+
+<p>1. Take the LRT Line 1 and get off at the Central Terminal Station or Recto Station. From there, look for jeepneys bound for Pasig. Make sure they pass through Pasig City Hall or the Pasig City Plaza. Alight at Pasig City Plaza. The Pasig Cathedral is located nearby, within walking distance.<p>
+<p>2.If you're closer to the MRT Line 3, take it and get off at the Ortigas Station.
+From Ortigas Station, you can either walk to EDSA and ride a jeepney going to Pasig or take a short taxi ride to Pasig City Hall or Pasig City Plaza.<p>
+<p>3.If you're coming from Quezon City, look for jeepneys bound for Pasig or Shaw Boulevard. Ask the driver if they pass by Pasig City Hall or Pasig City Plaza. Alight there, and the Pasig Cathedral is within walking distance.<p>
+
+
+<p>By Private Vehicle:<p>
+<p>1. Use a navigation app or GPS device to set your destination to  Pasig Cathedral Museum. Head towards EDSA or C5 Road, depending on your location.<p>
+<p>2.Take EDSA or C5 Road going south, depending on which route is more convenient for you. <p>
+<p>3.Look for signs leading to Pasig City Hall or Pasig City Plaza as you approach Pasig City.<p>
+<p>4.Once you reach Pasig City Hall or Pasig City Plaza, find parking in nearby parking lots or designated parking areas. The Pasig Cathedral Museum is within walking distance from Pasig City Hall or Pasig City Plaza.<p>
+
+
+<p>It's recommended to verify the specific routes and transportation options based on your starting point and current travel conditions. Additionally, always exercise caution and follow local traffic regulations while traveling.<p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://i.ibb.co/bQJJ4Dp/13868472.jpg" alt="13868472" border="0"></a>
+      <div class="card-content">
+        <h2>Ace Hotel & Suites</h2>
+        <p><strong>Information:</strong><p>Located in the vibrant district of Kapitolyo in Pasig City, Ace Hotel & Suites stands as an oasis of modern comfort and relaxation. Boasting contemporary architecture and stylish interiors, this hotel offers guests a refreshing escape from the hustle and bustle of city life.<p>
+<p>Ace Hotel & Suites features well-appointed rooms and suites designed with the utmost comfort and convenience in mind. Each room exudes a modern aesthetic, with sleek furnishings, plush bedding, and amenities such as flat-screen TVs, mini-refrigerators, and complimentary Wi-Fi. Whether you're traveling for business or leisure, you'll find everything you need for a comfortable stay.</p>
+<p>One of the highlights of Ace Hotel & Suites is its world-class wellness facilities, including the Ace Water Spa. Guests can indulge in a variety of therapeutic water treatments, including hydrotherapy massages, hot herbal pools, and steam rooms, designed to rejuvenate the body and relax the mind. The hotel also features a fully equipped fitness center, allowing guests to maintain their workout routine while away from home.</p>
+
+
+             </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://i.ibb.co/FbgM87B/207270779.jpg" alt="207270779" border="0"></a>
+      <div class="card-content">
+        <h2>Citadines Millennium Ortigas Manila</h2>
+        <p><strong>Information:</strong> <p>Situated along Ortigas Avenue in Pasig City, Citadines Millennium Ortigas Manila offers easy access to major business hubs, shopping centers, and entertainment destinations in Metro Manila. The serviced residence is within walking distance of prominent office buildings, including the Asian Development Bank headquarters and the Ortigas Center business district. It's also close to shopping malls like SM Megamall, Robinsons Galleria, and Shangri-La Plaza, where guests can indulge in retail therapy and dining experiences.<p>
+<p>Guests of Citadines Millennium Ortigas Manila can take advantage of a range of modern amenities and facilities designed to enhance their stay. Stay active in the fitness center, unwind in the residents' lounge, or catch up on work in the business center. The serviced residence also offers meeting rooms and function spaces for corporate events or social gatherings, making it an ideal choice for both business and leisure travelers.<p>
+<p>Whether you're traveling for business or leisure, Citadines Millennium Ortigas Manila invites you to experience the perfect blend of comfort, convenience, and hospitality in the heart of Ortigas Center. Book your stay today and discover why Citadines is the preferred choice for discerning travelers around the world.</p>
+
+       
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://i.ibb.co/55xTZQ0/mnl-entrance-02jpg.jpg" alt="mnl-entrance-02jpg" border="0"></a>
+      <div class="card-content">
+        <h2>Marco Polo Ortigas Manila</h2>
+        <p><strong>Information:</strong> <p>Perched majestically in the heart of Ortigas Center, Pasig City, Marco Polo Ortigas Manila epitomizes contemporary luxury and unparalleled service. With its sophisticated design, world-class amenities, and breathtaking views of the city skyline, this five-star hotel offers a truly unforgettable experience for discerning travelers.<p>
+<p>Marco Polo Ortigas Manila boasts a selection of luxurious rooms and suites, each meticulously designed to provide the utmost comfort and style. From the elegant furnishings to the state-of-the-art amenities, every detail is crafted with the discerning traveler in mind. Guests can enjoy panoramic views of the city skyline, plush bedding, marble bathrooms, and complimentary high-speed internet access, ensuring a restful and rejuvenating stay.<p>
+<p>Indulge your palate with a culinary journey through Marco Polo Ortigas Manila's array of dining outlets. From fine dining at Lung Hin, specializing in Cantonese cuisine, to casual all-day dining at Cucina, featuring international flavors and local specialties, there's something to satisfy every craving. Afternoon tea at Connect Lounge and cocktails at Vu's Sky Bar and Lounge provide the perfect opportunity to unwind and enjoy the stunning city views.</p>
+
+    </div>
+  </div>
+
+  
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

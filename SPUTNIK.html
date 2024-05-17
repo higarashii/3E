@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+  
+
+   <h1>Sputnik Aviation Airline Experience</h1>
+    <p>Is located at SPARTA Commune, Pioneer Street, Manila. Calling all aspiring pilots, aviation enthusiasts, and those of you who have always dreamed of sitting in an airliner cockpit! Sputnik Aviation brings you the only recreationally available airliner flight simulator, NOW OPEN FOR EXPERIENCE! Ever wonder what it's like for pilots to fly A multi-million dollar jet aircraft?</p>
+
+<p>Sputnik Aviation has launched a new initiative called the "Airline Experience" at their flight simulator facility located on Pioneer St., Mandaluyong City. The company, which was established during the pandemic, has evolved from a flight simulator streaming platform to the Philippines' first recreational flight simulator facility. </p>
+
+<p>The airline experience is open to everyone, even those without a general knowledge of the ins and outs of aviation. The simulator at AAG mimics the feels and the handling of an A320 on a 1:1 scale. Pilots are using it to train for their type-rating. </p>
+
+         <img src="https://i.ibb.co/QYPQtHN/X-Plane-Screenshot2023-12-25-20-57-07-49-thumb-png-600d9658c0fa224b0cb57eeef3395e27.png" alt="image" border="0"></a>
+
+</html>
+<div class="container">
+    <div class="header">
+<h1>Nearby Hotels</h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+         <img src="https://i.ibb.co/WBB5kNT/72de6154f64b3e0ac62cd41d2fbd770e.jpg" alt="image" border="0"></a>
+      <div class="card-content">
+        <h2>Mini Suites Eton Tower </h2>
+        <p><strong>Information:</strong><p>Is located at 128 Dela Rosa Street, Legazpi Village, Makati, Kalakhang Maynila.</p>
+<p>At The Mini Suites Eton Tower Makati, you get everything right at your fingertips. Located at the heart of the Makati Central Business District, </p>
+ 
+        
+<p>The Mini Suites has direct access to Makati's elevated walkways, making it within comfortable walking distance to commercial establishments, educational institutions, corporate headquarters, and main thoroughfares.
+        </p></div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+       <img src="https://i.ibb.co/vD6tjB2/hotel-facade.jpg" alt="image" border="0"></a>
+      <div class="card-content">
+        <h2>GO Hotels Manila Airline Road</h2>
+        <p><strong>Information:</strong> <p>Is located at 1430 A. Mabini St, Ermita, Manila, 1000 Metro Manila.</p>
+<p>Go Hotels Manila Airport Road is a perfect choice for travelers on the go. The 10 to 15-minute drive to and from the Ninoy Aquino International Airport Terminals 1, 2, 3 and 4 makes traveling fun and stress-free.</p>
+       <p>The hotel's convenient location is easy access to some of Metro Manila's popular shopping and lifestyle hubs, dining, entertainment, and gaming destinations.
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

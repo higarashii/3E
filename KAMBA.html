@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+	body {
+	  margin: auto;
+	  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+	  overflow: auto;
+	  background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+	  animation: gradient 15s ease infinite;
+	  background-size: 400% 400%;
+	  background-attachment: fixed;
+	}
+
+	@keyframes gradient {
+	  0% {
+		background-position: 0% 0%;
+	  }
+
+	  50% {
+		background-position: 100% 100%;
+	  }
+
+	  100% {
+		background-position: 0% 0%;
+	  }
+	}
+
+	.wave {
+	  background: rgb(255 255 255 / 25%);
+	  border-radius: 1000% 1000% 0 0;
+	  position: fixed;
+	  width: 200%;
+	  height: 12em;
+	  animation: wave 10s -3s linear infinite;
+	  transform: translate3d(0, 0, 0);
+	  opacity: 0.8;
+	  bottom: 0;
+	  left: 0;
+	  z-index: -1;
+	}
+
+	.wave:nth-of-type(2) {
+	  bottom: -1.25em;
+	  animation: wave 18s linear reverse infinite;
+	  opacity: 0.8;
+	}
+
+	.wave:nth-of-type(3) {
+	  bottom: -2.5em;
+	  animation: wave 20s -1s reverse infinite;
+	  opacity: 0.9;
+	}
+
+	@keyframes wave {
+	  2% {
+		transform: translateX(1);
+	  }
+
+	  25% {
+		transform: translateX(-25%);
+	  }
+
+	  50% {
+		transform: translateX(-50%);
+	  }
+
+	  75% {
+		transform: translateX(-25%);
+	  }
+
+	  100% {
+		transform: translateX(1);
+	  }
+	}
+
+	body {
+	  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	  margin: 0;
+	  padding: 0;
+	  background-color: #265073;
+	}
+
+	.container {
+	  max-width: 800px;
+	  margin: 20px auto;
+	  padding: 20px;
+	  background-color: rgba(45, 149, 150, 0.5);
+	  border-radius: 15px;
+	  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+	  text-align: center;
+	}
+
+	.header {
+	  text-align: center;
+	  margin-bottom: 20px;
+	  color: #9ad0c2;
+	}
+
+	.info {
+	  color: #9affd0c2;
+	  cursor: pointer;
+	}
+
+	.additional-info {
+	  color: #fff;
+	}
+
+	.card {
+	  margin-top: 20px;
+	  display: flex;
+	  flex-direction: column;
+	  background-color: rgba(255, 255, 255, 0.5);
+	  border-radius: 15px;
+	  box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+	  margin-bottom: 20px;
+	  overflow: hidden;
+	  transition: all 0.3s ease;
+	  cursor: pointer;
+	}
+
+	.card img {
+	  width: 100%;
+	  height: auto;
+	  border-top-left-radius: 15px;
+	  border-top-right-radius: 15px;
+	  object-fit: cover;
+	}
+
+	.card-content {
+	  padding: 20px;
+	}
+
+	.card-content h2 {
+	  margin-top: 0;
+	  font-size: 1.5rem;
+	  color: #333;
+	}
+
+	.card-content p {
+	  color: #666;
+	}
+  </style>
+</head>
+
+<body>
+
+  <div>
+	<div class="wave"></div>
+	<div class="wave"></div>
+	<div class="wave"></div>
+  </div>
+
+  <div class="container">
+	<div class="header">
+	 
+	  <p>
+	 
+	  </p>
+	</div>
+
+  <div class="container">
+	<div class="header">
+	  <h1>Region XII - SARANGANI</h1>
+
+	  <p>
+		Welcome to our region! Below are some nearby hotels for your stay.
+	  </p>
+	</div>
+
+<!-- Introduction / Information part here -->
+	<div class="info" onclick="toggleInfoContent()">
+	  <h2>KIAMBA WHITE BEACH</h2>
+
+<p>Kiamba White Beach, situated in Kiamba, Sarangani, is a picturesque beach destination known for its powdery white sand and crystal-clear waters. 
+
+<p>The beach offers a peaceful and secluded atmosphere, making it an ideal spot for relaxation and beach picnics. Visitors can enjoy swimming in the refreshing waters, sunbathing on the pristine sand, or taking leisurely walks along the shore. 
+
+<p>The beach provides breathtaking coastal views and a serene ambiance away from the crowds.
+
+<div class="info" onclick="toggleInfoContent()">
+<img src="https://i.ibb.co/XZs9G2G/17348076076-2f19dde7bc-z.jpg" alt="17348076076-2f19dde7bc-z" border="0"></a>
+	  <h2>HOT TO GET THERE?</h2>
+
+<p>To get to Kiamba White Beach in Kiamba, Sarangani, you can follow these directions:
+
+<p>1. By Air:
+The nearest airport to Kiamba White Beach is General Santos International Airport (GES). From the airport, you can take a taxi or a hired car to Kiamba, which is approximately a 1 to 1.5-hour drive away.
+
+<p>2. By Land:
+If you are coming from General Santos City, you can take a public utility van or jeepney bound for Kiamba. These vehicles can be found at the public transport terminal in General Santos City. The travel time from General Santos City to Kiamba is around 1 to 1.5 hours.
+
+<p>If you are coming from other parts of Mindanao or the Philippines, you can take a bus bound for General Santos City. From General Santos City, you can follow the same route as mentioned above.
+
+<p>3. By Private Vehicle:
+If you have your own vehicle or are renting one, you can drive to Kiamba White Beach. From General Santos City, take the General Santos City-Kiamba Road and follow the signs leading to Kiamba White Beach. The travel time is approximately 1 to 1.5 hours, depending on traffic conditions.
+
+<p>Once you arrive in Kiamba, Kiamba White Beach is easily accessible. You can ask the locals for directions or follow the signs leading to the beach. It is always recommended to plan your trip in advance and check for any road closures or travel advisories before heading to Kiamba White Beach.
+
+<div class="card" 
+	  <a href="https://ibb.co/BLG5T81"><img src="https://i.ibb.co/D4YHw3q/IMG-1717.jpg" alt="Hotel 1" />
+	  <div class="card-content">
+		<h2>Hotel 1: Kiamba Oasis Beach Resort</h2>
+		<p><strong>Location:</strong> Kiamba, Sarangani, Philippines</p>
+	
+<p>Kiamba Oasis Beach Resort is a beachfront hotel situated right on Kiamba White Beach. The resort offers comfortable rooms with stunning views of the beach and the ocean. 
+
+<p>Guests can enjoy direct access to the beach, relax by the swimming pool, and savor delicious meals at the on-site restaurant.The resort also provides various water sports activities for guests to enjoy.
+		
+			  </div>
+	</div>
+<div class="card" 
+	<a href="https://ibb.co/zSTmS4c"><img src="https://i.ibb.co/4jnFjVy/IMG-1718.jpg" alt="Hotel 2" />
+	  <div class="card-content">
+		<h2>Hotel 2: Kiamba Paradise Beach Resort</h2>
+		<p><strong>Location:</strong> Kiamva, Sarangani, Philippines</p>
+	
+<p>Kiamba Paradise Beach Resort is located near Kiamba White Beach, offering cozy accommodations with easy access to the beach. 
+
+<p>The resort features native-style cottages set amidst a tropical garden. Guests can enjoy the beachfront area, dine at the on-site restaurant serving local and international dishes, and engage in outdoor activities such as kayaking and snorkeling.
+		
+			  </div>
+	</div>
+
+<div class="card" 
+	  
+	<a href="https://ibb.co/bJ3jQzQ"><img src="https://i.ibb.co/RySGYzY/IMG-1719.jpg" alt="Hotel 3" />
+	  <div class="card-content">
+		<h2>Hotel 3: Baliton Beach Resort</h2>
+		<p><strong>Location:</strong> Kiamba, Sarangani, Philippines</p>
+	
+<p>Baliton Beach Resort is situated near Kiamba White Beach, offering native-style cottages surrounded by lush greenery. The resort provides a tranquil and serene atmosphere, perfect for relaxation. 
+
+<p>Guests can enjoy the beachfront area, dine at the on-site restaurant, and experience the beauty of Kiamba White Beach at their doorstep.
+		
+			  </div>
+	</div>
+  </div>
+
+
+  <script>
+	function toggleCardContent(card) {
+	  const content = card.querySelector(".additional-info");
+	  content.style.display =
+		content.style.display === "none" ? "block" : "none";
+	}
+
+	function toggleInfoContent() {
+	  const info = document.querySelector(".info");
+	  const content = info.querySelector(".additional-info");
+	  content.style.display =
+		content.style.display === "none" ? "block" : "none";
+	}
+  
+  </script>
+</body>
+
+</html>

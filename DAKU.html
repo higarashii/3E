@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+       </div>
+
+  
+   <h1>Daku Island, Siargao</h1>
+<p>Daku is a barangay in the municipality of General Luna, in the province of Surigao del Norte. Enjoy the tropical charm of Daku Island, the largest among the three popular island destinations in Siargao. With a total land area of 136 hectares, Daku boasts a wide and quiet shoreline, picture-perfect coconut and palm trees on white sand, and just a few villagers.<p>
+
+<p>Daku is one of the three islands that make up the standard island-hopping tours in Siargao. It is a mere 15-minute boat ride from General Luna, the central hub for Siargao's accommodations and surfing meets. You can easily book such a tour from your accommodation in General Luna, but this is generally more costly than renting a boat from the jetty.<p>
+
+<p>Daku is, indeed, a relaxing beach for days with and without swell. On calm days, snorkeling is a must-do, more so with the clear electric-blue water. On bigger days, the Daku Reef creates a fun wave that is still more forgiving for surfers, as it’s not shallow like most breaks on Siargao.<p>
+
+<p>This is the place where everyone taking the tri island hopping tour have their lunch. One of the islands that offers cooking services. This island has a surfing spot around the corner.<p>
+
+    <img src="https://i.ibb.co/Q6dmFFT//Daku-Island-Siargao-Philippines-Featured-Image.jpg" alt="Daku-Island-Siargao-Philippines-Featured-Image" border="0"></a>
+
+    <h1>How to get there</h1>
+<p>To reach Daku Island, you can follow these general directions:<p>
+
+<p>Daku is situated at approximately 9.7418, 126.1575. Elevation at these coordinates is estimated at 14.9 meters or 48.9 feet above mean sea level. Daku Island is the largest and most popular island to visit during a day of Siargao island hopping. The easiest way to visit Daku Island is with a tour.<p>
+
+<p>These island-hopping tours usually make the same circuit and stop at Daku Island, along with Naked Island and Guyam Island. If you prefer to tour the islands on your own, it’s also possible to hire a private boat. However, it’s recommended that you still make the same stopovers at Naked Island and Guyam Island. Due to their proximity to Daku, it would be a shame to miss out on these two beautiful islands!<p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://i.ibb.co/p203wgy/nay-palad-hideaway-s1180x560.jpg" alt="nay-palad-hideaway-s1180x560" border="0"></a>
+      <div class="card-content">
+        <h2>Nay Palad Hideaway</h2>
+        <p><strong>Information:</strong><p>Nay Palad Hideaway is  located at Malinao Rd, General Luna, Surigao del Norte approximately 4.07 km from Daku Island. An all-inclusive luxury hotel located near Daku Island, offering a secluded and upscale retreat.<p>
+<p>The birthplace of Barefoot Luxury, Nay Palad Hideaway (formerly known as Dedon Island Resort), nestles between ancient mangrove forests and the soft white sands of Siargao, in the Philippines.<p>
+<p> In easy reach of tropical jungle, underground caves, untouched beaches, deep-sea fishing and the legendary Cloud 9 barreling wave, Nay Palad Hideaway lets you create your own rhythm, turning each day into a different story. It’s an experience of hospitality, freedom and beauty that can never truly be described—only shared.</p>
+
+             </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://i.ibb.co/KWZb177/162745016.jpg" alt="162745016" border="0"></a>
+      <div class="card-content">
+        <h2>Secret Spot Siargao - Hostel</h2>
+        <p><strong>Information:</strong> <p>Located close to General Luna Beach and Guyam Island, Secret Spot Siargao - Hostel provides a terrace, a coffee shop/cafe, and a garden.<p>
+<p>Active travelers can enjoy amenities like ecotours and bicycling at this hostel. Treat yourself to a massage or other spa services. The on-site restaurant offers breakfast, lunch, and light fare. In addition to laundry facilities, guests can connect to free WiFi in public areas.</p>
+
+           </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+     <img src="https://i.ibb.co/RYJwc0n/agoda-569009-116109580-082955.jpg" alt="agoda-569009-116109580-082955" border="0"></a>
+      <div class="card-content">
+        <h2>Isla Cabana Resort</h2>
+        <p><strong>Information:</strong> <p>Located at Barangay 5, Poblacion, General Luna, General Luna, Siargao Island, Surigao del Norte, Philippines, 8419. Boasting a private beach area, Isla Cabana Resort features an outdoor pool and a sun terrace overlooking the Pacific Ocean. It offers spacious villas with balcony and provides free Wi-Fi access in the public areas. Massage and spa treatments are available at the Cabana Spa.<p>
+<p>The resort is just 1.9 miles to Cloud 9, the famous surfing waves with a worldwide reputation. Dapa Seaport is within 9.9 miles away, while Siargao Airport is approximately 18.6 miles away. Fitted with wooden flooring, air-conditioned villas feature an en suite bathroom equipped with shower and free toiletries. Villas come with a flat-screen cable TV, a personal safe, fridge and seating area. Minibar and electric kettle are also provided.<p>
+<p>Leisure activities at Isla Cabana Resort include snorkelling, fishing, canoeing and cycling. The friendly staff can assist with luggage storage, currency exchange and laundry services, while sightseeing and travel arrangements can be made at the tour desk. Isla Cabana Resort houses a beachfront restaurant serving delectable local cuisine. Packed lunches and special diet menus can also be prepared, while room service option is available.</p>
+
+              </div>
+    </div>
+  </div>
+
+
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

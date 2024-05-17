@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Region Guide</title>
+<style>
+body {
+margin: auto;
+font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+overflow: auto;
+background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+animation: gradient 15s ease infinite;
+background-size: 400% 400%;
+background-attachment: fixed;
+}
+
+@keyframes gradient {
+0% {
+background-position: 0% 0%;
+}
+
+50% {
+background-position: 100% 100%;
+}
+
+100% {
+background-position: 0% 0%;
+}
+}
+
+.wave {
+background: rgb(255 255 255 / 25%);
+border-radius: 1000% 1000% 0 0;
+position: fixed;
+width: 200%;
+height: 12em;
+animation: wave 10s -3s linear infinite;
+transform: translate3d(0, 0, 0);
+opacity: 0.8;
+bottom: 0;
+left: 0;
+z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+bottom: -1.25em;
+animation: wave 18s linear reverse infinite;
+opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+bottom: -2.5em;
+animation: wave 20s -1s reverse infinite;
+opacity: 0.9;
+}
+
+@keyframes wave {
+2% {
+transform: translateX(1);
+}
+
+25% {
+transform: translateX(-25%);
+}
+
+50% {
+transform: translateX(-50%);
+}
+
+75% {
+transform: translateX(-25%);
+}
+
+100% {
+transform: translateX(1);
+}
+}
+
+body {
+font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #265073;
+}
+
+.container {
+max-width: 800px;
+margin: 20px auto;
+padding: 20px;
+background-color: rgba(45, 149, 150, 0.5);
+border-radius: 15px;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+text-align: center;
+}
+
+.header {
+text-align: center;
+margin-bottom: 20px;
+color: #9ad0c2;
+}
+
+.info {
+color: #9affd0c2;
+cursor: pointer;
+}
+
+.additional-info {
+color: #fff;
+}
+
+.card {
+margin-top: 20px;
+display: flex;
+flex-direction: column;
+background-color: rgba(255, 255, 255, 0.5);
+border-radius: 15px;
+box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+margin-bottom: 20px;
+overflow: hidden;
+transition: all 0.3s ease;
+cursor: pointer;
+}
+
+.card img {
+width: 100%;
+height: auto;
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+object-fit: cover;
+}
+
+.card-content {
+padding: 20px;
+}
+
+.card-content h2 {
+margin-top: 0;
+font-size: 1.5rem;
+color: #333;
+}
+
+.card-content p {
+color: #666;
+}
+</style>
+</head>
+
+<body>
+
+<div>
+<div class="wave"></div>
+<div class="wave"></div>
+<div class="wave"></div>
+</div>
+
+<div class="container">
+<div class="header">
+
+<p>
+
+</p>
+</div>
+
+<!-- Introduction / Information part here -->
+<div class="info" onclick="toggleInfoContent()">
+<h1></h1>
+
+</div>
+
+
+<h1>Banaue Rice Terraces</h1>
+<p>Nestled amidst the picturesque Cordillera mountain range in the northern Philippines lies the captivating Banaue Rice Terraces. Carved into the mountainsides over 2,000 years ago by the indigenous Ifugao people, these terraces are a testament to ancient engineering and agricultural ingenuity. Often referred to as the "Eighth Wonder of the World," the terraces showcase the harmonious relationship between humans and nature.<p>
+
+<p>Visitors are treated to breathtaking vistas of cascading rice paddies that stretch as far as the eye can see, creating a mesmerizing landscape that is both humbling and awe-inspiring. Beyond its stunning beauty, the Banaue Rice Terraces offer a glimpse into the rich cultural heritage of the Ifugao people, with traditional villages dotting the surrounding hillsides and opportunities to learn about age-old farming techniques.<p>
+
+<p>Banaue offers a range of accommodations to suit every traveler's needs, from budget-friendly guesthouses to cozy homestays and luxurious mountain resorts. Visitors can immerse themselves in the local culture by staying in traditional Ifugao huts or opt for modern amenities with hotels offering stunning views of the terraces. As for activities, exploring the terraces on foot or via guided tours is a must, allowing visitors to appreciate the intricate irrigation system and learn about the Ifugao farming practices. <p>
+
+<p>Additionally, cultural shows and performances provide insight into the indigenous heritage of the region, while trekking opportunities abound for those seeking adventure amidst the breathtaking landscapes of the Cordilleras. Whether it's witnessing the sunrise over the terraces or interacting with the warm and hospitable locals, a visit to the Banaue Rice Terraces promises an unforgettable experience that celebrates both nature and culture.<p>
+
+<img src="https://i.ibb.co/KyyB4Jz/mount-batulao-philippines-012918-960x540.jpg" alt="image" border="0"></a>
+
+	<h1>How to get there</h1>
+<p>By Air:<p>
+
+<p>The nearest airport is in Baguio City, the Loakan Airport. From Baguio, you can take a bus or hire a private vehicle to Banaue. The journey takes approximately 5-6 hours.<p>
+
+<p>By Land:<p>
+<p>From Manila, take a bus bound for Banaue. Several bus companies offer trips to Banaue, with varying schedules and prices. The bus ride from Manila to Banaue takes around 9-10 hours, depending on traffic conditions.<p>
+
+
+
+</body>
+</html>
+<div class="container">
+<div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+<div class="card" onclick="toggleCardContent(this)">
+<img src="https://i.ibb.co/V3bSq0D/510591705.jpg" alt="image" border="0"></a>
+<div class="card-content">
+<h2>Batad Roberto's Abung Inn and Restaurant</h2>
+<p><strong>Information:</strong><p>Nestled along the famous Batad Trail in Banaue, 3601 Ifugao, Batad Roberto's Abung Inn and Restaurant offers a cozy retreat amidst the stunning landscapes of the Banaue Rice Terraces. Managed by a local family, the inn provides a warm and welcoming atmosphere, allowing guests to experience genuine Ifugao hospitality. Whether you're a nature enthusiast, a cultural explorer, or simply seeking a tranquil getaway, Batad Roberto's Abung Inn is an ideal base for exploring the wonders of Batad and its surrounding areas. Batad Roberto's Abung Inn offers comfortable accommodations, including traditional Ifugao huts and modern rooms, providing guests with a variety of options to suit their preferences.<p>
+<pThe inn's restaurant serves delicious local cuisine, allowing guests to indulge in authentic flavors while enjoying views of the surrounding rice terraces. Guided tours and trekking expeditions to the nearby rice terraces and waterfalls are available, providing guests with opportunities to explore the natural beauty and cultural heritage of the region.<p>
+<p>Additionally, cultural performances and workshops offer insights into Ifugao traditions and way of life, enhancing the overall guest experience. Batad Roberto's Abung Inn and Restaurant is located along the Batad Trail in Banaue, Ifugao. Visitors can reach the inn by taking a bus or private vehicle from Manila to Banaue, followed by a short hike or tricycle ride to the Batad village. From the Batad Saddle Point, it's a 30-minute trek downhill to reach the inn. Alternatively, guests can arrange for transportation services from Banaue town proper to Batad village.</p>
+
+</div>
+</div>
+
+<div class="card" onclick="toggleCardContent(this)">
+<img src="https://i.ibb.co/n1N6j2R/951212-15090415120035613838.jpg" alt="image" border="0"></a>
+<div class="card-content">
+<h2>Hillside Inn and Restaurant</h2>
+<p><strong>Information:</strong> <p>Perched atop the scenic viewpoint in Upper Batad, Banaue, Hillside Inn and Restaurant offers breathtaking panoramic views of the Banaue Rice Terraces. Surrounded by lush greenery and fresh mountain air, the inn provides a peaceful retreat for nature lovers and adventurers alike. With its comfortable accommodations, warm hospitality, and convenient location, Hillside Inn is the perfect choice for travelers seeking a memorable stay in the heart of Batad.<p>
+<p>Hillside Inn offers cozy rooms with modern amenities and stunning views of the rice terraces, providing guests with a comfortable and immersive experience. The inn's restaurant serves local and international cuisine, allowing guests to savor delicious meals while taking in the scenic beauty of the surroundings. Guided tours and trekking expeditions to the rice terraces and waterfalls are available for guests to explore the natural wonders of Batad. Cultural performances and workshops provide opportunities for guests to learn about the indigenous heritage and traditions of the Ifugao people, enriching their stay at Hillside Inn.<p>
+<p>Hillside Inn and Restaurant is located in Upper Batad, Banaue, Ifugao. Guests can travel from Manila to Banaue by bus or private vehicle, then take a tricycle ride or hike to the Batad viewpoint. From there, it's a short walk uphill to reach the inn. Alternatively, guests can arrange for transportation services from Banaue town proper to Upper Batad.</p>
+
+</div>
+</div>
+
+<div class="card" onclick="toggleCardContent(this)">
+<img src="https://i.ibb.co/rbttFFT/505099924.jpg" alt="image" border="0"></a>
+<div class="card-content">
+<h2>Rita's Mount View Inn and Restaurant</h2>
+<p><strong>Information:</strong> <p>Situated along the scenic Batad Trail in Banaue, Ifugao, Rita's Mount View Inn and Restaurant offers a peaceful retreat amidst the natural beauty of the Banaue Rice Terraces. Managed by a local family, the inn provides comfortable accommodations, delicious cuisine, and personalized service, ensuring a memorable stay for guests. Whether you're seeking adventure, relaxation, or cultural immersion, Rita's Mount View Inn is your home away from home in Batad. Rita's Mount View Inn features cozy rooms with basic amenities and stunning views of the rice terraces, providing guests with a comfortable and authentic mountain experience.<p>
+<p>The inn's restaurant serves local cuisine, allowing guests to taste delicious flavors while enjoying the picturesque surroundings. Guided tours and cultural activities are available for guests to explore the natural and cultural attractions of Batad. Cultural performances and workshops provide opportunities for guests to learn about Ifugao traditions and customs, enriching their stay at Rita's Mount View Inn.<p> 
+<p>Rita's Mount View Inn and Restaurant is located along the Batad Trail in Banaue, Ifugao. Guests can travel from Manila to Banaue by bus or private vehicle, then hike or take a tricycle ride to the Batad village. From there, it's a short walk to reach the inn. Alternatively, guests can arrange for transportation services from Banaue town proper to Batad village.</p>
+
+</div>
+</div>
+</div>
+
+<script>
+function toggleCardContent(card) {
+const content = card.querySelector(".additional-info");
+content.style.display =
+content.style.display === "none" ? "block" : "none";
+}
+
+function toggleInfoContent() {
+const info = document.querySelector(".info");
+const content = info.querySelector(".additional-info");
+content.style.display =
+content.style.display === "none" ? "block" : "none";
+}
+</script>
+</body>
+
+</html>

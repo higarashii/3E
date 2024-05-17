@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+    
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+      <p class="additional-info" style="display: none">
+ 
+      </p>
+    </div>
+
+    <!-- Card content goes here -->
+
+ <h1>Patapat Viaduct</h1>
+      ThePatapat Viaduct are situated Pagudpud, Ilocos Norte <br> Patapat Viaduct, which is elevated 31 meters over sea level was constructed by Hanil Development Co. Ltd. under the management of DPWH-PMO-PJHK and is maintained by the Department of Public Works and Highways. The concrete bridge was completed and opened to the public in October 1986. Dubbed as the French Riviera of the Northern Philippines, the now famous Patapat Viaduct is attracting the attention not only of local tourists but foreign as well. The bridge conforms to the winding mountain side of the town’s coastal mountains primarily to solve the problem of landslide that have caused a number of vehicular accidents in the past.
+        <br /><br />
+        Patapat Viaduct is one of the most scenic and photographed destinations in Ilocos Norte. The fascinating view is what makes this bridge a tourist attraction in the north. Because the bridge crosses Pasaleng Bay, motorists can enjoy a beautiful view of the bay and the scenic mountain view on the other side. Since the bridge snakes around the coast at the foot of the North Cordillera Mountain Range, it gives a breathtaking experience with nature.<p>
+
+   <a href="https://ibb.co/R74dJX4"><img sr="<a href="https://ibb.co/XtD58rX"><img src="https://i.ibb.co/9Wh4tkn/the-bridge.jpg" alt="the-bridge" border="0"></a>
+
+	<h1>How to get there</h1>
+ To get to Patapat Viaduct, you can follow these directions:
+          <br /><br />
+          <p> The Patapat Viaduct is a highway—more than 30 meters above sea level. The 1.3-kilometer long coastal road in Ilocos Norte municipality can be located in Pagudpud district. It is a busy street found at the coastal areas of Pagudpud linking Cagayan Valley Highway in Laoag to Maharlika Highway. <br>
+
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+       <a href="https://ibb.co/fd7JtDJ"><img src="https://i.ibb.co/r2J9Md9/philippines-patapat-viaduct.webp" alt="philippines-patapat-viaduct" border="0"></a>
+
+      <div class="card-content">
+        <h2> Palm Grove Saud Holiday</h2>
+        <p><strong>Information:</strong><p> Palm Grove Saud Holiday Complex is a beachfront resort located in Saud, Pagudpud, Ilocos Norte, just a short drive away from the Bangui Windmills. Nestled amidst lush tropical gardens, this resort offers a tranquil retreat for travelers seeking relaxation and adventure.<<br>
+
+Accommodation: The resort features a variety of accommodations, including cozy cottages and spacious villas, all equipped with modern amenities such as air conditioning, flat-screen TVs, and private bathrooms. Some accommodations offer balconies or terraces with views of the garden or the sea.<br>
+
+<p>Facilities : Guests can enjoy an outdoor swimming pool, perfect for a refreshing dip, as well as a restaurant serving delicious local and international cuisine. The resort also offers facilities for recreational activities such as beach volleyball and water sports, making it an ideal destination for both couples and families.<br>
+garden area where guests can relax and unwind.
+<br /><br />
+<p>
+   
+        <p class="additional-info" style="display: none">
+         
+        </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+         <img src="https://i.ibb.co/8g3F4ks/images-56.jpg" alt="images-56" border="0"></a>
+      <div class="card-content">
+        <h2>Evangeline Beach Resort</h2>
+      <p><strong>Information:</strong><p>Evangeline Beach Resort is a beachfront property located in Saud, Pagudpud, Ilocos Norte, offering comfortable accommodations and breathtaking views of the South China Sea near the Bangui Windmills.<br>
+
+<p>Accommodation: The resort offers cozy rooms and cottages, each with modern amenities such as air conditioning, flat-screen TVs, and private bathrooms. Some accommodations feature balconies or terraces with views of the sea or the resort's gardens.<br>
+
+
+<p>Facilities : Guests can relax at the resort's outdoor swimming pool or enjoy activities such as beach volleyball and snorkeling. The resort also features a restaurant serving local specialties and offers massage services for guests' relaxation needs.<br>
+
+   <p class="additional-info" style="display: none">
+         
+        </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+       <img src="https://i.ibb.co/xJKq7MD/images-57.jpg" alt="images-57" border="0"></a>
+      <div class="card-content">
+        <h2>Casa Consuelo Resort - Island Reef</h2>
+         <p><strong>Information:</strong><p>Casa Consuelo Resort - Island Reef is a beachfront resort located in Saud, Pagudpud, Ilocos Norte, offering a peaceful and idyllic setting near the Bangui Windmills. The resort is known for its pristine beachfront and stunning views of the sea.<br>
+
+<p>Accommodation: The resort offers cozy rooms and cottages, each designed with comfort and relaxation in mind. Guests can choose from a variety of accommodations, some featuring private balconies or terraces with sea views.<br>
+
+
+<p>Facilities : Guests can enjoy leisurely walks along the beach or relax at the resort's outdoor swimming pool. The resort also offers a restaurant serving delicious meals, as well as massage services and water sports activities for guests' enjoyment.<br>
+
+               <p class="additional-info" style="display: none">
+         
+        </p>
+      </div>
+    </div>
+
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

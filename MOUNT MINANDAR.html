@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+      
+    </div>
+
+   
+
+   <h1> Mount Minandar</h1>
+    <p>With new natural attractions discovered and explored every now and then, you’ll never run out of natural wonders in the province. From the waves of the beaches surrounding Barangay Kusiong in Datu Odin Sinsuat town, outdoor enthusiasts can now reach higher and conquer a new challenge – Mt. Minandar.<p>
+
+<p>Minandar is a local term which means start of rumbling sounds. According to the locals, Mt. Minandar was named after people from the sea heard rumbling sounds coming from the mountain top, Rising 1,464 feet above sea level, Mt. Minandar offers a picturesque view of the Grand Mosque and Timako Hill of Cotabato City and the shores of Barangay Kusiong and Tapian. Deep ravines, gorges and steep terrain characterize Mt. Minandar which is fronting another scenic summit, Mt. Kabalalan, which will open soon to the public.<p>
+
+<p>Formally opened to the public on July 17, 2016, the trail to Mt. Minandar passes through a lush tropical rain forest with a possible traverse trek to Pinutulan Creek.The mountain is home to Maguindanao’s ethnic Tedurays who considers Mt. Minandar their home and sacred place.<p>
+
+<a href="https://ibb.co/NWctzYQ"><img src="https://i.ibb.co/vL0V8zg/22minandar11.jpg" alt="22minandar11" border="0"></a>
+	<h1>How to get there</h1>
+<p>To reach Mount Minandar, you can follow these general directions:<p>
+
+<p>By Public and Private Transportation:<p>
+
+<p>By Air:
+Fly to Awang Airport.
+From the airport, take a tricycle or a habal-habal (motorcycle taxi) to the jump-off area for Mount Minandar. This transportation method allows for easy access to the mountain.
+By Land:
+Alternatively, you can reach Mount Minandar by land travel from General Santos City or neighboring provinces.
+The journey to the summit is relatively easy, taking about an hour or so. As you hike, you’ll pass through cornfields, coconut trees, and forests of coco trees, immersing yourself in the natural beauty that surrounds you.<p>
+
+
+<p>It's recommended to verify the specific routes and transportation options based on your starting point and current travel conditions. Additionally, always exercise caution and follow local traffic regulations while traveling.<p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://ibb.co/M6CFknL"><img src="https://i.ibb.co/4dVhRWx/500817172.jpg" alt="500817172" border="0"></a>
+      <div class="card-content">
+        <h2>Rockfort Hotel</h2>
+        <p><strong>Information:</strong><p>Located in Cotabato, Rockfort Hotel offers a garden. The hotel provides both free WiFi and free private parking. All units at the hotel come with air conditioning, a seating area, a flat-screen TV with satellite channels, a safety deposit box and a private bathroom with a bidet, free toiletries and a hairdryer. At Rockfort Hotel every room is fitted with bed linen and towels.<p>
+
+<p>A very clean, well-maintained, and well-appointed facility with friendly and helpful staff. Attention to detail in the room is apparent, and it even smelled very good after every cleaning. Bathrooms are great, there's a living room area separate from the bedroom with a useful smart table, a couch with a table, and another small dining/work table. Beds are very comfortable. They also serve a pretty good local brewed coffee with breakfast, not just instant.</p>
+
+            </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+     <a href="https://ibb.co/CJ139Ns"><img src="https://i.ibb.co/B4z56dK/470674970.jpg" alt="470674970" border="0"></a><div class="card-content">
+        <h2>Baverlly Home Stay</h2>
+        <p><strong>Information:</strong> <p>Located in Cotabato in the Mindanao region, Baverlly Home Stay features a balcony. This property offers access to a terrace, free private parking and free WiFi.The air-conditioned apartment is composed of 1 separate bedroom, a fully equipped kitchen, and 1 bathroom. A flat-screen TV is provided. The accommodation is non-smoking.<p>
+<p> Baverlly Home Stay, is perferct for the family. </p>
+             </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+    <a href="https://ibb.co/XJYBy37"><img src="https://i.ibb.co/Yj09Dyc/328746102.jpg" alt="328746102" border="0"></a><div class="card-content">
+        <h2>Casa Martina </h2>
+        <p><strong>Information:</strong> <p>Casa Martina offers accommodation in Cotabato. The apartment has family rooms.With a shared bathroom, units at the apartment complex also feature free WiFi, while selected rooms also feature a balcony.The nearest airport is Cotabato Airport, 8 km from the apartment.<p>
+<p>There's a lot of Facilities in Casa Martina.</p>
+
+            </div>
+    </div>
+  </div>
+
+ 
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

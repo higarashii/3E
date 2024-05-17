@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+         </div>
+
+   
+   <h1>Tandu Beach</h1>
+    <p>Tan duh Beach, often referred to as Tandu Beach, is a beautiful destination located in Parang, Sulu, in the Mindanao region of the Philippines. It’s known for its powdery white sand and serene atmosphere, offering a tropical paradise away from the more tourist-heavy spots. The beach is open to the public, and visitors can rent cottages during their stay<p>
+
+<p>Tandu Beach is another must-see paradise boasting of white sandy beaches fringed by lush coconut groves. The turquoise waters add to the excitement. Despite its unspoiled beauty, it remains relatively unknown and only a few tourists come here every year.<p>
+
+<p>Tandu Beach is part of the Sulu archipelago, an area that has been less traveled due to safety concerns, but it holds some of the most unspoiled beaches in the country. It’s important for travelers to coordinate with the Sulu Provincial Tourism Office for arrangements, including tour guides and police escorts, to ensure a safe and enjoyable visit.<p>
+
+<p>Follow Local Protocols: Upon arrival in Jolo, wait for your tour guide before exiting the ferry. Respect and follow the instructions of your guide and police escort for your safety.<p>
+
+   <a href="https://ibb.co/Thfzmnp"><img src="https://i.ibb.co/Qmgsrqz/tanduh-beach-sulu-v0-y9jndgz0vw7a1.webp" alt="tanduh-beach-sulu-v0-y9jndgz0vw7a1" border="0"></a>
+
+	<h1>How to get there</h1>
+<p>To reach Sulu Provincial Capitol, you can follow these general directions:<p>
+
+<p>By Public Transportation:<p>
+
+<p>1.Travel to Zamboanga City: This city is the usual gateway to Jolo, the capital city of Sulu. From there, you can catch a ferry to Jolo<p>
+
+<p>2.Buy Ferry Tickets in Advance: Purchase your ferry tickets as soon as you arrive at Zamboanga airport to secure a slot. Aleson and Montenegro Lines offer daily schedules from Zamboanga to Jolo, with a travel time of 8-9 hours. It’s recommended to take the last trip at 8 pm to save on accommodation costs, as you’ll spend the night on the ferry.<p>
+
+<p>3.Follow Local Protocols: Upon arrival in Jolo, wait for your tour guide before exiting the ferry. Respect and follow the instructions of your guide and police escort for your safety.<p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+     <a href="https://imgbb.com/"><img src="https://i.ibb.co/FYdTn29/bay-natuh-facade.jpg" alt="bay-natuh-facade" border="0"></a>
+
+      <div class="card-content">
+        <h2>Bay Natuh Bed and Breakfast</h2>
+        <p><strong>Information:</strong><p>Located in Blk. 5 Lot 27 Phase I Kakuyagan Village, Jolo, Philippines, Autonomous Region In Muslim Mindanao, This is currently the best accomodation in Jolo. Provided with attention to detail by the excellent Mrs Nat Tulawie who is a great contact point to visit Jolo Island, a place that has been off-limits for many years, and is still only recommendable for the very experienced traveler, with good preparation. It is a nice small boutique B&B.</p>
+
+            </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://ibb.co/NF7421d"><img src="https://i.ibb.co/gr6nZvL/caption-1.jpg" alt="caption-1" border="0"></a>      <div class="card-content">
+        <h2>Sulu Peacekeepers Inn</h2>
+        <p><strong>Information:</strong> <p>Located in Camp Asturias, Jolo Philippines.<p>
+<p>It boasts contemporary design and comfortable accommodations suitable for both leisure and business travelers.<p>
+<p>You can't really expect a very extravagant accommodation so it's already a nice place to stay. Secured as it is inside a police camp. Pillows are a bit hard, sheets are thin BUT, rooms are typically nice. Aircon is perfectly working. CR is very good. Bidet is a plus factor! Although there's no hot shower but nevertheless, it's still decent and a very nice place to stay in Jolo. There's also a restaurant inside so that's a plus factor as well. Sari-sari store for your snacks or toiletries can be found just in front of the inn. Would recommend this place if you'll stay in Jolo.</p>
+
+            </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+     <a href="https://ibb.co/X5zZZKd"><img src="https://i.ibb.co/LgCzzcq/92e58ee724527ec877419370b3d2b77d.jpg" alt="92e58ee724527ec877419370b3d2b77d" border="0"></a>
+      <div class="card-content">
+        <h2>Bug Agad Resort</h2>
+        <p><strong>Information:</strong> <p>Bud Agad is a place of natural beauty located in Anuling, Patikul, Sulu, Philippines. Bud Agad Resort:
+Bud Agad Resort is situated in the picturesque town of Patikul in the Sulu province.It offers a serene escape for visitors, surrounded by lush greenery and scenic landscapes.The resort is open to the public from Saturday to Thursday, operating between 8:00 am and 6:00 pm. However, please note that the resort is closed every Friday. Visitors can enjoy the natural beauty, relax, and unwind in this tranquil setting.For more details, you can check out this video that provides a glimpse of the resort.Camp Bud Datu.
+Despite being within a military facility, the site is relatively well-maintained. It’s not only historically significant but also offers breathtaking views of the surrounding area.<p>
+
+<p>If you’re interested in Malay-Islamic history, a visit to Camp Bud Datu is highly recommended.</p>
+          </div>
+    </div>
+  </div>
+
+  
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

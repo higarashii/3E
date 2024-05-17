@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+         </div>
+
+       <h1>Cagwait White Beach</h1>
+    <p>Nestled along the pristine shores of Cagwait, Surigao del Sur, Philippines, lies a hidden gem of natural beauty – Cagwait White Beach. This picturesque destination boasts a kilometer-long stretch of soft, powdery white sand and crystal-clear turquoise waters, making it a haven for travelers seeking solace and serenity amidst nature's splendor.<p>
+
+<p>Cagwait White Beach is a coastal marvel, with its shores gently caressed by the Philippine Sea. Lush coconut palm trees sway in the tropical breeze, offering shade and a sense of tranquility to beachgoers. The fine white sand, akin to powdered sugar, invites barefoot strolls along the shoreline, while the azure waters beckon visitors to immerse themselves in its refreshing embrace. The beach's shallow gradient ensures safe and enjoyable swimming experiences for visitors of all ages, making it an ideal destination for families and solo travelers alike.<p>
+
+<p>A day at Cagwait White Beach is a symphony of sights, sounds, and sensations, offering an unforgettable journey into the heart of paradise. From swimming in crystal-clear waters to indulging in local cuisine, every moment spent here is a celebration of nature's beauty and the joys of tropical living.<p>
+
+  <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/70/60/1c/white-sand-beach.jpg?w=700&h=-1&s=1">
+</a>
+
+
+	<h1>How to get there</h1>
+<p>To reach Santiago City Plaza, you can follow these general directions:<p>
+
+<p>By Public Transportation:<p>
+
+<p>1. Begin your journey by booking a flight from Manila to Butuan City. Butuan City is the nearest major city to Cagwait with an airport. From Butuan City, take a bus or van to Tandag City, the capital of Surigao del Sur. The journey takes approximately 4-5 hours.<p>
+<p>2. In Tandag City, you'll find options for public transportation, such as buses, vans, or jeepneys, heading to Cagwait. The travel time is around 2-3 hours. Upon reaching Cagwait, you can hire a tricycle or motorcycle taxi (habal-habal) to take you directly to Cagwait White Beach. Alternatively, you can ask for directions and walk if it's within a manageable distance.<p>
+
+<p>By Private Vehicle:<p>
+<p>1. Start by heading south from Manila on the South Luzon Expressway (SLEX) and continue onto the Southern Tagalog Arterial Road (STAR Tollway). Follow signs leading to Batangas City. Upon reaching Batangas City, proceed to the Batangas Port. From there, you can take a ferry bound for Surigao City. Make sure to check the ferry schedules in advance and book tickets accordingly.<p>
+<p>2. Upon arriving in Surigao City, you'll need to travel by road to Cagwait. The journey takes approximately 3-4 hours. You can either drive your vehicle or hire a local transportation service for convenience. Once in Cagwait, follow signs or ask locals for directions to Cagwait White Beach. It's a well-known destination in the area and shouldn't be hard to find.<p>
+
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://live.staticflickr.com/5507/10014814003_ce4a34db94_b.jpg"></a>
+      <div class="card-content">
+        <h2>Xtreme Beach Resort</h2>
+        <p><strong>Information:</strong><p>Situated along the pristine shores of Cagwait White Beach, Xtreme Beach Resort enjoys a prime location overlooking the azure waters of the Philippine Sea. Surrounded by lush coconut palms and powdery white sand, the resort provides a serene escape from the hustle and bustle of city life, yet it's conveniently accessible from nearby towns and cities.<p>
+<p> Xtreme Beach Resort serves as a place of adventure and relaxation not just for tourists but also for locals. This vibrant resort offers a perfect blend of excitement and tranquility, catering to the diverse tastes of travelers seeking an unforgettable beach getaway.<p>
+<p>Xtreme Beach Resort is reasy whether you're planning a romantic beach wedding, a corporate retreat, or a family reunion, this resort offers event facilities and services to ensure a memorable occasion. From intimate beachside ceremonies to grand celebrations, the resort's dedicated staff can assist with every detail to make your event a success. It also caters to adrenaline junkies with a wide array of adventure activities. From jet skiing and parasailing to banana boat rides and kite surfing, thrill-seekers will find no shortage of heart-pounding experiences to enjoy on the water.</p>
+
+             </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://surigaodelsur.gov.ph/tourism/img/municipalities_eat/Municipality%20of%20Cagwait-D9Z4X.jpg"></a>
+      <div class="card-content">
+        <h2>Sandscape Resort</h2>
+        <p><strong>Information:</strong> <p>Sandscape Resort enjoys a privileged location along the shores of Cagwait White Beach, offering uninterrupted views of the turquoise waters of the Philippine Sea. Surrounded by swaying coconut palms and soft, powdery sand, the resort provides a secluded sanctuary away from the hustle and bustle of everyday life, yet it remains easily accessible from nearby towns and cities.<p>
+<p>Sandscape Resort stands as a testament to tranquility and luxury. This idyllic retreat offers a harmonious blend of natural splendor and modern comforts, inviting guests to unwind and rejuvenate in a serene tropical paradise.<p>
+<p>Sandscape Resort offers luxurious beachfront villas, private cottages and a deluxe room adorned with modern amenities and elegant furnishings. Each villa boasts spacious living areas, private balconies or terraces, and breathtaking ocean views, providing the perfect setting for a romantic getaway or a family vacation.</p>
+
+
+            </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/c1/7b/3d/spacebar-beach-resort.jpg?w=700&h=-1&s=1"></a>
+      <div class="card-content">
+        <h2>Spacebar Resort</h2>
+        <p><strong>Information:</strong>
+<p>Spacebar Resort enjoys an amazing location at Cagwait White Beach, overlooking the crystal clear water of the beach. The resort provides a peaceful oasis for guests to unwind and rejuvenate, yet it's conveniently situated within reach of nearby attractions and amenities.<p>
+<p>Rest easy in the crashing waves in a place where you can enjoy the enchanting infinity pool and dashing view of the beach. Feel relaxed beyond in this world, only at Spacebar Resort.  Spacebar Resort offers charming beachfront bungalows, oceanview suites and tropical villas that blend seamlessly with the natural landscape. Each of these spaces features rustic yet stylish furnishings, private verandas with hammocks, and panoramic views of the sea. Guests can fall asleep to the gentle sound of waves lapping against the shore, ensuring a restful night's sleep.</p>
+
+           </div>
+    </div>
+  </div>
+
+
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

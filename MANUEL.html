@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+    </div>
+
+    
+   <h1>Museo ni Manuel Quezon</h1>
+    <p>Museo ni Manuel Quezon, located in the historic Quezon Memorial Circle in Quezon City, Philippines, is a tribute to one of the country's most influential leaders, Manuel L. Quezon, the second President of the Philippines. This museum serves as a repository of artifacts, documents, and memorabilia that chronicle the life, achievements, and legacy of President Quezon, offering visitors a fascinating glimpse into his remarkable journey and the pivotal role he played in shaping Philippine history.<p>
+
+<p>Visitors to Museo ni Manuel Quezon can explore various galleries dedicated to different aspects of President Quezon's life and legacy. From his role in the struggle for Philippine independence to his efforts to promote social justice, education, and national unity, each exhibit offers a deeper understanding of the man behind the legend and the challenges he faced in leading the country through tumultuous times.<p>
+
+<p>In addition to its permanent exhibits, Museo ni Manuel Quezon also hosts special events, lectures, and educational programs aimed at promoting awareness and appreciation of President Quezon's legacy among visitors of all ages. From guided tours to interactive workshops, these activities provide a dynamic and engaging way to learn about Philippine history and the enduring influence of President Quezon's ideals and principles.<p>
+
+<p>Whether you're a history enthusiast, a student eager to learn more about the nation's past, or simply curious about the life and legacy of one of the Philippines' most esteemed leaders, a visit to Museo ni Manuel Quezon offers a rewarding and enlightening experience that celebrates the rich heritage and enduring legacy of President Manuel L. Quezon.<p>
+
+    <img src="https://i.ibb.co/4Ktg5Dd/museo-ni-manuel-quezon2.webp" alt="museo-ni-manuel-quezon2" border="0"></a>
+
+
+	<h1>How to get there</h1>
+<p>To reach Museo ni Manuel Quezon, you can follow these general directions:<p>
+
+<p>By Public Transportation:<p>
+
+<p>1. The nearest MRT station is Quezon Avenue Station (for the MRT Line 3), while the nearest LRT station is Roosevelt Station (for LRT Line 1). Choose the station that is most convenient for you based on your starting location within Metro Manila.<p>
+<p>2. From Quezon Avenue Station, you can walk or take a short jeepney ride to reach the vicinity of Quezon Memorial Circle. Look for jeepneys or buses with routes that pass by Quezon Memorial Circle. Most jeepneys or buses with signage indicating "Fairview" or "Tandang Sora" pass by the circle.<p>
+<p>3.Inform the driver or conductor that you're going to Quezon Memorial Circle or Museo ni Manuel Quezon. They will drop you off at or near the circle, which is the landmark where the museum is located.<p>
+
+
+<p>By Private Vehicle:<p>
+<p>1. Use a navigation app or GPS device to set your destination to Quezon Memorial Circle in Quezon City, Philippines. The museum is located within the park grounds of Quezon Memorial Circle.<p>
+<p>2. Quezon Memorial Circle has several entrances, but the main entrance is along Quezon Avenue. Follow the directions provided by your navigation app to reach the main entrance or the nearest entrance to your location. <p>
+<p>3. Navigate to the parking area nearest to Museo ni Manuel Quezon. The museum is located within Quezon Memorial Circle, so you'll need to park your vehicle within the park grounds.<p>
+<p>4.After parking your vehicle, you can walk to Museo ni Manuel Quezon. Follow the signs or ask locals for directions to the museum, which is situated within the park grounds.<p>
+
+
+<p>It's recommended to verify the specific routes and transportation options based on your starting point and current travel conditions. Additionally, always exercise caution and follow local traffic regulations while traveling.<p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://i.ibb.co/PMfCFx8/pool-of-seda-vertis-north.jpg" alt="pool-of-seda-vertis-north" border="0"></a>
+      <div class="card-content">
+        <h2>Seda Vertis North</h2>
+        <p><strong>Information:</strong><p>Located within the bustling Vertis North district, Seda Vertis North stands as a beacon of sophistication amidst the vibrant energy of Quezon City. From the moment you step into the sleek lobby, you're greeted with an ambiance of understated elegance and attentive service.<p>
+<p>The hotel boasts a variety of stylish rooms and suites designed to cater to the needs of both leisure and business travelers. Each room is thoughtfully appointed with modern amenities and plush furnishings, providing a tranquil retreat from the city's hustle and bustle. Whether you're here for a quick getaway or an extended stay, you'll find comfort and convenience at every turn.</p>
+<p>Unwind and recharge amidst the hotel's array of recreational amenities. Take a refreshing dip in the swimming pool, work up a sweat at the fitness center, or pamper yourself with a soothing massage at the spa. Whatever your idea of relaxation may be, Seda Vertis North offers the perfect oasis to escape the stresses of everyday life.</p>
+
+
+              </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://i.ibb.co/CH6DsMZ/luxent-hotel.jpg" alt="luxent-hotel" border="0"></a>
+      <div class="card-content">
+        <h2>Luxent Hotel</h2>
+        <p><strong>Information:</strong> <p>Conveniently situated in the dynamic city of Quezon City, Luxent Hotel stands as an epitome of contemporary luxury and impeccable service. From the moment you step into the grand lobby, you're enveloped in an atmosphere of sophistication and warmth, setting the tone for a memorable stay.<p>
+<p>Luxent Hotel offers a selection of meticulously designed rooms and suites, each exuding a perfect blend of style and comfort. Whether you choose a cozy Deluxe Room or indulge in the lavishness of a Premier Suite, you'll find yourself surrounded by upscale amenities and plush furnishings, ensuring a restful retreat after a day of exploration or business engagements. <p>
+<p>Indulge in a moment of relaxation amidst Luxent Hotel's array of recreational amenities. Take a refreshing dip in the sparkling swimming pool, rejuvenate your senses with a pampering treatment at the spa, or maintain your fitness regimen at the well-equipped gym. Whatever your preference, our facilities are designed to cater to your wellness needs and ensure a truly rejuvenating stay.</p>
+
+            </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://i.ibb.co/zZ81Ng8/microtel-by-wyndham-up.jpg" alt="microtel-by-wyndham-up" border="0"></a>
+      <div class="card-content">
+        <h2>Microtel by Wyndham - UP Technohub</h2>
+        <p><strong>Information:</strong> <p>Nestled within the bustling UP-Ayala Land Technohub, Microtel by Wyndham - UP Technohub provides a serene retreat for both business and leisure travelers. From its inviting facade to its cozy interiors, the hotel exudes a sense of warmth and hospitality, welcoming guests with open arms.<p>
+<p>Step into your cozy room and discover a sanctuary of comfort and relaxation. Microtel by Wyndham - UP Technohub offers well-appointed guest rooms featuring signature Microtel beds, ergonomic workspaces, and modern amenities such as flat-screen TVs and complimentary Wi-Fi. Whether you're here for a quick business trip or a leisurely getaway, you'll find everything you need for a comfortable stay.<p>
+<p>In addition to comfortable accommodations and exceptional service, Microtel by Wyndham - UP Technohub offers a range of value-added amenities to enhance your stay. Start your day with a complimentary continental breakfast, take a refreshing dip in the outdoor swimming pool, or unwind with a workout in the fitness center. Whatever your preference, we have everything you need for a memorable stay.</p>
+
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

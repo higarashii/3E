@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+          </div>
+
+
+   <h1>Bucas Grande Island</h1>
+    <p>Bucas Grande is an island in the province of Surigao del Norte in the Philippines. The island is contiguous with the municipality of Socorro,Surigao del Norte. Its area is 128 square kilometres (49 sq mi). Its name means "large mouth" or "large opening" in Philippine Spanish in reference to the wide strait in between Bucas Grande and Socorro Island. Marvel at the beauty of Bucas Grande Island in Socorro. Known for its Sohoton Cove and mesmerizing jellyfish sanctuary, it's a haven for nature lovers.<p>
+
+<p>Bucas Grande Island is situated on the far eastern part of mainland Surigao del Norte. The lone island municipality of Socorro is the only one of its kind in the entire provin
+You sent
+province of Surigao del Norte. Bucas Grande Island lies within the breadth of the Pacific and is physically located at coordinates 9° 37′ 17″ North, 125° 58′ 0″ East. It has a total land area of 12,445 hectares and had a population of 25,942 inhabitants at the 2020 Census, and a voting population of over 13,000.<p>
+
+<p>Bucas Grande is also the site of the Sohoton Cove, a tourist attraction consisting of a cluster of small islets with lagoons, natural limestone caves, and rock formations. The name means "narrow opening" in Visayan, referring to the narrow gaps between the small islands.<p>
+
+    <img src="https://i.ibb.co/8mhtW6k/Bucas-Grande.webp" alt="Bucas-Grande" border="0"></a>
+
+    <h1>How to get there</h1>
+<p>To reach Bucas Grande Island, Surigao del Norte, you can follow these general directions:<p>
+
+<p>-Take a plane from Metro Manila to Butuan City (e.g. Philippine Airlines and Cebu Pacific).
+- Charter a tricycle to get to the bus terminal in Butuan.
+- Ride a bus bound for Surigao City and alight at Bad-as Junction (travel time: 2 – 2.5 hours).<p>
+
+<p>- Transfer to a van or bus en route to Tandag City and get off at Hayanggabon Port in the town of Claver which serves as the jump-off point for island hopping (travel time: approximately 2 hours).
+- Charter a boat for island hopping.<p>
+
+
+<p>For a cheaper alternative, you may ride the public boat from Hayanggabon Port to the town of Socorro which can be found in Bucas Grande Island (travel time: 1 – 1.5 hours). The port in Socorro will serve as your jump-off point for island hopping. There is also a public boat that leaves Surigao City Port for Socorro Port but the only boat for this route leaves between 11:00 AM and 12:00 PM.<p>
+
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://i.ibb.co/bJKqhRj/02269120009bg4phk-E326-R-960-660-R5-D.webp" alt="02269120009bg4phk-E326-R-960-660-R5-D" border="0"></a>
+      <div class="card-content">
+        <h2>Club Tara Island Resort</h2>
+        <p><strong>Information:</strong><p> When you a stay at Club Tara Resort in Socorro, you'll be near the bay, just steps from Sohoton Cove and Sohoton Park. This beach resort is 0.1 mi (0.1 km) from Kanlunes Beach and 6.4 mi (10.3 km) from Sohoton Lagoon.<p>
+<p>Head down to the water and enjoy a day at the private beach, or take advantage of other recreational amenities, which include an outdoor pool. This resort also features complimentary wireless internet access, tour/ticket assistance, and a picnic area.<p>
+<p>Enjoy Filipino cuisine at Club House Resto, a poolside restaurant which features an ocean view. You can also stay in and take advantage of the room service (during limited hours).</p>
+
+            </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://i.ibb.co/h7dyprN/0225w12000an0y0kr0-AF5-R-640-360-R5-D.jpg" alt="0225w12000an0y0kr0-AF5-R-640-360-R5-D" border="0"></a>
+      <div class="card-content">
+        <h2>Dahun Villas Siargao powered by Cocotel</h2>
+        <p><strong>Information:</strong> <p>When you stay at Dahun Villas Siargao - Homestay - Hostel in General Luna, you'll be near the beach, within a 5-minute drive of General Luna Port and General Luna Beach. This hostel is 1.1 mi (1.7 km) from Guyam Island and 2.8 mi (4.6 km) from Doot Beach.<p>
+<p>Enjoy recreation amenities such as bicycles to rent or take in the view from a garden. Additional amenities at this hostel include complimentary wireless internet access and tour/ticket assistance.<p>
+<p>At Dahun Villas Siargao - Homestay - Hostel, enjoy a satisfying meal at the restaurant. Mingle with other guests at the complimentary reception, held daily. Cooked-to-order breakfasts are available daily from 6:00 AM to 11:00 AM for a fee.<p>
+<p>Featured amenities include express check-in, express check-out, and coffee/tea in a common area. A roundtrip airport shuttle is provided for a surcharge (available 24 hours), and free self parking is available onsite.</p>
+
+           </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://i.ibb.co/rHHj3v0/1mc3y12000cbmttjq054-A-R-640-360-R5-D.jpg" alt="1mc3y12000cbmttjq054-A-R-640-360-R5-D" border="0"></a>
+      <div class="card-content">
+        <h2>Lao Singuan Homestay powered by Cocotel</h2>
+        <p><strong>Information:</strong> <p>With a stay at Lao Singuan Homestay powered by Cocotel in Del Carmen, you'll be 10 mi (16.1 km) from San Isidro Municipal Building and 15.4 mi (24.8 km) from Dapa Public Market. This guesthouse is 15.5 mi (24.9 km) from Magpupungko Beach and 19.7 mi (31.8 km) from Naked Island.<p>
+<p>Take in the views from a terrace. The front desk is staffed during limited hours. Free self parking is available onsite.<p>
+<p>Make yourself at home in one of the 17 air-conditioned rooms featuring flat-screen televisions. Satellite television is provided for your entertainment. Bathrooms feature showers with rainfall showerheads and toothbrushes and toothpaste.<p>
+
+          </div>
+    </div>
+  </div>
+
+  
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

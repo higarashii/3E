@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        margin: auto;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        overflow: auto;
+        background: linear-gradient(
+          315deg,
+          rgba(38, 80, 115, 1) 3%,
+          rgba(119, 176, 170, 1) 38%,
+          rgba(19, 93, 102, 1) 68%,
+          rgba(45, 149, 150, 1) 98%
+        );
+        animation: gradient 15s ease infinite;
+        background-size: 400% 400%;
+        background-attachment: fixed;
+      }
+
+      @keyframes gradient {
+        0% {
+          background-position: 0% 0%;
+        }
+
+        50% {
+          background-position: 100% 100%;
+        }
+
+        100% {
+          background-position: 0% 0%;
+        }
+      }
+
+      .wave {
+        background: rgb(255 255 255 / 25%);
+        border-radius: 1000% 1000% 0 0;
+        position: fixed;
+        width: 200%;
+        height: 12em;
+        animation: wave 10s -3s linear infinite;
+        transform: translate3d(0, 0, 0);
+        opacity: 0.8;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+      }
+
+      .wave:nth-of-type(2) {
+        bottom: -1.25em;
+        animation: wave 18s linear reverse infinite;
+        opacity: 0.8;
+      }
+
+      .wave:nth-of-type(3) {
+        bottom: -2.5em;
+        animation: wave 20s -1s reverse infinite;
+        opacity: 0.9;
+      }
+
+      @keyframes wave {
+        2% {
+          transform: translateX(1);
+        }
+
+        25% {
+          transform: translateX(-25%);
+        }
+
+        50% {
+          transform: translateX(-50%);
+        }
+
+        75% {
+          transform: translateX(-25%);
+        }
+
+        100% {
+          transform: translateX(1);
+        }
+      }
+
+      body {
+        font-family: "Arial", sans-serif;
+        text-align: center;
+        margin: 20px;
+        color: #fff;
+      }
+
+      p {
+        font-size: 18px;
+        font-weight: bold;
+        color: #ffd700;
+        text-shadow: 3px 10px 10px rgba(0, 0, 0, 0.5);
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 10px;
+      }
+
+      li {
+        font-size: 12px;
+        margin-bottom: 10px;
+        padding: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      li button {
+        background: linear-gradient(
+          0deg,
+          rgba(0, 60, 67, 0.5) 0%,
+          rgba(0, 60, 67, 0.5) 100%
+        );
+        line-height: 42px;
+        padding: 0;
+        border: none;
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+        transition: background-color 0.3s ease;
+        width: 100%;
+        text-align: center;
+      }
+
+      li button span {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+
+      li button:before,
+      li button:after {
+        position: absolute;
+        content: "";
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 215, 0, 1);
+        box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+          -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+          7px 7px 20px 0px rgba(0, 0, 0, 0.2),
+          4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      li button:before {
+        height: 0%;
+        width: 2px;
+      }
+
+      li button:after {
+        width: 0%;
+        height: 2px;
+      }
+
+      li button:hover {
+        color: rgba(255, 215, 0, 1);
+        background: transparent;
+      }
+
+      li button:hover:before {
+        height: 100%;
+      }
+
+      li button:hover:after {
+        width: 100%;
+      }
+
+      li button span:before,
+      li button span:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        background: rgba(255, 215, 0, 1);
+        box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+          -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+          7px 7px 20px 0px rgba(0, 0, 0, 0.2),
+          4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      li button span:before {
+        width: 2px;
+        height: 0%;
+      }
+
+      li button span:after {
+        height: 2px;
+        width: 0%;
+      }
+
+      li button span:hover:before {
+        height: 100%;
+      }
+
+      li button span:hover:after {
+        width: 100%;
+      }
+    </style>
+  </head>
+<h1> REGION VIII: EASTERN VISAYAS </h1>
+
+  <body>
+    <div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+    </div>
+
+    <a href="Intro.html" target="C">
+      <p>SAMAR</p>
+    </a>
+
+   
+    <ul>
+      <!-- Like this href="body.html" -->
+      <li>
+        <button class="btn-7">
+          <a href="SOHOTAN.html" target="C"><span>Sohotan Caves</span></a>
+       </button>
+       </li>
+      <li>
+        <button class="btn-7">
+          <a href="SAMAR ARCHAELOGICAL.html" target="C"><span>Samar Archeological Museum</span></a>
+         </button>
+       </li>
+
+    </ul>
+
+    <a href="Intro.html" target="C">
+      <p>BILIRAN</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="TINAGO.html" target="C"><span>Tinago Waterfalls</span></a>
+        </button>
+      </li>
+ <!-- Like this! just copy and paste.-->
+      <li>
+        <button class="btn-7">
+          <a href="SAMABAWAN.html" target="C"><span>Sambawan Island</span></a>
+        </button>
+      </li>
+    
+ <!-- Like this! just copy and paste.-->
+      <li>
+        <button class="btn-7">
+          <a href="CANAAN.html" target="C"><span>Canaan Hill Farms</span></a>
+        </button>
+      </li>
+   </ul>
+      <a href="Intro.html" target="C">
+      <p>ORMOC</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="LAKE JANAGDAN.html" target="C"><span>Lake Janagdan</span></a>
+        </button>
+      </li>
+ <!-- Like this! just copy and paste.-->
+      <li>
+        <button class="btn-7">
+          <a href="LAKE DANAO.html" target="C"><span>Lake Danao</span></a>
+        </button>
+      </li>
+      <li>
+    </ul>
+
+<a href="Intro.html" target="C">
+      <p>TACLOBAN</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="MACARTHUR.html" target="C"><span>Macarthur Landing Memorial Park</span></a>
+        </button>
+      </li>
+   <li>
+        <button class="btn-7">
+          <a href="SAN JUANICO.html" target="C"><span>San Juanico Bridge</span></a>
+        </button>
+      </li>
+   <li>
+        <button class="btn-7">
+          <a href="STO NINO.html" target="C"><span>Sto Nino Shrine Heritage Museum</span></a>
+        </button>
+      </li>
+
+    </ul>
+
+ <a href="Intro.html" target="C">
+      <p>LEYTE</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="CANIGAO.html" target="C"><span>Canigao Island</span></a>
+        </button>
+      </li>
+         <li>
+        <button class="btn-7">
+          <a href="KALANGGAMAN.html" target="C"><span>Kalanggaman Island</span></a>
+        </button>
+      </li>
+         <li>
+        <button class="btn-7">
+          <a href="CUATRO.html" target="C"><span>Cuatro Islas</span></a>
+        </button>
+      </li>
+     </ul>
+
+ <a href="Intro.html" target="C">
+      <p>EASTHERN SAMAR</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="CANHUGAS.html" target="C"><span>Canhugas Nature Park</span></a>
+        </button>
+      </li>
+       <li>
+        <button class="btn-7">
+          <a href="LINAO.html" target="C"><span>Linao Cave</span></a>
+        </button>
+      </li>
+        <li>
+        <button class="btn-7">
+          <a href="HANDIG.html" target="C"><span>Homonhon Island</span></a>
+        </button>
+      </li>
+    </ul>
+<a href="Intro.html" target="C">
+      <p>SOUTHERN LEYTE</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="GUINSUHOTAN.html" target="C"><span>Guinsuhotan Cave and Cagnitoan Waterfall</span></a>
+        </button>
+      </li>
+         <li>
+        <button class="btn-7">
+          <a href="MONTE CUEVA.html" target="C"><span>Monte Cueva Shrine</span></a>
+        </button>
+      </li>
+
+      </ul>
+<a href="Intro.html" target="C">
+      <p>NORTHERN SAMAR</p>
+    </a>
+    <ul>
+      <li>
+        <button class="btn-7">
+          <a href="CALBAYOG.html" target="C"><span>Calbayog Zipline</span></a>
+        </button>
+      </li>
+        <li>
+        <button class="btn-7">
+          <a href="PINK BEACH.html" target="C"><span>Pink Beach</span></a>
+        </button>
+      </li>
+
+
+    </ul>
+  </body>
+</html>

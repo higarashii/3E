@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+          </div>
+
+  
+
+   <h1>Bangas Island</h1>
+    <p>Bangas Island, located in Panglima Tahil, Sulu Province, is a hidden gem waiting to be explored. Here are some fascinating details about this captivating island.Bangas Island boasts crystalline white sands and crystal-clear waters that gently lap against the shoreline. Its pristine beaches easily rival other popular beach destinations in the Philippines.<p>
+
+<p>Beneath the surface, vibrant coral reefs thrive around Bangas Island. This makes it an ideal spot for scuba diving and snorkeling. Exploring the underwater world here reveals a diverse marine ecosystem teeming with life.<p>
+
+<p>Bangas Island is not just about natural beauty; it’s also home to a local community. Visitors can immerse themselves in the culture, interact with friendly locals, and learn about the island’s history and traditions.<p>
+
+<p>Interestingly, Bangas Island serves as the resting place for the Sama and Badjao communities. Locals refer to it as Bukitkat, while tourists sometimes call it Graveyard Island due to its role as a burial ground. The tombs of the young are marked with wooden artifacts, while others are secured within open huts.<p>
+
+   <a href="https://ibb.co/zVLXmd2"><img src="https://i.ibb.co/KxQ25ns/bangas-island-sulu.jpg" alt="bangas-island-sulu" border="0"></a>
+
+	<h1>How to get there</h1>
+<p>To reach Bangas Island, you can follow these general directions:<p>
+
+<p>By Public Transportation:<p>
+
+<p>1.Fly or take a ferry to Jolo: You can fly to Jolo from Zamboanga City with Philippine Airlines, which operates flights three times a week and the flight time is only about 35 minutes1. Alternatively, Aleson Shipping Lines offers ten-hour overnight ferry trips from Zamboanga City.<p>
+
+<p>2.From Jolo to Bangas Island: Once you arrive in Jolo, Bangas Island is just about 3.6 nautical miles from the port of Jolo, and it takes an average of 30 minutes to reach by boat.<p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://imgbb.com/"><img src="https://i.ibb.co/FYdTn29/bay-natuh-facade.jpg" alt="bay-natuh-facade" border="0"></a>
+      <div class="card-content">
+        <h2>Bay Natuh Bed and Breakfast</h2>
+        <p><strong>Information:</strong><p>Located in 
+Blk. 5 Lot 27 Phase I Kakuyagan Village, Jolo, Philippines, Autonomous Region In Muslim Mindanao, This is currently the best accomodation in Jolo. Provided with attention to detail by the excellent Mrs Nat Tulawie who is a great contact point to visit Jolo Island, a place that has been off-limits for many years, and is still only recommendable for the very experienced traveler, with good preparation. It is a nice small boutique B&B.</p>
+
+             </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://ibb.co/NF7421d"><img src="https://i.ibb.co/gr6nZvL/caption-1.jpg" alt="caption-1" border="0"></a>      <div class="card-content">
+        <h2>Sulu Peacekeepers Inn</h2>
+        <p><strong>Information:</strong> <p>Located in Camp Asturias, Jolo Philippines.<p>
+<p>It boasts contemporary design and comfortable accommodations suitable for both leisure and business travelers.<p>
+<p>You can't really expect a very extravagant accommodation so it's already a nice place to stay. Secured as it is inside a police camp. Pillows are a bit hard, sheets are thin BUT, rooms are typically nice. Aircon is perfectly working. CR is very good. Bidet is a plus factor! Although there's no hot shower but nevertheless, it's still decent and a very nice place to stay in Jolo. There's also a restaurant inside so that's a plus factor as well. Sari-sari store for your snacks or toiletries can be found just in front of the inn. Would recommend this place if you'll stay in Jolo.</p>
+
+              </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+     <a href="https://ibb.co/X5zZZKd"><img src="https://i.ibb.co/LgCzzcq/92e58ee724527ec877419370b3d2b77d.jpg" alt="92e58ee724527ec877419370b3d2b77d" border="0"></a>
+      <div class="card-content">
+        <h2>Bug Agad Resort</h2>
+        <p><strong>Information:</strong> <p>Bud Agad is a place of natural beauty located in Anuling, Patikul, Sulu, Philippines. Bud Agad Resort:
+Bud Agad Resort is situated in the picturesque town of Patikul in the Sulu province.It offers a serene escape for visitors, surrounded by lush greenery and scenic landscapes.The resort is open to the public from Saturday to Thursday, operating between 8:00 am and 6:00 pm. However, please note that the resort is closed every Friday. Visitors can enjoy the natural beauty, relax, and unwind in this tranquil setting.For more details, you can check out this video that provides a glimpse of the resort.Camp Bud Datu.
+Despite being within a military facility, the site is relatively well-maintained. It’s not only historically significant but also offers breathtaking views of the surrounding area.<p>
+
+<p>If you’re interested in Malay-Islamic history, a visit to Camp Bud Datu is highly recommended.</p>
+             </div>
+    </div>
+  </div>
+
+ 
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

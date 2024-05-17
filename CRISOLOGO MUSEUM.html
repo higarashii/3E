@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+    
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+      <p class="additional-info" style="display: none">
+ 
+      </p>
+    </div>
+
+    <!-- Card content goes here -->
+
+ <h1>Crisologo Museum</h1>
+    <p> Crisologo Museum is an ancestral house turned into a museum by the Crisologos, who happens to be one of Vigan’s most prominent political family figure. The museum is a few walks away from the Vigan Cathedral. It is famous not only because of the family name attached to it but with its wide range of memorabilia as it also houses historical and political remains of what shaped the Ilocos province and the whole Philippines.
+        <br /><br />
+        Floro S. Crisologo was one of the popular congressmen and was the head of the Crisologo family who ruled in Vigan in the 1970s. The surname grew popularity and love from the residents of the North as he authored some laws that created the University of Northern Philippines. He is also the one who is behind the establishment of the Social Security System that helped thousands of Filipinos today.
+<p>
+
+  <a href="https://ibb.co/MS1txCC"><img src="https://i.ibb.co/yPkZcQQ/crisologo-museum.jpg" alt="crisologo-museum" border="0"></a> 
+
+	<h1>How to get there</h1>
+    To get to Crisologo Museum, you can follow these directions:
+          <br /><br />
+          <p>From Laoag City: If you're coming from Laoag City, you can take a bus bound for Vigan City. Once you arrive at Vigan City Bus Terminal, you can take a tricycle to Calle Crisologo and walk along the street and you will find Crislogo Museum.<br>
+
+<p>From Manila: If you're coming from Manila, you can take a bus bound for Vigan City. There are several bus companies offering trips to Vigan. Once you arrive at Vigan City Bus Terminal, you can take a tricycle to Calle Crisologo and from calle Crisologo walk along the street and you will find Crislogo Museum.<br>
+
+<p>from Vigan City, hail a tricycle or kalesa [two-wheeled horse-drawn carriage] and tell the driver to drop you at Crisologo Museum. <br>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+  <img src="https://i.ibb.co/QD83j0F/images-41.jpg" alt="images-41" border="0"></a>
+      <div class="card-content">
+        <h2>Hotel de Benito</h2>
+        <p><strong>Location:</strong> Vigan, Ilocos Sur</p>
+         <p class="additional-info" style="display: none">
+          Hotel Benito de Vigan offers a blend of modern comfort and traditional Filipino hospitality in a colonial-inspired setting. The hotel is designed to reflect the architectural charm of Vigan, with its Spanish colonial-era buildings and cobblestone streets. <br>
+
+<p>The hotel offers a variety of rooms to suit different needs and preferences, including Deluxe Rooms, Superior Rooms, and Family Rooms. Each room is elegantly furnished and equipped with modern amenities such as air conditioning, flat-screen TVs, minibars, and Wi-Fi access. For guests seeking extra luxury, the hotel also has suites available, featuring spacious layouts, plush furnishings, and upgraded amenities. Facilities : Hotel Benito de Vigan provides facilities such as a restaurant serving Filipino and international cuisine, a swimming pool, and a garden area where guests can relax and unwind. </p>
+<br /><br />
+          Guests can also unwind and rejuvenate in the swimming pool or stay active in the fitness center.
+</p>
+
+   
+        <p class="additional-info" style="display: none">
+         
+        </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+   <img src="https://i.ibb.co/fF3bDhH/images-42.jpg" alt="images-42" border="0"></a>
+      <div class="card-content">
+        <h2>Plaza del Norte</h2>
+        <p><strong>Location:</strong> Vigan, Ilocos Sur</p>
+          <p class="additional-info" style="display: none">
+        <p>Plaza del Norte is a commercial and leisure complex located in Laoag City, Ilocos Norte, Philippines. It features a hotel, convention center, shopping arcade, restaurants, and recreational facilities. The plaza often hosts events, concerts, and exhibitions, making it a popular destination for both locals and tourists. Additionally, Plaza del Norte serves as a venue for weddings and other social gatherings due to its spacious grounds and modern amenities. The complex also showcases the rich cultural heritage of the Ilocos region through various exhibits and performances. Overall, Plaza del Norte is a vibrant hub of activity and entertainment in Laoag City.<br /><br />
+Rooms : Plaza del Norte Hotel in Laoag City, Ilocos Norte, offers various room options including standard, deluxe, and suite accommodations, catering to different guest preferences. Standard rooms are ideal for individuals or couples, while deluxe rooms provide extra space and upgraded amenities. Suites offer separate living and sleeping areas, with executive suites tailored for business travelers. Guests can expect well-appointed rooms, attentive service, and convenient access to hotel facilities and nearby attractions.<br /><br /> Facilities : Plaza del Norte Hotel and Convention Center in Laoag City, Ilocos Norte, offers a range of facilities to ensure guests have a comfortable stay. These include a swimming pool, fitness center, restaurants, bars, versatile event spaces, spa, business center, kids' play area, and secure parking. With amenities catering to leisure, business, and relaxation, guests can enjoy a convenient and enjoyable experience during their visit to Plaza del Norte.<br>
+
+
+   <p class="additional-info" style="display: none">
+         
+        </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+    <a href="https://imgbb.com/"><img src="https://i.ibb.co/F8mVtQf/images-45.jpg" alt="images-45" border="0"></a>
+      <div class="card-content">
+        <h2>Hotel Salcedo de Vigan</h2>
+              <p class="additional-info" style="display: none">
+          <p>Situated in the heart of Vigan's heritage district, Hotel Salcedo de Vigan offers cozy rooms with modern amenities. Guests can explore Calle Crisologo and other nearby landmarks easily from this location. <br>
+
+<p>Rooms : Hotel Salcedo de Vigan offers a range of accommodations, including standard rooms, deluxe rooms, and suites, each adorned with a blend of modern and traditional Filipino design elements. Guests can expect amenities like air conditioning, flat-screen TVs, Wi-Fi access, and private bathrooms with hot and cold showers. Some rooms may also feature additional conveniences such as mini-refrigerators and coffee-making facilities.<br>
+
+
+<p>Facilities : The hotel provides function rooms for events and gatherings, parking facilities, and services like laundry, room service, and concierge assistance to ensure a comfortable and convenient stay for guests exploring the historic city of Vigan and its cultural attractions, including the iconic Calle Crisologo.<br>
+
+
+
+               <p class="additional-info" style="display: none">
+         
+        </p>
+      </div>
+    </div>
+
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

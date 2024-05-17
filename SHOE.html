@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+         </div>
+
+    <h1>Shoe museum</h1>
+<p>The Marikina Shoe Museum in Marikina City,Philippines, is a renowned destination showcasing the city's rich heritage and craftsmanship in shoe-making.
+The museum features a wide collection of shoes worn by prominent figures, including former Philippine presidents, world leaders, celebrities, and athletes. <p>It also displays various styles of footwear, historical artifacts, and information about the shoe industry's evolution in Marikina .<p>
+ <a href="https://ibb.co/wK5k3Nx"><img src="https://i.ibb.co/wK5k3Nx/shoe-museum.jpg" alt="shoe-museum" border="0"></a> <h1>How to get there</h1>
+<p>To reach Shoe museum, you can follow these general directions:<p>
+
+<p>1.Public Transportation: You can take public transportation options such as jeepneys, buses, or UV Express vans depending on your location in Metro Manila. These modes of transportation typically have routes that pass through Marikina City.<p>2.Route Information: Ensure you are on a route that will take you to Marikina City. You can ask the driver or conductor to confirm if their route passes through Marikina.<p>3.Driving Directions: If you're driving to the museum, you can input the museum's address into your GPS device or smartphone navigation app. The address is J.P. Rizal Street, Barangay San Roque, Marikina City.<p>
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+       <a href="https://ibb.co/ftMFpZq"><img src="https://i.ibb.co/HY74zRB/Hotel-878-Manila-Exterior.jpg" alt="Hotel-878-Manila-Exterior" border="0"></a> <div class="card-content">
+        <h2> Hotel Libis 878</h2>
+       <p><strong>Information:</strong><p>Pio Del Pilar Street,corner Tangerine St,Marikina,878 Metro Manila<p> 
+<p>The hotel facilities will include a gym and an outdoor infinity pool, all-day dining, business center, and function rooms. Hotel101-Libis Bridgetowne sits on a 2,547 square meter prime titled commercial lot which forms part of Bridgetowne District. The property is also across the upcoming RLCâ€™s Opus Mall shopping center within the Bridgetowne District  .<p>
+          </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+         <a href="https://ibb.co/C7nZ8q8"><img src="https://i.ibb.co/NjLPCXC/richmonde.jpg" alt="richmonde" border="0"></a>  <div class="card-content">
+        <h2>Rich monde hotel</h2>
+        <p><strong>Information:</strong> <p>Rich monde hotel Marikina city<p>
+<p>Offers a luxurious accommodations, excellent dining options, state-of-the-art facilities, and warm Filipino hospitality. Guests can expect a comfortable and memorable stay, whether they are traveling for business or leisure.<p>
+
+             </div>
+    </div>
+
+          
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+    
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+      <p class="additional-info" style="display: none">
+ 
+      </p>
+    </div>
+
+    <!-- Card content goes here -->
+
+ <h1>Tondol Beach Resort</h1>
+    <p>  Tondol White Beach, nestled in the town of Anda in the province of Pangasinan, Philippines, is a hidden gem renowned for its pristine white sand and crystal-clear waters. Stretching over two kilometers along the coast of the Lingayen Gulf, Tondol Beach offers a tranquil and idyllic escape from the hustle and bustle of city life. What sets Tondol apart is its shallow and calm waters, making it ideal for swimming, snorkeling, and other water activities, even for children and non-swimmers. Visitors can also enjoy leisurely walks along the shore, bask in the sun on the powdery sands, or simply relax and take in the breathtaking views of the horizon.
+
+        The rustic charm of Tondol White Beach is complemented by the warm hospitality of the locals and the laid-back atmosphere of the surrounding fishing villages. Accommodations range from basic beach cottages to more upscale resorts, offering visitors a range of options to suit their preferences and budget. Whether it's savoring fresh seafood delicacies, watching the sunset paint the sky in vibrant hues, or simply unwinding amidst nature's beauty, Tondol Beach promises a rejuvenating and unforgettable experience for travelers seeking serenity and natural splendor along the shores of the Philippines.
+<p>
+
+  <img src="https://i.ibb.co/Kwdscw7/tondol-beach.jpg" alt="tondol-beach" border="0" style="max-width: 90%;">
+
+	<h1>How to get there</h1>
+<p>To reach Tondol White Beach, you can follow these general directions:
+<br></br>
+To get to Tondol White Beach Resort, located in Anda, Pangasinan, Philippines, follow these simple instructions:
+<br></br>
+Starting Point: Identify your starting location. Whether you're in Manila, Dagupan City, or elsewhere in Pangasinan, ensure you know where you're starting from.
+<br></br>
+Transportation: Determine your mode of transportation. You can either rent a car, hire a tricycle or jeepney, or take a bus, depending on your preferences and proximity to Anda.
+<br></br>
+Route via Public Transportation: From Manila, Dagupan City, or Alaminos City, follow the bus routes to Alaminos, Pangasinan. From Alaminos, transfer to another bus or van heading to Anda. Inform the driver or conductor that you're going to Tondol White Beach Resort in Anda.
+<br></br>
+Route via Private Vehicle: If you're driving, set your navigation system or follow road signs towards Anda, Pangasinan. You can take the Pangasinan Provincial Road or follow routes via major highways such as the North Luzon Expressway (NLEX) and Tarlac-Pangasinan-La Union Expressway (TPLEX) if you're coming from Manila.
+<br></br>
+Local Guidance: Once you arrive in Anda town proper, ask locals for directions to Tondol White Beach Resort. Alternatively, you can use maps or navigation apps on your phone to pinpoint the exact location.
+<br></br>
+Traveling to Tondol White Beach Resort: From Anda town proper, you may need to hire a tricycle or motorcycle taxi to take you to Tondol White Beach Resort, as it might be a bit far from the town center. Inform the driver of your destination.
+<br></br>
+Enjoying Tondol White Beach Resort: Once you arrive, enjoy the pristine white sand beach and the tranquil atmosphere of Tondol White Beach Resort. Relax, swim, and soak in the beauty of the surroundings.
+<p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+     <img src="https://i.ibb.co/JpJ9qg0/82389721-2566536003591144-3047745837334528000-n.jpg" alt="82389721-2566536003591144-3047745837334528000-n" border="0"></a>
+      <div class="card-content">
+        <h2>Tondol White Sand Beach</h2>
+        <p><strong>Information:</strong><p>Tondol White Sand Beach Resort offers a serene escape for travelers seeking tranquility and natural beauty.<p>
+<p>This beachfront resort boasts cozy cottages and rooms with modern amenities, providing guests with comfortable accommodation options during their stay. Step outside and find yourself greeted by the soft, powdery white sands and clear turquoise waters of Tondol Beach, inviting you to relax under the warm sun or take a refreshing dip in the sea.<p>
+<p>The resort also offers activities such as snorkeling, kayaking, and island hopping, allowing guests to explore the breathtaking marine life and stunning landscapes of the surrounding area. With its picturesque setting and warm hospitality, Tondol White Sand Beach Resort is the perfect destination for a rejuvenating beach getaway in the Philippines.</p>
+
+
+
+     
+        <p class="additional-info" style="display: none">
+         
+        </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+     <img src="https://i.ibb.co/sPw27f1/anda.jpg" alt="anda" border="0"></a>
+      <div class="card-content">
+        <h2>Anda White Beach</h2>
+        <p><strong>Information:</strong> <p>Anda White Beach Resort welcomes guests to experience the beauty of this tropical paradise. The resort features charming beachfront villas and cottages, each designed to provide a comfortable and relaxing retreat for visitors.<p>
+<p>Wake up to the sound of gentle waves lapping against the shore and step out onto your private balcony to enjoy panoramic views of the sparkling sea and swaying palm trees. Spend your days lounging on the pristine white sands, swimming in the crystal-clear waters, or indulging in a variety of water sports activities.</p>
+<p>At night, dine al fresco under the stars at the resort's restaurant, savoring delicious local dishes prepared with fresh ingredients. With its stunning location and laid-back atmosphere, Anda White Beach Resort offers an unforgettable island getaway in the Philippines.<p>
+
+
+
+
+               <p class="additional-info" style="display: none">
+         
+        </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+    <img src="https://i.ibb.co/T8Mq7gp/sunrise-beach-resort.jpg" alt="sunrise-beach-resort" border="0"></a>
+      <div class="card-content">
+        <h2>Sunrise Beach Resort</h2>
+        <p><strong>Information:</strong> <p>Sunrise Beach Resort beckons travelers with its tranquil ambiance and breathtaking ocean views.<p>
+<p>The resort features spacious bungalows and cottages nestled amidst lush tropical gardens, providing guests with a peaceful haven to unwind and reconnect with nature. Step outside and find yourself greeted by the soft sands and azure waters of Tondol Beach, where you can spend lazy days sunbathing, swimming, or simply strolling along the shoreline.<p>
+<p>For those seeking adventure, the resort offers a range of activities such as snorkeling, diving, and island hopping tours, allowing guests to explore the vibrant marine life and stunning coral reefs of the area. After a day of exploration, retreat to the comfort of your accommodation and watch the sunset over the horizon, painting the sky with hues of orange and pink.</p>
+<p>With its picturesque setting and warm hospitality, Sunrise Beach Resort promises an unforgettable beach vacation in Anda, Philippines.</p>
+
+
+
+
+               <p class="additional-info" style="display: none">
+         
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

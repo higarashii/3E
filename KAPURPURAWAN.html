@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+    
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+      <p class="additional-info" style="display: none">
+ 
+      </p>
+    </div>
+
+    <!-- Card content goes here -->
+
+  <h1>Kapurpurawan Rock Formation</h1>
+    <p>Kapurpurawan Rock Formation, nestled along the coast of Burgos in the province of Ilocos Norte, Philippines, stands as a testament to the awe-inspiring forces of nature. Its name, derived from the Ilocano word "puraw," meaning white, perfectly encapsulates its most striking feature the brilliant white limestone cliffs that dominate the landscape.<p>
+
+<p>Upon reaching Kapurpurawan, visitors are greeted by a scene of unparalleled splendor. The sheer grandeur of the towering cliffs, coupled with the serenity of the surrounding seascape, leaves an indelible impression on all who behold it. Many take the opportunity to explore the nooks and crannies of the rock formation, marveling at the intricate patterns and textures etched into the limestone surface.<p>
+
+<p>For photographers, Kapurpurawan offers endless opportunities to capture the beauty of nature in its purest form, with each angle revealing a new perspective on this remarkable landscape. Beyond its aesthetic appeal, Kapurpurawan Rock Formation serves as a testament to the enduring power of geological processes. Scientists and researchers are drawn to this site to study its geological makeup and unravel the mysteries of its formation.<p>
+
+<p>Through their investigations, they gain insights into the complex interplay of natural forces that have shaped the Earth's surface over millennia. As a cherished natural treasure and a symbol of the Philippines' rich natural heritage, Kapurpurawan continues to inspire wonder and admiration in all who visit, reminding us of the beauty and resilience of the natural world.<p>
+
+    <a href="https://ibb.co/VN62pbJ"><img src="https://i.ibb.co/Qc0rjhp/16016349609-0e363632cc-b.jpg" alt="image" border="0"></a>
+
+
+	<h1>How to get there</h1>
+<p>By Public Vehicle:<p>
+
+<p>The rock formation is about 3 kilometers from the main highway, so you need to walk along a road that is ragged or only to go horseback riding to see it close up.<p>
+<p>Find your way to Laoag, Northern Ilocos and then pick or ride from there to Burgos or Pagudpud. <p>
+<p>Ask the driver or driver to drop you off on the road to Kapurpurawan near Burgos City. The Laoag travel time is about 1.5 hours.<p>
+
+<p>By Private Vehicle:<p>
+
+<p> Car or Motorcycle
+
+<p>If you prefer driving, you can rent a car in Manila and take the North Luzon Expressway (NLEX) and the Subic-Clark-Tarlac Expressway (SCTEX) until you reach Ilocos.<p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+       <a href="https://imgbb.com/"><img src="https://i.ibb.co/qDhDrgP/416329262-1.jpg" alt="416329262-1" border="0"></a>
+      <div class="card-content">
+        <h2>West Loch Parl Hotel</h2>
+        <p><strong>Information:</strong><p>West Loch Park Hotel Vigan provides travellers with quality service and an elegant but cozy atmosphere.<p>
+<p>Guest rooms are equipped with modern amenities, including air conditioning, coffee and tea equipment, an in-room safe box, work desk, cable channels, seating area, an en suite bathroom, smoke detector, soundproofing, and free WiFi access. The 18-square-meter Standard Room comes with one double bed, while the 24-square-meter Deluxe Room comes with two double beds.<p>
+<p>Hotel’s Ka’Ope Restaurant serves breakfast, lunch, and dinner. Room service is available upon request. Other on-premises services and conveniences include 24-hour check-in, concierge, daily housekeeping, dry cleaning and laundry, luggage storage, gift shop, a designated smoking area, car rentals, shuttle service, and on-site parking.<p>
+
+
+     
+        <p class="additional-info" style="display: none">
+         
+        </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://imgbb.com/"><img src="https://i.ibb.co/ZdLr48H/30087113-Dz-OIPA6-BKUZNL7-JMo-QMb-Lyy-Z6l8t-UJU9q-G39-ZTt-Xu-O0.jpg" alt="image" border="0"></a>
+      <div class="card-content">
+        <h2>Northview Hotel</h2>
+        <p><strong>Information:</strong> <p>Northview Hotel is a homey property located along the Airport Road in Barangay Nalbo, Laoag. The hotel offers budget-friendly accomodations without scrimping on quality. Here, guests can enjoy a convenient location, cozy rooms, and hotel-grade amenities without having to break the bank.<p>
+<p> All rooms come fully equipped with an air conditioning unit, comfy beds, clean linen, a television with cable channels, and a seating area. En suite bathrooms come with complete bath amenities, a hot and cold shower, as well as a complimentary set of toiletries. Guests staying in suites can enjoy additional features such as a mini refrigerator and a dining table.<p>
+<p>For meals, guests can head over to the hotel’s Manong J’s Restaurant where they can feast on authentic Ilocano dishes. The restaurant is open from 6am-10pm daily. Room service is also an option.<p>
+
+               <p class="additional-info" style="display: none">
+         
+        </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+       <a href="https://ibb.co/GdGRNYZ"><img src="https://i.ibb.co/XW6tM0n/photo3jpg-1.jpg" alt="photo3jpg-1" border="0"></a>    
+	<div class="card-content">
+        <h2>The Palacio de Laoag</h2>
+        <p><strong>Information:</strong> <p>The Palacio de Laoag is perfect for leisure travelers who are keen on quality accommodations, hospitable staff, and accessible location. Vacationers can also look forward to modern hotel facilities, including two swimming pools. A pleasant stay at this three-star hotel marks the kickoff of every guest’s Laoag City tour.<p>
+<p>When it comes to accommodation, all fully furnished, air-conditioned rooms ensure a restful slumber.<p>
+<p>Accommodations come with free hearty breakfast meals and access to internet (in communal areas). More dining options, including vegetarian-friendly meals, await guests at the on-site café and restobars. Families and couples can feast on delicious drinks and authentic Ilocano dishes, such as bagnet and sinanglaw, at Veranda Restaurant and Café Marqueza. Groups of friends can unwind and sing their hearts out at Sultan Music Bar.<p>
+
+
+               <p class="additional-info" style="display: none">
+         
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

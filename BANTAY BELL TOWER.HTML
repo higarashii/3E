@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+    
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+      <p class="additional-info" style="display: none">
+ 
+      </p>
+    </div>
+
+    <!-- Card content goes here -->
+
+  <h1>Bantay Bell Tower</h1>
+    <p>The Bantay Bell Tower, also known as the St. Augustine Parish Church Bell Tower, is an iconic structure that stands majestically atop a hill in Bantay, Ilocos Sur, Philippines. Constructed in 1591, the bell tower is a magnificent testament to the enduring legacy of Spanish colonial architecture in the region. Rising to a height of approximately 45 meters, the tower commands a commanding view of the surrounding landscape, offering panoramic vistas of verdant rice fields, rolling hills, and the winding Abra River below.<p>
+
+<p>Built from bricks and coral stones, the Bantay Bell Tower boasts a distinctive octagonal shape and intricate architectural details that reflect the craftsmanship of its creators. Over the centuries, the tower has weathered the passage of time and witnessed countless historical events, serving as a silent witness to the rich tapestry of Ilocano culture and heritage. Its sturdy walls have withstood earthquakes, typhoons, and other natural disasters, standing as a testament to the resilience and ingenuity of the Filipino people.<p>
+
+<p>As the sun sets behind the distant mountains, the Bantay Bell Tower casts a striking silhouette against the evening sky, its ancient bells chiming softly in the breeze. Illuminated by the warm glow of twilight, the tower exudes a sense of timeless beauty and tranquility, inviting visitors to step back in time and immerse themselves in the history and romance of colonial-era Philippines. Today, the Bantay Bell Tower stands as a beloved symbol of Bantay's cultural heritage, drawing pilgrims, tourists, and history enthusiasts from far and wide who come to marvel at its beauty and significance.<p>
+
+<p>Visitors to the Bantay Bell Tower can climb the narrow staircase that winds its way to the top of the tower, where breathtaking views of the surrounding countryside await. From this vantage point, one can gaze out across the landscape and contemplate the rich history and heritage of Ilocos Sur, from the Spanish colonial era to the present day. Whether bathed in the golden light of dawn or silhouetted against the fiery hues of sunset, the Bantay Bell Tower continues to inspire awe and wonder in all who behold it, a timeless monument to the enduring spirit of the Filipino people.<p>
+
+    <a href="https://ibb.co/L1p2Nrq"><img src="https://i.ibb.co/BBsSnG7/11097921823-6f74546838-b-1.jpg" alt="image" border="0"></a>
+
+
+	<h1>How to get there</h1>
+<p>By Public Vehicle:<p>
+
+<p>To travel from Manila to the Bantay Bell Tower in Ilocos, you can take a bus from terminals such as Victory Liner, Partas, or Florida Bus Lines.<p>
+
+<p>The journey typically takes around 8-10 hours, depending on traffic and road conditions. Once you arrive in Ilocos, you can take a tricycle or taxi to reach the Bantay Bell Tower, which is located near Vigan City.<p>
+
+<p>By Private Vehicle:<p>
+
+<p> Car or Motorcycle
+
+<p>If you prefer driving, you can rent a car in Manila and take the North Luzon Expressway (NLEX) and the Subic-Clark-Tarlac Expressway (SCTEX) until you reach Ilocos.<p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://ibb.co/grx5DsT"><img src="https://i.ibb.co/9p7FqRT/vitalis-villas-santiago-ilocos-sur-8-1.jpg" alt="vitalis-villas-santiago-ilocos-sur-8-1" border="0"></a>
+      <div class="card-content">
+        <h2>Vitalis Villas</h2>
+        <p><strong>Information:</strong><p>It’s architecture is Greek-inspired, complemented by modern amenities and signature Filipino hospitality. Whether you’re exploring the island, or in need of a vacation, Vitalis Villas is just the place for you.<p>
+<p>All Villas come complete with spacious living rooms, a fully-equipped kitchen with cooking and washing areas, 6-seater dining tables, luxurious en suite bathrooms, and balconies that feature breathtaking views of the property and beyond. Select villas offer pool access and a private jacuzzi. Butler service is available upon request.<p>
+
+
+     
+        <p class="additional-info" style="display: none">
+         
+        </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+     <a href="https://ibb.co/fGb6fgx"><img src="https://i.ibb.co/3Yw623C/courtyard-1.jpg" alt="courtyard-1" border="0"></a>      
+	<div class="card-content">
+        <h2>Ciudad Fernandia Hotel</h2>
+        <p><strong>Information:</strong> <p>Ciudad Fernandina Hotel is a modern and stylish accommodation situated in the heart of Vigan City, Ilocos Sur, Philippines.<p> 
+<p>Hotel features a range of well-appointed guest rooms and suites, each designed to provide a relaxing and restful stay for travelers.<p>
+<p>Guests can indulge in delicious cuisine at the hotel's on-site restaurant, which serves a variety of local and international dishes prepared with fresh, locally sourced ingredients.<p>
+
+               <p class="additional-info" style="display: none">
+         
+        </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://imgbb.com/"><img src="https://i.ibb.co/NxKk1Yz/429431166-380604471504829-4380226332239930088-n.png" alt="image" border="0"></a>
+      <div class="card-content">
+        <h2>Hotel Felicidad</h2>
+        <p><strong>Information:</strong> <p>Hotel Felicidad is a charming boutique hotel nestled in the heart of Vigan City, Ilocos Sur, Philippines.<p>
+<p>The  offers guests a delightful blend of colonial-era ambiance and modern comforts.<p>
+<p>The rooms are well-appointed and equipped with essential facilities, ensuring a relaxing stay for guests. Located near key attractions and transportation hubs, Go Hotel Plus is an ideal choice for budget-conscious travelers seeking a convenient and hassle-free accommodation option in Tuguegarao City.<p>
+
+
+               <p class="additional-info" style="display: none">
+         
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+    
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+      <p class="additional-info" style="display: none">
+ 
+      </p>
+    </div>
+
+    <!-- Card content goes here -->
+
+ <h1>Immuki Islands</h1>
+    <p>Immuki island or formerly known as kaparingitan by the locals, is it intriguing? Well, the island is 24 km away from the city, another discovered destination located at barangay Paraoir, Balaoan, La Union. Visitors are requested to register at Paraoir barangay hall. Visiting hour is at 6:00 AM to 6:00 PM. It is strictly prohibited to bring food, alcohol, drinks, and cigarettes to the island. You cannot go there barefooted. You must use at least aqua sock water shoes to be safe from sharp edges of corals around the area. It is not advised to dive but surely, you’ll enjoy the ambiance of swimming with your friends.<p>
+
+<p>The place was known as a hidden paradise connected by the two lagoons with a crystal-clear water. It’s so clear you can visibly see the fish swimming around you; it’s like welcoming inviting you to explore the island.<p>
+
+<p>La union has a wide range of beaches, that means, a wide of activities you need to experience during your stay. These top list water adventure destinations might cost you something but creating memories and experiencing the province is priceless.The place was known as a hidden paradise connected by the two lagoons with a crystal-clear water. It’s so clear you can visibly see the fish swimming around you; it’s like welcoming inviting you to explore the island.
+
+La union has a wide range of beaches, that means, a wide of activities you need to experience during your stay. These top list water adventure destinations might cost you something but creating memories and experiencing the province is priceless.<p>
+
+<p>At present, the IMMUKI ISLAND is a stunning island, not anymore a mere paringit because of the mangroves (Bantigue/Nirad) on it. The crystal clear waters where you can see fish swimming is also an added attraction. IMMUKI ISLAND is located in Barangay Paraoir, Balaoan, La Union.Immuki island or formerly known as kaparingitan by the locals, is it intriguing? Well, the island is 24 km away from the city, another discovered destination located at barangay Paraoir, Balaoan, La Union. Visitors are requested to register at Paraoir barangay hall. Visiting hour is at 6:00 AM to 6:00 PM. It is strictly prohibited to bring food, alcohol, drinks, and cigarettes to the island. You cannot go there barefooted. You must use at least aqua sock water shoes to be safe from sharp edges of corals around the area. It is not advised to dive but surely, you’ll enjoy the ambiance of swimming with your friends.<p>
+
+   <a href="https://ibb.co/6sgQv5M"><img src="https://i.ibb.co/NYZR1zv/immuki15ss-diaries.webp" alt="image" border="0"></a>
+
+
+	<h1>How to get there</h1>
+<p>To reach Immuki Islands, you can follow these general directions:<p>
+
+<p>Start from Basco, the capital of Batanes, Philippines.<p>
+
+<p>Head to the Ivana Port, which is around 10-15 minutes away from Basco by tricycle or motorcycle.<p>
+<p>Inform the driver you want to go to Bolinao Falls.<p>
+
+<p>Once at Ivana Port, you can arrange for a boat or join a tour that includes Immuki Island.<p>
+<p>Ensure that the boat operator is licensed and that safety measures are in place.<p>
+<p>Enjoy the boat ride to Immuki Island, which typically takes around 30-45 minutes, depending on weather and sea conditions.<p>
+<p>Once you arrive at Immuki Island, explore its pristine beaches, rock formations, and stunning landscapes.<p>
+<p>After enjoying your time on the island, return to Ivana Port by boat.</p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+     <a href="https://imgbb.com/"><img src="https://i.ibb.co/DkLy1Fh/429322518-420030827222175-5284031112774141234-n.png" alt="image" border="0"></a>
+      <div class="card-content">
+        <h2>Hiraya Sunset Hill Restaurant & Cottages</h2>
+        <p><strong>Information:</strong><p>Hiraya is an ancient Filipino word meaning "fruit of one's hopes, dreams and aspirations". We believe it is the perfect description of our Sunset Hill - the rolling hills of Legleg, San Juan.<p>
+<p>We are a farm-to-table restaurant that sources locally only and use the own field to grow organic vegetables for the restaurant. Apart form that, we do have 3 Kubos where you can enjoy the beautiful property and enjoy the soothing athmospehere.<p>
+<p>The resort is known for its beautiful landscape and well-maintained gardens, creating a serene atmosphere for guests. Dining options include on-site restaurants serving a variety of local and international cuisines. The resort also hosts events and conferences, making it a versatile destination for both leisure and business travelers.</p>
+
+
+
+     
+        <p class="additional-info" style="display: none">
+         
+        </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://ibb.co/Wt3ytTW"><img src="https://i.ibb.co/gV7TVnM/429418527-3541906146076410-142525197937885703-n.png" alt="image" border="0"></a>
+      <div class="card-content">
+        <h2>Camp Luna Glamping Resort</h2>
+        <p><strong>Information:</strong> <p>Camp Luna Glamping Resort is the first glamping resort in Luna, La Union.
+Its location is in the vanguard of the picturesque pebble beach with captivating landscapes and serene surroundings.<p>
+<p>Camp Luna Glamping Resort offers two unique villas with a popup Industrial Shabby Chic interior fit for a grandeur camping experience while connecting with nature. Perfect for Romantic Weekend Getaways, Family Camping Trips, Adventure Travelers, and Group Getaways.</p>
+
+
+
+
+               <p class="additional-info" style="display: none">
+         
+        </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+     <a href="https://ibb.co/SJjC9Mk"><img src="https://i.ibb.co/2594fCz/image.png" alt="image" border="0"></a>
+      <div class="card-content">
+        <h2>Hotel Mikka</h2>
+        <p><strong>Information:</strong> <p>Nestled at the corner of V. De los Reyes and Salcedo Streets in Vigan City, Ilocos Sur, Gordion Hotel stands as a distinguished accommodation offering a harmonious blend of modern comforts and colonial-inspired design. With a strategic location near Vigan's historic attractions, the hotel provides guests with a convenient base to explore the city's rich heritage.<p>
+<p>Gordion Hotel offers a variety of accommodations, including comfortable rooms and suites, each adorned with thoughtful details. Amenities such as free Wi-Fi, air conditioning, and flat-screen TVs contribute to a pleasant stay. Reflecting Vigan's cultural legacy, the hotel likely showcases architectural elements reminiscent of the Spanish colonial era, creating an immersive and historical ambiance.<p>
+<p>Guests may also enjoy on-site dining options, featuring a diverse array of local and international cuisines. Equipped to host events and functions, Gordion Hotel provides event spaces and services for various occasions. For the latest information on room availability and amenities, guests are encouraged to check the official website or contact the hotel directly, while exploring recent reviews can offer valuable insights into the guest experience.</p>
+
+
+
+
+               <p class="additional-info" style="display: none">
+         
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

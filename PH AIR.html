@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+          </div>
+
+   
+   <h1>Philippine Air Force Aerospace Museum</h1>
+    <p>The Philippine Air Force Aerospace Museum stands as a testament to the rich history and proud heritage of the Philippine Air Force (PAF). Located within the Villamor Air Base in Pasay City, Metro Manila, this captivating museum offers visitors a fascinating journey through the evolution of Philippine aviation and the pivotal role played by the country's air force in defending the nation's skies.<p>
+
+<p>The museum's galleries are thoughtfully curated to offer visitors a deeper insight into the history, missions, and accomplishments of the Philippine Air Force. Engaging displays, multimedia presentations, and interactive exhibits bring to life the bravery and dedication of the men and women who have served in the air force, highlighting their courage in times of conflict and their commitment to peace and stability.<p>
+
+<p>One of the highlights of the Philippine Air Force Aerospace Museum is its collection of historical artifacts, including uniforms, medals, photographs, and documents, which offer a glimpse into the lives of past aviators and the challenges they faced in defending the nation's sovereignty. Visitors can also learn about the various training programs and capabilities of the Philippine Air Force, as well as its humanitarian and disaster relief efforts both locally and abroad.<p>
+
+<p>In addition to its static displays, the museum occasionally hosts special events, lectures, and educational programs aimed at promoting awareness and appreciation of aviation history and aerospace technology among visitors of all ages. Whether you're an aviation enthusiast, a history buff, or simply curious about the role of the Philippine Air Force in safeguarding the nation, a visit to the Philippine Air Force Aerospace Museum offers a truly enriching and inspiring experience<p>
+
+    <img src="https://i.ibb.co/92r3gwL/inside-llll.jpg" alt="inside-llll" border="0"></a>
+
+
+	<h1>How to get there</h1>
+<p>To reach Philippine Air Force Aerospace Museum, you can follow these general directions:<p>
+
+<p>By Public Transportation:<p>
+
+<p>1. Take the MRT (Metro Rail Transit) or LRT (Light Rail Transit) to the nearest station.The nearest MRT station is the Magallanes Station, located along EDSA. Alternatively, you can take the LRT Line 1 and alight at the EDSA Station.<p>
+<p>2. Take a bus or jeepney heading towards Villamor Air Base.Look for buses or jeepneys that are bound for Villamor Air Base or Nichols. You can ask locals or the terminal staff for assistance.<p>
+<p>3.Once you reach the gate of Villamor Air Base, inform the guards that you're visiting the Philippine Air Force Aerospace Museum.<p>
+
+
+<p>By Private Vehicle:<p>
+<p>1. Use a navigation app or GPS device to set your destination to Villamor Air Base in Pasay City, Metro Manila. The base is located along Sales Road (also known as Andrews Avenue).<p>
+<p>2. Upon reaching the vicinity of Villamor Air Base, you'll need to enter through one of the designated gates. <p>
+<p>3. Once inside Villamor Air Base, follow the main road and look for signs directing you to the Philippine Air Force Aerospace Museum. If you're unsure, feel free to ask the guards or personnel stationed within the base for directions to the museum.<p>
+<p>4.Upon reaching the museum, you'll find parking areas available for visitors. Park your vehicle in a designated spot and ensure that you comply with any parking regulations or instructions provided by museum staff or security personnel.<p>
+
+
+<p>It's recommended to verify the specific routes and transportation options based on your starting point and current travel conditions. Additionally, always exercise caution and follow local traffic regulations while traveling.<p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://i.ibb.co/YXS8WDX/495481854.jpg" alt="495481854" border="0"></a>
+      <div class="card-content">
+        <h2>Belmont Hotel Manila</h2>
+        <p><strong>Information:</strong><p>Belmont Hotel Manila, nestled within the vibrant Resorts World Manila complex, epitomizes contemporary luxury and exceptional hospitality in the heart of Pasay City, Philippines. This modern hotel offers guests a seamless blend of sophistication, comfort, and convenience, making it the perfect destination for both leisure and business travelers alike.<p>
+<p>Each of the hotel's well-appointed rooms and suites is thoughtfully designed to provide the utmost in comfort and relaxation. Whether you're staying in a cozy deluxe room or indulging in the luxury of a spacious suite, you'll find modern amenities, plush bedding, and stunning views of the city skyline or the nearby airport runways.</p>
+<p>Belmont Hotel Manila boasts an array of dining options to satisfy every palate. From sumptuous buffets at Café Belmont to authentic Japanese cuisine at Ogetsu Hime, guests can embark on a culinary journey around the world without ever leaving the hotel.</p>
+
+
+          </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://i.ibb.co/5Bt5hm6/Resorts-World-Manila.jpg" alt="Resorts-World-Manila" border="0"></a>
+      <div class="card-content">
+        <h2>Resorts World Manila</h2>
+        <p><strong>Information:</strong> <p>Resorts World Manila stands as a vibrant integrated resort destination at the forefront of entertainment, leisure, and hospitality in the Philippines. Located in the bustling Newport City complex in Pasay City, this sprawling development offers a world-class fusion of luxury accommodations, thrilling gaming facilities, top-notch entertainment, and premier dining options, all under one roof.<p>
+<p>Accommodations at Resorts World Manila range from luxurious hotels to serviced apartments, providing guests with a variety of options to suit their needs and preferences. Whether you're looking for a romantic retreat, a family-friendly getaway, or a lavish staycation, you'll find the perfect accommodation to call home during your visit. <p>
+<p>Beyond its entertainment and dining offerings, Resorts World Manila also features a variety of leisure facilities, including a luxury spa, fitness center, shopping mall, and outdoor entertainment plaza. Whether you're looking to relax and unwind or indulge in some retail therapy, the resort offers something for everyone.</p>
+
+        <!--In this part, you will add information about this place, and when you add a new paragraph/info, just enclose it with <br /> tags. -->
+        <p class="additional-info" style="display: none">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel
+          metus id ipsum condimentum varius.
+        </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://i.ibb.co/t4rCDLp/18930750604-ce7f54cf31-b.webp" alt="18930750604-ce7f54cf31-b" border="0"></a>
+      <div class="card-content">
+        <h2>Marriott Hotel Manila</h2>
+        <p><strong>Information:</strong> <p>Marriott Hotel Manila stands as a beacon of luxury and sophistication in the heart of the vibrant Resorts World Manila complex, just moments away from Ninoy Aquino International Airport (NAIA) in Pasay City, Philippines. With its impeccable service, elegant accommodations, and world-class amenities, this five-star hotel offers guests an unforgettable experience marked by comfort, style, and unparalleled hospitality.<p>
+<p>Marriott Hotel Manila boasts an array of dining options to satisfy every palate. From innovative international cuisine at Marriott Café to authentic Japanese specialties at Man Ho, guests can embark on a culinary journey around the world without ever leaving the hotel. The Greatroom lobby lounge is the perfect spot to unwind with a cocktail or enjoy light bites in a relaxed setting.<p>
+<p>Each of the hotel's spacious rooms and suites is thoughtfully designed to provide the utmost in comfort and relaxation. Featuring plush bedding, modern amenities, and panoramic views of the city skyline or the nearby airport runways, every accommodation offers a tranquil retreat where guests can unwind and rejuvenate amidst luxurious surroundings.</p>
+
+            </div>
+    </div>
+  </div>
+
+  
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

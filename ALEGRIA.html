@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Region Guide</title>
+<style>
+body {
+margin: auto;
+font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+overflow: auto;
+background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+animation: gradient 15s ease infinite;
+background-size: 400% 400%;
+background-attachment: fixed;
+}
+
+@keyframes gradient {
+0% {
+background-position: 0% 0%;
+}
+
+50% {
+background-position: 100% 100%;
+}
+
+100% {
+background-position: 0% 0%;
+}
+}
+
+.wave {
+background: rgb(255 255 255 / 25%);
+border-radius: 1000% 1000% 0 0;
+position: fixed;
+width: 200%;
+height: 12em;
+animation: wave 10s -3s linear infinite;
+transform: translate3d(0, 0, 0);
+opacity: 0.8;
+bottom: 0;
+left: 0;
+z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+bottom: -1.25em;
+animation: wave 18s linear reverse infinite;
+opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+bottom: -2.5em;
+animation: wave 20s -1s reverse infinite;
+opacity: 0.9;
+}
+
+@keyframes wave {
+2% {
+transform: translateX(1);
+}
+
+25% {
+transform: translateX(-25%);
+}
+
+50% {
+transform: translateX(-50%);
+}
+
+75% {
+transform: translateX(-25%);
+}
+
+100% {
+transform: translateX(1);
+}
+}
+
+body {
+font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #265073;
+}
+
+.container {
+max-width: 800px;
+margin: 20px auto;
+padding: 20px;
+background-color: rgba(45, 149, 150, 0.5);
+border-radius: 15px;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+text-align: center;
+}
+
+.header {
+text-align: center;
+margin-bottom: 20px;
+color: #9ad0c2;
+}
+
+.info {
+color: #9affd0c2;
+cursor: pointer;
+}
+
+.additional-info {
+color: #fff;
+}
+
+.card {
+margin-top: 20px;
+display: flex;
+flex-direction: column;
+background-color: rgba(255, 255, 255, 0.5);
+border-radius: 15px;
+box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+margin-bottom: 20px;
+overflow: hidden;
+transition: all 0.3s ease;
+cursor: pointer;
+}
+
+.card img {
+width: 100%;
+height: auto;
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+object-fit: cover;
+}
+
+.card-content {
+padding: 20px;
+}
+
+.card-content h2 {
+margin-top: 0;
+font-size: 1.5rem;
+color: #333;
+}
+
+.card-content p {
+color: #666;
+}
+</style>
+</head>
+
+<body>
+
+<div>
+<div class="wave"></div>
+<div class="wave"></div>
+<div class="wave"></div>
+</div>
+
+<div class="container">
+<div class="header">
+
+<p>
+
+</p>
+</div>
+
+<!-- Introduction / Information part here -->
+<div class="info" onclick="toggleInfoContent()">
+<h1></h1>
+
+</div>
+
+
+<h1>Alegria Beach</h1>
+<p>Alegria Beach, Santa Monica, Surigao del Norte, Philippines. Alegria Beach is located in Alegria, a municipality in the province of Cebu. Alegria Beach is an unspoiled beach in Alegria, Cebu. It has a laid back atmosphere intended for those seeking real sanctuary from the crowds. The beach extends a warm welcome to all guests with its crystal clear waters and sandy beach, inviting guests to relax, dine, swim, and party with loved ones.<p>
+
+<p>Guests can begin a tour at Alegria Beach by diving into the waters, followed by some exciting action-packed beach activities like snorkeling, diving, and more. The beach is adjacent to the Saint Joseph Parish Church and other tourist spots in Cebu. The white sandy beaches of Alegria Beach provide a soft and inviting landscape for beachgoers to unwind and soak up the sun. The crystal clear waters offer a refreshing oasis, perfect for swimming or simply taking a leisurely dip. As you bask in the serene atmosphere, you’ll be surrounded by the breathtaking beauty of the beach and its surroundings.<p>
+
+<p>Whether you prefer to lounge on the beach, take a leisurely stroll along the shore, or engage in water activities such as snorkeling or kayaking, Alegria Beach offers something for everyone. The serene and unspoiled atmosphere provides a sense of tranquility, allowing you to fully immerse yourself in the natural surroundings and create
+lasting memories.<p>
+
+<img src="https://i.ibb.co/tK5xygQ/caption.jpg" alt="caption" border="0"></a>
+
+<h1>How to get there</h1>
+<p>To reach Alegria Beach, you can follow these general directions:<p>
+
+<p>From General Luna, Alegria Beach is about 1.5 hours drive. You can rented mopeds and set off on a day-trip from the south to the north. The drive is incredibly scenic and you will be constantly surrounded by coconut palms. The drive up will take you past Tayangban Cave, Magpupungko Rock Pools and through the town of San Isidro.<p>
+
+
+<p>If you have time you can to stop off at the caves or rock pools. Just before you reach Alegria Beach the road will take you directly past TakTak falls. On your drive up you can decided to stop at the falls, which is the only waterfall on Siargao Island. Also It is a few kilometers away from the city so you’ll have to ride a bus or van to get there. You can visit Alegria Beach anytime of day, however it’s recommended to visit during the summer months, from March to May.<p>
+
+</body>
+</html>
+<div class="container">
+<div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+<div class="card" onclick="toggleCardContent(this)">
+<img src="https://i.ibb.co/D4H7TL9/images.jpg" alt="images" border="0"></a>
+<div class="card-content">
+<h2>DaRosa Del Mar</h2>
+<p><strong>Information:</strong><p>DaRosa Del Mar is located in the village of Alegria in northern Siargao Island, Purok 6 Barangay Alegria, Mindanao 8422 Philippines. DaRosa Del Mar are 350 meters off the highway so all you hear is the wind through the coconut palms and the waves against the shore. Has accommodations with a garden, free private parking, a shares lounge and a terrace.<p>
+<p>Featuring a restaurant, the 3-Star hotel has air-conditioned rooms with free WiFi, each with a private bathroom, Guests can have a drink at the bar. This is a place to chill. We offer great food/drinks and great place to stay. Come visit us and enjoy a great experience on this wonderful island.<p>
+
+</div>
+</div>
+
+<div class="card" onclick="toggleCardContent(this)">
+<img src="https://i.ibb.co/bRqGxzW/ostrovok-2273118-f7869d-074391.jpg" alt="ostrovok-2273118-f7869d-074391" border="0"></a>
+<div class="card-content">
+<h2>Siargao Bleu Resort & Spa</h2>
+<p><strong>Information:</strong> <p>Siargao Bleu Resort & Spa located at Cloud 9, Tourism Road, Brgy. Catangnan,, General Luna, Mindanao 8419 Philippines. Set 5 minutes from one of the worlds most famous surf spot Cloud 9, relax to the sound of the wave at this Balinese - inspired high end resort Siargao Bleu Resort & Spa recognized as one of the top most stunning resort views of the Philippines. The resort boasts of a 1,600 sq. meters pool; pamper you with personalized service with a butler upon request, SPA services with highly trained therapists provided at the Bleu Spa or room service, FREE airport/seaport transfer and shuttle in the Cloud 9 strip.<p>
+<p>Excellent breakfast options are included in every room, It is equipped with FREE Wi-Fi access, interooms, flat-screen TV, personal safe, air-conditioners, hot & cold shower, free toiletries and provided with the most comfortable beds & pillows. Cottages have direct access to the pool, veranda seating, sun lounge decks, Jacuzzi tubs and minibar.<p>
+<p>Its Bleu Restaurant serves a variety of the island’s best seafood dishes and the famous KING MUD CRABS. On special occasions, the mouthwatering local specialty LECHON can be prepared. For leisure activities, an array of resort and island activities awaits you assisted by the Bleu family. In Siargao Bleu, every guest is a VIP!.</p>
+
+</div>
+</div>
+
+<div class="card" onclick="toggleCardContent(this)">
+<img src="https://i.ibb.co/2hkWhCr/442208561.jpg" alt="442208561" border="0"></a>
+<div class="card-content">
+<h2>KAWAYAN VILLA SIARGAO</h2>
+<p><strong>Information:</strong> <p>kawayan villa siargao is located at Cloud 9 Drive in General Luna in 3.2 km from the centre. It is that you need for a luxury, countryside, eco trip vacation.<p>
+<p>Kawayan Siargao resort created for you modern and native style cottages with terrace, high perched on wooden piles, intimate and discreet, surrounded by a luxurious and peaceful tropical garden.<p>
+<p>You will appreciate your open sky bathrooms with hot and cold rain shower under the jungle sun or starry sky. For guests' cozy accommodation is offered only one room type - villa. For guests are provided facilities such as minibar, safety deposit box, air conditioning, hairdryer, refrigerator, desk, free toiletries.<p>
+<p>In addition to the above amenities, the apartment is soundproofing. Accommodation has a lot of rooms with garden view, pool view. For guests is provided special facilities: private pool.</p>
+
+</div>
+</div>
+</div>
+
+<script>
+function toggleCardContent(card) {
+const content = card.querySelector(".additional-info");
+content.style.display =
+content.style.display === "none" ? "block" : "none";
+}
+
+function toggleInfoContent() {
+const info = document.querySelector(".info");
+const content = info.querySelector(".additional-info");
+content.style.display =
+content.style.display === "none" ? "block" : "none";
+}
+</script>
+</body>
+
+</html>
+
+

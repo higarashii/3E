@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+    
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+      <p class="additional-info" style="display: none">
+ 
+      </p>
+    </div>
+
+    <!-- Card content goes here -->
+
+ <h1>Hundred Island</h1>
+    <p>Located off the coast of Pangasinan in the Philippines, Hundred Islands National Park is a mesmerizing archipelago boasting over a hundred lush green islets dotting the turquoise waters of Lingayen Gulf. With its pristine beaches, crystal-clear waters, and abundant marine life, this natural wonderland offers a haven for adventure seekers, beach lovers, and nature enthusiasts alike. Embark on a journey to explore these picturesque islands, each with its own unique charm and allure, and discover the unparalleled beauty and serenity that Hundred Islands has to offer. 
+<br></br>
+Hundred Islands National Park beckons with an irresistible allure, offering a myriad of compelling reasons to embark on an unforgettable adventure. Its pristine beaches, framed by crystal-clear waters, invite weary souls to unwind amidst breathtaking natural beauty. Whether you seek thrilling water sports, tranquil island hopping, or simply basking in the sun-kissed serenity, Hundred Islands promises an unparalleled escape.
+<br></br>
+ Dive into its vibrant underwater world teeming with marine life, or hike through lush trails unveiling panoramic vistas at every turn. From thrilling adventures to moments of tranquil contemplation, Hundred Islands offers an immersive experience that captivates the senses and rejuvenates the spirit, making it a must-visit destination for all travelers seeking solace and adventure in equal measure.<p>
+
+ <img src="https://i.ibb.co/f4TqqmN/Hundred-Islands-Pangasinan-Day-Tourfrom-Manila.jpg" alt="Hundred-Islands-Pangasinan-Day-Tourfrom-Manila" style="width: 800px; height: auto;"></a>
+
+	<h1>How to get there</h1>
+<h1>How to get there</h1>
+<p>To reach Hundred Island, you can follow these general directions:
+<br></br>
+Transportation Options: Determine your preferred mode of transportation. You can either take a bus, drive your own car, or book a private van or shuttle service.
+<br></br>
+Route via Bus: If you choose to take the bus, head to the Dau Bus Terminal in Mabalacat, Pampanga, which is accessible from Clark. You can take a jeepney or taxi from Clark to reach the terminal.
+<br></br>
+Bus Companies: Look for buses operated by Victory Liner or Dagupan Bus Company that are bound for Alaminos, Pangasinan. These buses typically have routes passing through the city of Alaminos, which is the jump-off point to Hundred Islands.
+<br></br>
+Alaminos City: Once you arrive in Alaminos City, Pangasinan, you can take a tricycle or jeepney to Lucap Wharf, which is the main jump-off point to Hundred Islands. It's about a 10 to 15-minute ride from the city proper to Lucap Wharf.
+<br></br>
+Boat to Hundred Islands: At Lucap Wharf, you'll find boats available for hire that can take you to Hundred Islands. You can choose from different tour packages depending on your preferences, including island hopping and snorkeling.
+<br></br>
+Travel Time: The travel time from Clark to Alaminos City is approximately 3 to 4 hours by bus, depending on traffic conditions. The boat ride from Lucap Wharf to Hundred Islands takes around 20 to 30 minutes.
+<br></br>
+Private Transportation: If you prefer driving your own car or booking a private van or shuttle service, you can take the North Luzon Expressway (NLEX) and follow the route towards Alaminos City, Pangasinan. From there, proceed to Lucap Wharf as mentioned earlier.
+<br></br>
+Enjoy Hundred Islands: Once you reach Hundred Islands, explore the various islands, enjoy swimming, snorkeling, and other water activities, and take in the beautiful scenery.
+<p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://i.ibb.co/Cb7JS3s/Vista-De-Las-Islas-Hotel-Restaurant-1.jpg" alt="Vista-De-Las-Islas-Hotel-Restaurant-1" border="0"></a>
+      <div class="card-content">
+        <h2>Vista De Las Islas Hotel and Restaurant</h2>
+        <p><strong>Information:</strong><p>Vista De Las Islas Hotel and Restaurant offers a comfortable retreat for travelers exploring the natural wonders of Hundred Islands. Located within close proximity to the island hopping departure point, this hotel provides convenient access to the pristine beaches and azure waters of Pangasinan. 
+<br></br>
+The hotel features well-appointed rooms with modern amenities, ensuring a relaxing stay for guests. Visitors can enjoy panoramic views of the surrounding islands from the hotel's rooftop terrace or unwind by the outdoor swimming pool. The on-site restaurant serves a variety of local and international dishes, allowing guests to savor delicious flavors while admiring the scenic vistas.
+<br></br>
+With its warm hospitality and convenient location, Vista De Las Islas Hotel and Restaurant is the perfect choice for a memorable island getaway in Pangasinan.</p>
+
+
+
+     
+        <p class="additional-info" style="display: none">
+         
+        </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://i.ibb.co/BsnP9c6/puerto-del-sol-resort.jpg" alt="puerto-del-sol-resort" border="0"></a>
+      <div class="card-content">
+        <h2>Puerto Del Sol Resort Hotel</h2>
+        <p><strong>Information:</strong> <p>Puerto Del Sol Resort Hotel offers guests a luxurious escape in the heart of Pangasinan. This beachfront resort features spacious rooms and suites adorned with elegant furnishings and modern amenities, providing a comfortable retreat for travelers. 
+<br></br>
+Guests can unwind by the infinity pool overlooking the glistening waters of the Gulf or relax on the pristine white sands of the private beach. The resort also offers a range of recreational activities, including water sports, tennis, and beach volleyball, ensuring an unforgettable stay for guests of all ages. 
+<br></br>
+With its picturesque setting and world-class amenities, Puerto Del Sol Resort Hotel is the perfect destination for a relaxing beach vacation in Pangasinan.</p>
+
+
+
+
+               <p class="additional-info" style="display: none">
+         
+        </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+    <img src="https://i.ibb.co/rvMmBGw/maxine-sea-hotel.jpg" alt="maxine-sea-hotel" border="0"></a>
+      <div class="card-content">
+        <h2>Maxine by the Sea Hotel and Restaurant</h2>
+        <p><strong>Information:</strong> <p>Maxine by the Sea Hotel and Restaurant offers guests a cozy retreat near Hundred Islands National Park. The hotel features comfortable rooms with modern amenities, providing a relaxing haven for travelers exploring the natural beauty of Pangasinan.
+<br></br>
+Guests can enjoy delicious seafood dishes and other local specialties at the hotel's restaurant, which offers panoramic views of the nearby coastline. The hotel's friendly staff are always on hand to assist guests with arranging island hopping tours, boat rentals, and other activities, ensuring a memorable stay.
+<br></br>
+With its warm hospitality and convenient location, Maxine by the Sea Hotel and Restaurant is the perfect choice for a relaxing getaway in Pangasinan.</p>
+
+
+
+
+               <p class="additional-info" style="display: none">
+         
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>
