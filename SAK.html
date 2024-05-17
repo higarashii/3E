@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+      </div>
+
+  
+   <h1> Sak-a Falls </h1>
+    <p>Sak-a Falls is a stunning three-tiered waterfall located in San Antonio, Remedios T. Romualdez, Agusan del Norte. It is a natural wonder that offers a refreshing retreat amidst the lush greenery of the Philippine countryside. The first tier of Sak-a Falls is known for its strong flow, which cascades down with vigor, making it a sight to behold but not ideal for swimming due to safety concerns <br>
+
+The second and third tiers of Sak-a Falls, however, are a haven for water enthusiasts. These levels provide a more tranquil experience, with deep, cool waters that are perfect for swimming and cliff jumping. Surrounded by tall, verdant trees, the falls offer a serene environment where visitors can relax and enjoy the beauty of nature. The sparkling water, especially at noon, creates a mesmerizing effect as it reflects the sun’s rays, making Sak-a Falls a picturesque destination for both adventure seekers and those looking to unwind</P>
+    <img src="https://i0.wp.com/caragaregion.com/wp-content/uploads/2020/11/sak-a-falls.jpg?fit=1024%2C576"  width="400" width="400"></a>
+
+	<h1>How to get there</h1>
+<p>To reach the enchanting Sak-a Falls in Agusan del Norte, start your journey from Butuan City. Here, you can catch a jeepney bound for the town of Remedios T. Romualdez (RTR). Once you arrive in RTR’s town proper, look for a habal-habal—a local motorcycle taxi—to take you to Barangay San Antonio. It’s advisable to hire a local guide in Barangay San Antonio to accompany you on the trek to Sak-a Falls. The guide will lead you through a scenic route that may take around 1 to 2 hours of hiking, depending on your pace. The trail is an adventure in itself, offering a glimpse of the region’s natural beauty before you arrive at the breathtaking falls.
+
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+     <img src="https://static51.com-hotel.com/uploads/hotel/73662/photo/butuan-grand-palace-hotel_15722331871.jpg" alt="image" border="0"></a>
+      <div class="card-content">
+        <h2>Grand Palace Hotel </h2>
+        <p><strong>Information:</strong> <p>The Butuan Grand Palace Hotel is a distinguished establishment located in Butuan City, Philippines. It is located at Capitol Drive, Imadejas Subdivision 8600 Butuan City Caraga. It’s a 5-star property that offers a range of facilities to ensure a comfortable and memorable stay for its guests.
+The hotel boasts a variety of rooms, some of which feature balconies with scenic mountain views. Each room is equipped with a desk, a flat-screen TV, air conditioning, and a private bathroom complete with a bidet and free toiletries. Certain rooms also offer the luxury of a terrace. The hotel boasts a variety of rooms, some of which feature balconies with scenic mountain views. Each room is equipped with a desk, a flat-screen TV, air conditioning, and a private bathroom complete with a bidet and free toiletries. Certain rooms also offer the luxury of a terrace. It is located at Capitol Drive, Imadejas Subdivision 8600 Butuan City Caraga. </P>
+
+
+              </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://pix10.agoda.net/hotelImages/734814/-1/09d9c74fe5a10db7912f6f07c2b4b7ed.jpg?s=1024x768" alt="image" border="0"></a>
+      <div class="card-content">
+        <h2>Go Hotels Butuan </h2>
+        <p><strong>Information:</strong> <p> Go Hotels Butuan is located at Robinsons Place Butuan, J.C. Aquino Ave., Brgy. Bayanihan, Butuan City 8600 Butuan City Caraga. Go Hotels Butuan is a value-oriented hotel that offers modern and comfortable accommodations for travelers. It is the first Go Hotels property to open in Mindanao and is conveniently located within Robinsons Place Butuan, providing easy access to shopping and dining options. The hotel features 104 rooms, ranging from 16 to 22 square meters in size, equipped with amenities such as in-room safes, 24-hour CCTV security, free Wi-Fi, basic toiletries, private bathrooms with hot and cold rain showers, and 32" LCD TVs with cable. The rooms are designed with guests’ comfort in mind, featuring chiropractic and high-quality non-allergenic pillows, 100% cotton sheets with duvet covers, and individually controlled air conditioning units. For business travelers, the hotel also offers conference rooms that can accommodate 20 to 80 persons</p>
+
+
+              </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://q-xx.bstatic.com/xdata/images/hotel/max1024x768/231802918.jpg?k=6ebf5afb469e93bd89661e5aefc0c69c84d679948db85f1e8304dca936d65644&o=&s=1024x" alt="image" border="0"></a>
+      <div class="card-content">
+        <h2>Almont Inland Resort
+</h2>
+        <p><strong>Information:</strong><p>Amidst the city's offerings, Almont Inland Resort and Convention Center is the place to experience the best of Butuanon warmth and hospitality. It is located at J.C. Aquino Ave., Butuan City 8600 Butuan City Caraga. Here, one can take a breather and engage in a host of recreational and relaxing activities, including swimming, tennis and fishing. It is where one can indulge in business affairs at a leisurely pace. Conveniently located, this inland resort is close to the city center and is just 10 minutes away from the airport. Here, you'll find a four-hectare haven for corporate events, family and romantic celebrations and respite from hectic city life. Located at the capital of Caraga, the resort plays host to numerous conventions and seminars, bringing together visitors from across the northern Mindanao region. We invite you to embrace the charm of historic Butuan and make us your home away from home. 
+ </P>
+            </div>
+    </div>
+  </div>
+
+ 
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

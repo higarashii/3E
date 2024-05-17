@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+    </div>
+
+  
+   <h1>Sta. Cruz Falls</h1>
+    <p>Sta. Cruz Falls of Brgy Sta. Cruz, Kapatagan, Lanao del Norte is a hidden treasure hidden in the heart of Lanao del Norte. Located in the municipality of Kapatagan and is the perfect place for an adventure or an unforgettable getaway.</p>
+
+<p>Sta. Cruz Falls is an amazing three-tier waterfall, with an overall drop of about fifty feet. It's an impressive cascading waterfall that has the water pouring down the first layer, and then flowing down into the third and second tiers. The waters are clear and cool and the surroundings are serene.</p>
+
+<p>The most appealing aspect of Sta. Cruz Falls is that it's easily accessible. It's only 20 minutes away in the direction of Iligan City and can also be reached by jeepney from the center of Kapatagan. The path to the falls is a well-paved trail that is suitable for hikers and those who do not. When you reach the waterfall, you can admire the view and snap photos of the beautiful scenery.</p>
+
+       <img src="https://i.ibb.co/dDmsRwN/Lanao-del-Norte-Sta-Cruz-Falls.jpg" alt="image" border="0"></a>
+
+ <h1>How to Get there</h1>
+<p>To reach Sta. Cruz Falls, you can follow these general directions:</p>
+
+<p>1. You can reach Lanao del Norte by air or land travel. The nearest airport is Laguindingan Airport, located in Misamis Oriental.</p>
+<p>2. From there, you can take a bus or private vehicle to Lanao del Norte. Once you arrive in Lanao del Norte, you'll need to travel to Tubod.</p>
+<p>3. You can take a bus, van, or hire a private vehicle from the capital city of Iligan or other nearby towns.</p>
+<p>4. In Tubod, inquire about local transportation options to reach Sta. Cruz Falls. You can hire a habal-habal (motorcycle taxi) or tricycle to take you to the jump-off point of the falls. </p>
+<p>5. Once you have arranged transportation, you'll head to the jump-off point for Sta. Cruz Falls.</p>
+<p>6. And, once you arrive at Sta. Cruz Falls, take your time to appreciate the natural beauty of the waterfalls. You can swim, relax, or take photos in the area. Follow any safety instructions provided by local authorities and respect the environment. </p>
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Nearby Hotels</h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+        <img src="https://i.ibb.co/hgcLMFR/received-441011398606749.jpg" alt="image" border="0"></a>
+      <div class="card-content">
+        <h2>Baroy Town Hotel </h2>
+        <p><strong>Information:</strong><p>"A humble place to stay in Lanao del Norte"</p>
+<p>Happiness, comfort and luxury. That's what we aim to bring when you stay with us.</p>
+<p>The Baroy Town Hotel is the perfect place for everyone. Aside from its peaceful and strategic location, it offers good service and stunning accommodations that will make your stay even more relaxing.</p> 
+
+         <p>At the hotel, each room has a desk. All rooms are equipped with a flat-screen TV, and some units at Royal Garden Hotel have a city view.
+        </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+           <img src="https://i.ibb.co/w6yzBRx/436645687.jpg" alt="image" border="0"></a>
+      <div class="card-content">
+        <h2>Hotel de Rosa</h2>
+        <p><strong>Information:</strong> <p>Traveling can be an exhausting experience.</p>
+<p>It is located at Santo Niño Village, Purok 2, Baroy, 9210 Lanao del Norte. Enter Hotel de Rosa, where style, comfort and hospitality meet. Our commitment to service is incomparable and our fares are unmatched.</p>
+<p>Hotel de Rosa provides accommodation with a terrace, free private parking and a restaurant. This 3-star hotel offers free WiFi.</p>
+
+                <p>Every room is equipped with a balcony. All units at the hotel are equipped with a seating area, a flat-screen TV with satellite channels and a private bathroom with free toiletries and a bidet.
+        </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+          <img src="https://i.ibb.co/NnTwr2w/FB-IMG-1713929961921.jpg" alt="image" border="0"></a>
+      <div class="card-content">
+        <h2>Comfort Zone Inn</h2>
+        <p><strong>Information:</strong> <p>Looking for a place to stay in Lanao del Norte with your family? Then look no further than ComfortZone Inn Maranding, located at Purok Indian Tree, Maranding, Lala Lanao Del Norte. Quality and a budget friendly hotel that brings the best of Lanao to your doorstep.</p>
+<p>Comfort Zone Inn is a budgetel in Maranding, Lala, Lanao del Norte, providing quality accommodation, services, comfort and style that you need</p>
+
+       <p>Stay in comfort & style within your budget! See our featured rooms with complete amenities.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

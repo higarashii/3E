@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Region Guide</title>
+<style>
+body {
+margin: auto;
+font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+overflow: auto;
+background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%,
+rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150,
+1) 98%);
+animation: gradient 15s ease infinite;
+background-size: 400% 400%;
+background-attachment: fixed;
+}
+@keyframes gradient {
+0% {
+background-position: 0% 0%;
+}
+50% {
+background-position: 100% 100%;
+}
+100% {
+background-position: 0% 0%;
+}
+}
+.wave {
+background: rgb(255 255 255 / 25%);
+border-radius: 1000% 1000% 0 0;
+position: fixed;
+width: 200%;
+height: 12em;
+animation: wave 10s -3s linear infinite;
+transform: translate3d(0, 0, 0);
+opacity: 0.8;
+bottom: 0;
+left: 0;
+z-index: -1;
+}
+.wave:nth-of-type(2) {
+bottom: -1.25em;
+animation: wave 18s linear reverse infinite;
+opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+bottom: -2.5em;
+animation: wave 20s -1s reverse infinite;
+opacity: 0.9;
+}
+@keyframes wave {
+2% {
+transform: translateX(1);
+}
+25% {
+transform: translateX(-25%);
+}
+50% {
+transform: translateX(-50%);
+}
+75% {
+transform: translateX(-25%);
+}
+100% {
+transform: translateX(1);
+}
+}
+body {
+font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #265073;
+}
+.container {
+max-width: 800px;
+margin: 20px auto;
+padding: 20px;
+background-color: rgba(45, 149, 150, 0.5);
+border-radius: 15px;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+text-align: center;
+}
+.header {
+text-align: center;
+margin-bottom: 20px;
+color: #9ad0c2;
+}
+.info {
+color: #9affd0c2;
+cursor: pointer;
+
+}
+.additional-info {
+color: #fff;
+}
+.card {
+margin-top: 20px;
+display: flex;
+flex-direction: column;
+background-color: rgba(255, 255, 255, 0.5);
+border-radius: 15px;
+box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+margin-bottom: 20px;
+overflow: hidden;
+transition: all 0.3s ease;
+cursor: pointer;
+}
+.card img {
+width: 100%;
+height: auto;
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+object-fit: cover;
+}
+.card-content {
+padding: 20px;
+}
+.card-content h2 {
+margin-top: 0;
+font-size: 1.5rem;
+color: #333;
+}
+.card-content p {
+color: #666;
+}
+</style>
+</head>
+<body>
+<div>
+<div class="wave"></div>
+<div class="wave"></div>
+<div class="wave"></div>
+</div>
+<div class="container">
+<div class="header">
+
+<p>
+</p>
+</div>
+<!-- Introduction / Information part here -->
+<div class="info" onclick="toggleInfoContent()">
+<h1></h1>
+<!--In this part, you will add information about this place, and
+when you add a new paragraph/info, just enclose it with <br /> tags. -->
+<p class="additional-info" style="display: none">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+vel
+metus id ipsum condimentum varius. Lorem ipsum dolor sit amet,
+consectetur adipiscing elit. Nullam vel metus id ipsum condimentum
+varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Nullam vel metus id ipsum condimentum varius. <br /><br />
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+vel
+metus id ipsum condimentum varius. Lorem ipsum dolor sit amet,
+consectetur adipiscing elit. Nullam vel metus id ipsum condimentum
+varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Nullam vel metus id ipsum condimentum varius.
+</p>
+</div>
+<!-- Card content goes here -->
+<h1>People's Park Davao</h1>
+<p> Visit Davao People's Park, one of the Philippines' most coveted parks. It's one of the cleanest and greenest parks in the country. The Durian Dome is one of the park's highlights and is one of the most photographed landmarks in Davao. A fitness center is also located here for everyone interested in getting active.<p>
+<p>On one side of the complex is a learning center for children and adults. The Sunken Garden, the garden haven, and the Children's Library are located in one corner of the park, where kids of all ages can read their books whenever they like.<p>
+<p>The Philippine Eagle replica is the most important of the major sculptures. Children can play with swings, slides, monkey bars, and much more in the children's playground.<p>
+
+<img src="https://i.ibb.co/YWxpZ54/peoples-5-Bpark.jpg" alt="peoples-5-Bpark" border="0"></a>
+
+<h1>How to get there</h1>
+<p>To reach People's Park Davao, you can follow these general directions:<p>
+<p>By Public Transportation:<p>
+<p>Jeepney: You can also take a jeepney to reach People's Park. Look for jeepneys with routes passing through the vicinity of the park. Jeepneys in Davao City typically have signs indicating their route, so you can ask locals or the driver to confirm if the jeepney passes by People's Park.<p>
+<p>It's recommended to verify the specific routes and transportation
+options based on your starting point and current travel conditions.
+Additionally, always exercise caution and follow local traffic regulations
+while traveling.<p>
+</body>
+</html>
+<div class="container">
+<div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+<div class="card" onclick="toggleCardContent(this)">
+
+<img src="https://i.ibb.co/5TS5vGL/normal-facade.jpg" alt="normal-facade" border="0"></a>
+
+<div class="card-content">
+<h2>The Manor Hotel</h2>
+<p><strong>Information:</strong><p>The Manor Hotel is located in Davao, a 25-minute drive from the Davao International Airport. It provides comfortable rooms, massage services and free Wi-Fi in the entire hotel.The Gaisano South is only a 10-minute walk from the property, while The Abreeza Mall is a 10-minute drive away. Hotel Manor is a 15-minute walk from the People's Park and a 5-minute drive from The San Pedro Church.<p>
+<p>TThe rooms at Hotel Manor are simple and come fitted with freshly laundered beddings. They have air-conditioned rooms equipped with cable TV, an en suite bathroom and a telephone.
+.<p>
+<!--In this part, you will add information about this place, and
+when you add a new paragraph/info, just enclose it with <br /> tags. -->
+<p class="additional-info" style="display: none">
+
+</p>
+</div>
+</div>
+<div class="card" onclick="toggleCardContent(this)">
+<img src="https://i.ibb.co/CwHvwwL/eae1529afe4e6fee2eefc93feb4ea0f8.jpg" alt="eae1529afe4e6fee2eefc93feb4ea0f8" border="0"></a>
+<div class="card-content">
+<h2>Red Planet Davao</h2>
+<p><strong>Information:</strong> <p>Red Planet Davao is located in Davao City just a 2-minute drive from SM Lanang Davao and 6-minute drive from SMX Convention Center, the hotel features a 24-hour front desk, a business centre, and free WiFi throughout the property.<p>
+<p>Red Planet Davao is 1.9 km from Abreeza Mall, 3.5 km from People's Park while Samal Island is about an hour from the property by land and boat transfers. The nearest airport is Davao International Airport, 6.3 km away from the property.<p>
+<p>The rooms at the hotel is equipped with a flat-screen cable TV, air conditioning, and a writing desk. Featuring a shower, the private bathrooms also come with a hairdryer and free toiletries. Extras include a safety deposit box and a laptop safe.</p>
+<!--In this part, you will add information about this place, and
+when you add a new paragraph/info, just enclose it with <br /> tags. -->
+<p class="additional-info" style="display: none">
+
+</p>
+</div>
+</div>
+<div class="card" onclick="toggleCardContent(this)">
+
+<img src="https://i.ibb.co/XCG7ndK/Beautiful-view-The-Apo-View-Hotel.jpg" alt="Beautiful-view-The-Apo-View-Hotel" border="0"></a>
+<div class="card-content">
+<h2>The Apo View Hotel</h2>
+<p><strong>Information:</strong> <p>A 5-minute walk from People’s Park and Gaisano Mall, The Apo View Hotel offers 4-star accommodation in Davao City. It features an outdoor swimming pool, 3 dining choices and free Wi-Fi.
+
+Indulge in a relaxing massage, visit the Pagcor Casino Filipino or laze by the pool. Staff at the tour desk can assist with travel arrangements, while local souvenirs can be purchased at the gift shop.<p>
+<p>Bathed in warm light, rooms have modern interiors and dark wood furnishings. All units are well equipped with a flat-screen cable TV, dining area and private bathroom with a bathtub. Guests enjoy views of the mountain, city and pool.
+
+ENTRÉE restaurant and Café Josefina serve local and international favourites. Refreshing cocktails and light snacks are available at Blue Room bar.</p>
+<!--In this part, you will add information about this place, and
+when you add a new paragraph/info, just enclose it with <br /> tags. -->
+<p class="additional-info" style="display: none">
+</p>
+</div>
+</div>
+</div>
+<!-- You have nothing to do here or you have nothing to remove. Do you
+understand?-->
+<script>
+function toggleCardContent(card) {
+const content = card.querySelector(".additional-info");
+content.style.display =
+content.style.display === "none" ? "block" : "none";
+}
+function toggleInfoContent() {
+const info = document.querySelector(".info");
+const content = info.querySelector(".additional-info");
+content.style.display =
+content.style.display === "none" ? "block" : "none";
+}
+</script>
+</body>
+</html>

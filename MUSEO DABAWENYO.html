@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Region Guide</title>
+<style>
+body {
+margin: auto;
+font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+overflow: auto;
+background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%,
+rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150,
+1) 98%);
+animation: gradient 15s ease infinite;
+background-size: 400% 400%;
+background-attachment: fixed;
+}
+@keyframes gradient {
+0% {
+background-position: 0% 0%;
+}
+50% {
+background-position: 100% 100%;
+}
+100% {
+background-position: 0% 0%;
+}
+}
+.wave {
+background: rgb(255 255 255 / 25%);
+border-radius: 1000% 1000% 0 0;
+position: fixed;
+width: 200%;
+height: 12em;
+animation: wave 10s -3s linear infinite;
+transform: translate3d(0, 0, 0);
+opacity: 0.8;
+bottom: 0;
+left: 0;
+z-index: -1;
+}
+.wave:nth-of-type(2) {
+bottom: -1.25em;
+animation: wave 18s linear reverse infinite;
+opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+bottom: -2.5em;
+animation: wave 20s -1s reverse infinite;
+opacity: 0.9;
+}
+@keyframes wave {
+2% {
+transform: translateX(1);
+}
+25% {
+transform: translateX(-25%);
+}
+50% {
+transform: translateX(-50%);
+}
+75% {
+transform: translateX(-25%);
+}
+100% {
+transform: translateX(1);
+}
+}
+body {
+font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #265073;
+}
+.container {
+max-width: 800px;
+margin: 20px auto;
+padding: 20px;
+background-color: rgba(45, 149, 150, 0.5);
+border-radius: 15px;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+text-align: center;
+}
+.header {
+text-align: center;
+margin-bottom: 20px;
+color: #9ad0c2;
+}
+.info {
+color: #9affd0c2;
+cursor: pointer;
+
+}
+.additional-info {
+color: #fff;
+}
+.card {
+margin-top: 20px;
+display: flex;
+flex-direction: column;
+background-color: rgba(255, 255, 255, 0.5);
+border-radius: 15px;
+box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+margin-bottom: 20px;
+overflow: hidden;
+transition: all 0.3s ease;
+cursor: pointer;
+}
+.card img {
+width: 100%;
+height: auto;
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+object-fit: cover;
+}
+.card-content {
+padding: 20px;
+}
+.card-content h2 {
+margin-top: 0;
+font-size: 1.5rem;
+color: #333;
+}
+.card-content p {
+color: #666;
+}
+</style>
+</head>
+<body>
+<div>
+<div class="wave"></div>
+<div class="wave"></div>
+<div class="wave"></div>
+</div>
+<div class="container">
+<div class="header">
+
+<p>
+</p>
+</div>
+<!-- Introduction / Information part here -->
+<div class="info" onclick="toggleInfoContent()">
+<h1></h1>
+<!--In this part, you will add information about this place, and
+when you add a new paragraph/info, just enclose it with <br /> tags. -->
+<p class="additional-info" style="display: none">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+vel
+metus id ipsum condimentum varius. Lorem ipsum dolor sit amet,
+consectetur adipiscing elit. Nullam vel metus id ipsum condimentum
+varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Nullam vel metus id ipsum condimentum varius. <br /><br />
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+vel
+metus id ipsum condimentum varius. Lorem ipsum dolor sit amet,
+consectetur adipiscing elit. Nullam vel metus id ipsum condimentum
+varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Nullam vel metus id ipsum condimentum varius.
+</p>
+</div>
+<!-- Card content goes here -->
+<h1>Museo Dabawenyo</h1>
+<p> The Museo Dabawenyo, or also known as the Museum of the People of Davao, is one of the most known museums in the country. This building is formally known as the Court of First Instance and was restored and rehabilitated to showcase the diverse cultural heritage and the rich history of the city.<p>
+<p>Within the museum, visitors can see stilt house replicas, weapons, and musical instruments used by indigenous people. It also houses a full gallery of antiques like armors, chairs, crowns, and lamps of Moro People as well as traditional Filipino clothing, Filipino bills, musical notes, clothes, and more .<p>
+<p>The Dabawenyo Museum is located on Fr. Salga Road, which is on Pichon Avenue, only a few meters from the Bonifacio Rotunda and the Osmeña Park. It is accessible from 9 AM to 12 NN from Tuesday to Sunday and from 1 PM to 6 PM on Mondays.<p>
+
+<img src="https://i.ibb.co/0qhLFdZ/Davao-City-offers-Public-Virtual-Tour-of-Museo-Dabawenyo.jpg" alt="Davao-City-offers-Public-Virtual-Tour-of-Museo-Dabawenyo" border="0"></a>
+
+<h1>How to get there</h1>
+<p>To reach Museo Dabawenyo, you can follow these general directions:<p>
+<p>By Public Transportation:<p>
+
+<p>Taxi/Grab/Transportation Service: The easiest and most convenient way to reach the Museo Dabawenyo is by taking a taxi or using a ride-hailing service like Grab. You can simply input "Museo Dabawenyo" as your destination, and the driver will take you directly there.<p>
+</body>
+</html>
+<div class="container">
+<div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+<div class="card" onclick="toggleCardContent(this)">
+<img src="https://i.ibb.co/7SYyb3V/0-02-06-0875c3fafb16b4831f591d3ca315fc5291c6509da33b21e9f0bedd347fe19a5d-8f8b411b9e2017bc.jpg" alt="0-02-06-0875c3fafb16b4831f591d3ca315fc5291c6509da33b21e9f0bedd347fe19a5d-8f8b411b9e2017bc" border="0"></a>
+<div class="card-content">
+<h2>Blue Lotus Hotel</h2>
+<p><strong>Information:</strong><p>Blue Lotus Hotel features a restaurant, outdoor swimming pool, a fitness centre and bar in Davao City. The property is around 2.2 km from SM City Davao, 2.2 km from People's Park and 2.5 km from Aldevinco Shopping Center. The accommodation offers a 24-hour front desk, room service and organising tours for guests.<p>
+<p>The hotel will provide guests with air-conditioned rooms offering a desk, a kettle, a minibar, a safety deposit box, a flat-screen TV and a private bathroom with a bidet. At Blue Lotus Hotel every room includes bed linen and towels.<p>
+
+<!--In this part, you will add information about this place, and
+when you add a new paragraph/info, just enclose it with <br /> tags. -->
+<p class="additional-info" style="display: none">
+
+</p>
+</div>
+</div>
+<div class="card" onclick="toggleCardContent(this)">
+<img src="https://i.ibb.co/tPx3VwL/images-q-tbn-ANd9-Gc-RJCZsa-Xu-R0-NUWYr-QQFmeun-Nw2-O6-B2-SYCDA0wp-FCEGUDZa-APof-Pppy-AOZBp-Kzby-Bp.jpg" alt="images-q-tbn-ANd9-Gc-RJCZsa-Xu-R0-NUWYr-QQFmeun-Nw2-O6-B2-SYCDA0wp-FCEGUDZa-APof-Pppy-AOZBp-Kzby-Bp-" border="0"></a>
+<div class="card-content">
+<h2>Vittoria Suites at Northpoint Pines Estate</h2>
+<p><strong>Information:</strong> <p> Set in Davao City and only 1 km from Abreeza Mall, Vittoria Suites at Northpoint Pines Estate features accommodation with sea views, free WiFi and free private parking. This recently renovated aparthotel is located 2.6 km from SM Lanang Premier and 3.8 km from People's Park. Featuring family rooms, this property also provides guests with a year-round outdoor pool.<p>
+
+<p>All units at the aparthotel come with air conditioning, a seating area, a flat-screen TV with streaming services, a kitchen, a dining area and a private bathroom with a walk-in shower. Some units feature a terrace and/or a balcony with mountain views and outdoor furniture. At the aparthotel, each unit includes bed linen and towels. </p>
+<!--In this part, you will add information about this place, and
+when you add a new paragraph/info, just enclose it with <br /> tags. -->
+<p class="additional-info" style="display: none">
+</p>
+</div>
+</div>
+<div class="card" onclick="toggleCardContent(this)">
+<img src="https://i.ibb.co/fvsbJTM/restaurant.jpg" alt="restaurant" border="0"></a>
+<div class="card-content">
+<h2>The Bourke Hotel</h2>
+<p><strong>Information:</strong> <p> Situated in Davao City and with People's Park reachable within 500 metres, The Bourke Hotel features a tour desk, allergy-free rooms, a restaurant, free WiFi throughout the property and a terrace. This 3-star hotel offers room service and luggage storage space. The accommodation provides airport transfers, while a car rental service is also available.<p>
+<p>FAll rooms are fitted with air conditioning, a flat-screen TV with cable channels, a minibar, a coffee machine, a shower, bathrobes and a desk. The rooms are fitted with a kettle and a private bathroom with slippers, while some rooms also boast a kitchenette fitted with a microwave. At the hotel rooms have bed linen and towels.</p>
+<!--In this part, you will add information about this place, and
+when you add a new paragraph/info, just enclose it with <br /> tags. -->
+<p class="additional-info" style="display: none">
+</p>
+</div>
+</div>
+</div>
+<!-- You have nothing to do here or you have nothing to remove. Do you
+understand?-->
+<script>
+function toggleCardContent(card) {
+const content = card.querySelector(".additional-info");
+content.style.display =
+content.style.display === "none" ? "block" : "none";
+}
+function toggleInfoContent() {
+const info = document.querySelector(".info");
+const content = info.querySelector(".additional-info");
+
+content.style.display =
+content.style.display === "none" ? "block" : "none";
+}
+</script>
+</body>
+</html>

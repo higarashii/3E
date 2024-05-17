@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region IX</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+          </div>
+
+     <h1>Great Santa Cruz Island</h1>
+    <p>Great Santa Cruz Island is a small inhabited island located in the southern region of the Philippines. Situated 4 kilometers, approximately 2.49 miles south of downtown Zamboanga City, boasts one of the few pink sand beaches in the world.<p>
+
+<p>The Island together with Little Santa Cruz Island, is a protected area in Region 9 of the Philippines. Jointly known as the Great and Little Sta. Cruz Islands Protected Landscape & Seascape.<p>
+<p>The color of the sand comes from the pulverized red organ pipe coral, which has eroded over eons and mixed with the white sand. Great Santa Cruz Island promises an unforgettable experience for beach lovers and nature enthusiasts alike.<p>
+    
+<img src="https://i.ibb.co/GRbRYk4/Sta-Cruz-Island-April-Cuenca.jpg" alt="ad" border="0"></a>
+
+    <h1>How to get there</h1>
+<p>To reach Great Santa Cruz Island, you can follow these general directions:<p>
+
+<p>By Public Transportation:<p>
+
+<p>1. Take a bus or taxi to Paseo del Mar in Zamboanga City. From Paseo del Mar, you can hire a banca (a traditional boat) to take you to Great Santa Cruz Island. The boat ride takes about 15-20 minutes.<p>
+<p>2. Each boat can accommodate up to 10 persons and costs Php 1,000.00 for a round trip. An entrance fee of Php 20.00 and a Php 5.00 terminal fee are collected once you arrive on the island.<p>
+<p>By Private Vehicle:<p>
+<p>1. If you're traveling by private vehicle, drive to Paseo del Mar in Zamboanga City and Park your vehicle securely and proceed to the boat area.<p>
+<p>2. The boat will take you to Great Santa Cruz Island. The boat ride takes about 15-20 minutes.<p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+     <img src="https://i.ibb.co/j8KyxHz/568124-14021414410018344138.jpg" alt="adss" border="0"></a>
+      <div class="card-content">
+        <h2>Garden Orchid Hotel</h2>
+        <p><strong>Information:</strong><p>Garden Orchid Hotel is located in Zamboanga City, which is part of the Zamboanga Peninsula in the Philippines. Specifically, it's situated at Gov. Camins Avenue, Zamboanga City.<p>
+<p>The hotel offers comfortable accommodations with amenities such as free parking, Wi-Fi, massage services, and an outdoor swimming pool. Guests appreciate its convenient location, friendly staff, and value for money.<p>
+<p>It's a good choice for your stay in Zamboanga City whether you're traveling for business or leisure because it provides convenient location, comfortable rooms, and a range of amenities.</p>
+
+             </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+    <img src="https://i.ibb.co/rkqxvNV/Screenshot-20240514-192812.jpg" alt="fcvdfb" border="0"></a>
+      <div class="card-content">
+        <h2>Ever O Business Hotel</h2>
+        <p><strong>Information:</strong> <p>Ever O Business Hotel is located in Tomas Claudio Street, Corner La Purisima, Zamboanga City. It's conveniently located within a 10-minute drive from Zamboanga International Airport, making it easily accessible for both locals and tourists.<p>
+<p>The hotel provides various room offerings, including single standard, superior, deluxe, junior suite, executive suite, premiere suite, and presidential suite. You'll enjoy a comfortable stay whether you're on a business trip or a quick getaway.<p>
+<p>The hotel provides modern amenities, comfortable beds, and quality basics for a pleasant stay for both business and leisure travelers, with friendly staff and scrumptious meals available. <p>
+
+
+              </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://i.ibb.co/q09BN4b/02204120009ztd6321-D2-B-R-960-660-R5-D.jpg" alt="ijkb" border="0"></a>
+      <div class="card-content">
+        <h2>Hotel Primera</h2>
+        <p><strong>Information:</strong> <p>Hotel Primera is located at Canelar Moret Street, Zamboanga City, Mindanao, Philippines. Its central location provides easy access to nearby attractions, restaurants, and amenities.<p>
+<p>The hotel offers affordable rates for its rooms, making it suitable for budget-conscious travelers. There are also friendly staff ensures a pleasant stay, and there are several restaurants nearby for dining convenience.<p>
+<p>Hotel Primera's convenient location allows guests to explore Zamboanga City easily. With its value-for-money rates and positive reviews, it's a great choice for travelers seeking comfort and accessibility.<p>
+
+             </div>
+    </div>
+  </div>
+
+  
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

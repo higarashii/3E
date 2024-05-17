@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+        </div>
+
+
+   <h1>Belvedere</h1>
+    <p>Welcome to the breathtaking Belvedere in Tangub City, Misamis Occidental, one of the most stunning natural landmarks in the Philippines. Belvedere is a hilltop viewpoint that offers breathtaking panoramic views of the surrounding landscape. As you make your way up to the top of the hill, you’ll be greeted by a stunning view of the rolling hills, verdant forests, and crystal-clear waters of Tangub City.<p>
+
+<p>The view from Belvedere is truly awe-inspiring, offering a unique perspective on the natural beauty of the Philippines. Whether you’re an avid photographer or simply looking for a peaceful place to relax and unwind, Belvedere is the perfect destination. As you explore Belvedere, take a moment to appreciate the peaceful and serene atmosphere. This is the perfect place to escape the hustle and bustle of daily life and reconnect with nature. And if you’re lucky enough to visit during sunset, you’ll be treated to a truly magical sight. The sky transforms into a canvas of oranges, pinks, and purples, creating a stunning backdrop for your visit.<p>
+
+<p>This area offers a blend of natural beauty and historical significance, making it a popular spot for both relaxation and exploration. Belvedere provides a unique glimpse into the lifestyle and natural beauty of Misamis Occidental, appealing to tourists seeking tranquility and a deep connection with Filipino culture.<p>
+
+<p>Visitors to Belvedere – Misamis Occidental often find themselves enjoying the scenic views, local traditions, and a peaceful environment that stands in contrast to the bustling urban centers.<p>
+
+    <img src="https://i.ibb.co/djF9CLW/belvedere-unique-tourist-spots-misamis-occidental-1024x529.png" src="https://i.ibb.co/GxNR2vK/image.png" alt="image" border="0"></a>
+
+	<h1>How to get there</h1>
+<p>To reach Belvedere, you can follow these general directions:<p>
+
+<p>By Public Transportation:<p>
+
+<p>1. If you're coming from Manila or other major cities with airports, the closest major airport to Belvedere is Ozamiz City Airport. From there, you can take a bus or a taxi to reach Misamis Occidental.<p>
+<p>2. Buses are available from major cities like Cagayan de Oro, Iligan, Zamboanga, Pagadian, and Dipolog that travel directly to Ozamiz City, which is near Misamis Occidental.<p>
+<p>3. For those preferring a journey by water, ferries operate routes that connect to Ozamiz City from various parts such as Manila, Iligan, Tagbilaran, and Cebu.<p>
+<p>4. Once in Ozamiz City, local buses or vans can be used to travel within Misamis Occidental and reach specific destinations like Belvedere.<p>
+
+
+<p>By Private Vehicle:<p>
+<p>1. To travel to Belvedere in Misamis Occidental via private vehicle, you can follow the general directions and ensure you have a reliable map or GPS service as local road conditions and signages can vary.<p>
+<p>2. Drive west on the National Highway towards Tangub City and follow signages and local directions to reach Belvedere in Misamis Occidental.<p>
+
+<p>It's recommended to verify the specific routes and transportation options based on your starting point and current travel conditions. Additionally, always exercise caution and follow local traffic regulations while traveling.<p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="<a href="https://ibb.co/nrYrss2"><img src="https://i.ibb.co/qBcBMMG/407550308.jpg" alt="407550308" border="0"></a>
+      <div class="card-content">
+        <h2>Aya Hotel and Residences</h2>
+        <p><strong>Information:</strong><p>Aya Hotel and Residences near Belvedere in Misamis Occidental, specifically located in Old National Highway, Poblacion 4, Clarin, 7201 Misamis Occidental. Aya Hotel and Residences offers a comfortable and convenient stay for travelers exploring the region. This hotel combines modern amenities with excellent service to ensure a pleasant experience for its guests.<p>
+<p>Each room is designed with comfort in mind, featuring contemporary furnishings and essential facilities. Guests can enjoy various services such as free Wi-Fi, room service, and access to dining options that offer local and international cuisine.<p>
+<p>The hotel's strategic location allows easy access to local attractions, making it a great choice for both leisure and business travelers looking for quality accommodation in Misamis Occidental.</p>
+
+            </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="<a href="https://ibb.co/dG3vrbV"><img src="https://i.ibb.co/PwbyNTP/facade-3.jpg" alt="facade-3" border="0"></a>
+      <div class="card-content">
+        <h2>Royal Garden Hotel</h2>
+        <p><strong>Information:</strong> <p>The Royal Garden Hotel, located Corner Streets Burgos Street, Ozamiz City, Misamis Occidental, is an ideal choice for travelers seeking comfort and convenience. This upscale hotel boasts a range of well-appointed rooms and suites that cater to both business and leisure guests.<p>
+<p>Each room is equipped with modern amenities such as air conditioning, high-speed internet, and cable TV. Guests can enjoy a variety of dining options within the hotel, offering both local and international cuisine. <p>
+<p>Additional facilities include a fitness center, swimming pool, and conference rooms, making it suitable for hosting events and meetings. With its prime location, the Royal Garden Hotel provides easy access to nearby attractions and is a perfect base for exploring the natural beauty of Misamis Occidental.</p>
+
+        <!--In this part, you will add information about this place, and when you add a new paragraph/info, just enclose it with <br /> tags. -->
+        <p class="additional-info" style="display: none">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel
+          metus id ipsum condimentum varius.
+        </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="<a href="https://ibb.co/HPBKDhX"><img src="https://i.ibb.co/z2Qmh6N/costa.jpg" alt="costa" border="0"></a>
+      <div class="card-content">
+        <h2>Costa del Sol Resort Hotel</h2>
+        <p><strong>Information:</strong> <p>Costa del Sol Resort Hotel, nestled near Belvedere in Misamis Occidental, is a delightful escape for those seeking a blend of tranquility and adventure. This charming resort is designed to provide a luxurious yet comfortable experience, offering guests beautifully furnished rooms with stunning views of the surrounding landscape.<p>
+<p>Each room is equipped with modern amenities to ensure a relaxing stay. The resort features an array of facilities including an inviting swimming pool, a well-equipped spa, and dining options that serve exquisite local and international cuisine.<p>
+<p>With its proximity to Belvedere, guests can easily explore the natural attractions and cultural sites of Misamis Occidental.<p>
+<p>Costa del Sol Resort Hotel is an excellent choice for travelers looking to immerse themselves in the serene beauty of the region while enjoying top-notch hospitality.</p>
+
+             </div>
+    </div>
+  </div>
+
+
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

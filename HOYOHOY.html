@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+       </div>
+
+      <h1>Hoyohoy Highland Stone Chapel Adventure Park</h1>
+    <p>Hoyohoy Highland Stone Chapel Adventure Park, nestled in the picturesque landscape of Tangub City, Misamis Occidental, Philippines, is a captivating blend of natural beauty, spiritual serenity, and exhilarating adventure. Perched atop a verdant hill, this unique destination offers visitors a one-of-a-kind experience that combines stunning vistas, cultural heritage, and adrenaline-pumping activities.<p>
+
+<p>At the heart of Hoyohoy Highland Stone Chapel Adventure Park lies its iconic stone chapel, a testament to faith and architectural marvel. Surrounded by lush greenery and overlooking sweeping views of the city and the sea beyond, the chapel provides a tranquil sanctuary for prayer, meditation, and reflection. Whether you're seeking spiritual solace or simply marveling at the beauty of the surroundings, the stone chapel offers a serene retreat from the hustle and bustle of everyday life.<p>
+
+<p>Cultural enthusiasts will find plenty to admire at Hoyohoy Highland Stone Chapel Adventure Park, where traditional Filipino architecture and indigenous craftsmanship are celebrated. Visitors can explore intricately designed stone structures, inspired by the rich heritage of the region, and learn about the customs and traditions of the local community through cultural presentations and demonstrations.<p>
+
+<p>In essence, Hoyohoy Highland Stone Chapel Adventure Park is more than just a destination, it's an immersive experience that celebrates the beauty of nature, the richness of culture, and the spirit of adventure. Whether you're seeking a spiritual retreat, an adrenaline-fueled escapade, or simply a place to connect with nature and unwind, this hidden gem invites you to embark on a journey of discovery and delight in the heart of Misamis Occidental.<p>
+
+    <img src="<a href="https://ibb.co/272BJtM"><img src="https://i.ibb.co/1fVxcqX/img-1089-resize-1.jpg" alt="img-1089-resize-1" border="0"></a>
+
+	<h1>How to get there</h1>
+<p>To reach Hoyohoy Highland Stone Chapel Adventure Park, you can follow these general directions:<p>
+
+<p>By Public Transportation:<p>
+
+<p>1. From Ozamiz City, you can take a bus or a jeepney bound for Tangub City. These public vehicles are usually available at the city center or at designated terminals.<p>
+<p>2. Inform the driver or conductor that you're heading to Hoyohoy Highland Stone Chapel Adventure Park. They can drop you off at the nearest point to the park entrance.<p>
+<p>3. Once you're dropped off, you might need to walk a bit or hire a tricycle to reach the park itself, as it might not be directly accessible by large vehicles.<p>
+
+<p>By Private Vehicle:<p>
+<p>1. If you're traveling by private vehicle from nearby towns or cities, you can use online maps or navigation apps to guide you to Hoyohoy Highland Stone Chapel Adventure Park.<p>
+<p>2. From the city center, you can navigate using maps or follow road signs directing you towards the park.<p>
+<p>3. The park is located atop a hill, so expect some winding roads as you ascend. Follow signs for the park entrance.<p>
+<p>4. Use navigation apps or maps to plan your route. Most navigation apps will provide the best route based on your starting point and current traffic conditions.<p>
+
+
+
+<p>It's recommended to verify the specific routes and transportation options based on your starting point and current travel conditions. Additionally, always exercise caution and follow local traffic regulations while traveling.<p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="<a href="https://ibb.co/D7Mm1TG"><img src="https://i.ibb.co/MR1KgQ8/305569574-477182204419071-3956632452068391312-n.jpg" alt="305569574-477182204419071-3956632452068391312-n" border="0"></a>
+      <div class="card-content">
+        <h2>Pensionne House</h2>
+        <p><strong>Information:</strong><p>Located in Tangub City, Pensionne House offers comfortable rooms and basic amenities for travelers. Pensionne House's location in Tangub City offers convenient access to nearby attractions, including Hoyohoy Highland Stone Chapel Adventure Park. Travelers can easily explore the park and other points of interest in the area while enjoying the comfort and affordability of Pensionne House as their base.<p>
+<p> Pensionne House provides comfortable and affordable rooms suitable for solo travelers, couples, families, and small groups. The rooms are designed to offer a cozy retreat after a day of adventure or sightseeing. While the amenities may vary depending on the room type, guests can expect clean and well-maintained spaces designed for a comfortable stay.<p>
+<p>Pensionne House offers budget-friendly rates, making it an ideal choice for travelers looking to maximize their budget without compromising on comfort and convenience. The affordable rates make Pensionne House a popular choice among budget-conscious travelers exploring Misamis Occidental and its attractions.</p>
+
+             </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="<a href="https://ibb.co/gts9Pqh"><img src="https://i.ibb.co/3StdM6Q/75133832.jpg" alt="75133832" border="0"></a>
+      <div class="card-content">
+        <h2>GV Hotel - Ozamiz</h2>
+        <p><strong>Information:</strong> <p>GV Hotel - Ozamiz is centrally located in Ozamiz City, providing guests with easy access to nearby attractions, dining options, and transportation hubs. Travelers can explore the city's landmarks, such as the Cotta Fort and the Immaculate Conception Cathedral, or venture further to discover the natural beauty of Misamis Occidental.<p>
+<p>While GV Hotel - Ozamiz may not offer extensive amenities, it provides the essentials needed for a convenient stay. This typically includes comfortable beds, clean linens, and private bathrooms with basic toiletries. Some rooms may also feature amenities such as air conditioning, television, and Wi-Fi access, offering guests the comfort and connectivity they need during their stay.<p>
+<p>Despite being a budget hotel, GV Hotel - Ozamiz prides itself on providing friendly and accommodating service to guests. The hotel staff are known for their hospitality and willingness to assist guests with their needs, whether it's providing local recommendations, arranging transportation, or addressing any concerns during their stay.<p>
+<p>Overall, GV Hotel - Ozamiz in Misamis Occidental provides a no-frills accommodation option for travelers seeking affordability and convenience during their visit to Ozamiz City and the surrounding areas. With its central location, clean rooms, and friendly service, GV Hotel - Ozamiz offers a comfortable stay at a wallet-friendly price.</p>
+
+          </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="<a href="https://ibb.co/TwSNfcJ"><img src="https://i.ibb.co/fX5TgMZ/hotel-guillermo.jpg" alt="hotel-guillermo" border="0"></a><br /><a target='_blank' 
+      <div class="card-content">
+        <h2>Hotel Guillermo</h2>
+        <p><strong>Information:</strong> <p>Hotel Guillermo boasts modern and stylish accommodations designed to provide guests with a comfortable and relaxing stay. The rooms are tastefully furnished with contemporary decor and equipped with amenities to cater to the needs of both leisure and business travelers. From cozy standard rooms to spacious suites, guests can choose the accommodation that best suits their preferences and budget.<p>
+<p>Hotel Guillermo enjoys a prime location in Iligan City, providing guests with easy access to key attractions, shopping centers, dining establishments, and business districts in the area. Whether guests are visiting for leisure or business purposes, the hotel's central location makes it a convenient base for exploring the city and its surroundings.<p>
+<p>Hotel Guillermo offers dining options that cater to a variety of tastes and preferences. Guests can enjoy delicious meals at the hotel's restaurant, which serves a selection of local and international dishes prepared by skilled chefs. For those looking to unwind after a long day of sightseeing or work, the hotel also features a cozy cafe or lounge where guests can relax and enjoy refreshing beverages and light snacks.<p>
+<p>Overall, Hotel Guillermo in Misamis Oriental provides a comfortable and convenient accommodation option for travelers visiting Iligan City. With its modern amenities, central location, and warm hospitality, Hotel Guillermo offers a memorable and enjoyable stay for guests looking to experience the best that the city has to offer.<p>.
+
+      </div>
+    </div>
+  </div>
+
+  
+
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

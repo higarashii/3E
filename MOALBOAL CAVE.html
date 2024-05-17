@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region IX</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+         </div>
+
+    <h1>Moalboal Cave</h1>
+    <p>Hidden within the lush tropical landscape, Moalboal Cave, located at Moalboal Rd., Titay, Zamboanga Sibugay, beckons intrepid explorers with its enigmatic allure. Carved into the rugged limestone cliffs, this subterranean wonder reveals a human face hewn in stone—its features weathered by time and mystery. The cavern’s entrance, framed by gnarled roots and dangling vines, leads into a dimly lit chamber where the ancient carving resides. The air is thick with humidity, and the distant echo of dripping water reverberates off the walls.
+<p>As you venture deeper, the cave reveals its secrets: narrow passages adorned with delicate stalactites and stalagmites, their crystalline forms shimmering like frozen tears. The uneven floor crunches underfoot, a mosaic of sediment and ancient fossils. Shafts of sunlight pierce through crevices, casting ethereal patterns on the damp walls.
+<p>Legend whispers that the stone face holds mystical powers—a guardian of hidden knowledge or a silent witness to forgotten tales. Locals gather here during solstice nights, lighting incense and leaving offerings at its base. Whether you seek adventure, spiritual connection, or simply a glimpse into the past, Moalboal Cave invites you to step beyond the veil and unravel its timeless enigma.</p> 
+<img src="https://i.ibb.co/5xzxZsG/sqc.jpg" alt="sqc" border="0"></a>
+	<h1>How to get there</h1>
+<p>To reach Moalboal Cave, you can follow these general directions:<p>
+
+<p>By Public Transportation:<p>
+
+<p>1. Take a flight to either one of these cities, Zamboanga, Pagadian, or Dipolog, from Manila and Cebu. Once you arrive in any of these cities, take a bus heading to Ipil, the capital of Zamboanga Sibugay. <p>
+<p>2. Buses bound for Ipil are abundant, so even if you’re a first-timer, you won’t have a hard time reaching the region. After arriving in Ipil, take a tricycle or habal-habal going to Moalboal Road, and along the way, it will direct you to the destination of the cave.<p>
+
+<p>By Private Vehicle:<p>
+<p>1. Travelling using a rented car or privaely own vehicle from nearby towns or cities, you can use online maps or navigation apps to guide you to Moalboal Cave.<p>
+<p>2. Renting a car is still the same as commuting. After landing at either one of the cities, Zamboanga, Pagadian, or Dipolog, drive to the city proper, use a navigation app to track the exact location of the destination.<p>
+
+<p>It's recommended to verify the specific routes and transportation options based on your starting point and current travel conditions. Additionally, always exercise caution and follow local traffic regulations while traveling.<p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+    <img src="https://i.ibb.co/WP8dr4m/image.png" alt="image" border="0"></a>
+      <div class="card-content">
+        <h2>RedDoorz at Jackie’s Hotel & Restaurant</h2>
+        <p><strong>Information:</strong><p> RedDoorz at Jackie’s Hotel & Restaurant is offering accommodation in Ipil. located in Jackie's Hotel and Restaurant Ipil, Zamboanga Sibugay, Philippines.<p>
+<p>The hotel features family rooms. that can accommodate larger groups of visitors, either a family, group of friends, or lovebirds traveling for vacation.<p>
+<p>The private bathroom is equipped with a shower and free toiletries. At the hotel, all rooms are equipped with air conditioning and a flat-screen TV. Speaking English and Filipino, staff are ready to help around the clock at the reception.<p>
+              </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+   <img src="https://i.ibb.co/LN9djvF/image.png" alt="image" border="0"></a>
+      <div class="card-content">
+        <h2>GV Hotel</h2>
+        <p><strong>Information:</strong> <p>GV Hotel is an affordable hotel located at Climaco Drive, Zamboanga, Sibugay, 7001 Ipil, Philippines.<p>
+<p>GV Hotel-Ipil provides affordable accommodation featuring a 24-hour front desk and free WiFi access. Rooms come with air conditioning and windows offering direct sunlight.<p>
+<p>Each room here is fitted with tile flooring. It has a TV with cable channels, clean linen sheets, and an en suite bathroom equipped with free toiletries and hot-water showers.<p>
+<p>GV Hotel-Ipil provides free parking facilities for those who drive. You will also find an on-site snack bar and a mini-market. Housekeeping services are provided daily.<p>
+<p>The hotel is only 550 meters from Ipil’s Municipal Hall and the Municipal Government of Ipil. Zamboanga International Airport is 137 km away.<p>
+        <!--In this part, you will add information about this place, and when you add a new paragraph/info, just enclose it with <br /> tags. -->
+        <p class="additional-info" style="display: none">
+        </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://i.ibb.co/VJWrqvd/image.png" alt="image" border="0"></a>
+      <div class="card-content">
+        <h2>RB Modern Condos </h2>
+        <p><strong>Information:</strong> <p>RB Modern Condos is an accommodation nearby the popular tourist destination in the city, located in Zamboanga Sibugay, Zamboanga Peninsula. You'll be within a 5-minute drive of KCC Mall de Zamboanga and the Metropolitan Cathedral of Immaculate Conception. This condo is 2.6 mi (4.3 km) from Pasonanca Park and 2.7 mi (4.4 km) from Paseo del Mar.<p>
+<p>Featured amenities include dry cleaning and laundry services and a 24-hour front desk. Free self-parking is available onsite. Make yourself comfortable in this individually decorated condo, featuring a kitchen with a refrigerator and a stovetop. A 49-inch smart television with digital programming provides entertainment, while complimentary wireless internet access keeps you connected. Conveniences include a separate sitting area and a fan.<p>
+<p>RB Modern Condos is a great accommodation that offers a great stay for tourists to feel comfortable and relax while they are on vacation.<p>
+                  
+             </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

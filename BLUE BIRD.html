@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+       </div>
+
+
+      <h1>BLUE BIRD DECK VIEW</h1>
+
+<p>The Blue Bird Deck View in Carmen, Davao del Norte, is a scenic viewpoint that offers breathtaking vistas of the surrounding landscapes, including the picturesque valleys, lush forests, and, if the weather permits, even the majestic Mount Apo, the highest peak in the Philippines. It's a popular spot for visitors to take in the natural beauty of the area and capture stunning photographs. The deck provides a peaceful setting for relaxation and appreciation of nature's wonders.</p>
+<p>The Blue Bird Deck View it provides stunning panoramic views of the surrounding landscapes, including lush forests, rolling hills, and, on clear days, the majestic Mount Apo, the highest peak in the Philippines. The deck is a popular destination for tourists and locals alike who want to enjoy the natural beauty of the area and capture memorable photographs.</p>
+
+<p>location: XPWM+H3W, Kaputian, Island Garden City of Samal, Davao del Norte</p>
+
+<div style="text-align:center;"></div>
+<img width="320" src="https://i.ibb.co/YhYc1Vn/IMG-2361.jpg" alt="IMG-2361"</a>
+
+<h1>How to get there:</h1>
+
+<p>The best way to get from Davao Airport (DVO) to Samal Blue Bird Deck View costs only $4 and takes just 31 mins. Find the travel options that best suit you.</p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+
+
+   <a href="https://ibb.co/JF8hRng"><img src="https://i.ibb.co/sJcBvjz/7-F491-BA5-22-EE-4-B20-80-A2-D67-A7-D7-DF7-C9.jpg" alt="Hotel 1" />
+      <div class="card-content">
+        <h2>Sena Gladys Suites</h2>
+        <p><strong>Information:</strong> <p>Purok bagong silang Ate jano Street, Panabo, 8105 Davao del Norte</p>
+
+
+<p>SENA Gladyz Suites aims to make your visit relaxing and enjoyable as possible, with an outdoor swimming pool and minimalist hotel-style amenities.
+Set in a mainly residential neighborhood, this laid-back hotel is 1 km from both Panabo Park and the Pan-Philippine Highway, and 3 km from Panabo City Seawall and Park.</p> 
+
+<p>The straightforward rooms provide Wi-Fi and TVs, as well as fridges and kettles. Upgraded rooms add microwaves, sitting areas, balconies and/or whirlpool tubs. Room service is available.
+Amenities include an outdoor pool and a communal kitchen, plus event space and parking.</p> 
+
+              </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://ibb.co/VqSTM5m"><img src="https://i.ibb.co/9rTWySt/71367555-C0-F2-47-B4-85-D4-806-C12711-D48.jpg" alt="Hotel 2" />
+      <div class="card-content">
+        <h2>Oyo 702 Queens Hometel</h2>
+        <p><strong>Information:</strong>  <p>Nea Mendicor, Tagum city davao del norte</p>
+
+<p>OYO 702 Queens Hometel in Tagum, Philippines is a top-rated hotel that offers exceptional value and service to its guests. Set along a quiet road, this unassuming budget hotel is 3 km from both Tagum Night Market and Gaisano Mall of Tagum, and an 11-minute walk from the buses and coaches at Pereyras Terminal Station.</p> 
+
+<p>Simply furnished rooms have flat-screen TVs and air conditioning, as well as en suite wet rooms. Some rooms feature bunk beds and sleep up to 4 guests. Parking is available, as is Wi-Fi.</p> 
+
+
+           </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+     <a href="https://ibb.co/DfCkPXw"><img src="https://i.ibb.co/hFWHx52/5-EF62457-9147-48-B0-9-CE4-411-A64-AF8686.jpg" alt="Hotel 3" />
+      <div class="card-content">
+        <h2>Hijo Resorts</h2>
+        <p><strong>Information:</strong> 
+
+<p>Hijo Resorts Davao is a premier eco-adventure resort located in Tagum City, Davao del Norte, Philippines. It is situated within the Hijo Plantation, a sprawling 760-hectare property that features lush landscapes, pristine beaches, and diverse ecosystems. The resort offers a range of accommodations, from beachfront villas to garden cottages, providing guests with a luxurious and tranquil escape. Additionally, Hijo Resorts Davao offers various activities such as plantation tours, river cruises, kayaking, and wildlife encounters, allowing visitors to immerse themselves in the natural beauty and rich biodiversity of the region.</p>
+
+<p>Hijo Resorts Davao also provides various recreational activities such as plantation tours, river cruises, kayaking, and wildlife encounters, allowing visitors to experience the natural beauty and biodiversity of the area. Overall, it's a destination where luxury meets sustainability, offering guests a memorable and environmentally conscious getaway experience.</p> 
+
+              </div>
+    </div>
+  </div>
+
+
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  
+  </script>
+</body>
+
+</html>

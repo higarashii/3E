@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+         </div>
+
+    
+   <h1>QUEEN TUNA PARK</h1>
+   
+    <p>Formerly known as Lion’s Beach, the Queen Tuna Park in General Santos is probably one of the less-maintained parks in the Philippines. Though, it is regularly visited by locals and domestic tourists because of the large waves coming from the Celebes Sea and the nice breeze and cool air which can be experienced in the place.</p>
+
+<p>Queen Tuna Park is located in Barangay Dadiangas South, nearby the Old Mosque and Public Market. The authorities invested a lot of money to beautify this place so it can add to the tourist attractions in the city – but because of the current security issues in Basilan, the tourism of the whole Mindanao Island was affected.</p>
+
+<p>The Queen Tuna Park is open to the public from 5:00 am to 10:00 pm. Bathing of pets is not allowed. Selling & bringing of alcoholic drinks, gambling, littering, parking of vehicles and smoking are strictly prohibited. Cooking is allowed in designated areas only. The use of cottages inside Queen Tuna Park is free but make sure to keep it clean and orderly when you leave.</p>
+
+<p>Large concrete statues of animals such as elephants, fishes and dinosaurs can be seen inside the Queen Tuna Park. But because of the problems in tourism, there’s no budget allocated for it yet. I’m positive that the government will soon improve the park so it can invite more tourists.</p>
+
+<div style="text-align:center;"></div>
+      <img width="320" src="https://i.ibb.co/wgn1VN6/8-B1890-CE-DF4-B-4195-B7-C8-95-F24-E473-FBC.jpg" alt="8-B1890-CE-DF4-B-4195-B7-C8-95-F24-E473-FBC"</a>
+
+<h1>How to get there:</h1>
+
+<p>Queen Tuna Park is about 14 kilometers from the General Santos International Airport. Hire a habal-habal (P120) or taxi (P300) going directly to the place. In the city center, any tricycle (P10) can bring you to the park.</p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://imgbb.com/"><img src="https://i.ibb.co/jDPB89K/image.png" alt="image" border="0"></a>
+      <div class="card-content">
+
+      
+        <h2>Zanrock Micro Hotel</h2>
+        <p><strong>Information:</strong> <p>Tiongson St, General Santos City, South Cotabato</p>
+    <p>The hotel has a very good location, also near the General Santos International Airport (GES), which is only 13.17 km away.</p>
+
+<p>This hotel is very easy to find since it is strategically positioned close to public facilities.</p>
+
+<p>About Zanrock MicroHotel: Splendid service together with wide range of facilities provided will make you complain for nothing during your stay at Zanrock MicroHotel.
+
+24-hours front desk is available to serve you, from check-in to check-out, or any assistance you need. Should you desire more, do not hesitate to ask the front desk, we are always ready to accommodate you.
+
+Savor your favorite dishes with special cuisines from Zanrock MicroHotel exclusively for you.
+
+Zanrock MicroHotel is a hotel with great comfort and excellent service according to most hotel's guests.
+
+With all facilities offered, Zanrock MicroHotel is the right place to stay.</p>
+
+              </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+     <a href="https://ibb.co/gMM07Hb"><img src="https://i.ibb.co/Y775WY4/18df0985b62d848db0c4f202478d352dd3d3a5ec.jpg" alt="Hotel 2" />
+      <div class="card-content">
+        <h2>Microtel by Wyndham</h2>
+        <p><strong>Information:</strong> <p>Valley High National Highway, General Santos City, 9500</p>
+    <p>Located in the city proper, Microtel by Wyndham General Santos offers cozy accommodations, a highly recommended restaurant, 24-hour front desk, free Wi-Fi, and spacious parking area.</p>
+
+<p>All rooms are air-conditioned and are equipped with a flat-screen cable television, a safety deposit box, a fridge, a writing desk, and a living space. Private bathrooms come with a hot and cold shower, a bathtub, a hairdryer, and a complimentary set of bath essentials.</p>
+
+<p>The in-house restaurant serves breakfast, lunch, and dinner. There are also numerous dining options nearby. One of the most popular is Cafe Amoree, an Italian restaurant that’s only a two-minute walk away from the property. Food delivery can also be arranged.</p>
+
+<p>The hotel can assist guests with the property’s laundry and ironing services. Other services include car rentals, airport transfers, and massage. Meeting facilities are available upon request.</p>
+
+<p>Microtel by Wyndham is a quick drive away from St. Paul Novitiate Park. General Santos City Museum can be reached after a 10-minute drive. Several malls and other commercial establishments can be found in the area. From the airport, travelers need to take a 30-minute car ride.</p>
+
+              </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+     <a href="https://ibb.co/hX43QJZ"><img src="https://i.ibb.co/CJYRC3M/95585016.jpg" alt="Hotel 3" />
+      <div class="card-content">
+        <h2>Hotel San Marco</h2>
+        <p><strong>Information:</strong> <p>Pres. Jose P. Laurel Ave, General Santos, South Cotabato</p>
+    <p>Located in General Santos, South Cotabato, Hotel San Marco Gensan aims to make every guest’s experience a memorable one by offering top-quality accommodations and excellent amenities. The hotel offers free WiFi and has an in-house restaurant and on-site bar.</p>
+
+<p>All rooms are air-conditioned and equipped with a flat-panel cable TV, coffee/tea maker, refrigerator, and in-room safe. Rollaway beds are available for an additional charge. Each room is fitted with a private bathroom and furnished with a desk. The hotel offers room service and daily housekeeping. Free WiFi is accessible in all rooms. Kids stay free of charge, provided that they sleep in the existing beds inside the rooms.</p>
+
+<p>The hotel’s restaurant, Cafe Verona, specializes in Filipino cuisine. Complimentary cooked-to-order breakfast is served every morning at the hotel’s in-house restaurant. Guests may order drinks from Baccus, the hotel’s in-house bar/lounge. Front desk is available 24 hours a day to assist guests with their needs. The hotel offers concierge services, dry cleaning, and laundry services. Airport transportation and self-parking are available free of charge.</p>
+
+<p>There are shops, ATM/banking facility, a salon, grocery, and supermarket nearby. Guests may visit General Santos City Museum, which is just a mere 0.52 kilometers away. Other attractions include Plaza Heneral Santos, which is just 0.70 kilometers away, and Lake Sebu, which is 45 minutes away from General Santos.</p>
+
+             </div>
+    </div>
+  </div>
+
+  
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  
+  </script>
+</body>
+
+</html>

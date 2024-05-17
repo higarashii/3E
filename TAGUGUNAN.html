@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+         </div>
+
+   
+
+      <h1>TAGTUGUNAN WATERFALLS</h1>
+
+<p>Tagtuganan Falls has a very deep catchment pool, surrounded by lush forest trees and vines it was a very nice place to stay and relax. Water was clear that day and everyone started to take a dip and swam crossed the deep pool just to be underneath the gushing water of the falls. Some participants did not cross the pool as they do not know how to swim. They just sat on the bank and fresh their body from the stream of cold water coming from the falls.</p>
+
+<p>What a good way to end this adventure. All are refreshed and we trek back to our assembly area where others are waiting for us. In just one day, I visited three beauties of nature – Kabyawan Cave, Pugad Sayaw Cave and the Tugtuganan Falls.
+I would like to thank all the Barangay officials and the guide who help us make this event successful and to the participants who willingly abide by the rules set by the Officials.</p>
+
+<p>Location : Tagtugonan Falls Gupitan Kapalong Davao Del Norte Philippines.</p>
+
+<div style="text-align:center;"></div>
+<img width="320" src="https://i.ibb.co/zJPQRYV/IMG-2359.jpg" alt="IMG-2359"</a>
+
+<h1>How to get there:</h1>
+
+<p>At the airport, hire a taxi going to Ecoland integrated Bus Terminal (15kms) for a 30-minute ride. From there, catch up a Bus bound for Digos City, General Santos City or Kidapawan (53 km) then get off at the Digos City Bus Terminal; travel time would be less than two hours to get to Tugtugunan Falls.</p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+
+    
+      <img src="<a href="https://ibb.co/yyqYMnP"><img src="https://i.ibb.co/6PF1pRw/B5-C9-AA6-D-703-B-4-A58-87-D6-BB30-D3-EFA24-B.jpg" alt="Hotel 1" />
+      <div class="card-content">
+        <h2>Rgb Tourist Inn Hotel</h2>
+        <p><strong>Information:</strong> <p>HPM6+R4V, Magsaysay St., Maniki, Kapalong, 8800 Davao del Norte</p>
+
+<p>Kapalong offers a variety of accommodations that cater to different budgets and preferences. For budget travelers, the Rgb Tourist Inn Hotel is a great option. The hotel offers affordable rooms with basic amenities and is located in the heart of Kapalong, making it easy to access the town's attractions.</p>
+
+<p>With a stay at RGB Tourist Inn Hotel in Kapalong, you'll be 15.7 mi (25.2 km) from Tagum City Hall and 14.6 mi (23.6 km) from Gaisano Grand Mall. Featured amenities include limo/town car service and a 24-hour front desk. Guests may use a roundtrip airport shuttle for a surcharge, and free self parking is available onsite.</p> 
+
+
+            </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="<a href="https://ibb.co/GvDCDrR"><img src="https://i.ibb.co/5W3s3JL/44-EEB25-B-698-C-493-E-BC9-B-7600-D05-BABA1.jpg" alt="Hotel 2" />
+      <div class="card-content">
+        <h2>WNB budget inn hotel</h2>
+        <p><strong>Information:</strong> <p>HPP6+MRR, Bonifacio St, maniki, Kapalong, Davao del Norte, Philippines</p>
+
+<p>WNB Budget Inn hotels basic rooms usually provide simple and functional rooms with essential amenities such as a bed, private bathroom (or shared facilities in some cases), and basic furniture. Rooms may vary in size and layout but are designed to offer a comfortable stay at an economical price point.</p>
+
+<p>WNB Budget Inn hotels also has a Affordable Rates and offer competitive rates that are budget-friendly, making them suitable for travelers looking to save on accommodation expenses without compromising on comfort and cleanliness.</p>
+
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="<a href="https://ibb.co/tpqJHPD"><img src="https://i.ibb.co/zVX4mHZ/5-E7-DA63-B-05-AF-435-A-A73-D-9-F79-C6-D006-FF.jpg" alt="Hotel 3" />
+      <div class="card-content">
+        <h2>River Walk Hotels</h2>
+        <p><strong>Information:</strong> <p>Kapalong, Davao Del Norte</p>
+        
+<p> Spacious, comfortable rooms. Balconies with city and river views. This is a totally refreshed hotel experience. From staycations to special occasions, Hotel Tampa Riverwalk has you covered.</p> 
+
+<p> In the heart of Tampa Bay’s iconic Riverwalk, Hotel Tampa is a vibrant destination for local charm and downtown discovery. Central to everywhere you want to be and with every modern comfort, the Riverwalk’s charismatic energy inspires every stay. Take in exceptional balcony views, dine waterfront at Rivers Edge, or simply relax and enjoy a cocktail or two poolside—Hotel Tampa Riverwalk is ready for your arrival.</p>
+
+           </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  
+  </script>
+</body>
+
+</html>

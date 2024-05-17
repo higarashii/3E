@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region IX</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+   
+    </div>
+
+ 
+   <h1>Aliguay Island</h1>
+    <p>Aliguay is an island in the Philippines, and a barangay of Dapitan. The island is an established marine sanctuary. The island is surrounded by white sand beaches and coral reefs. There are no water sources on the island. A few residents live on Aliguay Island, mostly selling fish to tourists.<p>
+
+<p>Aliguay is a small island located about an hour away by speed boat from Dakak Beach Resort in Dapitan. Due to its remote location, only few tourists are able to visit this wonderful island. <p>
+<p>The Aliguay Island Protected Landscape and Seascape is regarded as one of the undiscovered gems of Zamboanga. Surrounded by pristine beaches, crystal-clear waters, and coral reefs, this marine sanctuary has been in place for a while. Because of this, the majority of visitors to this isolated island use snorkels to view Aliguay's underwater wonders. The island is less commercialized, yet the residents welcome visitors and offer simple amenities and meals.<p>
+<p>Though most past tourists have arrived at Aliguay by arranging rides with the local boatmen and fishermen at Dipolog and Dapitan, there isn't a set route to get to the island. Approximately Php3,000 is needed for a round-trip boat ride.<p>
+
+    <img src="https://i.ibb.co/k52J9H5/ad.jpg" alt="ad" border="0"></a>
+
+	<h1>How to get there</h1>
+<p>To reach Aliguay Island, you can follow these general directions:<p>
+
+<p>By Public Transportation:<p>
+
+<p>1. First is booking a flight from Manila to Zamboanga International Airport. Upon arrival at Zamboanga International Airport, you’ll find public transportation options like vans or taxis within the airport.<p>
+<p>2. These can take you to Dakak Port. From Dakak Port, you can ride a speed boat or an outrigger to reach Aliguay Island.<p>
+
+<p>By Private Vehicle:<p>
+<p>1. Travelling using a rented car or privaely own vehicle from nearby towns or cities, you can use online maps or navigation apps to guide you to Aliguay Island.<p>
+<p>2. Renting a car is still the same as commuting. After landing at Zamboanga International Airport, drive to Dakak Port, use a navigation app to go there, and it is approximately a 2–3-hour drive and after transfer to a boat going to Aliguay Island.<p>
+
+<p>It's recommended to verify the specific routes and transportation options based on your starting point and current travel conditions. Additionally, always exercise caution and follow local traffic regulations while traveling.<p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+     <img src="https://i.ibb.co/TcK4CtS/adss.jpg" alt="adss" border="0"></a>
+      <div class="card-content">
+        <h2>Bamboo Garden Business Inn</h2>
+        <p><strong>Information:</strong><p>Bamboo Garden Business Inn, located in Bonifacio Street, Dipolog, Mindanao, is an excellent choice for travelers visiting Dipolog, offering a budget-friendly environment alongside many helpful amenities designed to enhance your stay.<p>
+<p>Rooms at Bamboo Garden Business Inn offer air conditioning, providing exceptional comfort and convenience, and guests can go online with free wifi.<p>
+<p>A concierge, room service, and baggage storage are some of the conveniences offered at this small hotel. An on-site restaurant will also help to make your stay even more special.</p>
+
+      
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+    <img src="https://i.ibb.co/FD2zPFJ/fcvdfb.jpg" alt="fcvdfb" border="0"></a>
+      <div class="card-content">
+        <h2>D'Hotel & Suites</h2>
+        <p><strong>Information:</strong> <p>D'Hotel & Suites is a 48-room business and boutique hotel situated in the very heart of the city of Rizal Avenue, corner Osmena Street, Dipolog, Mindanao, making it the ideal base for business and leisure travel in Dipolog City.<p>
+<p>The hotel offers free airport transportation, free breakfast, and free wifi for all hotel guests, as well as individual dining venues and convenient facilities.<p>
+<p>D'Hotel & Suites is the perfect choice for every traveler. For food lovers, they have four restaurants that also offer the finest dining experience in the city. <p>
+
+
+       
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+<img src="https://i.ibb.co/31m21fc/image.png" alt="image" border="0"></a>
+      <div class="card-content">
+        <h2>Gwandalan House Boutique</h2>
+        <p><strong>Information:</strong> <p>Gwandalan House Boutique is located in 2 Dipolog-Polanco-Oroquieta Road Highway Lower Turno, Dipolog, Mindanao.<p>
+<p>Hotel Bed & Breakfast offers quaint and unique accommodations in the heart of Dipolog. All beautifully designed rooms feature air conditioning, handcrafted furniture, a flat-screen TV, and a private bathroom.<p>
+<p>Guests can enjoy a plate of sumptuous Filipino or continental breakfast and hotel specialty coffee, all in the comfort of their garden sanctuary.<p>
+
+       
+          
+
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

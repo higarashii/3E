@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Region Guide</title>
+<style>
+body {
+margin: auto;
+font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+overflow: auto;
+background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%,
+rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150,
+1) 98%);
+animation: gradient 15s ease infinite;
+background-size: 400% 400%;
+background-attachment: fixed;
+}
+@keyframes gradient {
+0% {
+background-position: 0% 0%;
+}
+50% {
+background-position: 100% 100%;
+}
+100% {
+background-position: 0% 0%;
+}
+}
+.wave {
+background: rgb(255 255 255 / 25%);
+border-radius: 1000% 1000% 0 0;
+position: fixed;
+width: 200%;
+height: 12em;
+animation: wave 10s -3s linear infinite;
+transform: translate3d(0, 0, 0);
+opacity: 0.8;
+bottom: 0;
+left: 0;
+z-index: -1;
+}
+.wave:nth-of-type(2) {
+bottom: -1.25em;
+animation: wave 18s linear reverse infinite;
+opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+bottom: -2.5em;
+animation: wave 20s -1s reverse infinite;
+opacity: 0.9;
+}
+@keyframes wave {
+2% {
+transform: translateX(1);
+}
+25% {
+transform: translateX(-25%);
+}
+50% {
+transform: translateX(-50%);
+}
+75% {
+transform: translateX(-25%);
+}
+100% {
+transform: translateX(1);
+}
+}
+body {
+font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #265073;
+}
+.container {
+max-width: 800px;
+margin: 20px auto;
+padding: 20px;
+background-color: rgba(45, 149, 150, 0.5);
+border-radius: 15px;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+text-align: center;
+}
+.header {
+text-align: center;
+margin-bottom: 20px;
+color: #9ad0c2;
+}
+.info {
+color: #9affd0c2;
+cursor: pointer;
+
+}
+.additional-info {
+color: #fff;
+}
+.card {
+margin-top: 20px;
+display: flex;
+flex-direction: column;
+background-color: rgba(255, 255, 255, 0.5);
+border-radius: 15px;
+box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+margin-bottom: 20px;
+overflow: hidden;
+transition: all 0.3s ease;
+cursor: pointer;
+}
+.card img {
+width: 100%;
+height: auto;
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+object-fit: cover;
+}
+.card-content {
+padding: 20px;
+}
+.card-content h2 {
+margin-top: 0;
+font-size: 1.5rem;
+color: #333;
+}
+.card-content p {
+color: #666;
+}
+</style>
+</head>
+<body>
+<div>
+<div class="wave"></div>
+<div class="wave"></div>
+<div class="wave"></div>
+</div>
+<div class="container">
+<div class="header">
+
+<p>
+</p>
+</div>
+</div>
+
+<h1>Unwind at Malagos Garden Resort and Chocolate Museum</h1>
+<p> One of the best attractions in Davao is the Malagos Garden Resort. It's a 12-hectare Davao nature theme park and is a one-stop destination for travelers wanting to enjoy the environment and at the same time, find refuge in the serenity of the area.
+
+You can encounter bird species that you can feed as you interact directly with them at the bird feeding dome.<p>
+<p>Along with these natural locations, Malagos is also home to the Philippines' first chocolate museum. The famous tree-to-bark chocolate from Malagos is manufactured in Davao and sold to other countries like Japan.<p>
+
+<p>Malagos also houses the Mindanao Contemporary Art Gallery, which showcases art and history that tackle Mindanao's rich culture.Get close to other animals at the petting zoo, know the habits of butterflies in the butterfly sanctuary, and simply enjoy the great outdoors when you try a Malagos Garden tour.<p>
+
+<img src="<a href="https://gttp.imgix.net/224736/x/0/top-15-tourist-spots-in-davao-mindanao-home-to-mount-apo-hiking-amp-nearby-samal-island-resort-city-4.jpg?auto=compress%2Cformat&ch=Width%2CDPR&dpr=1&ixlib=php-3.3.0&w=883"
+
+alt="image" border="0"></a>
+<h1>How to get there</h1>
+<p>To reach Malagos, you can follow these general directions:<p>
+<p>By Public Transportation:<p>
+<p>Public Transportation: If you prefer public transportation, you can take a jeepney or bus bound for Calinan from Davao City. Once you reach Calinan, you can hire a motorcycle taxi (habal-habal) or a tricycle to take you to Malagos Chocolate Museum.<p>
+<p>It's recommended to verify the specific routes and transportation
+options based on your starting point and current travel conditions.
+Additionally, always exercise caution and follow local traffic regulations
+while traveling.<p>
+</body>
+</html>
+<div class="container">
+<div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+<div class="card" onclick="toggleCardContent(this)">
+<img src="<a
+href="https://cf.bstatic.com/xdata/images/hotel/max1024x768/56867895.jpg?k=05ce8638d6c7fe222a0de8b851ea5a15e4f0f283b5c16b3c745fbbcdae44d269&o=&hp=1"
+alt="image" border="0"></a>
+<div class="card-content">
+<h2>The Pinnacle Hotel and Suites</h2>
+<p><strong>Information:</strong><p>At The Pinnacle Hotel and Suites, guests may enjoy a massage or rent a car to explore the area. The friendly staff can assist with fax/photocopying, laundry service and tour arrangements. Airport transfer and shuttle services are also available at a surcharge.<p>
+
+<p>Fitted with parquet flooring, air-conditioned rooms include a wardrobe, desk and a flat-screen TV with cable channels. Electric kettle, minibar and refrigerator are also provided. The en suite bathroom comes with shower facility, hairdryer and free toiletries.<p>
+
+</div>
+</div>
+<div class="card" onclick="toggleCardContent(this)">
+<img src="<a href="https://ibb.co/JCj4CsP"><img
+src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/403345365.jpg?k=0ada801ff119b529f2ad4d146a27102d57787d7796a15e01132d008b1653fdc3&o=&hp=1"0"></a>
+<div class="card-content">
+<h2>Go Hotels Lanang - Davao</h2>
+<p><strong>Information:</strong> <p>Go Hotels Lanang - Davao offers accommodation amidst the hustle and bustle of Davao City. Free WiFi is available throughout the property.<p>
+<p>The hotel offers a range of amenities and facilities, including
+spacious rooms equipped with modern conveniences, a restaurant serving
+delicious local and international cuisine, and meeting or event spaces for
+various occasions.<p>
+<p>Each room at this hotel is air conditioned and has a flat-screen TV. Rooms are fitted with a private bathroom.
+
+Guests can approach the 24-hour front desk for luggage storage.
+
+Abreeza Mall is 3.1 km from Go Hotels Lanang - Davao, while People's Park is 5 km from the property.</p>
+
+</div>
+</div>
+<div class="card" onclick="toggleCardContent(this)">
+
+<img src="<a href="https://cf.bstatic.com/xdata/images/hotel/max1280x900/525923224.jpg?k=1b0d421f62468b2c259c4556ce49871bc65a55191d65832d284d6a0f56ed8b88&o=&hp=1" alt="image" border="0"></a>
+
+<div class="card-content">
+<h2>AEON SUITES STAYCATION manage by ARIA HOTEL</h2>
+<p><strong>Information:</strong> <p>Featuring free WiFithroughout the property, a sun terrace with a swimming pool, restaurant and fitness centre, AEON SUITES STAYCATION manage by ARIA HOTEL is situated in Davao City. This 4-star hotel offers room service and a kids' club. Some rooms at the property have a patio with a sea view.<p>
+<p>The units are fitted with a microwave, fridge, a kettle, a shower, free toiletries and a desk. Complete with a private bathroom fitted with a bidet and slippers, all rooms at the hotel have a flat-screen TV and air conditioning, and some rooms include a balcony. At AEON SUITES STAYCATION manage by ARIA HOTEL rooms are equipped with bed linen and towels.</p>
+</div>
+</div>
+</div>
+<!-- You have nothing to do here or you have nothing to remove. Do you
+understand?-->
+<script>
+function toggleCardContent(card) {
+const content = card.querySelector(".additional-info");
+content.style.display =
+content.style.display === "none" ? "block" : "none";
+}
+function toggleInfoContent() {
+const info = document.querySelector(".info");
+const content = info.querySelector(".additional-info");
+content.style.display =
+content.style.display === "none" ? "block" : "none";
+}
+</script>
+</body>
+</html>

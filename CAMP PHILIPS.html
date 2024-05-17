@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+        </div>
+
+   <h1>Camp Phillips</h1>
+    <p>Camp Philips is located at Del Monte's headquarters in Manolo Fortich, Bukidnon. Upon entering the community, take a photo stop at the big pineapple statueâ€¦ and have a check if Spongebob is in the house!<p>
+
+<p>Within Camp Phillips, you will also see American-style houses built by previous owners of Del Monte for Del Monte employees. Don't leave without dropping by the souvenir shop. Buy fresh pineapple, delicacies made from pineapple, and pasalubong items at reasonable prices.<p>
+
+<p>Camp Phillips is a community situated in Manolo Fortich, Bukidnon. It is also where the Del Monte Pineapple Plantation is located. It has a vast field of pineapples covering around 9000 hectares of land. A wide area of the place is planted with pineapples that stretch from horizon to horizon.<p>
+
+<p>Upon entering Camp Phillips, one would be able to see a big pineapple statue, a perfect spot for picture taking. One can look around the vast area without seeking any permission from Del Monte as it is open to the public. Inside Camp Phillips, one would be able to see the American style housing project built by the Americans (previous owners of Del Monte) for Del Monte employees.<p>
+
+    <img src="https://i.ibb.co/4dv4hY4/Camp-Phillips-001.jpg" alt="image" border="0"></a>
+
+ <h1>How to Get there</h1>
+<p>To reach Camp Phillips, you can follow these general directions:</p>
+
+<p>By Land Transport:</p>
+
+<p>1. From Cagayan de Oro City: Cagayan de Oro City is the closest major city to Camp Phillips. From the city, you can take a bus or van bound for Manolo Fortich, a municipality in Bukidnon where Camp Phillips is located. The journey takes approximately 1 to 2 hours. In Manolo Fortich, you can hire a tricycle or take a jeepney to Camp Phillips.</p>
+<p>2. From other locations: If you are coming from other areas, it's best to check bus or van routes that go to Manolo Fortich. You can inquire at local transportation terminals for the most up-to-date information on schedules and fares.</p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Nearby Hotels</h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://i.ibb.co/SQqvVGb/m17-1024x681.jpg" alt="image" border="0"></a>
+      <div class="card-content">
+        <h2>Mallberry Suites Business Hotel </h2>
+        <p><strong>Information:</strong><p>The Mallberry Suites Business Hotel in Cagayan de Oro City offers a luxurious and comfortable stay for both business and leisure travelers.</p>
+<p>With spacious and well-appointed rooms, modern amenities, and excellent service, guests can expect a seamless experience. The hotel also features a fitness center, pool, and restaurant, making it an all-in-one destination for relaxation and productivity.</p>
+<p>Overall, Mallberry Suites Business Hotel is a hotel with great comfort and excellent service according to most hotel's guests. With all facilities offered, Mallberry Suites Business Hotel is the right place to stay.</p> 
+
+                   <p>Mallberry Suites Business Hotel is a hotel in a good neighborhood, which is located at Osmena St, Cagayan de Oro Center, Misamis Oriental. Not only well positioned, but Mallberry Suites Business Hotel is also one of hotels near the following Mount Kitanglad within 47.82 km and Mount Kibuwa within 49.84 km.
+        </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+     <img src="https://i.ibb.co/KzGFyZK/19a0edd4-z.jpg" alt="image" border="0"></a>
+      <div class="card-content">
+        <h2>Limketkai Luxe Hotel</h2>
+        <p><strong>Information:</strong> <p>"Enjoy a Luxury Experience here in our Limketkai"</p>
+<p>Limketkai Luxe Hotel stands for a solid gold, ready to deliver the very best in the hospitality service. It features 213 guest rooms fitted with state-of-the-art amenities for the convenience and comfort of its guests.</p>
+<p>Limketkai Luxe Hotel is the tallest and biggest hotel in CDO. Endorsed as the first Gold Hotel in the Philippines, it has also been certified as the first LEED (Leadership in Energy and Environmental Design) building in the Philippines as certified by the U.S. Green Building Council in 2013 and 2014.</p>
+<p>Limketkai Luxe Hotel is located approximately 45-minutes away from laguindingan airport and within the city center with shopping malls, restaurants, condominiums, transport service, pasalubong centers, market and seaport. Our services, facilities and amenities are designed to make our guests' experience truly luxurious and memorable.</p>
+
+            </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://i.ibb.co/Dtt4JC2/img-20180414-080241-largejpg.jpg" alt="image" border="0"></a>
+      <div class="card-content">
+        <h2>Newdawn Hotel Plus</h2>
+        <p><strong>Information:</strong> <p>Staying at New Dawn Hotel Plus is a good choice when you are visiting Cagayan de Oro City Center. This hotel is very easy to find since it is strategically positioned close to public facilities. And it is located at FJHV+JQ7 Newdawn Hotel Plus, Don Apolinar Velez St.</p>
+<p>For you, travelers who wish to travel comfortably on a budget, New Dawn Hotel Plus is the perfect place to stay that provides decent facilities as well as great services.</p>
+<p>If you plan to have a long-term stay, staying at New Dawn Hotel Plus is the right choice for you. Providing wide range of facilities and great service quality, this accommodation certainly makes you feel at home.</p>
+
+              </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

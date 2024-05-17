@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+         </div>
+
+
+
+      <h1>DAHICAN BEACH</h1>
+
+<p>Dahican Beach in the Philippines is a breathtaking natural paradise featuring long stretches of white sand and crystal-clear waters.</p>
+<p>It is renowned as a destination for surfers and skimboarders, thanks to its consistent waves that attract water sports enthusiasts.</p>
+<p>Aside from water activities, tourists can also appreciate the beach's natural beauty, swim, and observe local fishermen who showcase traditional fishing techniques. Explore the surrounding attractions, such as the enigmatic Dead City.</p>
+
+<div style="text-align:center;"></div>
+<img width="320" src="https://i.ibb.co/vzVXBJy/received-959208562248082.jpg" alt="received-959208562248082" </a>
+
+<h1>How to get there</h1>
+
+<p>Has to fly to Davao City, then take either a bus or a van going to Mati (travel time: from 3-6 hours! ... vans are definitely faster) and, from the bus or van terminal there, take a motorcycle ("habal-habal") to the beach. It would take you around 15-20 minutes to reach it.</p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+
+      <a href="https://ibb.co/gWLJymj"><img src="https://i.ibb.co/ykcq0df/D4-D446-DF-8346-4-AFF-B06-F-02-AC82-A5-B870.jpg" alt="Hotel 1" />
+      <div class="card-content">
+        <h2>Adelina Hotel and Suites</h2>
+        <p><strong>Information:</strong> 
+    <p>ADELINA HOTEL & SUITES is a premier five-story boutique hotel located at the heart of Mati City, Province of Davao Oriental, Philippines.</p>
+
+<p>The hotel features a chic and elegant Mandaya-inspired architectural design, representing the locals’ utmost devotion to their culture, environment, and Mati’s rapidly growing economy.The intricate designs of “Dagmay,” a sacred Mandaya cloth can be seen in the hotel’s interiors. The cloth symbolizes high reverence towards the creation of “Labaw na Magbabaya” (God) and the importance of the rights, roles, and responsibilities of their clan members.</p>
+
+<p>Enjoy free Wi-Fi: We believe that when a hotel advertises free WiFi, they should provide travelers with a fast and reliable connection.</p>
+<p>Concierge service: Top-tier hotels have a lot to recommend them: luxurious spas, twice-daily room service and superb on-site restaurants.</p>
+<p>Pool access: Hotel has pool room, in particular, hotels based in big cities might require keycard access to get into the pool. Spa, and amenity access.</p>
+<p>Ballroom: Kasamongan Ballroom is the hotel’s primary events facility that can comfortably accommodate 300 individuals. Kasamongan which means reunion of families.</p>
+<p>Cafe: Cafe Adelina offers a versatile space for guests whether for a cup of coffee with their business partners or casual dining with friends under a relaxed ambiance of heritage-meets-modernity. The Cafe features a fusion of Mati’s ethnic dishes, contemporary cuisine, and the Adelina’s signature recipes.</p>
+<p>Pool: A serene retreat without venturing to Dahican Beach, Adelina Hotel and Suites offers a luxurious pool on the ground floor. Guests can indulge in classic drinks at the pool bar. The swimming pool is accessible for in-house guests from 7 am to 8 pm.</p>
+
+            </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+    <a href="https://ibb.co/Lgn4H0S"><img src="https://i.ibb.co/94sRSpn/E2-B240-D5-DB68-477-F-991-A-638-E85-D875-BF.jpg" alt="Hotel 2" />
+      <div class="card-content">
+        <h2>Costa Lucas</h2>
+        <p><strong>Information:</strong> 
+    <p>Costa Lucas , nestled in the picturesque town of Mati in the Philippines, is a pristine stretch of coastline known for its powdery white sand and crystal-clear waters. Spanning several kilometers, the beach offers a plethora of activities for its visitors, including swimming, sunbathing, beach volleyball, and picnicking, ensuring a fun-filled day out for everyone.</p> 
+    <p>Costa Lucas Beach has many amenities, including lifeguards on duty, bathroom access, and it's also pet-friendly, allowing dogs.</p>
+     <p>However, visitors should note that facilities for individuals with disabilities, nudist areas, camping options, and surfing opportunities are not available here.</p>
+
+             </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+   <a href="https://ibb.co/yp2pQwr"><img src="https://i.ibb.co/f9J9xhs/1-BA67-A3-D-FA0-F-4-B82-B5-D8-4527-DAC0719-F.jpg" alt="Hotel 3" />
+      <div class="card-content">
+        <h2>Lane's Kalapyahan</h2>
+        <p><strong>Information:</strong>
+    <p>Lane’s kalapyahan in Dahican is our family's all time popular choice when we want to go to the beach. And the best part is that there is no shortage of resorts to visit in Mati.</p>
+<p>We lately had a trip to La-ne's Kalapyahan. As known, Dahican offers one of the most stunning stretch of coastline. That's where the resort is located. They also have wide pool area where both the young and young-at-heart can definitely enjoy. Beach, sun, fun and good food - that's what they have in store for their guests.</p>
+<p>They have a restaurant called La-ne's Kan-Anan, and a bar within the vicinity of the resort, where they offer wide selection of delicious food and drinks at a reasonable price. The room we booked was enough for 4 people, has aircondition, TV, cabinet, own bathroom w/ hot/cold shower, and a veranda with chairs and table, plus free breakfast and complimentary coffee. The ambiance of the resort is cozy, peaceful and relaxing, perfect for a family outings. Great thing is that the whole resort is well maintained and clean. Has lots of trees and open spaces.</p>
+
+             </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  
+  </script>
+</body>
+
+</html>

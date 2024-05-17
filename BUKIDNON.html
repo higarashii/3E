@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+        </div>
+
+ 
+   <h1>Bukidnon Provincial Capitol</h1>
+    <p>Found along the way to Kaamulan Park, the Bukidnon Provincial Capitol building is one of the major landmarks in Malaybalay. It is located at San Victores St, Malaybalay, 8700 Bukidnon. It is an interesting cultural photo stop if ever you're in the area. Built in 1933 and funded by the Americans, the building features colonial-inspired architecture and stands as one of the more outstanding kapitolyos built during the Commonwealth period.<p>
+
+<p>Bukidnon Provincial Capitol in Northern Mindanao, Philippines is a picturesque destination surrounded by lush greenery and towering mountains. The tranquil atmosphere and cool climate make it a perfect retreat for nature lovers and adventure seekers. Explore the vibrant culture, indulge in delicious local cuisine, and uncover the rich history of this charming province.<p>
+
+<p>Immerse yourself in the vibrant culture of Bukidnon by witnessing colorful tribal festivals, traditional dances, and intricate handicrafts. Learn about the heritage of the indigenous tribes through interactive cultural experiences and engage in community celebrations that showcase the province's rich cultural diversity.<p>
+
+    <img src="https://i.ibb.co/ZLHNDjj/2560px-Bukidnon-Provincial-Capitol-front-left-San-Victores-Malaybalay-Bukidnon-12-07-2023.jpg" alt="image" border="0"></a>
+
+ <h1>How to Get there</h1>
+<p>To reach Bukidnon Provincial Capitol, you can follow these general directions:</p>
+
+<p>By Land Transport:</p>
+
+<p>1. From Cagayan de Oro: Cagayan de Oro City is the gateway to Bukidnon. You can take a bus or va from Agora Terminal in CDO City to Malaybalay City, the capitl of Bukidnon. Once you reach Malaybalay, you can hire a trcicyle or take a taxi to the Bukidnon Provincial Capitol  .</p>
+<p>2. From Davao City: If you are coming from Davao City, you csn take a bus or van bound for Malaybalay City. Once you reach the destination, you ride tricycle or take a taxi to reach Bukidnon Provincial Capitol.</p>
+<p>3. From other locations: its best to check bus or van routes that go directly to Malaybalay City.  </p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Nearby Hotels</h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://i.ibb.co/Dtt4JC2/img-20180414-080241-largejpg.jpg" alt="image" border="0"></a>
+      <div class="card-content">
+        <h2>Newdawn Hotel Plus </h2>
+        <p><strong>Information:</strong><p>Staying at New Dawn Hotel Plus is a good choice when you are visiting Cagayan de Oro City Center. This hotel is very easy to find since it is strategically positioned close to public facilities.And it is located at FJHV+JQ7 Newdawn Hotel Plus, Don Apolinar Velez St.</p>
+<p>For you, travelers who wish to travel comfortably on a budget, New Dawn Hotel Plus is the perfect place to stay that provides decent facilities as well as great services.</p>
+<p>If you plan to have a long-term stay, staying at New Dawn Hotel Plus is the right choice for you. Providing wide range of facilities and great service quality, this accommodation certainly makes you feel at home.</p> 
+
+       </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://i.ibb.co/B6gwdLS/photo0jpg.jpg" alt="image" border="0"></a>
+      <div class="card-content">
+        <h2>Win Min Transient Inn</h2>
+        <p><strong>Information:</strong> <p>Winmin Transient Inn, a 1.5 star hotel located in the vibrant city of Cagayan De Oro, Philippines. With its prime location and comfortable accommodations, this hotel offers a convenient and enjoyable stay for both business and leisure travelers.</p>
+<p>Step into Winmin Transient Inn and experience a warm and inviting atmosphere. The hotel was last renovated in 2018, ensuring that guests are met with modern amenities and stylish decor. With a total of 41 rooms, there is ample space to accommodate guests, making it an ideal choice for solo travelers, couples, and small groups.</p>
+<p>Winmin Transient Inn in Cagayan De Oro, Philippines, is renowned for its outstanding convenience facilities that cater to the needs of every guest. With a wide range of amenities, this hotel ensures that guests have a hassle-free and comfortable stay.</p>
+<p>Also, Winmin Transient Inn offers easy access to a myriad of cultural landmarks and attractions. Immerse yourself in the rich history and artistry of the city by visiting nearby landmarks such as Xavier Museum, Museum of Three Cultures, and City Museum Of Cagayan De Oro.</p>
+
+              </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+     <img src="https://i.ibb.co/zFcS3Yz/a35977fd00a6b461a58b665b35c11995.jpg" alt="image" border="0"></a>
+      <div class="card-content">
+        <h2>Red Planet Cagayan De Oro</h2>
+        <p><strong>Information:</strong> <p>The Red Planet hotel in Cagayan De Oro is strategically located at the center of the bustling city. It's the ideal jump off point for guests who want to explore the best of the city and beyond.</p>
+<p>Whether you're visiting for business or travelling for leisure, Red Planet hotel is the right choice for you.</p>
+<p>The Red Planet hotel in Cagayan De Oro features 159 modern rooms. Each room comes complete with quality custom-made beds with upscale linen, air-conditioning, in-room safe, hair dryer, ceiling fan, 32-inch flat screen TV, and en suite bathroom with soothing power shower.</p>
+<p>Guests travelling for work can use the room's private workstation as well as the complimentary high-speed WIFI for a seamless connection. All rooms and furnishings at the Red Planet Hotels were thoughtfully designed to ensure a quality and comfortable stay for all kinds of guests.</p>
+
+             </div>
+    </div>
+  </div>
+
+
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

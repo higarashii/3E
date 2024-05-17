@@ -1,0 +1,251 @@
+DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+         </div>
+
+ 
+   <h1>Tinuy-an Falls</h1>
+    <p>Tinuy-an Falls stands as a majestic testament to nature's splendor, nestled amidst the verdant forests of Bislig City, Surigao del Sur, in the Philippines. Often hailed as the "Niagara Falls of the Philippines," this breathtaking cascade captivates the senses with its sheer grandeur and pristine beauty.<p>
+
+<p>As you approach Tinuy-an Falls, the thundering roar of cascading water heralds your arrival, drawing you closer to its awe-inspiring presence. Emerging from the lush greenery, the waterfall reveals itself in all its majestic glory — a symphony of rushing water plummeting from a height of over 55 meters, spanning an impressive width of 95 meters.<p>
+
+<p>The turquoise waters of Tinuy-an Falls beckon visitors to take a refreshing dip in its natural pool. Whether you're seeking a respite from the tropical heat or simply yearning for a leisurely swim, the cool, crystal-clear waters provide the perfect oasis for relaxation and rejuvenation. Tinuy-an Falls not only offers swimming as its activity, tourists can also do Bamboo Rafting, Picnicking and Nature Appreciation, Photography and Sightseeing, and some Exploration while Hiking.<p>
+
+  <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Tinuy-an_Falls%2C_Bislig_City%2C_Philippines.jpg"></a>
+
+	<h1>How to get there</h1>
+<p>To reach Tinuy-an Falls, you can follow these general directions:<p>
+
+<p>By Public Transportation:<p>
+
+<p>1.  Fly from Manila to Butuan City's Bancasi Airport (BXU) or  Take a bus from Manila to Butuan City. Several bus companies offer trips to Butuan City from various terminals in Manila.<p>
+<p>2. From Butuan City, take a bus or van to Bislig City. The trip usually takes around 5 to 6 hours. Upon reaching Bislig City, you can hire a motorcycle (habal-habal) or tricycle to take you to Tinuy-an Falls. It's approximately a 30 to 45-minute ride from Bislig City proper to the falls.<p>
+
+<p>By Private Vehicle:<p>
+<p>1. Start your journey in Manila and head southbound on the Pan-Philippine Highway (AH26) or South Luzon Expressway (SLEX).
+Continue on AH26 until you reach the city of Bislig in Surigao del Sur province, Mindanao. Once in Bislig, follow the signs leading to Tinuy-an Falls.<p>
+<p>2. The journey by private vehicle typically takes around 30 to 35 hours, depending on traffic conditions, road conditions, and stops along the way.<p>
+
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/1a/cd/1c/avisha-suites.jpg?w=700&h=-1&s=1"></a>
+      <div class="card-content">
+        <h2>Avisha Suites</h2>
+        <p><strong>Information:</strong><p> One of the premier destination for a luxurious and unforgettable stay in the captivating town of Hinatuan. Situated amidst the natural beauty of Surigao del Sur, Avisha Suites stands as a beacon of sophistication and comfort, offering guests a sanctuary of elegance and tranquility.<p>
+<p> Avisha Suites provide an unparalleled hospitality and world-class amenities to ensure that every aspect of the guests stay surpasses their expectations. Whether they visited for a relaxing getaway, a romantic retreat, or an adventure-filled exploration of Hinatuan's wonders<p>
+<p>Avisha Suites offers an array of facilities and services designed to cater to guest's every need. Rejuvenate the body and mind at the spa and wellness center, savor delectable cuisine at their on-site restaurant, or simply unwind by the poolside and bask in the warm glow of the sun.</p>
+
+             </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://media-cdn.tripadvisor.com/media/photo-s/03/bb/08/3b/florland-resort.jpg"></a>
+      <div class="card-content">
+        <h2>Florland Resort</h2>
+        <p><strong>Information:</strong> <p> Florland Resort is a hidden gem nestled in the heart of the Philippines, offering a tranquil retreat amidst the lush landscapes of Bislig City, Surigao del Sur, in the beautiful island of Mindanao. Tucked away from the hustle and bustle of urban life, this enchanting resort beckons travelers seeking solace in nature's embrace.<p>
+<p>As you enter Florland Resort, you're greeted by the harmonious symphony of rustling leaves and gentle whispers of the breeze. The resort's rustic charm blends seamlessly with its natural surroundings, creating an ambiance of peace and tranquility.Accommodation options at Florland Resort cater to a variety of preferences, ranging from cozy cottages nestled amidst the verdant gardens to spacious rooms overlooking the scenic landscape. Each accommodation exudes warmth and comfort, providing a sanctuary where guests can unwind and reconnect with nature.<p>
+
+
+              </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/483588367.jpg?k=d11a95238be1031f86b76f0d694fa0f792e828c27be602824889d0ed81112c6d&o=&hp=1"></a>
+      <div class="card-content">
+        <h2>GLC Suites in Bislig</h2>
+        <p><strong>Information:</strong><p> GLC Suites in Bislig is a tranquil haven nestled in the heart of Bislig City, Surigao del Sur, Philippines. Surrounded by lush greenery and serene landscapes, this charming hotel offers a perfect blend of comfort and convenience for travelers seeking a memorable stay.<p>
+<p>GLC Suites welcomes guests with its warm hospitality and inviting ambiance. The hotel features modern architecture with touches of local design elements, creating a unique and cozy atmosphere. Whether you're traveling for business or leisure, GLC Suites provides a sanctuary where you can relax and rejuvenate amidst the beauty of Bislig.</p>
+
+              </div>
+    </div>
+  </div>
+
+  
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+</html>

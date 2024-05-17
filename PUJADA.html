@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+          </div>
+
+   
+
+      <h1>PUJADA BAY</h1>
+
+<p>Pujada Bay, sometimes (usually historically) called Pujaga Bay, is a bay on the Pacific coast of the southern Philippine island of Mindanao.</p>
+<p>It is an arm of the Philippine Sea in Davao Oriental province formed by the Guanguan Peninsula which separates it from the Mayo Bay on the east and the Pujada Peninsula which separates it from Davao Gulf on the west. Pujada Bay borders Mati, the province's capital and largest city, with its port and city proper situated at its head.</p>
+<p>It is entered between Lamigan Point on the east and Tumago Point on the west, with the Pujada Island dividing its entrance into two channels. There are three other islands on the bay, namely Uanivan, Oak and Ivy islands.</p>
+
+
+<div style="text-align:center;"></div>
+<img width="320" src="https://i.ibb.co/KVRwcKM/received-741003624914007.jpg" alt="received-741003624914007" </a> 
+
+<h1>How to get there:</h1>
+
+<p>There are many ways to get to Pujada Bay as numerous resorts offer day tours. However, you have to get to Mati City first. Mati is a 4-hour drive from Davao. To get there, you have two options: public transportation or renting a car</p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+
+
+     <a href="https://imgbb.com/"><img src="https://i.ibb.co/gv5LKHs/1-C826-D06-6175-4-EBF-BB94-D69-A4-F761-A7-F.jpg" alt="Hotel 1" />
+      <div class="card-content">
+        <h2>Adelina Hotel and Suites</h2>
+        <p><strong>Information:</strong> 
+    <p>ADELINA HOTEL & SUITES is a premier five-story boutique hotel located at the heart of Mati City, Province of Davao Oriental, Philippines. The hotel features a chic and elegant Mandaya-inspired architectural design, representing the locals’ utmost devotion to their culture, environment, and Mati’s rapidly growing economy. The intricate designs of “Dagmay,” a sacred Mandaya cloth can be seen in the hotel’s interiors. The cloth symbolizes high reverence towards the creation of “Labaw na Magbabaya” (God) and the importance of the rights, roles, and responsibilities of their clan members.</p>
+
+<p>Enjoy free Wi-Fi: We believe that when a hotel advertises free WiFi, they should provide travelers with a fast and reliable connection.</p> 
+<p>Concierge service: Top-tier hotels have a lot to recommend them: luxurious spas, twice-daily room service and superb on-site restaurants.</p>
+<p>Pool access: Hotel has pool room, in particular, hotels based in big cities might require keycard access to get into the pool. Spa, and amenity access.</p>
+<p>Ballroom: Kasamongan Ballroom is the hotel’s primary events facility that can comfortably accommodate 300 individuals. Kasamongan which means reunion of families.</p>
+<p>Cafe: Cafe Adelina offers a versatile space for guests for a cup of coffee with their business partners or casual dining with friends under a relaxed ambiance of heritage-meets-modernity. The Cafe features a fusion of Mati’s ethnic dishes, contemporary cuisine, and the Adelina’s signature recipes.</p>
+<p>Pool: A serene retreat without venturing to Dahican Beach, Adelina Hotel and Suites offers a luxurious pool on the ground floor. Guests can indulge in classic drinks at the pool bar. The swimming pool is accessible for in-house guests from 7 am to 8 pm.</p>
+    
+              </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+   <a href="https://ibb.co/B2NcXMJ"><img src="https://i.ibb.co/JjQmfJT/803-BFC5-E-09-A5-4903-A5-C2-D2-A27-A6-FA07-A.jpg" alt="Hotel 2" />
+      <div class="card-content">
+        <h2>The Lorenz</h2>
+        <p><strong>Information:</strong> 
+    <p>The lorenz is Located in Davao City, Domicilio Lorenzo is within a convenient 5-minute walk from the entertainment hub Matina Town Square and 450 metres from NCCC Mall. The property features an outdoor swimming pool and provides free WiFi access throughout the property.</p>
+
+<p>Offering beautiful views of the lush garden, air-conditioned rooms are equipped with an electric kettle, a flat-screen cable TV, and a refrigerator. The en suite bathrooms come with hot and cold shower facility along with free toiletries. Select room are equipped with a safety deposit box.</p>
+
+<p>Domicilio Lorenzo provides luggage storage and complimentary parking on site. Guests have access to a common guest kitchen. Alternatively, the staff can also assist with food delivery, on request. Additional towels and linens are available at extra charges.</p>
+
+             </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+    <a href="https://ibb.co/dcDpJn5"><img src="https://i.ibb.co/Mh715qC/DCCAF80-E-6-DF2-4341-A336-C2-E036807-E40.jpg" alt="Hotel 3" />
+      <div class="card-content">
+        <h2>Sheepys Surfside Beach Resort</h2>
+        <p><strong>Information:</strong> <p>Mati located along Dahican Bobon Road</p>
+   <p>Sheepy’s Surfside Beach Resort is a great accommodation if you are looking for a comfortable and nice place to stay in Mati. It is a beachfront property that is located along Dahican-Bobon Road.</p>
+   <p>This resort is very accessible and it’s just few minutes away from the known Dahican Beach and pujada bay Honestly, every corner of Sheepy’s Surfside Beach Resort is great for picture taking.</p>
+    <p>I like how each photo turned out especially with a group of friends who are very game and fun to be with to the point that even in front of the camera, we tease each other. Less decent photos I guess, but lots of candid ones which I love. Anyway, for more photos,</p>
+   
+             </div>
+    </div>
+  </div>
+
+
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+    
+  </script>
+</body>
+
+</html>

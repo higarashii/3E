@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+     </div>
+
+     <h1> Magellan’s Landing Site </h1>
+    <p> Magellan’s Landing Site in Agusan del Norte is a historical landmark that commemorates the arrival of the Portuguese explorer Ferdinand Magellan in the Philippines. Situated at the mouth of the Masao River, this site is believed to be where Magellan and his crew set foot on Philippine soil during their circumnavigation of the globe in 1521. A statue and several markers now stand at this location, serving as a reminder of this significant event in the country’s history. The site is not only a testament to the beginning of Christianity in the Philippines but also marks the first recorded instance of international relations and diplomacy between Europe and the Philippines. <br>
+
+Today, Magellan’s Landing Site is a place of reflection and education for visitors and locals alike. While the beach itself may be modest and somewhat unadorned, the historical value of the site provides a deep sense of connection to the past. It is a poignant spot for those interested in the rich tapestry of Philippine history and the global impact of the Age of Exploration. The site’s location near the entrance to the Masao River makes it easily accessible for those looking to delve into the historical narratives that have shaped the nation</p>
+
+    <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/e1/d4/59/best-shot.jpg"  width="400" width="400"></a>
+
+	<h1>How to get there</h1>
+<p>Look for a tricycle near the PNP Hospital (across the Libertad Fruit Vendors Association market).<BR>
+Find the sign that says “Barangay Ambago” at the corner of this street and the main J.C. Aquino Ave.<BR>
+For a fee ranging from PHP 200 to PHP 300, the tricycle can take you to visit the Balangay Shrine Museum, Magellan’s Landing Site, and the Bood Promontory Eco Park. The fee usually includes the trip back to the main avenue
+
+
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://q-xx.bstatic.com/xdata/images/hotel/max1024x768/231802918.jpg?k=6ebf5afb469e93bd89661e5aefc0c69c84d679948db85f1e8304dca936d65644&o=&s=1024x" alt="image" border="0"></a>
+      <div class="card-content">
+        <h2>Almont Inland Resort
+</h2>
+        <p><strong>Information:</strong><p>Amidst the city's offerings, Almont Inland Resort and Convention Center is located at J.C. Aquino Ave., Butuan City 8600 Butuan City Caraga. It is the place to experience the best of Butuanon warmth and hospitality. Here, one can take a breather and engage in a host of recreational and relaxing activities, including swimming, tennis and fishing. It is where one can indulge in business affairs at a leisurely pace. Conveniently located, this inland resort is close to the city center and is just 10 minutes away from the airport. Here, you'll find a four-hectare haven for corporate events, family and romantic celebrations and respite from hectic city life. Located at the capital of Caraga, the resort plays host to numerous conventions and seminars, bringing together visitors from across the northern Mindanao region. We invite you to embrace the charm of historic Butuan and make us your home away from home.
+        <!--In this part, you will add information about this place, and when you add a new paragraph/info, just enclose it with <br /> tags. -->
+        <p class="additional-info" style="display: none">
+                 </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://pix10.agoda.net/hotelImages/734814/-1/09d9c74fe5a10db7912f6f07c2b4b7ed.jpg?s=1024x768" alt="image" border="0"></a>
+      <div class="card-content">
+        <h2>Go Hotels Butuan </h2>
+        <p><strong>Information:</strong> <p> Go Hotels Butuan is located at Robinsons Place Butuan, J.C. Aquino Ave., Brgy. Bayanihan, Butuan City 8600 Butuan City Caraga. Go Hotels Butuan is a value-oriented hotel that offers modern and comfortable accommodations for travelers. It is the first Go Hotels property to open in Mindanao and is conveniently located within Robinsons Place Butuan, providing easy access to shopping and dining options. The hotel features 104 rooms, ranging from 16 to 22 square meters in size, equipped with amenities such as in-room safes, 24-hour CCTV security, free Wi-Fi, basic toiletries, private bathrooms with hot and cold rain showers, and 32" LCD TVs with cable. The rooms are designed with guests’ comfort in mind, featuring chiropractic and high-quality non-allergenic pillows, 100% cotton sheets with duvet covers, and individually controlled air conditioning units. For business travelers, the hotel also offers conference rooms that can accommodate 20 to 80 persons</p>
+
+             </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://cdn.logitravel.it/wsimgresize/resize/830/650/s3-eu-west-1.amazonaws.com/logs3euw1cdn/cloudcontent/fotos/agregadorHotelero/0028/11236/2811236/26.jpg?f=14955830" alt="image" border="0"></a>
+      <div class="card-content">
+        <h2> Watergate Hotel </h2>
+        <p><strong>Information:</strong> <p>The Watergate Hotel is the first boutique hotel in the Caraga Region. It is situated right in downtown Butuan, making it convenient for both business and leisure travelers. The hotel is located Jose Rosales Ave, Limaha, Butuan, Philippines, 8500  near government centers, business offices, and local malls. Gaisano and the proposed SM City Mall are just 500 meters away from the hotel grounds . The Watergate Hotel offers a unique experience with its boutique amenities and unparalleled service. Each room is meticulously crafted, featuring sea green and lime accents, along with robust furnishings that reflect the essence of Butuan.The Watergate Hotel embodies the transformation of Butuan City, offering modern elegance, practicality, and relaxation. Whether you’re here for business or leisure, it’s a top choice for a comfortable stay. </P>
+           </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

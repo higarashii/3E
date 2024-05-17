@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+    </div>
+
+   <h1>Lumondo Falls</h1>
+    <p>Lumondo Falls is situated in Barangay Budlingin, Alegria, Surigao del Norte. Lumondo Falls is being dubbed as a Neglected Gem of Nature in Surigao del Norte. It is an amazing waterfalls in the province with around 20 meters drop. This falls is at its raw form, preserved and untouched.<p>
+
+<p>Lumondo Falls is approximately 2.5kms from the national highway and 51.5 kms from the nearest airport(Surigao Domestic Airport). From the crossroad of the national highway along Brgy. Don Julio Ouano, Alegria, SDN, one can sport a ride with a habal-habal up to its Information  Center towering the nearby location of the actual water drop.<p>
+
+<p>One can find huge boulders below the cascading waters. There are also plenty of flora and fauna and different species of birds. This is really 99% at its natural form with less or no improvements made. One have to trek on a mountain trail leading to the falls.<p>
+
+<p>Visitors to Santiago City often find themselves drawn to the vibrant atmosphere of the plaza, whether it's to unwind after a day of exploring the city or to immerse themselves in the local culture and community spirit.<p>
+
+    <img src="https://i.ibb.co/m9jwLSY/Lumondo-Falls.jpg" alt="Lumondo-Falls" border="0"></a>
+
+    <h1>How to get there</h1>
+<p>To reach Lumondo Falls, you can follow these general directions:<p>
+
+<p>Getting there is as easy as 1-2-3! The falls is approximately 2.5 kilometres away from the national highway of Alegria. From Eskina (crossroad) Don Julio take a habal habal (motorcycle for hire with flat timber wings) up to the Tourist Information Center towering the nearby location of the actual water drop.<p>
+
+<p>Expect the more or less 10 minutes motorcycle ride to be rocky since the road going to Barangay  Budlingin is rough or not yet fully paved . From the tourist Information Center be prepared to 154 steps trail going down to the location of the majestic falls.  Bring foods and water- there are no stores or any food stalls near to the location of the waterfalls.</p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://i.ibb.co/9wwdLQQ/almont-inland-resort.jpg" alt="almont-inland-resort" border="0"></a>
+      <div class="card-content">
+<h2>Almont Inland Resort</h2>
+        <p><strong>Information:</strong><p>Amidst the city's offerings, Almont Inland Resort and Convention Center is the place to experience the best of Butuanon warmth and hospitality. Here, one can take a breather and engage in a host of recreational and relaxing activities, including swimming, tennis and fishing. It is where one can indulge in business affairs at a leisurely pace.<p>
+<p>Located at the capital of Caraga, the resort plays host to numerous conventions and seminars, bringing together visitors from across the northern Mindanao region. We invite you to embrace the charm of historic Butuan and make us your home away from home.<p>
+<p>Conveniently located, this inland resort is close to the city center and is just 10 minutes away from the airport. Here, you'll find a four-hectare haven for corporate events, family and romantic celebrations and respite from hectic city life.</p>
+
+             </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://i.ibb.co/jfSDW3K/hotel-oazis-1.jpg" alt="hotel-oazis-1" border="0"></a>
+      <div class="card-content">
+        <h2>Hotel Oazis</h2>
+        <p><strong>Information:</strong> <p>Welcome to Hotel Oazis, your Butuan “home away from home.” Hotel Oazis aims to make your visit as relaxing and enjoyable as possible, which is why so many guests continue to come back year after year.<p>
+<p>Hotel Oazis offers guests an array of room amenities including a kitchenette, air conditioning, and a refrigerator, and getting online is possible, as free wifi is available.<p>
+<p>The hotel offers a 24 hour front desk, a concierge, and room service, to make your visit even more pleasant. The property also features a pool and free breakfast. Guests arriving by vehicle have access to free parking.</p>
+
+              </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://i.ibb.co/mtDQYtk/download-1.jpg" alt="download-1" border="0"></a>
+      <div class="card-content">
+        <h2>Buddha's Surf Resort</h2>
+        <p><strong>Information:</strong> <p>Set in the heart of the Siargao Island Surf community, Buddha's Surf Resort gives you a true local surfing experience.<p>
+<p>Located between the busy Cloud 9 and the town of General Luna, the resort is ideal for travelers and surfers alike looking for good island vibes. The resort is comfortable with a laid back atmosphere and has easy access to everything you desire.<p>
+
+              </div>
+    </div>
+  </div>
+
+    <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

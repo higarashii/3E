@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+      </div>
+
+  >
+
+   <h1> ECO PARK </h1>
+    <p> If you're into adventures, a nature lover or an outdoor enthusiast, then the latest addition to the growing tourism sites in SOCCSKSARGEN region or SOX is for you - the Lebak Katunggan Coastal Eco Park.<p>
+
+<p> Located in Brgy. Taguisa, Lebak, Province of Sultan Kudarat, Lebak Katunggan Coastal Eco Park was officially launched by the Department of Tourism-12 and LGU-Lebak last August 2017. The 720-hectare mangrove forest features a 1.6 kilometer boardwalk which leads to Taguisa Beach.<p>
+
+<p> Since its launching, tourists have started visiting the mangrove park.
+
+Visitors will surely enjoy the trek through the boardwalk and the sight of a thick mangrove forest, go boating, and enjoy the beach. Local delicacies and seafood are available at Taguisa Beach. In the afternoon, sunset watching is not to be missed.<p>
+
+   <a href="https://imgbb.com/"><img src="https://i.ibb.co/7nRMXVb/6-A12-F7-AE-D4-B8-450-F-952-F-C6-C6616-BE9-DA.jpg" alt="6-A12-F7-AE-D4-B8-450-F-952-F-C6-C6616-BE9-DA" border="0"></a>
+
+	<h1>How to get there</h1>
+<p>To reach ECO PARK, you can follow these general directions:<p>
+
+<p>By Public Transportation:<p>
+
+<p>1. From Manila, fly directly to General Santos City, South Cotabato. From the airport, make your way to the bus terminal and take a bus bound for Koronadal City (Marbel).<p>
+<p>2. Travel time is about an hour and fare is around 70 pesos. From Koronadal bus terminal, take another bus to Isulan, Sultan Kudarat. c/o Pinoy Adventurista.<p>
+
+<p>By Private Vehicle:<p>
+<p>1. You can take a car going to eco park. <p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+       <a href="https://imgbb.com/"><img src="https://i.ibb.co/d2BVMvz/908-C8-FA3-407-D-4-A2-D-A8-E5-1-E1-BA699-C1-B5.jpg" alt="908-C8-FA3-407-D-4-A2-D-A8-E5-1-E1-BA699-C1-B5" border="0"></a>
+
+      <div class="card-content">
+      <div class="card-content">
+        <h2> Monroe Hotel </h2>
+        <p><strong>Information:</strong><p> Monroe Hotel
+
+An excellent choice for travelers visiting Ca'n Picafort, offering a budget friendly environment alongside.</p>
+<p> Overall, building that provides lodging, meals, and other services to the traveling public on a commercial basis. A motel performs the same functions as a hotel but in a format designed for travelers using automobiles. Inns have existed since very ancient times to serve merchants and other travelers.</p>
+
+         </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://ibb.co/ct8SFQH"><img src="https://i.ibb.co/TR0x8tS/6-A51-A086-AA1-C-468-E-ADC4-961-EF4-BA6-DD7.jpg" alt="6-A51-A086-AA1-C-468-E-ADC4-961-EF4-BA6-DD7" border="0"></a>
+
+      <div class="card-content">
+        <h2> Best Western Sky Valley </h2>
+        <p><strong>Information:</strong> <p> Near PMG Monroe Family MedicineMake yourself at home in one of the 58 air-conditioned rooms featuring refrigerators and microwaves. Your pillowtop bed comes with premium bedding. 37-inch LCD televisions with cable programming provide entertainment, while complimentary wireless internet access keeps you connected. <p>
+<p> Property is cleaned with disinfectant Property confirms they are implementing enhanced cleaning measures Social distancing measures are in place Guests are provided with free hand sanitizer Property confirms they are implementing guest safety measures. <p>
+<p> This property accepts credit cards and debit cards; cash is not accepted
+This property reserves the right to pre-authorize the guests credit card prior to arrival.
+Cashless transactions are available
+Noise-free guestrooms cannot be guaranteed
+Safety features at this property include a smoke detector </p>
+
+             </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+    <a href="https://ibb.co/j8XMvKX"><img src="https://i.ibb.co/8mZ5D3Z/AD1-F9885-5-EBC-4-CD2-B9-DF-BE7-B910-F8060.webp" alt="AD1-F9885-5-EBC-4-CD2-B9-DF-BE7-B910-F8060" border="0"></a>
+
+      <div class="card-content">
+        <h2> Evergreen & Suites </h2>
+        <p><strong>Information:</strong> <p> All team here is very helpful and friendly and the room worked for the 2person. But if you want some other size of bed you can request also. The indoor pool is great and a great temp (so often indoor pools are way too cold in winter up here!). The king suite have mini fridge and microwave, and it's walking distance.<p>
+<p> The "grab-and-go" breakfast options are enough for any appetite, and better than most. The hotel seems to take very seriously the protection of guests, however, the person at the front desk was not masked. The second person in the administration was wearing the mask beard-style. If that doesn't bother you, you'll find this property practical, well located, and a good choice for Monroe.<p>
+
+          </div>
+    </div>
+  </div>
+
+
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

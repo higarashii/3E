@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+      </div>
+
+    
+    
+      <h1>OUR LADY OF MT. MATUTUM</h1>
+
+<p>About 15 kilometers from the town center of Polomolok is a road that leads to the Trappistine Monastery of Our Lady of Mount Matutum. It is located at the foot of Mt. Matutum in Barangay Landan in Polomolok South Cotabato, after which the monastery got its name. It is home to about 30 or so Trappistine nuns under the Cistercian Order which originated in France.</p>
+
+<p>The Trappistine Monastery is a place of prayer, meditation and reflection. The steep drive up the monastery leads to their guest house, where the Stations of the Cross can be found on one side of the road. The guest house is open for visitors and accommodation may be arranged for those who want to go on a retreat or recollection.</p>
+
+<p>Upon entering the place, a small chapel can be found, a few steps up from the parking lot. It has a view of the rolling hills on the horizon. It is where Eucharistic exposition and adoration may be held for those seeking some moments of silence and solitude in front of the Blessed Sacrament. Below the small chapel are three rooms for guests and visitors. A few meters from the chapel is a cottage with two rooms intended for guest priests who may be visiting the place or who may be facilitating a retreat or a recollection.</p>
+
+<div style="text-align:center;"></div>
+<img width="320" src="https://i.ibb.co/xgR219s/109-F0-B2-D-3-C34-437-E-83-D0-4-F1-ECEAB75-EF.jpg" alt="109-F0-B2-D-3-C34-437-E-83-D0-4-F1-ECEAB75-EF"</a><br />
+
+<h1>How to get there:</h1>
+
+<p>The fastest way to get from General Santos Internalional Airport to Mount Matutum is to taxi which takes 43 min and costs ₱650 - ₱850. How far is it from General Santos to Mount Matutum? The distance between General Santos and Mount Matutum is 42 km. The road distance is 42.4 km.</p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+
+    
+      <a href="https://imgbb.com/"><img src="https://i.ibb.co/7KqZ9F4/07-EE846-A-76-B9-4-B95-9-D0-A-43-EC4-D3-A4-B19.webp" alt="Hotel 1" />
+      <div class="card-content">
+        <h2>Giorgio's Place</h2>
+        <p><strong>Information:</strong> <p>Valencia Site, Cannery Rd, Polomolok, South Cotabato</p>
+    <p>Giorgio's Place is located in area / city Polomolok. There are plenty of tourist attractions nearby, such as Taal Falls within 23.64 km, and Hikong Lowig (4th Falls) within 38.6 km.</p>
+
+<p>Giorgio's Place is highly recommended for backpackers who want to get an affordable stay yet comfortable at the same time. For you, travelers who wish to travel comfortably on a budget, Giorgio's Place is the perfect place to stay that provides decent facilities as well as great services.</p>
+
+<p>This hotel is the perfect choice for couples seeking a romantic getaway or a honeymoon retreat. Enjoy the most memorable nights with your loved one by staying at Giorgio's Place. Have fun with various entertaining facilities for you and the whole family at Giorgio's Place, a wonderful accommodation for your family holiday.</p>
+
+<p>24-hours front desk is available to serve you, from check-in to check-out, or any assistance you need. Should you desire more, do not hesitate to ask the front desk, we are always ready to accommodate you.</p>
+
+<p>Giorgio's Place is the ideal choice for you who are looking for a comfortable yet affordable accommodation.<p>
+    
+    
+             </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+     <a href="https://ibb.co/TrFFBWh"><img src="https://i.ibb.co/ZNkk62T/5-F2-F66-BE-1659-4325-BF6-B-17-FDDA815522.jpg" alt="Hotel 2" />
+      <div class="card-content">
+        <h2>AMCOOP Suites</h2>
+        <p><strong>Information:</strong> <p>Cannery Rd, Polomolok, South Cotabatao</p>
+    <p>Right in the middle of Polland (Polomolok-Landia as coined by locals) stands tall and proud, a new hotel you can call home, Amcoop Suites. As the name suggests, it is proudly managed by a cooperative.</p>
+
+<p>Amcoop Suites is conveniently located along the Cannery Road which leads to DoleFil Plantation and the serene Monastery of Trappistine.</p>
+
+<p>It's a good place to stay if you plan on visiting your friends down south , or if you simply wish to enjoy the scenic beauty of Mt. Matutum.</p>
+
+            </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+    <a href="https://ibb.co/XpSCzxv"><img src="https://i.ibb.co/NpZyL2H/5-A1-C287-B-A7-CE-4-CF3-846-C-E45-A4463-EDF9.jpg" alt="Hotel 3" />
+      <div class="card-content">
+        <h2>Tropiland Hotel</h2>
+        <p><strong>Information:</strong> <p>Ligtas Subdivision, Cannery Site, Polomolok, South Cotabato</p>
+   <p>Tropiland Hotel: their some more popular amenities offered include an on-site restaurant, room service, and kids activities.</p>
+
+<p>Guests can enjoy an on-site restaurant during their stay.</p>
+
+<p>Conveniently located restaurants include Sadok Restaurant, Nature's Garden Restaurant & Lounge, and Pizza Daks Polomolok.</p>
+
+             </div>
+    </div>
+  </div>
+
+ 
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  
+  </script>
+</body>
+
+</html>

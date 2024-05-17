@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+      </div>
+
+   <h1> Pink Beach</h1>
+    <p> The Philippines is certainly gifted with great destinations that may make your trip memorable, relaxing, and amazing. Some places in the Philippines are unique and cannot be found anywhere else in the world. We have unspoiled islands, gorgeous waterfalls, caverns, rock formations, and other tourism attractions that might entice international travelers. Sila Island in Northern Samar is one of them.
+    <p> Sila Island is one of seven islands that make up the San Vicente Northern Samar island-municipality. These islands are known for their white sand beaches, but Sila Island is distinctive in its own right. The island’s sand is reddish.
+    <p> This amazing destination, popularly known as the “pink beach” by residents and visitors alike, is still untouched by the damaging effects of over-commercialization.  For this reason alone, it’s a best choice for your next summer vacation, especially if you wish to experience the humble perfection of this emerging island paradise.
+    <p> The pinkish hue of the island’s sands comes from the natural colors of coral and shell fragments. These finely pulverized materials, through thousands of years of process, have been mixed with the originally white-colored sand of the island’s shores. During mid-day when the sun is at its hottest and brightest, the beach reveals another more saturated reddish shade. 
+</p>
+
+    <a href="https://imgbb.com/"><img src="https://i.ibb.co/jVCgZ30/Northern-Samar-Pink-Beach2.jpg" alt="Northern-Samar-Pink-Beach2" border="0"></a>
+
+	<h1>How to get there</h1>
+<b> Manila-Catarman (By Plane) </b>
+<p><li>Catarman has one small semi-active airport (the nearest to Sila Island) that caters to one airline company, Philippine Airlines. There are also chartered jets available from Cebu, Davao, and Manila.
+<li>However, flying directly to Catarman from Manila is not a practical option for budget travelers especially if they don’t want to spend too much on plane tickets alone.
+<li>From Catarman, you have to take another van service to reach Calbayog, the nearest city to San Isidro, the jump-off point to San Vicente.<p>
+
+<b> Manila-Sorsogon-Sila Island route (Land and Sea Travel) </b>
+<p><li>From Manila, land trips and sea travels going to Sila Island in San Vicente offer more affordable options. There are bus companies which routes can take you to Bulan, Sorsogon (fares for air-conditioned buses may vary, but it usually starts at ₱400 – ₱1,000).<p>
+
+<p><li>Upon arriving in Bulan, Sorsogon, you can either walk or take a local ride to the town’s port. From the port, you can hire private boat services to take you to Sila Island. This is an option for group travel, especially if you want to explore two popular Philippine destinations at the same time, Sorsogon, and Northern Samar. Prices are negotiable and will be based on the terms that you’ve agreed with the boatman.<p>
+
+<b> Manila-Sorsogon-Sila Island route (Land and Sea Travel) </b>
+<p><li>Direct bus companies offer trips from Manila to Calbayog, the nearest Northern Samar town to San Vicente Northern, Samar, the jump-off point to Sila Island. <p>
+
+<p><li>Boat rides to San Vicente from Calbayog can take up to 45 minutes. As mentioned above, boat fare costs 100 PHP per person. <p>
+
+<b> ALTERNATIVE</b>
+<p><li>There are special trips available for tourists who want to go directly to the Pink Beach either from San Isidro or from the next town of Victoria; it is about 6 km away from the town of San Isidro. Fare ranges from 7,000 PHP to 9,000 PHP per group (round trip). Can be lower depends on your haggling skills.
+</li><p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://ibb.co/3cNS8gq"><img src="https://i.ibb.co/dD2k38q/155738816.jpg" alt="155738816" border="0"></a>
+      <div class="card-content">
+        <h2>Birmingham Allen Beach Resort</h2>
+        <p><strong>Information:</strong><p> Birmingham Allen is located at the coastal town of Allen, Northern Samar, Philippines. It is accessible by plane from Manila to Catarman, Samar via PAL Express. The resort is a 5 bedroom modern deluxe resort with swimming pool and jacuzzi and with direct access to the sea at the back of the resort. It has a magnificent view of the San Bernardino strait between Sorsogon and Samar.</p>
+
+               <b>Location:</b> White Sand, San Antonio, Allen, Northern Samar Province 1110 Philippines
+        </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://ibb.co/wyvQ3CZ"><img src="https://i.ibb.co/WnTzqFN/496066046.jpg" alt="496066046" border="0"></a>
+      <div class="card-content">
+        <h2>Mamori Hotel</h2>
+        <p><strong>Information:</strong><p> MAMORI HOTEL features accommodation in Allen. This 2-star hotel offers room service and a 24-hour front desk. There is a terrace and guests can make use of free WiFi and free private parking.
+
+<p> At the hotel the rooms include air conditioning, a desk, a flat-screen TV, a private bathroom, bed linen, towels and a balcony with a sea view. All rooms will provide guests with a wardrobe and a kettle.
+
+<p> The nearest airport is Catarman National Airport, 45 km from MAMORI HOTEL.</p>
+
+             <b>Location:</b> Rizal Street, 6405 Allen, Northern Samar, Philippines
+
+        </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://ibb.co/sHNWYcq"><img src="https://i.ibb.co/ySZ4jKq/67724394-4000x2667-FIT-AND-TRIM-91bfd46571832c6b4d2eadb401d9098a.webp" alt="67724394-4000x2667-FIT-AND-TRIM-91bfd46571832c6b4d2eadb401d9098a" border="0"></a>
+      <div class="card-content">
+        <h2>Baypark Hotel</h2>
+        <p><strong>Information:</strong> <p>When staying at a hotel, the design and architecture are two important factors that can spoil your eyes. With its unique setting, Baypark Hotel provides a pleasant accommodation for your stay. Splendid service together with wide range of facilities provided will make you complain for nothing during your stay at Baypark Hotel. The hotel’s fitness center is a must-try during your stay here. 24-hours front desk is available to serve you, from check-in to check-out, or any assistance you need.
+<p>Should you desire more, do not hesitate to ask the front desk, we are always ready to accommodate you. Savor your favorite dishes with special cuisines from Baypark Hotel exclusively for you. WiFi is available within public areas of the property to help you to stay connected with family and friends. Baypark Hotel is a hotel with great comfort and excellent service according to most hotel's guests. With all facilities offered, Baypark Hotel is the right place to stay.</p>
+
+                <b>Location:</b> Maharlika Highway, Brgy.Capoocan, Calbayog City, Samar, Philippines, 6710.
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

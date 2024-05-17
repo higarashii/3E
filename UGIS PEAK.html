@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+          </div>
+
+
+
+   <h1> UGIS PEAK IN ESPERANZA </h1>
+    <p> The Daguma Mountain Range's Ugis Peak is located in the Municipality of Esperanza, Province of Sultan Kudarat, and is the ancestral home of the T'durays of southwest Mindanao. Its difficult and nerve-wracking knife-edge peak has made it a popular destination for Mindanao mountain climbers. <p>
+
+<p> A day hike to the mount's peak will introduce you to the excellent local culture of the Teduray, the natives living at the foot of Mt. Ugis, as you pass by.<p>
+
+<p> These are some of the rants you will surely hear from the hikers, especially the amateur ones, during the trek to the Skyscraper of the South, Mount Ugis – a part of the Daguma Mountain Range in Sitio Ugis, Barangay Marguez, Esperanza, Sultan Kudarat Province. <p>
+
+   <a href="https://imgbb.com/"><img src="https://i.ibb.co/cLHP8sN/A4-FA3-A80-BFD4-4-CD4-A995-1675-DEFDBC09.jpg" alt="A4-FA3-A80-BFD4-4-CD4-A995-1675-DEFDBC09" border="0"></a>
+
+	<h1>How to get there</h1>
+<p>To reach Ugis Peak Esperanza, you can follow these general directions:<p>
+
+<p>By Public Transportation:<p>
+
+<p>1. The cheapest way to get from Manila to Sultan Kudarat is to bus and ferry and bus and takes 2 days 8h. But The fastest way to get from Manila to Sultan Kudarat is to train and fly.<p>
+<p>2. Get to know this 20.1-km out-and-back trail near Esperanza, Sultan Kudarat. Generally considered a challenging route, it takes an average of 6 h 52 min to complete. This trail is great for hiking, mountain biking, and road biking, and it's unlikely you'll encounter many other people while exploring. The trail is open year-round and is beautiful to visit anytime. You'll need to leave pups at home — dogs aren't allowed on this trail.<p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://imgbb.com/"><img src="https://i.ibb.co/vLB6qQ7/AC6908-E7-C7-E0-4-A57-842-C-5330-E778-FF4-C.jpg" alt="AC6908-E7-C7-E0-4-A57-842-C-5330-E778-FF4-C" border="0"></a>
+
+      <div class="card-content">
+      <div class="card-content">
+        <h2> Mountain breeze Resort</h2>
+        <p><strong>Information:</strong><p> Mountain breeze Resort
+
+At Mountain Breeze Lodge & Resort we aim to offer a relaxing getaway in an area of outstanding beautiful nature and culture. Nestled in the Jala'ad Mountains, one of Jordan's most unique areas of outstanding beauty, the Mountain Breeze Lodge & Resort is the perfect getaway for anyone wishing to enjoy the countryside and experience its calming bliss.<p>
+<p> The resort is a 20-minute drive from the ancient city of Salt and a 45-minute drive from Amman. Mountain Breeze Lodge & Resort features quality accommodation in elegant and comfortable log cabins set in a private area of a gorgeous pine and oak forest within the resort's grounds. 
+The resort also features an outdoor swimming pool, two dining terraces overlooking amazing views of the mountains, a lounge bar, corporate meeting facilities, and an outdoor activities center which includes archery, target shooting, and paintball.</p>
+
+             </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://imgbb.com/"><img src="https://i.ibb.co/9c1pknQ/D7-E062-C7-C2-AD-4-DEB-8-AB5-AA696-A580200.jpg" alt="D7-E062-C7-C2-AD-4-DEB-8-AB5-AA696-A580200" border="0"></a><br /><a target='_blank' href='https://usefulwebtool.com/'><br />
+
+      <div class="card-content">
+        <h2> Orazon's Resort </h2>
+        <p><strong>Information:</strong> <p> Make yourself at home in one of the 285 air-conditioned rooms featuring minibars. Rooms have private balconies. Satellite television is provided for your entertainment. Private bathrooms have complimentary toiletries and hair dryers.<p>
+<p> Relax at the full-service spa, where you can enjoy massages, body treatments, and facials. You can take advantage of recreational amenities such as outdoor tennis courts, a health club, and an outdoor pool. This Mediterranean property also features complimentary wireless internet access, tour/ticket assistance, and bicycle tour information. Getting to the surf and sand is a breeze with the complimentary beach shuttle.<p>
+<p> This property is all inclusive. Rates include meals and beverages at onsite dining establishments. Charges may be applied for dining at some restaurants, special dinners and dishes, some beverages, and other amenities.
+Satisfy your appetite with Mediterranean cuisine at A Pousada, one of the property's 2 restaurants. Unwind at the end of the day with a drink at the bar/lounge or the beach bar. A complimentary buffet breakfast is served daily from 7:30 AM to 11:00 AM.</p>
+
+              </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+     <a href="https://ibb.co/wwNJn2d"><img src="https://i.ibb.co/wwNJn2d/E08153-F8-43-F8-403-E-A884-FC490-CBACA4-E.jpg" alt="E08153-F8-43-F8-403-E-A884-FC490-CBACA4-E" border="0"></a>
+      <div class="card-content">
+        <h2> Fortune Home Beach</h2>
+        <p><strong>Information:</strong> <p> Fortune Homes Beach and Grill Place is a resort in a good neighborhood, which is located at Long Beach.<p>
+<p> Not only well positioned, but Fortune Homes Beach and Grill Place is also one of resorts near the following Long Beach within 0.02 km and Enarayan Beach within 0.64 km.<p>
+<p> Fortune Homes Beach and Grill Place is highly recommended for backpackers who want to get an affordable stay yet comfortable at the same time.<p>
+<p> If you plan to have a long-term stay, staying at Fortune Homes Beach and Grill Place is the right choice for you. Providing wide range of facilities and great service quality, this accommodation certainly makes you feel at home.
+This resort is the best spot for you who desire a serene and peaceful getaway, far away from the crowds.
+Fortune Homes Beach and Grill Place is the smartest choice for you who are looking for affordable accommodation with outstanding service.<p>.
+              </div>
+    </div>
+  </div>
+
+
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

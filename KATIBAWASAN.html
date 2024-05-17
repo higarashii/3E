@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+     </div>
+
+
+   <h1>Katibawasan falls</h1>
+
+<p>One of the most beautiful natural landmarks in Camiguin, Philippines, is Katibawasan Falls. This magnificent waterfall, which is situated in the municipality of Mambajao, is located at a height of roughly 70 meters and tumbles down to a glistening pool below, providing tourists with an amazing spectacle. The falls, which are surrounded by dense tropical vegetation, provide a tranquil atmosphere that makes them the ideal place to unwind and revitalize while taking in the splendor of nature. on a hot days in particular, the waterfall's cool mist is a delightful sensation.<p>In addition to being a beautiful place to visit, Katibawasan Falls is significant to the local community culturally.<p>
+
+<a href="https://ibb.co/GV76dC9"><img src="https://i.ibb.co/THcfwP1/Katibawasan-1.jpg" alt="Katibawasan-1" border="0"></a> 
+<h1>How to get there</h1>
+<p>To reach Katibawasan falls, you can follow these general directions:<p>
+
+<p>How to get there
+There are several convenient routes to reach Katibawasan Falls in Camiguin traveling by air You can land at Camiguin Airport, which is situated in Mambajao, the island's capital municipality.<p>To get to the falls from there, you can rent a motorbike or a tricycle if you're already on the island, another option is to go to Katibawasan Falls from your lodging by multicab or tricycle.<p>The actual town of Mambajao is located about 5 kilometers southeast of the falls.<p>
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+     <a href="https://ibb.co/RjrBmRb"><img src="https://i.ibb.co/RjrBmRb/catarman.jpg" alt="catarman" border="0"></a>   <div class="card-content">
+        <h2>catarman coral dive resort</h2>
+        <p><strong>Information:</strong><p>Catarman camuigin 1900,Mindanao<p> 
+<p>Situated along the beachfront, Catarman Coral Dive Resort offers comfortable accommodations with ocean views the resort specializes in scuba diving and snorkeling tours, making it an ideal choice for underwater enthusiasts. guests can also enjoy delicious meals at the on-site restaurant.<p>
+             </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+     <a href="https://ibb.co/7kQjB4M"><img src="https://i.ibb.co/7kQjB4M/volcano-house.jpg" alt="volcano-house" border="0"></a>  <div class="card-content">
+        <h2>Volcano house</h2>
+        <p><strong>Information:</strong> <p> Agoho mambajao, camuiguin <p>
+<p>Camiguin Volcano House provides cozy rooms with views of the sea or mountains the hotel features a restaurant serving Filipino and international dishes, as well as a garden area where guests can relax and enjoy the peaceful ambiance.<p>
+
+             </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+   <a href="https://ibb.co/F4k50dn"><img src="https://i.ibb.co/F4k50dn/balai-sa-balai.webp" alt="balai-sa-balai" border="0"></a>     <div class="card-content">
+        <h2>Balai sa balai</h2>
+        <p><strong>Information:</strong> <p>Mambajao, 9100 Camiguin<p>
+<p>Balai sa Balai offers cozy cottages and rooms with views of the sea or garden the property features a restaurant serving local and international cuisine, as well as a swimming pool and garden area for relaxation.</p>
+      
+        </div>
+    </div>
+  </div>
+
+  
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

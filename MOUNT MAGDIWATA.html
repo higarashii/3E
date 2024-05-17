@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+          </div>
+
+   
+   <h1>MOUNT MAGDIWATA</h1>
+    <p>Mount Magdiwata is situated in San Francisco, Agusan del Sur. It is one of the tourist spots in Agusan del Sur, a favored trekking destination among the locals and foreign mountaineers. Standing about 592 meters above sea level, it is a beautiful sight to behold especially in the town of San Francisco. Most trekkers reach the summit plateau in just one day where it offers beautiful views of Agusan Marsh and some part of the province.<p>
+
+<p>Cloaked with tropical rainforest, this mountain is a sanctuary of wild animals such as Philippine deers, monkeys and tarshiers. The springs and creeks found on the mountain serve as sources of potable water in the province.<p>
+
+<p>A long time ago, it is said that in that particular place where the Mt. Magdiwata stood now, there was a Diwata (or in English, a fairy) who was raped and she got pregnant but eventually, she died and was buried there. That is why the Mt. magdiwata is shaped like a pregnant woman laying down. <p>
+
+
+    <img src="https://i.ibb.co/G5qKKZ8/Mt-Magdiwata.png" alt="Mt-Magdiwata" border="0"></a>
+
+
+	<h1>How to get there</h1>
+<p>To reach Mount Magdiwata, you can follow these general directions:<p>
+
+<p>1. From Manila you can book a flight from Butuan and then ride a bus to Davao City and drop at Municipality of San Francisco Terminal.<p>
+<p>2. From San Francisco ride a tricycle going to Batomoda its 10 minutes ride going to Bayugan 2 and drop at the entrance going to Mount Magdiwata.<p>
+
+<p>It's recommended to verify the specific routes and transportation options based on your starting point and current travel conditions. Additionally, always exercise caution and follow local traffic regulations while traveling.<p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://i.ibb.co/VB5qSLQ/Messenger-creation-c80e2e6b-ed6c-4380-a3a6-96343e91d5b3.jpg" alt="Messenger-creation-c80e2e6b-ed6c-4380-a3a6-96343e91d5b3" border="0"></a>
+      <div class="card-content">
+        <h2>Asia Novo Botique Hotel</h2>
+        <p><strong>Information:</strong><p>Asia Novo Botique Hotel is located at San Francisco, Agusan Del Sur. It offers comfortable accommodations suitable for travelers looking for affordable yet decent lodging options.<p>
+<p>The hotel has Family rooms, featuring a private bathroom with a bidet and free toiletries rooms at the hotel also boast free Wifi.<p>
+<p>Asia novo Hotel is a practical choice for travelers seeking a simple and hassle-free stay near at Agusan Wild life Sanctuary.</p>
+
+             </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://i.ibb.co/nbDfNN2/Messenger-creation-60899e19-52d3-4169-9602-69016ca1fb46.jpg" alt="Messenger-creation-60899e19-52d3-4169-9602-69016ca1fb46" border="0"></a>
+      <div class="card-content">
+        <h2>Dels Hotel, Grill and Restaurant</h2>
+        <p><strong>Information:</strong> <p> It is located at National Highway, Barangay Karaos, San Francisco, Agusan Del Sur. A very affordable hotel and restaurant that guest can enjoy.<p>
+<p>Because the Dels hotel are not just hotel it also have restaurant it can be a venue for a occasion for every kind of event. It is good location overall for sightseeing,recreation, dining, and geeting around.  <p>
+<p>Based on the good feedback, it was a cozy place and the staff are very hospitable. Room size is good and  clean. Also it has a delicious food, and event place for all ocassions. </p>
+
+            </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://i.ibb.co/FgMtBdc/Messenger-creation-0dc2056d-f699-424b-ab93-6451fe612fae.jpg" alt="Messenger-creation-0dc2056d-f699-424b-ab93-6451fe612fae" border="0"></a>
+      <div class="card-content">
+        <h2>Northway Hotels</h2>
+        <p><strong>Information:</strong> <p>Situated a mere 1 mile away from The Giant toog Tree.It features accommodation with climate control. Multi Channel Tv and a writing desk in the rooms. They include bathroom with bath sheets and towels.<p>
+<p>A breakfast is serve in the restaurant. Unwind and embrace the ambiance od San Francisco in th 24 hour restaurant onsite. <p>
+
+            </div>
+    </div>
+  </div>
+
+  
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

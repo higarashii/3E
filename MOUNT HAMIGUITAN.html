@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+    </div>
+
+    
+
+      <h1>MOUNT HAMIGUITAN RANGE WILDLIFE SANCTUARY, SAN ISIDRO</h1>
+
+<p>The Philippines is home to a good many mountains that will treat you to majestic views and an incredible journey with nature. One of these mountains is recognized in the world for its rich biodiversity-the Mount Hamiguitan Range Wildlife Sanctuary (MHRWS), one of the protected areas in the country.</p>
+
+<p>It was in 2004 when the MHRWS was legislated as a protected area by virtue of Republic Act No. 9303.</p>
+
+<p>The wildlife sanctuary, which is situated in the Municipalities of San Isidro and Governor Generoso, and City of Mati, all in the Province of Davao Oriental, initially covered 7,132.78 hectares. However, through local government ordinances and resolutions, 19,520.05 hectares was added to the original protected area of MHRWS, which now has a total area of 26,652.83 hectares.
+Mount Hamiguitan represents a complete, substantially intact and highly diverse mountain ecosystem and hosts diverse animal and plant species. It is also a sanctuary to critically endangered trees, plants, and the iconic Philippine eagle.</p>
+
+
+<div style="text-align:center;"></div>
+<img width="320" src="https://i.ibb.co/MRC3dZH/received-1476005363039892.jpg" alt="received-1476005363039892" border="0"></a>
+
+<h1>How to get there:</h1>
+
+<p> From Manila, visitors may take plane ride to Davao City. From Davao City, ride a bus to the Municipality of San Isidro, which will take around 2.5 hours. Buses are also available from Davao City to Mati, with a travel time of four (4) hours.</p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+
+
+   <a href="https://ibb.co/124R0J0"><img src="https://i.ibb.co/q12mDFD/4-ABB88-CF-8-C5-F-44-B6-B0-A2-DB70-CB73-B25-E.jpg" alt="Hotel 1" />
+      <div class="card-content">
+        <h2>Mt. Hamiguitan Escape Resort</h2>
+        <p><strong>Information:</strong> 
+   <p>Experience a superb resort stay at Mt Hamiguitan Escape Resort. The resort features facilities like restaurant, room service, garden, family rooms, terrace, and swimming pool. Previous guests have rated their stay at Mt Hamiguitan Escape Resort an average of 5.0 out of 5 stars in 1 review. Mt Hamiguitan Escape Resort is approximately 43.4 miles (69.9 km) from Francisco Bangoy International Airport, the nearest airport.</p>
+   
+   <p>As a guest at Mt Hamiguitan Escape Resort, you have the option to request pick-up or drop-off at the airport, as the resort provides an airport shuttle service. Guests are welcome to check in at the resort starting from 1:00 PM and check-out by 12:00 PM, with the convenience of express check-in and check-out services available for a smooth and efficient experience. Ensuring your comfort is a top priority at Mt Hamiguitan Escape Resort, and you’ll notice it right from the moment you arrive. Enjoy hassle-free private parking at this resort. You'll also find a dedicated parking space for people with disabilities.</p>
+   <p>Mt Hamiguitan Escape Resort also offers room service. Take a dip in the hot tub or jacuzzi to relax tired muscles. Your safety is important at Mt Hamiguitan Escape Resort. Fire extinguishers and smoke alarms are strategically placed within the property. Smoking is not allowed within the property. Make Mt Hamiguitan Escape Resort your home away from home during your stay in the Philippines. Select your dates and book your stay now!</p>
+
+          </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+     <a href="https://ibb.co/GpkH1Yj"><img src="https://i.ibb.co/YQ80KnG/1-B55-E953-7-E83-4-A83-B17-A-42-A550-DD6-BC6.jpg" alt="Hotel 2" />
+      <div class="card-content">
+        <h2>The Amery Luxury Palm Villas</h2>
+        <p><strong>Information:</strong> <p>Dahican-Bonon rd. Mati City</p>
+    <p>The Amery Luxury Palm Villas is an exclusive 10,632 square meters luxury resort, nestled between towering coconut trees and the white sands of Dahican.</p>
+    <p>From the moment you step off your private car, you will discover an idyllic destination of privacy and pampering; where diving the Mati-Mayo Reef, basking in your private pool, surfing the Dahican waves, indulging in culinary artistry and soulful spa treatments.</p>
+    <p>The beginning it is located in 
+1550-D Dahican-Bobon Rd., Mati City, Davao Oriental, Philippines 8200</p>
+
+             </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+   <a href="https://ibb.co/ZfXw0x3"><img src="https://i.ibb.co/Fh3fFz9/1565-B97-B-5116-4-BC6-9-F37-6-FA9939-C072-A.jpg" alt="Hotel 3" />
+      <div class="card-content">
+        <h2>Playa del Rosario</h2>
+        <p><strong>Information:</strong> 
+    <p>Playa del Rosario is a small beach resort tucked along the east coast municipality of Baganga.  Admittedly a long drive from Davao City, the resort can be reached by passing through Mati City (290 kilometers or 5.5 hour-drive) or via Compostela (220 kilometers or 4 hour-drive).  You will be accompanied by a long stretch of seaside scenery or be treated to a meandering trip past hills and ridges.</p> 
+<p>Baganga is a first-class municipality in Davao Oriental.  Life is still laid-back – no traffic, fewer stores, limited dining options – and the locality hums to quietude by nightfall.  However, what it lacks in modern conveniences, the municipality makes up for having several water-based attractions such Campawan and the nearby Aliwagwag Falls, San Victor Island, the Carolina lake, a sand bar, and even a hot spring.</p>  
+<p>You can visit these natural spots going to or after leaving Baganga – and we would be happy to have you spend the night at Playa del Rosario Resort.  We offer 14 rooms, configured to cater to groups of 4, 8, or 14 persons. These rooms are modestly decked with minimum amenities that will still afford you a comfortable stay.</p>  
+
+             </div>
+    </div>
+  </div>
+
+
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region XI - DAVAO DEL SUR</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+      <h1>Region XI - DAVAO DEL SUR</h1>
+
+      <p>
+        Welcome to our region! Below are some nearby hotels for your stay.
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h2>SAN PEDRO METROPOLITAN CATHEDRAL</h2>
+
+<p>Located in 3J75+WMV, San Pedro Street, Poblacion District, Davao City, Davao del Sur, Philippines</p>
+
+<p>Modernist Catholic basilica with a curved, concrete facade, ornate altar & separate bell tower. San Pedro Cathedral is not only the oldest church in Davao City, but also the city's premier historical landmark. It was named after San Pedro (Saint Peter), the patron saint of Davao. The original structure was built in 1847 during the arrival of the Spanish Conquistadors, led by Don Jose Uyanguren.</p>
+
+<p>The Metropolitan Cathedral of San Pedro, also known as the San Pedro Cathedral Parish or Davao Cathedral, is a Roman Catholic cathedral located at Barangay 2-A, Poblacion District, Davao City, Philippines. The cathedral, dedicated to Saint Peter, is the ecclesiastical seat of the Roman Catholic Archdiocese of Davao.</p>
+
+     </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+    <a href="https://imgbb.com/"><img src="https://i.ibb.co/HtmpzS5/C1-D35380-BD2-F-4435-B531-5-A22454-FFB03.jpg" alt="Hotel 1" />
+      <div class="card-content">
+        <h2>Hotel 1: Davao Royal Suites and Residences</h2>
+        <p><strong>Location:</strong> 34 C. M. Recto, Poblacion District, Davao City, 8000 Davao del Sur</p>
+
+<p>Davao Royal Suites and Residences is located in Poblacion District, a neighborhood in Davao, and is in a shopping district. The area's natural beauty can be seen at Bonsai Forest and Eden Nature Park, while Tribu K Mindanawan and Davao Museum are cultural highlights. Sta. Ana Shrine and Davao Zorb Park are also worth visiting.</p>
+
+<p>Take advantage of free cooked-to-order breakfast, laundry facilities, and a bar at Davao Royal Suites and Residences. The on-site Filipino cuisine restaurant, Claveria Cafe, offers breakfast, lunch, dinner, and light fare. Stay connected with free in-room WiFi.</p>
+              </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+    <a href="https://ibb.co/q9CSTyj"><img src="https://i.ibb.co/VDx1fj9/4-F33-B702-5-ABD-4-F67-87-E6-D2-EB817-F8-CF7.jpg" alt="Hotel 2" />
+      <div class="card-content">
+        <h2>Hotel 2: Jade Dragons Suites</h2>
+        <p><strong>Location:</strong> Barangay Aurora Quezon St, Poblacion District, Davao City, 8000 Davao del Sur</p>
+
+<p>Guests staying at Jade Dragon’s Suites in Davao City are sure to have a pleasant stay. The property features well-furnished guest rooms with en suite bathrooms, 24-hour front desk, 24-hour security, free WiFi, airport transportation, on-site restaurant, conference rooms, luggage storage, and a parking space.</p>
+
+<p>All rooms are air-conditioned and equipped with cable TV and telephone. Each room is fitted with a private toilet and bath with hot and cold shower. Free WiFi is accessible in the guest rooms. Room service is available. Complimentary toiletries are provided.</p>
+
+<p>There are ATM facilities, beauty salons, grocery stores, laundry shops, and supermarkets nearby. The property features an elevator on site. The front desk operates 24 hours a day. Round-the-clock security is available. Luggage storage is offered at the property. Newspaper is available at the lobby. Free WIFi is accessible in the common areas. There’s a parking space on site. Car rental is available. Airport transportation is available for an additional charge. Jade Dragon’s Suites features an on-site restaurant. Conference rooms are available for guests’ use. Complimentary breakfast is served every morning. Pets are allowed at the property.</p>
+
+            </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+    <a href="https://ibb.co/7SJXJQg"><img src="https://i.ibb.co/yNnXnph/CACFA6-D5-584-A-4-CE2-9209-12-E061-AA3-BAA.jpg" alt="Hotel 3" />
+      <div class="card-content">
+        <h2>Hotel 3: The Pinacle Hotel Suites</h2>
+        <p><strong>Location:</strong> Sta. Ana Avenue, Davao, 8000, Philippines</p>
+
+<p>The hotel is located in the heart of Davao City, making it a convenient base for exploring the city. Guests can easily access local attractions, shopping malls, and restaurants from the hotel.</p>
+
+<p>The Pinnacle Hotel and Suites features function rooms and an indoor pool with hot tub facility. Operating a 24-hour front desk, it provides free parking and free Wi-Fi access in the entire property.</p>
+
+<p>At The Pinnacle Hotel and Suites, guests may enjoy a massage or rent a car to explore the area. The friendly staff can assist with fax/photocopying, laundry service and tour arrangements. Airport transfer and shuttle services are also available at a surcharge.</p>
+
+            </div>
+    </div>
+  </div>
+
+
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  
+  </script>
+</body>
+
+</html>

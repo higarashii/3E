@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Region Guide</title>
+<style>
+body {
+margin: auto;
+font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+overflow: auto;
+background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%,
+rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150,
+1) 98%);
+animation: gradient 15s ease infinite;
+background-size: 400% 400%;
+background-attachment: fixed;
+}
+@keyframes gradient {
+0% {
+background-position: 0% 0%;
+}
+50% {
+background-position: 100% 100%;
+}
+100% {
+background-position: 0% 0%;
+}
+}
+.wave {
+background: rgb(255 255 255 / 25%);
+border-radius: 1000% 1000% 0 0;
+position: fixed;
+width: 200%;
+height: 12em;
+animation: wave 10s -3s linear infinite;
+transform: translate3d(0, 0, 0);
+opacity: 0.8;
+bottom: 0;
+left: 0;
+z-index: -1;
+}
+.wave:nth-of-type(2) {
+bottom: -1.25em;
+animation: wave 18s linear reverse infinite;
+opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+bottom: -2.5em;
+animation: wave 20s -1s reverse infinite;
+opacity: 0.9;
+}
+@keyframes wave {
+2% {
+transform: translateX(1);
+}
+25% {
+transform: translateX(-25%);
+}
+50% {
+transform: translateX(-50%);
+}
+75% {
+transform: translateX(-25%);
+}
+100% {
+transform: translateX(1);
+}
+}
+body {
+font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #265073;
+}
+.container {
+max-width: 800px;
+margin: 20px auto;
+padding: 20px;
+background-color: rgba(45, 149, 150, 0.5);
+border-radius: 15px;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+text-align: center;
+}
+.header {
+text-align: center;
+margin-bottom: 20px;
+color: #9ad0c2;
+}
+.info {
+color: #9affd0c2;
+cursor: pointer;
+
+}
+.additional-info {
+color: #fff;
+}
+.card {
+margin-top: 20px;
+display: flex;
+flex-direction: column;
+background-color: rgba(255, 255, 255, 0.5);
+border-radius: 15px;
+box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+margin-bottom: 20px;
+overflow: hidden;
+transition: all 0.3s ease;
+cursor: pointer;
+}
+.card img {
+width: 100%;
+height: auto;
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+object-fit: cover;
+}
+.card-content {
+padding: 20px;
+}
+.card-content h2 {
+margin-top: 0;
+font-size: 1.5rem;
+color: #333;
+}
+.card-content p {
+color: black;
+}
+</style>
+</head>
+<body>
+<div>
+<div class="wave"></div>
+<div class="wave"></div>
+<div class="wave"></div>
+</div>
+<div class="container">
+<div class="header">
+
+<p>
+</p>
+</div>
+<!-- Introduction / Information part here -->
+<div class="info" onclick="toggleInfoContent()">
+<h1></h1>
+<!--In this part, you will add information about this place, and
+when you add a new paragraph/info, just enclose it with <br /> tags. -->
+<p class="additional-info" style="display: none">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+vel
+metus id ipsum condimentum varius. Lorem ipsum dolor sit amet,
+consectetur adipiscing elit. Nullam vel metus id ipsum condimentum
+varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Nullam vel metus id ipsum condimentum varius. <br /><br />
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+vel
+metus id ipsum condimentum varius. Lorem ipsum dolor sit amet,
+consectetur adipiscing elit. Nullam vel metus id ipsum condimentum
+varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Nullam vel metus id ipsum condimentum varius.
+</p>
+</div>
+<!-- Card content goes here -->
+<h1>Discover Eden Nature Park</h1>
+<p>If you want to commune with nature, you have to visit this next destination. Eden Nature Park and Resort in Davao City was named after the famed Biblical Garden.
+Trying out Eden Nature Park activities is highly recommended because its serenity and tropical forest climate will remove anybody's anxiety from the stress and noise of the busy city.
+Whether you want to meditate alone or take a break with your family and friends, a tour in Eden Nature Park is worth it.<p>
+<p>The Amphitheater, Lola's Garden, the Flower Garden, Plaza Maria, Mayumi's Well, and others are all tourist spots in the nature park..<p>
+<p>The nature park is also a resort. They have a 24-hour front desk, an outdoor pool, and buffet breakfast. Their rooms are equipped with a flat-screen TV, a wardrobe, and an en-suite bathroom.
+
+Staying at the park means direct access to everything it offers, which is a great way to spend time with your loved ones during your trip to Davao.<p>
+
+<img width="333" src="https://gttp.imgix.net/224733/x/0/top-15-tourist-spots-in-davao-mindanao-home-to-mount-apo-hiking-amp-nearby-samal-island-resort-city-3.jpg?auto=compress%2Cformat&ch=Width%2CDPR&dpr=1&ixlib=php-3.3.0&w=883"</a>
+
+<h1>How to get there</h1>
+<p> Transportation to Eden Nature Park:<p>
+<p>Public Transportation: If you prefer public transportation, you can take a jeepney or bus bound for Toril District from Davao City. Once you reach Toril, you can hire a motorcycle taxi (habal-habal) or a tricycle to take you to Eden Nature Park.<p>
+<p>By Private Vehicle:<p>
+<p>Private Vehicle or Rental Car: The most convenient way to reach Eden Nature Park is by driving. You can either use your own vehicle or rent a car in Davao City. From Davao City, you'll need to head towards Toril District. Once you reach Toril, there are signs directing you to Eden Nature Park. The park is located approximately 25 kilometers (about 1 hour) away from Davao City center.<p>
+</body>
+</html>
+<div class="container">
+<div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+<div class="card" onclick="toggleCardContent(this)">
+
+<a href="https://ibb.co/0hqd1pB"><img src="https://i.ibb.co/TmcFJDK/234769275.jpg" alt="234769275" border="0"></a>
+
+<h2>Acacia Hotel Davao</h2>
+<p><strong>Information:</strong><p>You're eligible for a Genius discount at Acacia Hotel Davao! To save at this property, all you have to do is sign in.
+Situated in Davao City, 1 km from SM Lanang Premier, Acacia Hotel Davao features accommodation with a restaurant, free private parking, a fitness centre and a bar. With free WiFi, this 4-star hotel offers a 24-hour front desk and room service. The property is non-smoking and is located 1.8 km from Abreeza Mall.<p>
+<p>All rooms at the hotel come with air conditioning, a seating area, a flat-screen TV with cable channels, a safety deposit box and a private bathroom with a bidet, bathrobes and slippers. Acacia Hotel Davao provides some rooms with mountain views, and the rooms are equipped with a kettle. At the accommodation rooms are equipped with bed linen and towels.<p>
+<!--In this part, you will add information about this place, and
+when you add a new paragraph/info, just enclose it with <br /> tags. -->
+<p class="additional-info" style="display: none">
+
+</p>
+
+</div>
+</div>
+<div class="card" onclick="toggleCardContent(this)">
+<img src="https://i.ibb.co/tZH0cz4/Bautiful-view-The-Royal-Mandaya-Hotel-Davao.jpg" alt="Bautiful-view-The-Royal-Mandaya-Hotel-Davao" border="0"></a>
+
+<div class="card-content">
+<h2>The Royal Mandaya Hotel</h2>
+<p><strong>Information:</strong> <p>Located in Davao City, this hotel is a 10-minute walk from People’s Park and the Aldevinco Shopping Centre. Providing free Wi-Fi access and parking, it also houses 2 dining outlets and an outdoor pool.The Royal Mandaya Hotel is a 15-minute walk from shopping options such as Gaisano Mall and Gaisano Illustre. The Davao International Airport is a 30-minute drive away.<p>
+<p>Every unit comes with a private bathroom, while some rooms also boast a fully equipped kitchenette with a microwave. At the homestay, some units are allergy-free<p>
+
+<!--In this part, you will add information about this place, and
+when you add a new paragraph/info, just enclose it with <br /> tags. -->
+<p class="additional-info" style="display: none">
+</div>
+</div>
+<div class="card" onclick="toggleCardContent(this)">
+<img src="https://i.ibb.co/XsnRCyK/242294625.jpg" alt="242294625" border="0"></a>
+<div class="card-content">
+<h2>Avida Davao by davaobnb & Lemonique Homes</h2>
+<p><strong>Information:</strong> <p>Offering sea views, Avida Davao by davaobnb & Lemonique Homes is an accommodation located in Davao City, 2.6 km from Abreeza Mall and 1.2 km from D' Bone Collector Museum. The air-conditioned accommodation is 700 metres from People's Park, and guests can benefit from on-site private parking and complimentary WiFi. The accommodation provides a lift and full-day security for guests.<p>
+
+<p>The Executive Poolside comes with two (2) king size beds, and can
+accommodate a maximum of four (4) persons per room.Property Features:
+Beach Access, Free Parking, Outdoor Swimming Pool<p>
+<!--In this part, you will add information about this place, and
+when you add a new paragraph/info, just enclose it with <br /> tags. -->
+<p class="additional-info" style="display: none">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+vel
+metus id ipsum condimentum varius.
+</p>
+</div>
+</div>
+</div>
+<!-- You have nothing to do here or you have nothing to remove. Do you
+understand?-->
+<script>
+function toggleCardContent(card) {
+const content = card.querySelector(".additional-info");
+content.style.display =
+content.style.display === "none" ? "block" : "none";
+}
+function toggleInfoContent() {
+const info = document.querySelector(".info");
+const content = info.querySelector(".additional-info");
+content.style.display =
+content.style.display === "none" ? "block" : "none";
+}
+</script>
+</body>
+</html>

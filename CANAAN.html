@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+          </div>
+
+ 
+   <h1>Canaan Hill Farms</h1>
+    <p>Canaan Hill Farms is an agri-tourism farm site accredited by the Department of Tourism and TESDA that promotes tourism and agriculture. The farm is located in the town of Caibiran, Biliran which also provides agriculture-related training in the Eastern Visayas region.</p>
+
+<p>The farm is owned and run by the Espinazo Family from the patriarchs to their grandchildren. The name came from the Bible which we all know as the land of milk and honey. The management is very conservative and there are strict rules to be followed by guests. The farm is 7 hectares and has an elevated terrain that rises up to 350 ft above sea level. It is an organic farm that grows its crops naturally meaning no pesticides, insecticides, and zero percent chemicals.</p>
+
+<p>They also raise goats, wild pigs, free-range chickens, doves, and sheep. These livestock’s waste is to be fed to worms that produce a vermicast which they use as the fertilizer for their crops. They focus on fruits, vegetables, and herbs production which they sell in the market and in their pharmacy. These produce can be used for culinary and health purposes.</p>
+	<img src="https://i.ibb.co/sCCpsfz/canaan.jpg" alt="canaan" border="0"></a>
+
+	<h1>How to get there</h1>
+<p>To reach Canaan Hill Farms, you can follow these general directions:<p>
+
+<p>• The Canaan Hills Farms and Honey Garden is about 2-hour drive from Tacloban City and 30 minutes travel from Naval town, Biliran province's capital.</p>
+<p>• Charter a tricycle or motorcycle from Naval going straightly to Canaan Hill Farms. Or you can contact Kuya Elmer Samuray for a tour guide – 0915 269 8650 / 0929 713 8940. (Travel Time: 45 Minutes)</p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+	<img src="https://i.ibb.co/6n2Vpk4/bethany.jpg" alt="bethany" border="0"></a>
+
+      <div class="card-content">
+        <h2>Bethany Hill Brown Room</h2>
+        <p><strong>Information:</strong><p>Located at Bethany Hill, Weluisa Farm, Biliran, Leyte, Philippines, the superior services and facilities offered at Bethany Hill Brown Room will make for a memorable stay. Parking is provided free of charge for guests.</p>
+
+<p>Guests are guaranteed a comfortable stay while at Bethany Hill Brown Room. To enhance your stay, some rooms at the apartment come with air conditioning. Some rooms have television to keep guests entertained. You can stay fresh and clean with toiletries and towels provided in some of the guest bathrooms.</p>
+
+          </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://i.ibb.co/n13WPYY/fragoch.jpg" alt="fragoch" border="0"></a>
+
+      <div class="card-content">
+        <h2>Fragoch Tourist Inn</h2>
+        <p><strong>Information:</strong> <p>Get your trip off to a great start with a stay at this property located at HC53+H22, Caneja Street, Extension, Naval, 6543 Biliran, which offers car park free of charge. Conveniently situated in the Naval part of Naval, this property puts you close to attractions and interesting dining options. As an added bonus, restaurant is provided on-site to conveniently serve your needs.</p>
+
+<p>Comprising a balcony and a dressing room, the rooms at the property are equipped with high-speed internet and a flat-screen TV with satellite channels. They have a spacious interior. This Biliran hotel serves a continental breakfast every morning.</p>
+        <!--In this part, you will add information about this place, and when you add a new paragraph/info, just enclose it with <br /> tags. -->
+        <p class="additional-info" style="display: none">
+          
+        </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://i.ibb.co/FHbkZjQ/midpoint.jpg" alt="midpoint" border="0"></a>
+
+      <div class="card-content">
+        <h2>Midpoint Suites</h2>
+        <p><strong>Information:</strong> <p>Midpoint Suites located at Naval, 6543 Biliran, provides accommodation in Naval. The accommodation features room service and a 24-hour front desk for guests. The rooms at the inn are fitted with a seating area, a flat-screen TV with satellite channels and a private bathroom with free toiletries and a bidet.</p>
+
+<p>Guest rooms at midpoint Suites have air conditioning and a desk. Guests at the accommodation can enjoy a à la carte breakfast. The nearest airport is Daniel Z. Romualdez Airport, 120 km from midpoint Suites. With a 24-hour front desk and air conditioning, the Midpoint Suites is located 1 mile from the centre of Naval and offers highly rated bed and breakfast hospitality with three bright & well-appointed, air-conditioned rooms. See 2 hot deals at up to 32% off at the accommodation on preferred nights in May & June.</p>
+
+                  
+            </div>
+    </div>
+  </div>
+
+
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

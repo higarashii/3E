@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+         </div>
+
+    <h1>Baras Bird Sanctuary</h1>
+    <p> The Baras Bird Sanctuary is a vital wetland area in the Philippines that spans two hectares and provides a habitat for tens of thousands of stunning birds. Located at riverbank, this area was once a pepper farm before being transformed into a sanctuary for birds.<p>
+
+<p> It is an area of land in which birds are protected and encouraged to breed.<p>
+
+<p> The Baras Bird Sanctuary is a vital wetland area in the Philippines that spans two hectares and provides a habitat for tens of thousands of stunning birds. Located at riverbank, this area was once a pepper farm before being transformed into a sanctuary for birds.
+It is an area of land in which birds are protected and encouraged to breed.<p>
+
+   <a href="https://ibb.co/dbpXF3V"><img src="https://i.ibb.co/dbpXF3V/F89-F3-F95-1-F60-4730-8-CDE-1365-C84-D5-B32.jpg" alt="F89-F3-F95-1-F60-4730-8-CDE-1365-C84-D5-B32" border="0"></a>
+	<h1>How to get there</h1>
+<p>To reach Baras Bird Sanctuary , you can follow these general directions:<p>
+
+<p>By Public Transportation:<p>
+
+<p>1. From manila you need to take train, bus , ferry and take a flight. The fastest way to get from Manila to Sultan Kudarat is to train and fly which takes 4h 18m and costs ₱2,900 - ₱19,000. <p>
+<p>2. And when you are in sultan kudarat you can only take a but to be able to arrive in baras bird sanctuary.<p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+     <a href="https://ibb.co/4SrBBvG"><img src="https://i.ibb.co/4SrBBvG/EFA0-DC8-F-9106-4-EAC-861-F-2-F3-F33-F15-C88.jpg" alt="EFA0-DC8-F-9106-4-EAC-861-F-2-F3-F33-F15-C88" border="0"></a>
+      <div class="card-content">
+      <div class="card-content">
+        <h2> HRR PENSION HOUSE</h2>
+        <p><strong>Information:</strong><p> HRR PENSION HOUSE 
+
+<p> Pension means A home for the elderly; an old folks' home. A lodging which is usually less exquisite and thus more affordable than a hotel.</p>
+<p> A pension hotel is usually not a boarding house, but is a real hotel. A pension hotel provides rooms with no or few amenities. They usually have private bathrooms with showers. A pension hotel usually has a window air conditioning unit, but the hallways and other areas of the hotel are usually cooled only by fans.</p>
+
+              </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+    <a href="https://ibb.co/SK0vCKZ"><img src="https://i.ibb.co/SK0vCKZ/530-BC144-42-A2-476-A-B911-8-DF45416-F337.jpg" alt="530-BC144-42-A2-476-A-B911-8-DF45416-F337" border="0"></a>
+      <div class="card-content">
+        <h2> BOUTIQUE HOTEL </h2>
+        <p><strong>Information:</strong> <p> A boutique hotel is a type of hotel that feels small, intimate, and quaint. It typically has less than 100 rooms and offers guests an ultra-personal service. Unlike the way most other hotel brands are perceived by the public, a boutique hotel stays true to the local culture.
+The outside of a boutique hotel is usually quaint and historic or modern and contemporary.<p>
+<p> Individualized Decor - Following the aesthetic of the outdoor decor, all boutique hotels have an individualized decor that gives the space a welcoming personality.<p>
+
+            </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+  <a href="https://ibb.co/pK1RGYq"><img src="https://i.ibb.co/pK1RGYq/2-E5-A86-D3-7-CB7-4224-BAE1-7-D7143361630.jpg" alt="2-E5-A86-D3-7-CB7-4224-BAE1-7-D7143361630" border="0"></a>
+      <div class="card-content">
+        <h2> PUNTA LANDING TRAVELLERS </h2>
+        <p><strong>Information:</strong> <p> Facilities provided inside a hotel room may range from a modest-quality mattress in a small room to large suites with bigger, higher-quality beds, a dresser, a refrigerator, and other kitchen facilities, upholstered chairs, a flat-screen television, and en-suite bathrooms.<p>
+<p> Besides, This hotel is providing an accommodation for temporary staying, related services such as changing bedclothes, giving towels and hygiene items, the opportunity to use appliances and TV set, cleaning and sanitation are available.<p>
+             </div>
+    </div>
+  </div>
+
+ 
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

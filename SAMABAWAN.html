@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+         </div>
+
+
+   <h1>Sambawan Island</h1>
+    <p>Sambawan Island is Biliran’s answer to paradise. White sands, thriving marine life and warm blue waters lapping up the tree-lined shore is a must for those wanting escape from reality. Maria Benita, our good fairy must have worked wonders in this place. Sambawan Island is located 5km of the west coast of Maripipi Municipality, south of the Samar sea, is fast becoming the most visited attraction by the tourists. The semi- curved beach with soaring rock formations covered with green grass as a backdrop create a bubble of fantasy that you are entering another dimension.</p>
+
+<p>Sambawan Island, Maripipi has a stark, mountainous coastline and a spectacular sunrise, a stunningly beautiful view, which will surely melt your heart.Viewed from a distance, Sambawan island with its towering rocks; is a series of interconnecting stony islets. It has two main islands and the rocky terrain is covered with grass. Along the shore lines, Talisay trees are being planted. Sambawan island is a marine sanctuary and a popular dive site. It has an extensive wealth of marine life, good visibility and corals that are in good condition. Turtles, sea snakes and reef sharks are also found there often. Current is mild and suitable for all range of divers.</p>
+
+	<img src="https://i.ibb.co/dWWdTJf/sambawan.jpg" alt="sambawan" border="0"></a>
+
+	<h1>How to get there</h1>
+<p>To reach Sambawan Island, you can follow these general directions:<p>
+
+<p>• From Manila, book a flight to Tacloban</p>
+• From Tacloban ride Van-vans, Duptors, Grandtours to Naval</p>
+• Then take the only passenger boat to Maripipi Is (it leaves 10am)</p>
+• From Maripipi Is. Ride Habal habal to Brgy. Ol-og</p>
+• Then rent a boat to Sambawan Island</p>
+• Alternate route is Ride jeep, bus or Habal habal to Kawayan and hire boat directly to Sambawan but this route is expensive because the boat costs Php 5,500* to Php 6,500*.</p>
+
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+	<img src="https://i.ibb.co/c61qcY7/final-baypark.jpg" alt="final-baypark" border="0"></a>
+
+      <div class="card-content">
+        <h2>Baypark Hotel</h2>
+        <p><strong>Information:</strong><p>Everyone needs a place to lay their weary head. For travelers visiting Calbayog City, specifically at 3H9Q+32Q, 1, Calbayog City, 6710 Samar, Baypark Hotel is an excellent choice for rest and rejuvenation. Well-known for its family-friendly environment and proximity to great restaurants and attractions, Baypark Hotel makes it easy to enjoy the best of Calbayog City.</p>
+
+<p>Guest rooms offer a refrigerator, a minibar, and air conditioning, and Baypark Hotel makes getting online easy as free wifi is available. You can also take advantage of some of the amenities offered by the hotel, including a 24 hour front desk, a concierge, and room service. In addition, guests can enjoy a fitness center and breakfast during their visit. As an added convenience, there is free parking available to guests. Whether you’re traveling for business, pleasure or both, Baypark Hotel is sure to make your visit to Calbayog City one worth remembering.</p>
+        <!--In this part, you will add information about this place, and when you add a new paragraph/info, just enclose it with <br /> tags. -->
+        <p class="additional-info" style="display: none">
+          
+        </p>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://i.ibb.co/VqsNk2J/west-prime.jpg" alt="west-prime" border="0"></a>
+
+      <div class="card-content">
+        <h2>West Prime Hotel</h2>
+        <p><strong>Information:</strong> <p>Located in front of Calbayog Convention Center, 1, Calbayog City, 6710 Samar, West Prime Hotel provides a bar. Featuring room service, this property also provides guests with a restaurant. The hotel features family rooms.</p>
+
+<p>At the hotel, each room is equipped with a desk. Complete with a private bathroom equipped with a bidet and free toiletries, guest rooms at West Prime Hotel have a flat-screen TV and air conditioning, and selected rooms come with a balcony. At the accommodation each room has bed linen and towels. Around the clock assistance is available at the reception, where staff speak English and Filipino.</p>
+
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://i.ibb.co/ZLX6Ww9/tj-pensione.jpg" alt="tj-pensione" border="0"></a>
+
+      <div class="card-content">
+        <h2>TJ Pensione</h2>
+        <p><strong>Information:</strong> <p>Ideally located in the H96V+GG2, JRS Business Corporation, Naval, Biliran area, TJ PENSIONE promises a relaxing and wonderful visit. The property offers a high standard of service and amenities to suit the individual needs of all travelers. Free Wi-Fi in all rooms, daily housekeeping, 24-hour front desk, Wi-Fi in public areas, car hire is just some of the facilities on offer. Comfortable guestrooms ensure a good night's sleep with some rooms featuring facilities such as flat screen television, clothes rack, linens, towels, fan. The property offers various recreational opportunities. For reliable service and professional staff, TJ PENSIONE caters to your needs.</p>
+
+            </div>
+    </div>
+  </div>
+
+   <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

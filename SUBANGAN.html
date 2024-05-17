@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+          </div>
+
+   
+
+      <h1>SUBANGAN MUSEUM</h1>
+
+<p>Subangan Museum is located in Brgy. Datu Martin Marundan, Mati City, Davao Oriental.</p>
+<p>Its main attraction is the 53-feet long and weighing 20 metric tons (live weight) sperm whale skeleton called Davor. Davor, obviously named after the Province of Davao Oriental, is placed at the center of the museum that will surely greet your entry.</p>
+<p>Subangan Museum is an interactive, state-of-the-art museum that highlights treasured relics, interactive visuals, photos, documents, videos and textiles. Its name is derived from the Bisayan word, subang, which means “east.”</p>
+
+
+<div style="text-align:center;"></div>
+<img width="320" src="https://i.ibb.co/VwPZJ0D/received-468953018833256.jpg" alt="received-468953018833256" </a> 
+
+
+<h1>How to get there:</h1>
+
+<p></h3>
+
+<p>From Manila or Cebu going to Davao City. Then ride a bus or van in Ecoland Bus Terminal. Bus ride from Davao City to Mati is around 2.5 to 3 hours. From Mati Terminal, you can ride motorcyle ( Tricycle or Habal2x ) going to Subangan Museum</p>
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+
+    <a href="https://ibb.co/cQfcp2x"><img src="https://i.ibb.co/tDjMNY3/4-F5360-DC-BD62-429-B-8-D2-B-6-FE8-DEF666-C5.jpg" alt="Hotel 1" />
+      <div class="card-content">
+        <h2>The Lorenz</h2>
+        <p><strong>Information:</strong> 
+    <p>The lorenz is Located in Davao City, Domicilio Lorenzo is within a convenient 5-minute walk from the entertainment hub Matina Town Square and 450 metres from NCCC Mall. The property features an outdoor swimming pool and provides free WiFi access throughout the property.</p>
+
+<p>Offering beautiful views of the lush garden, air-conditioned rooms are equipped with an electric kettle, a flat-screen cable TV, and a refrigerator. The en suite bathrooms come with hot and cold shower facility along with free toiletries. Select room are equipped with a safety deposit box.</p>
+
+<p>Domicilio Lorenzo provides luggage storage and complimentary parking on site. Guests have access to a common guest kitchen. Alternatively, the staff can also assist with food delivery, on request. Additional towels and linens are available at extra charges.</p>
+    
+    
+           </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://imgbb.com/"><img src="https://i.ibb.co/yQ12jXD/95-FF2578-8-B13-49-D6-8-AF5-66279-EB7940-B.jpg" alt="Hotel 2" />
+      <div class="card-content">
+        <h2>ADELINA HOTEL AND SUITES</h2>
+        <p><strong>Information:</strong> 
+    <p>ADELINA HOTEL & SUITES is a premier five-story boutique hotel located at the heart of Mati City, Province of Davao Oriental, Philippines.</p>
+
+<p>The hotel features a chic and elegant Mandaya-inspired architectural design, representing the locals’ utmost devotion to their culture, environment, and Mati’s rapidly growing economy. The intricate designs of “Dagmay,” a sacred Mandaya cloth can be seen in the hotel’s interiors. The cloth symbolizes high reverence towards the creation of “Labaw na Magbabaya” (God) and the importance of the rights, roles, and responsibilities of their clan members.</p>
+
+<p>Enjoy free Wi-Fi: We believe that when a hotel advertises free WiFi, they should provide travelers with a fast and reliable connection. 
+<p>Concierge service: Top-tier hotels have a lot to recommend them: luxurious spas, twice-daily room service and superb on-site restaurants.
+Pool access: Hotel has pool room, in particular, hotels based in big cities might require keycard access to get into the pool. Spa, and amenity access.</p>
+<p>Ballroom: Kasamongan Ballroom is the hotel’s primary events facility that can comfortably accommodate 300 individuals. Kasamongan which means reunion of families.</p>
+<p>Cafe: Cafe Adelina offers a versatile space for guests whether for a cup of coffee with their business partners or casual dining with friends under a relaxed ambiance of heritage-meets-modernity. The Cafe features a fusion of Mati’s ethnic dishes, contemporary cuisine, and the Adelina’s signature recipes.</>p
+<p>Pool: A serene retreat without venturing to Dahican Beach, Adelina Hotel and Suites offers a luxurious pool on the ground floor. Guests can indulge in classic drinks at the pool bar. The swimming pool is accessible for in-house guests from 7 am to 8 pm.</p>
+
+             </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://ibb.co/ThjGQWD"><img src="https://i.ibb.co/5cp3QKX/3-FCF5997-5442-42-E8-BAB7-85-A722-CD205-A.jpg" alt="Hotel 3" />
+      <div class="card-content">
+        <h2>YKG Hotel</h2>
+        <p><strong>Information:</strong> 
+   <p>Staying at YKG Hotel is a good choice when you are visiting Mati.This hotel is very easy to find since it is strategically positioned close to public facilities.</>
+
+<p>For you, travelers who wish to travel comfortably on a budget, YKG Hotel is the perfect place to stay that provides decent facilities as well as great services. YKG Hotel is the splendid choice for you who are seeking a luxurious treat for your holiday. Get pampered with the most excellent services and make your holiday memorable by staying here. From business event to corporate gathering, YKG Hotel provides complete services and facilities that you and your colleagues need.</p>
+
+<p>If you plan to have a long-term stay, staying at YKG Hotel is the right choice for you. Providing wide range of facilities and great service quality, this accommodation certainly makes you feel at home. While traveling with friends can be a lot of fun, traveling solo has its own perks. As for the accommodation, YKG Hotel is suitable for you who value privacy during your stay. 24-hours front desk is available to serve you, from check-in to check-out, or any assistance you need. Should you desire more, do not hesitate to ask the front desk, we are always ready to accommodate you.</p>
+
+            </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  
+  </script>
+</body>
+
+</html>

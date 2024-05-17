@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+        </div>
+
+     <h1>GLORIA'S FANTASYLAND</h1>
+    <p> Waterfront theme park with many rides & live entertainment plus shopping, parades & fireworks. 
+	The park is located in Dapitan City, Zamboanga del Norte. Glorious Fantasyland opened its doors in 2009 as the brainchild of Zamboanga del Norte's Jalosjos family who also owns Dakak. 
+	What started out as a humble pint-sized perya (or fair) has since expanded to a five-hectare theme park with rides, attractions, and shows to keep visitors entertained. Gloria’s Fantasyland is the only theme park in Visayas and 	Mindanao who assertively brings world class shows and entertainment to the public, who are goal-oriented to its target market. Gloria’s Fantasyland decisively make choice quickly and confidently to deliver good service to 	clients. The theme park also purposefully consistent to its policies to have efficient and reliable service towards our market. The management is very opinionated when it comes to whatever experience and feedback from clients 	through our services. We strongly express to our market, the magical array of dreamy characters exciting kiddie rides, enchanting sights to see and joyous to music to the ears to become a reality. <p>
+
+<p>The Gloria’s Fantasyland slogan “Ibalik ang Pagkabata Natin” is reflected in the choice and range of the rides on offer. Spectacular rides like the spinning rides, thrill rides, roller coaster, carousels and kiddie rides are 	sure to bring back the fun and excitement of childhood in everyone.<p>
+
+<p>Gloria’s Fantasyland. A place for you, me and the whole family!<p>
+
+    <img src="https://i.ibb.co/84Xq9tT/Dapitan-City-Zamboanga-del-Norte-Gloria-s-Fantasyland-Dec-13-2014-02.jpg" alt="image" border="0"></a>
+
+	<h1>How to get there</h1>
+
+<p>To reach Gloria’s Fantasyland, you can follow these general directions:<p>
+
+<p>By Public Transportation:<p>
+<p>1. If you're using public transportation, your first step is to travel to Zamboanga City. You can take a bus, van, or plane depending on your location. From Zamboanga City, head to a tricycle or jeepney terminal. Inform the driver that you're going to Gloria's Fantasyland in Santa Maria. They should be familiar with the destination and can drop you off at the nearest point.<p> 
+<p>2. Once you're dropped off, you may need to walk a short distance to reach Gloria's Fantasyland. Follow signs or ask locals for directions if needed.<p> 
+
+<p>By Private Vehicle:<p>
+<p>1. Use a map or GPS to plan your route to Gloria's Fantasyland. The theme park is located in Zamboanga City, typically in the vicinity of Santa Maria, which is a barangay in the city. If you're coming from outside Zamboanga City, your first step is to travel to the city. Major highways and roads usually lead to Zamboanga City from neighboring towns and cities.<p> 
+<p>2. Once you're in Zamboanga City, drive to the barangay of Santa Maria. This is where Gloria's Fantasyland is typically located. Follow signs or ask locals for directions to the theme park. Upon arrival at Gloria's Fantasyland, there should be designated parking areas where you can safely park your vehicle. Be prepared to pay a parking fee if applicable.<p> 
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1> Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://i.ibb.co/ns6Sqzv/b.jpg" alt="image" border="0"></a>
+      <div class="card-content">
+        <h2>Villa Angelina Luxury Suites</h2>
+        <p><strong>Information:</strong><p>Villa Angelina Luxury Suites, located in Dapitan City, Zamboanga del Norte, is an experience of pure bliss and an unparalleled luxury getaway in the southern part of the Philippines. A magnificent paradise inside the renowned tropical property of Dakak Beach Resort, settled exclusively in its left cove wing, Villa Angelina Luxury Suites is known for its elegant and spacious villas with rich interiors that exude elegance, comfort and style. The Villas are mostly perched atop the cliff overlooking the pristine white sand beach cove of Dakak with the warm view of the Sulu Sea. Guests may enjoy the feeling of intimate and discreet seclusion amidst the nostalgic beauty of nature.<p> 
+
+<p>Villa Angelina holds top of the line amenities with an infinity pool that overlooks the cerulean waters; it has a spa, sauna and jacuzzi which offer a similarly stunning view, Asian Fusion restaurants which serve Korean, Japanese, Mexican and Filipino cuisines and a private beach cove where you can hold your small events or parties. Yacht tour, helicopter adventure, diving or golf all day, Villa Angelina will take care of everything you need for a very delightful stay. Villa Angelina also offers intimate wedding venues for couples who opt for a rustic outdoor or garden matrimony. We have themed wedding packages at very reasonable rates that will surely excite you to tie the knot right away. In its 4 years of existence, Villa Angelina Luxury Suites has maintained its standards and improved its services to cater to the ever changing needs of its clientele, making it the premier destination of the south!</p>
+
+          </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://i.ibb.co/KFgd4PM/ariana-hotel.jpg" alt="image" border="0"></a>
+      <div class="card-content">
+        <h2>Ariana Hotel</h2>
+        <p><strong>Information:</strong> <p>See why so many travelers make Ariana Hotel, located in Dipolog City, 7100 Zamboanga del Norte, their hotel of choice when visiting Dipolog. Providing an ideal mix of value, comfort and convenience, it offers an array of amenities designed for travelers like you. You’ll enjoy relaxing rooms that offer air conditioning, a refrigerator, and a minibar, and you can stay connected during your stay as Ariana Hotel offers guests free wifi.
+	The hotel features room service, a coffee shop, and shops. Plus, Ariana Hotel offers a pool and free breakfast, providing a pleasant respite from your busy day. For guests with a vehicle, free parking is available.<p>
+	
+<p>While in Dipolog be sure to experience local tempura favorites at Umami Room and Olive Tree Bar.
+	If you’re looking for things to do, you can check out Dipolog Sunset Boulevard (1.0 mi), which is a popular attraction amongst tourists, and it is within walking distance.
+	At Ariana Hotel, your comfort and satisfaction come first, and they look forward to welcoming you to Dipolog.
+</p>
+
+       
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <img src="https://i.ibb.co/wcqY4VS/d-hotel-1.jpg" alt="image" border="0"></a>
+      <div class="card-content">
+        <h2>D'Hotel & Suites</h2>
+        <p><strong>Information:</strong> <p> "We Make People Happy!" D'Hotel & Suites, located in Rizal Avenue corner Osmena Street, 7100 Zamboanga, Dipolog City, is a 48-room business and boutique hotel situated in the very heart of the city, making it the ideal base for business and leisure travel in Dipolog City. Our prime location provides easy access to all the commercial areas for businessmen while allowing tourists and leisure travelers to walk right out and immediately experience the local scene. We take pride in giving our guests great service and comfort and this is reflected in our rooms which you will find elegant, modern, and cozy. Offering free airport transportation, free breakfast, and free wifi for all hotel guests, individual dining venues and convenient facilities, D'Hotel & Suites is the perfect choice for every traveler.<p> 
+
+<p>For food lovers, D'Hotel & Suites' four restaurants also offer the finest dining experience in the city. Savor the best All-Time Filipino Favorites and a wide selection of Continental and Asian Fusion Cuisine at Tonino's Resto & Wine Bar or enjoy a bottle of premium wine with a selection of cheeses and cuts from our Deli at the Taylors Room. Indulge your senses and experience the "fifth taste" with Authentic Japanese Cuisine at Umami Room and enjoy live music on weekends at the Olive Tree Bar. Pizza and Pasta lovers will also enjoy Cucina Italiana - giving you an authentic taste of Italy with freshly made gelato and pizza from Dipolog's first and only wood-fired oven. Guests who want to soak in the local food scene will want to drop by our carenderia/fast food highlighting Tonino's Special Lechon and a plethora of "fiesta food" Pinoy Favorites - Kada Adlaw, Adlaw sa Dipolog! As the leader in style, excellence, and reputation our aim is to provide you, our guest, with 5-star service at affordable prices. Easily mix business and pleasure and Experience Affordable Luxury at D'Hotel & Suites.</p>
+
+              </div>
+    </div>
+  </div>
+
+  
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>

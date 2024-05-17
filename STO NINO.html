@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Region Guide</title>
+  <style>
+    body {
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: auto;
+      background: linear-gradient(315deg, rgba(38, 80, 115, 1) 3%, rgba(119, 176, 170, 1) 38%, rgba(19, 93, 102, 1) 68%, rgba(45, 149, 150, 1) 98%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      background-attachment: fixed;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      50% {
+        background-position: 100% 100%;
+      }
+
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    .wave {
+      background: rgb(255 255 255 / 25%);
+      border-radius: 1000% 1000% 0 0;
+      position: fixed;
+      width: 200%;
+      height: 12em;
+      animation: wave 10s -3s linear infinite;
+      transform: translate3d(0, 0, 0);
+      opacity: 0.8;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+      bottom: -1.25em;
+      animation: wave 18s linear reverse infinite;
+      opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+      bottom: -2.5em;
+      animation: wave 20s -1s reverse infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes wave {
+      2% {
+        transform: translateX(1);
+      }
+
+      25% {
+        transform: translateX(-25%);
+      }
+
+      50% {
+        transform: translateX(-50%);
+      }
+
+      75% {
+        transform: translateX(-25%);
+      }
+
+      100% {
+        transform: translateX(1);
+      }
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #265073;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(45, 149, 150, 0.5);
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #9ad0c2;
+    }
+
+    .info {
+      color: #9affd0c2;
+      cursor: pointer;
+    }
+
+    .additional-info {
+      color: #fff;
+    }
+
+    .card {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(144, 144, 144, 0.8);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card-content p {
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+     
+      <p>
+     
+      </p>
+    </div>
+
+    <!-- Introduction / Information part here -->
+    <div class="info" onclick="toggleInfoContent()">
+      <h1></h1>
+
+          </div>
+
+   
+   <h1> Sto. Nino Shrine and Heritage Museum</h1>
+    <p>Sto. Niño Shrine and Heritage Museum is a cultural and historical landmark located in Tacloban City, Leyte, Philippines. It is a sprawling complex that consists of a shrine dedicated to the Holy Child Jesus (Sto. Niño) and a museum showcasing the rich heritage and history of the region. The shrine features intricate architecture and beautiful interiors, with ornate furnishings and religious artworks. Visitors can explore the museum's exhibits, which include artifacts, photographs, and memorabilia related to the life and legacy of former Philippine First Lady Imelda Marcos, who commissioned the construction of the shrine. The site offers insights into the Marcos family's influence and contributions to Philippine society, as well as the region's cultural heritage.
+</p>
+
+
+    <a href="https://ibb.co/prdG54z"><img src="https://i.ibb.co/fGHBLrp/santo-nino-2.jpg" alt="santo-nino-2" border="0"></a>
+
+	<h1>How to get there</h1>
+<p>Sto. Niño Shrine and Heritage Museum is located along Real Street in Tacloban City, making it easily accessible by land transportation. Visitors can take a public utility van, jeepney, or tricycle to reach the shrine from various parts of Tacloban City. The site is centrally located and well-known among locals, so transportation should be readily available. Sto. Niño Shrine and Heritage Museum is also a popular stop for guided city tours in Tacloban.
+<p>
+
+
+
+</body>
+</html>
+<div class="container">
+    <div class="header">
+<h1>Below are some nearby hotels for you to stay </h1>
+
+    <div class="card" onclick="toggleCardContent(this)">
+     <a href="https://ibb.co/WKqRm5z"><img src="https://i.ibb.co/NYQGcCN/alejandro-2.jpg" alt="alejandro-2" border="0"></a><br />
+      <div class="card-content">
+        <h2>Hotel Alejandro</h2>
+        <p><strong>Information:</strong><p>Hotel Alejandro, a boutique gem nestled in the bustling heart of Tacloban City, offers a prime location mere moments away from the iconic Sto. Niño Shrine and Heritage Museum. Boasting chic accommodations and contemporary conveniences, it caters to the discerning needs of both leisure and business travelers alike. With its stylish rooms and personalized service, Hotel Alejandro provides an inviting sanctuary amidst the city's vibrant energy. Guests can indulge in a culinary journey at the hotel's restaurant, savoring a delightful array of local and international flavors. Additionally, the hotel presents an array of amenities including a refreshing swimming pool, rejuvenating spa, and well-equipped conference rooms, ensuring a memorable stay for every guest.</p>
+
+            </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+     <a href="https://ibb.co/gt8nJjC"><img src="https://i.ibb.co/j3YpD6F/Asia-star-hotel.jpg" alt="Asia-star-hotel" border="0"></a><br />
+      <div class="card-content">
+        <h2>Asia Stars Hotel</h2>
+        <p><strong>Information:</strong> <p>Situated in the heart of Tacloban City, Asia Stars Hotel offers an accessible and economical accommodation solution for visitors keen to explore the city's cultural treasures. Nestled conveniently near the Sto. Niño Shrine and Heritage Museum, guests enjoy comfortable rooms equipped with all the essentials at budget-friendly rates. Beyond affordability, the hotel prides itself on providing warm and attentive service, ensuring a pleasant stay for every guest. Its strategic location also grants easy access to transportation hubs, restaurants, and shops, facilitating effortless exploration of the area's attractions. Whether embarking on a cultural excursion or simply seeking a convenient base for city adventures, Asia Stars Hotel promises a rewarding experience without breaking the bank.</p>
+
+           </div>
+    </div>
+
+    <div class="card" onclick="toggleCardContent(this)">
+      <a href="https://ibb.co/yqN3QgN"><img src="https://i.ibb.co/x6247z2/ironwood-hotel.jpg" alt="ironwood-hotel" border="0"></a>
+      <div class="card-content">
+        <h2>Ironwood Hotel</h2>
+        <p><strong>Information:</strong> <p>Ironwood Hotel provides a convenient and stylish accommodation option for visitors exploring Tacloban City, Leyte, located in close proximity to the renowned Sto. Niño Shrine and Heritage Museum. Situated in the heart of the city, the hotel offers easy access to this historic site and other nearby attractions. Each room at Ironwood Hotel is tastefully appointed with modern amenities and elegant furnishings, ensuring a comfortable and enjoyable stay for guests. The hotel features a range of amenities, including complimentary Wi-Fi, a fitness center, and a business center, catering to the needs of both leisure and business travelers. Additionally, guests can dine at the hotel's onsite restaurant, which serves a variety of delicious dishes. With its central location and array of facilities, Ironwood Hotel offers a convenient and memorable experience for travelers exploring Tacloban City.</p>
+
+           </div>
+    </div>
+  </div>
+
+
+  <script>
+    function toggleCardContent(card) {
+      const content = card.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleInfoContent() {
+      const info = document.querySelector(".info");
+      const content = info.querySelector(".additional-info");
+      content.style.display =
+        content.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+
+</html>
